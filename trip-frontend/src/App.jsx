@@ -4,11 +4,11 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { 
   Compass, Clock, Share2, User, Sparkles, Download, Plus, Info, 
   GripVertical, CloudSun, Eye, EyeOff, Send, CheckCircle, ArrowLeft, 
-  X, Calendar, MapPin, DollarSign, Users, Bot, Settings, LogOut, Heart, Map
+  X, Calendar, MapPin, DollarSign, Users, Bot, Settings, LogOut, Heart, Map, Wallet
 } from 'lucide-react';
 import L from 'leaflet';
 import axios from 'axios'; // Buat nembak AI Backend (kalau udah jalan)
-
+import LoginView from './login';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 
@@ -171,33 +171,122 @@ function ExploreView() {
 // ==========================================
 // (Modal Trip Sama Seperti Sebelumnya)
 function CreateTripModal({ isOpen, onClose, onSubmit }) {
-  const [city, setCity] = useState('Yogyakarta');
-  const [startDate, setStartDate] = useState('2024-12-10');
-  const [endDate, setEndDate] = useState('2024-12-14');
-  const [budget, setBudget] = useState('4500000');
-  const [passengers, setPassengers] = useState('2 Dewasa');
-  const [preferences, setPreferences] = useState(['Budaya', 'Kuliner', 'Alam']);
+  const [formData, setFormData] = useState({ 
+    city: 'Bandung, Jawa Barat', 
+    days: 3, 
+    passengers: 2, 
+    budget: ' ',
+    preferences: ['Alam', 'Kuliner']
+  });
+
+  const formatRupiah = (angka) => {
+    return new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+      minimumFractionDigits: 0
+    }).format(angka);
+  };
 
   if (!isOpen) return null;
 
   return (
-    <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', backgroundColor: 'rgba(15, 23, 42, 0.65)', backdropFilter: 'blur(6px)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 9999, padding: '16px' }}>
-      <div style={{ backgroundColor: '#fff', width: '100%', maxWidth: '480px', borderRadius: '16px', border: '1px solid #e2e8f0', overflow: 'hidden' }}>
-        <div style={{ backgroundColor: '#0f172a', color: '#fff', padding: '16px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><div style={{ backgroundColor: '#f97316', padding: '6px', borderRadius: '50%', display: 'flex' }}><Sparkles size={16} color="#fff" /></div><h3 style={{ margin: 0, fontSize: '15px', fontWeight: '700' }}>Buat Rencana Perjalanan Baru</h3></div>
-          <button onClick={onClose} style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer' }}><X size={20} /></button>
+    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.6)', zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
+      <div style={{ backgroundColor: '#ffffff', borderRadius: '16px', width: '100%', maxWidth: '420px', overflow: 'hidden', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)', fontFamily: 'system-ui, sans-serif' }}>
+        
+        {/* Header Modal */}
+        <div style={{ backgroundColor: '#1e293b', padding: '16px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: '#ffffff' }}>
+          <h2 style={{ margin: 0, fontSize: '18px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div style={{ backgroundColor: '#f97316', padding: '6px', borderRadius: '8px', display: 'flex' }}>
+              <Sparkles size={18} color="#fff" />
+            </div>
+            Buat Rencana Baru
+          </h2>
+          <button onClick={onClose} style={{ background: 'transparent', border: 'none', color: '#94a3b8', cursor: 'pointer', display: 'flex', padding: 0 }}>
+            <X size={22} />
+          </button>
         </div>
-        <form onSubmit={(e) => { e.preventDefault(); onSubmit({ city, startDate, endDate, budget: parseInt(budget || '0').toLocaleString('id-ID'), passengers, preferences }); }} style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+
+        {/* Isi Form */}
+        <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          
+          {/* 1. Kota Tujuan */}
           <div>
-            <label style={{ fontSize: '11px', fontWeight: '700', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '4px' }}><MapPin size={13} color="#f97316" /> Kota Tujuan</label>
-            <select value={city} onChange={(e) => setCity(e.target.value)} style={{ width: '100%', padding: '9px 12px', borderRadius: '8px', border: '1px solid #cbd5e1', fontSize: '12px', outline: 'none' }}>
-              <option value="Yogyakarta">DIY Yogyakarta</option>
-              <option value="Bandung">Bandung, Jawa Barat</option>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', fontWeight: '600', color: '#475569', marginBottom: '8px' }}>
+              <MapPin size={18} color="#f97316" /> Kota Tujuan
+            </label>
+            <select 
+              style={{ width: '100%', padding: '12px 16px', backgroundColor: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '10px', fontSize: '15px', color: '#0f172a', outline: 'none', cursor: 'pointer', boxSizing: 'border-box' }}
+              value={formData.city}
+              onChange={(e) => setFormData({...formData, city: e.target.value})}
+            >
+              <option value="Bandung, Jawa Barat">Bandung, Jawa Barat</option>
+              <option value="Yogyakarta, DIY">Yogyakarta, DIY</option>
               <option value="Bali">Bali</option>
             </select>
           </div>
-          <button type="submit" style={{ width: '100%', padding: '10px', borderRadius: '10px', border: 'none', backgroundColor: '#f97316', color: '#fff', fontWeight: '700', fontSize: '13px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', marginTop: '10px' }}><Sparkles size={16} /> Generate Itinerary dengan AI</button>
-        </form>
+
+          {/* 2. Durasi & Jumlah Orang */}
+          <div style={{ display: 'flex', gap: '16px' }}>
+            <div style={{ flex: 1 }}>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', fontWeight: '600', color: '#475569', marginBottom: '8px' }}>
+                <Calendar size={18} color="#f97316" /> Durasi (Hari)
+              </label>
+              <input 
+                type="number" min="1"
+                style={{ width: '100%', padding: '12px 16px', backgroundColor: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '10px', fontSize: '15px', color: '#0f172a', outline: 'none', boxSizing: 'border-box' }}
+                value={formData.days}
+                onChange={(e) => setFormData({...formData, days: e.target.value})}
+              />
+            </div>
+            <div style={{ flex: 1 }}>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', fontWeight: '600', color: '#475569', marginBottom: '8px' }}>
+                <Users size={18} color="#f97316" /> Jml Orang
+              </label>
+              <input 
+                type="number" min="1"
+                style={{ width: '100%', padding: '12px 16px', backgroundColor: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '10px', fontSize: '15px', color: '#0f172a', outline: 'none', boxSizing: 'border-box' }}
+                value={formData.passengers}
+                onChange={(e) => setFormData({...formData, passengers: e.target.value})}
+              />
+            </div>
+          </div>
+
+          {/* 3. Estimasi Budget (Slider) */}
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', fontWeight: '600', color: '#475569' }}>
+                <Wallet size={18} color="#f97316" /> Estimasi Budget
+              </label>
+              <span style={{ backgroundColor: '#ffedd5', color: '#c2410c', padding: '4px 12px', borderRadius: '20px', fontSize: '14px', fontWeight: '700' }}>
+                {formatRupiah(formData.budget)}
+              </span>
+            </div>
+            
+            <input 
+              type="range" min="0" max="20000000" step="250000" 
+              value={formData.budget}
+              onChange={(e) => setFormData({...formData, budget: e.target.value})}
+              style={{ width: '100%', height: '6px', backgroundColor: '#e2e8f0', borderRadius: '10px', appearance: 'none', cursor: 'pointer', accentColor: '#f97316' }}
+            />
+            
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', color: '#94a3b8', marginTop: '8px', fontWeight: '600' }}>
+              <span>Rp 0</span>
+              <span>Rp 20 Juta</span>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Footer / Tombol */}
+        <div style={{ padding: '20px 24px', backgroundColor: '#f8fafc', borderTop: '1px solid #f1f5f9' }}>
+          <button 
+            onClick={() => onSubmit(formData)}
+            style={{ width: '100%', backgroundColor: '#f97316', color: '#ffffff', fontWeight: 'bold', fontSize: '16px', padding: '14px', borderRadius: '12px', border: 'none', cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px', boxShadow: '0 4px 6px -1px rgba(249, 115, 22, 0.2)' }}
+          >
+            <Sparkles size={20} /> Generate Itinerary
+          </button>
+        </div>
+
       </div>
     </div>
   );
@@ -206,6 +295,7 @@ function CreateTripModal({ isOpen, onClose, onSubmit }) {
 // ==========================================
 // MAIN APP
 // ==========================================
+
 const defaultDestinations = [
   { id: '1', name: 'Tiba di YIA', time: '09:00', category: 'Transportasi', lat: -7.9015, lng: 110.0573, crowdLevel: 'Sepi', crowdPercent: 20, crowdColor: '#16a34a', image: 'https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=300&q=80' },
   { id: '2', name: 'Transfer ke Hotel', time: '10:30', category: 'Akomodasi', lat: -7.7828, lng: 110.3671, crowdLevel: 'Normal', crowdPercent: 40, crowdColor: '#2563eb', image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=300&q=80' },
@@ -214,7 +304,7 @@ const defaultDestinations = [
 
 export default function App() {
   // === STATE AUTH DIHAPUS SEMENTARA BIAR LANGSUNG MASUK DASHBOARD BUAT TES ===
-  const [isLoggedIn, setIsLoggedIn] = useState(true); 
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // false = login, true = dashboard
   const [currentTab, setCurrentTab] = useState('dashboard'); // 'dashboard' | 'mytrips' | 'explore'
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   
@@ -224,7 +314,12 @@ export default function App() {
   const [tripInfo, setTripInfo] = useState({ city: 'Yogyakarta', budget: '4.500.000', passengers: '2 Dewasa', preferences: ['Budaya', 'Alam'] });
   const [destinations, setDestinations] = useState(defaultDestinations);
   const [activeDay, setActiveDay] = useState(1);
-
+  const [formData, setFormData] = useState({
+    city: 'Bandung, Jawa Barat',
+    days: 3,
+    passengers: 2,
+    budget: ''
+  });
   const handleOnDragEnd = (result) => {
     if (!result.destination) return;
     const items = Array.from(destinations);
@@ -242,6 +337,10 @@ export default function App() {
 
   const routeCoordinates = destinations.map(item => [item.lat, item.lng]);
   const mapCenter = [-7.7800, 110.3600];
+
+  if (!isLoggedIn) {
+  return <LoginView onLoginSuccess={() => setIsLoggedIn(true)} />;
+}
 
   return (
     <div style={{ backgroundColor: '#e2e8f0', height: '100vh', width: '100vw', overflow: 'hidden', display: 'flex', flexDirection: 'column', fontFamily: "'Inter', system-ui, sans-serif", color: '#1e293b', position: 'relative' }}>
