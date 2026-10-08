@@ -13,7 +13,7 @@ app.use(express.json());
 // GET: Tes koneksi & ambil data semua user
 app.get('/api/users', async (req, res) => {
     try {
-        const result = await pool.query('SELECT id, name, email, created_at FROM Users');
+        const result = await pool.query('SELECT id, name, email, created_at FROM users');
         res.json({ success: true, data: result.rows });
     } catch (err) {
         res.status(500).json({ success: false, message: err.message });
@@ -30,7 +30,7 @@ app.post('/api/auth/register', async (req, res) => {
 
     try {
         // Cek apakah email sudah terdaftar
-        const userCheck = await pool.query('SELECT * FROM Users WHERE email = $1', [email]);
+        const userCheck = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
         if (userCheck.rows.length > 0) {
             return res.status(400).json({ success: false, message: 'Email sudah terdaftar' });
         }
@@ -41,7 +41,7 @@ app.post('/api/auth/register', async (req, res) => {
 
         // Simpan pengguna ke database
         const newUser = await pool.query(
-            'INSERT INTO Users (name, email, password_hash) VALUES ($1, $2, $3) RETURNING id, name, email, created_at',
+            'INSERT INTO users (name, email, password_hash) VALUES ($1, $2, $3) RETURNING id, name, email, created_at',
             [name, email, hashedPassword]
         );
 
@@ -65,7 +65,7 @@ app.post('/api/auth/login', async (req, res) => {
 
     try {
         // Cari pengguna berdasarkan email
-        const userResult = await pool.query('SELECT * FROM Users WHERE email = $1', [email]);
+        const userResult = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
         if (userResult.rows.length === 0) {
             return res.status(400).json({ success: false, message: 'Email atau password salah' });
         }
@@ -81,7 +81,7 @@ app.post('/api/auth/login', async (req, res) => {
         // Buat JWT Token (berlaku 1 hari)
         const token = jwt.sign(
             { id: user.id, email: user.email },
-            process.env.JWT_SECRET,
+            process.env.JWT_SECRET || 'secret_key_default',
             { expiresIn: '1d' }
         );
 
