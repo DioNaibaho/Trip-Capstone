@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Compass, Eye, EyeOff, User } from 'lucide-react';
+import Swal from 'sweetalert2';
 
 export default function Login({ onLoginSuccess }) {
   // Mode: true = Halaman Daftar, false = Halaman Login
@@ -37,9 +38,19 @@ export default function Login({ onLoginSuccess }) {
       if (result.success) {
         if (isRegisterMode) {
           // Kalau sukses daftar
-          alert('Pendaftaran berhasil! Silakan login dengan akun baru Anda.');
-          setIsRegisterMode(false); // Balik ke halaman login otomatis
-          setPassword(''); // Kosongin password biar aman
+          Swal.fire({
+            title: 'Berhasil!',
+            text: 'Pendaftaran berhasil! Silakan login dengan akun baru Anda.',
+            icon: 'success',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK'
+          }).then((res) => {
+            if (res.isConfirmed) {
+              setIsRegisterMode(false); // BALIK KE TAMPILAN LOGIN AUTOMATIS
+              setPassword('');          // Kosongin password
+              setName('');              // Kosongin nama
+            }
+          });
         } else {
           // Kalau sukses login
           localStorage.setItem('token', result.token);
@@ -228,7 +239,6 @@ export default function Login({ onLoginSuccess }) {
           {isRegisterMode ? 'Sudah punya akun? ' : 'Belum punya akun? '}
           <button 
             type="button"
-            // INI YANG BIKIN BISA GANTI HALAMAN DAFTAR/LOGIN
             onClick={() => setIsRegisterMode(!isRegisterMode)} 
             style={{ background: 'none', border: 'none', color: '#0f172a', fontWeight: '700', cursor: 'pointer', textDecoration: 'underline', fontSize: '11px', padding: 0 }}
           >
