@@ -1,0 +1,249 @@
+@id,@type,name,tourism,@lat,@lon
+29391348,node,Hotel Sukajadi,hotel,-6.8862096,107.5970895
+29392374,node,Imperium,hotel,-6.9050087,107.6009357
+32042016,node,Topaz,hotel,-6.8927539,107.5841016
+32520353,node,Grand Hotel Preanger,hotel,-6.9213431,107.6116540
+479731735,node,Padma Hotel Bandung,hotel,-6.8646342,107.6090275
+479731737,node,Grha Ciumbuleuit Guest House,hotel,-6.8671861,107.6062461
+1013447614,node,Arion Swiss Bell,hotel,-6.9131037,107.6042599
+1099327692,node,Jayakarta,hotel,-6.8708571,107.6198065
+1158819836,node,Camerlang,hotel,-6.9122725,107.5976731
+1158819872,node,Mutiara,hotel,-6.9120915,107.5984241
+1212690953,node,Edelweiss,hotel,-6.8820821,107.5967445
+1342928043,node,Hotel Patra Jasa,hotel,-6.8889817,107.6138659
+1342944385,node,Hotel Utari,hotel,-6.9007400,107.6126245
+1342944393,node,Hotel Karmila,hotel,-6.9028896,107.6116316
+1342944408,node,UTC Dago Hotel,hotel,-6.9061025,107.6109516
+1342948124,node,Hotel Halmahera,hotel,-6.9071810,107.6161290
+1342948128,node,Hotel Gandasari,hotel,-6.9078607,107.6130004
+1342970049,node,Hotel Royal Palace,hotel,-6.9173595,107.6124190
+1342970053,node,Hotel Royal Merdeka,hotel,-6.9111142,107.6107756
+1381753562,node,Sheraton Bandung Hotel & Towers,hotel,-6.8743988,107.6195436
+1586233214,node,Sari Ater Kamboti Bandung,hotel,-6.8830236,107.5800241
+1587039078,node,The Majesty Hotel,hotel,-6.8831560,107.5810170
+1655564498,node,Provence,hotel,-6.8620761,107.5848460
+1700853213,node,Perdana Wisata,hotel,-6.9201876,107.6014738
+1706574395,node,Hotel Agusta,hotel,-6.8976004,107.6337287
+1706574396,node,Hotel Yehezkiel,hotel,-6.8979998,107.6325164
+1788564513,node,Otten Ville Boutique Hotel,hotel,-6.9028932,107.6007213
+1801234292,node,Bumi Bhandawa,hotel,-6.8840321,107.6256947
+1924435640,node,Sensa,hotel,-6.8948421,107.6049865
+1924439599,node,Aston Tropicana,hotel,-6.8964744,107.6036507
+1924439614,node,Fave,hotel,-6.8960590,107.6036829
+2016397751,node,Cherry Homes,hotel,-6.8872528,107.5839909
+2039449490,node,Hotel Gegerkalong Asri,hotel,-6.8682763,107.5852847
+2490687089,node,Papandayan,hotel,-6.9231465,107.6237011
+2494627703,node,Parakan Wangi,hotel,-6.9498041,107.6280034
+2494655270,node,The Summit Siliwangi,hotel,-6.9077241,107.6129293
+3029767270,node,,hotel,-6.8628816,107.6277834
+3029767271,node,,hotel,-6.8634509,107.6340367
+3029767273,node,,hotel,-6.8664096,107.6258097
+3029772513,node,Dago Highland Resort,hotel,-6.8630028,107.6464113
+3105373529,node,Meize Hotel - Jl. Sumbawa,hotel,-6.9148648,107.6178088
+3269202627,node,Park Hotel,hotel,-6.8990960,107.6415674
+3353575236,node,Mercure Bandung Setiabudi,hotel,-6.8545699,107.5950633
+3365192832,node,Verona Palace Hotel,hotel,-6.8891571,107.5821297
+3376282081,node,Sofyan Inn Specia,hotel,-6.9316800,107.6178928
+3376673101,node,Amaris Hotel Setiabudhi,hotel,-6.8736729,107.5956727
+3376756789,node,Wisma Tubagus,guest_house,-6.8853338,107.6163121
+3405488095,node,SM Residence Pasteur,hotel,-6.8850077,107.5833177
+3424716226,node,Vio Hotel,hotel,-6.9008276,107.5980564
+3436699526,node,Pullman,hotel,-6.9003506,107.6175514
+3506203980,node,Grand Pasundan Convention Hotel,hotel,-6.9367875,107.5934789
+3733193725,node,Patradissa,hotel,-6.9114220,107.6017620
+3807724904,node,The Silk At Dago,hotel,-6.8737345,107.6195926
+3807746630,node,Puri Tomat,hotel,-6.8713763,107.6203726
+3809369314,node,Kementerian Pertanian MESS/GUEST House,guest_house,-6.8714219,107.6197149
+3809369329,node,Wirton Dago Hotel,hotel,-6.8691116,107.6201773
+3809666546,node,Benua Hotel,hotel,-6.9329864,107.6259090
+3809732416,node,Bantal Guling Alun Alun,guest_house,-6.9319557,107.6064828
+4143034494,node,HOTEL METRO,hotel,-6.9407736,107.6555103
+4150284489,node,Hotel Lengkong,hotel,-6.9231252,107.6117327
+4263828828,node,Regata Hotel,hotel,-6.8825827,107.6005351
+4267738966,node,GH Universal Hotel,hotel,-6.8493085,107.5984922
+4288729690,node,Fabu Hotel Bandung,hotel,-6.9160701,107.6019399
+4291804589,node,Alya NZ,guest_house,-6.8761229,107.5654485
+4320694456,node,Bandung Hostel,hostel,-6.9145034,107.6297365
+4326502122,node,Zodiak,hotel,-6.9123077,107.5994831
+4326512398,node,Serena Hotel,hotel,-6.9118697,107.6024868
+4326513914,node,Grand Sovia Hotel,hotel,-6.9124690,107.6029340
+4327194341,node,Parahyangan Residences,guest_house,-6.8772867,107.6039296
+4328071039,node,Summerbird - Bed and Brasserie,hotel,-6.9120462,107.5966492
+4328088067,node,D'batoe Boutique Hotel,hotel,-6.9102080,107.5979591
+4328094416,node,Grand Pacific Hotel,hotel,-6.9088775,107.5978586
+4328099655,node,Hotel Citradream Bandung,hotel,-6.9119051,107.5980388
+4328119383,node,Apartment Gardujati / Guest House,guest_house,-6.9168351,107.5981664
+4329680561,node,Hotel Imperium Bandung,hotel,-6.9053468,107.6005941
+4354994539,node,Vio Veteran,hotel,-6.9192675,107.6150293
+4364208638,node,Malaka Hotel,hotel,-6.9271196,107.6232611
+4364221707,node,Bukit Dago Business Hotel,hotel,-6.8772184,107.6173420
+4364264976,node,Hotel New Naripan,hotel,-6.9201218,107.6118937
+4364268209,node,Vio Surapaati,hotel,-6.8988861,107.6196592
+4364351816,node,Four Points by Sheraton Bandung,hotel,-6.9013446,107.6122508
+4364431589,node,favehotel,hotel,-6.9172142,107.6079722
+4365642382,node,Grand Malabar Hotel,hotel,-6.9199991,107.6243107
+4365686176,node,Ardan Hotel,hotel,-6.8933524,107.5991752
+4365828036,node,Zodiak Hotel,hotel,-6.8792749,107.5838438
+4365845390,node,Grand Tebu Hotel,hotel,-6.9130366,107.6292594
+4365862470,node,D'Best Hotel,hotel,-6.9303323,107.6033774
+4365868418,node,Harapan Indah Hotel,hotel,-6.9223613,107.6215720
+4365969235,node,De'Rain,hotel,-6.9237412,107.6165669
+4365975820,node,Zodiak Hotel,hotel,-6.9120282,107.5980357
+4366003613,node,De Hoff Cihampelas Cottage,hotel,-6.9023262,107.5984379
+4366036884,node,Ivory by Ayola Hotel,hotel,-6.9052505,107.6139540
+4366160271,node,Raffleshom Hotel,hotel,-6.9244626,107.6102761
+4366211031,node,Hotel Dafam Rio,hotel,-6.9142388,107.6291362
+4366500173,node,Arimbi Dewi Sartika,hotel,-6.9297717,107.6055701
+4366529015,node,Cihampelas hotel 2,hotel,-6.8900307,107.6042626
+4366542977,node,Hyper Inn,hotel,-6.9142778,107.5941443
+4367046647,node,Clove Garden Hotel,hotel,-6.8729881,107.6428897
+4367108753,node,Zest Hotel,hotel,-6.8953346,107.5974404
+4367119795,node,Cihampelas Hotel 1,hotel,-6.8889008,107.6041305
+4367137267,node,dPalma Hotel,hotel,-6.9226427,107.6206005
+4367194151,node,Namin Hotel,hotel,-6.8949349,107.6144867
+4367285388,node,Idea's Hotel,hotel,-6.9422992,107.6417377
+4367306824,node,M Premiere Hotel,hotel,-6.9025113,107.6126153
+4367331942,node,Unique Guesthouse 1,hotel,-6.9187466,107.5998169
+4367333994,node,De'qur Hotel,hotel,-6.8955675,107.6165128
+4367336310,node,Grand Cordela Hotel,hotel,-6.9370389,107.6879520
+4367339333,node,Travello Hotel,hotel,-6.8613442,107.5954536
+4367346832,node,VELeZA,hotel,-6.9237306,107.6169092
+4367377390,node,The Victoria Luxurious Guesthouse,hotel,-6.8789881,107.5936611
+4367403002,node,House Sangkuriang,hotel,-6.8845803,107.6116992
+4367415073,node,Garden Permata Hote,hotel,-6.8825448,107.5809045
+4367486386,node,Sofia House Dago Hotel,hotel,-6.8912551,107.6160848
+4367492914,node,Noor Hotel,hotel,-6.9070748,107.6192545
+4367499145,node,D' River Guest House,hotel,-6.8862417,107.6043448
+4367529941,node,Orange Home's Syariah,hotel,-6.8890210,107.5833566
+4367950798,node,D'sovia Hotel,hotel,-6.9172253,107.5980546
+4367985579,node,Dago's Hill Hotel,hotel,-6.8828975,107.6213632
+4368072361,node,Hotel Endah Parahyangan,hotel,-6.9087470,107.5681663
+4368082307,node,Grand Setiabudi Hotel & Apartment,hotel,-6.8749468,107.5966057
+4368154959,node,Novotel Bandung,hotel,-6.9048427,107.6040474
+4368184538,node,Lotus Hotel,hotel,-6.8807512,107.6209847
+4368836119,node,Fullmar House,hotel,-6.8855054,107.5832957
+4368869499,node,Asoka Hotel,hotel,-6.9279883,107.6129377
+4368870949,node,Hotel Ilos,hotel,-6.8909513,107.5844269
+4368872127,node,Amalio Hotel,hotel,-6.8978624,107.6335530
+4368900414,node,Hotel Danoufa,hotel,-6.8959957,107.6197747
+4368902095,node,Arwiga Hotel and Convention,hotel,-6.8922096,107.5991368
+4368904700,node,Hotel Cihampelas 3,hotel,-6.8884875,107.6038967
+4368992655,node,Hotel Corsica,hotel,-6.9045086,107.6283299
+4369159158,node,Sweet Karina Hotel,hotel,-6.8863872,107.5844659
+4369754653,node,Nandya Hotel,hotel,-6.9234092,107.6099225
+4369854694,node,Asmila Boutique Hotel,hotel,-6.8821468,107.6001959
+4369877696,node,El Cavana Hotel,hotel,-6.9148979,107.5987599
+4370117219,node,Arinda Guest House,hotel,-6.9100918,107.6494895
+4370125443,node,Hotel 88 Bandung Kopo,hotel,-6.9516380,107.5858215
+4370151162,node,HOTEL WISMA DAGO,hotel,-6.8944420,107.6118780
+4370162206,node,Vio Cihampelas,hotel,-6.8984858,107.6041481
+4370175009,node,Excellent Seven Boutique Hotel,hotel,-6.9010747,107.5995703
+4370179384,node,Hotel Grand Kopo,hotel,-6.9366158,107.5953771
+4370470049,node,Zodiak@Kebon Jati,hotel,-6.9160743,107.6009259
+4370481546,node,Bali Indah Hotel,hotel,-6.9380560,107.6151956
+4370531568,node,Hotel Istana,hotel,-6.9177986,107.6121924
+4370599589,node,Vio Hotel Pasteur,hotel,-6.8922074,107.5821626
+4373080471,node,Amira Hotel,hotel,-6.8841687,107.5831743
+4373107740,node,Sakura Guest House,hotel,-6.9033913,107.6053848
+4373130278,node,Elenor's Home,hotel,-6.8880057,107.6012479
+4373140133,node,Pondok Kurnia,hotel,-6.9452455,107.6267781
+4373144127,node,,hotel,-6.8863093,107.5776845
+4373174485,node,Arlya Hotel,hotel,-6.9179939,107.6531560
+4373270426,node,Kenangan Hotel,hotel,-6.9125995,107.6054070
+4373321350,node,Hotel Salon Fora,hotel,-6.8703099,107.5930342
+4373373687,node,Oasis Hotel,hotel,-6.9116572,107.6193761
+4373419773,node,Hotel Boulevard,hotel,-6.9294983,107.6261956
+4373592307,node,Hotel Anda,hotel,-6.9191940,107.6265725
+4374570796,node,Palm Hotel,hotel,-6.9172119,107.5987200
+4381766291,node,Rizh Garden,hotel,-6.9281394,107.6201129
+4395991497,node,Attic,guest_house,-6.8894684,107.6141432
+4402017325,node,Bantal Guling,hotel,-6.9303091,107.6395774
+4403942376,node,GH Universal,hotel,-6.8500004,107.5982953
+4421265389,node,,guest_house,-6.9350687,107.6560650
+4489016289,node,Basecamp,guest_house,-6.9285726,107.6636102
+4543278790,node,Suryalaya Inn,hotel,-6.9434523,107.6234262
+4555510932,node,Venice Guest House,guest_house,-6.9124293,107.6054923
+4655134787,node,Fave Hotel,hotel,-6.9161539,107.5942195
+5022145228,node,Gado Gadu Hostel (real adress!),hotel,-6.9172152,107.5990058
+5031456123,node,Rompis Residence,hostel,-6.8870845,107.5879782
+5172665198,node,The Newton Hotel,hotel,-6.9147927,107.6298813
+5182888921,node,Caryota,hotel,-6.8843680,107.5963463
+5291705249,node,Chez Bon Hostel,hostel,-6.9186500,107.6095986
+5451497375,node,Hotel Lini,hotel,-6.9139162,107.6043320
+5471916073,node,InterContinental Bandung Dago Pakar,hotel,-6.8665528,107.6421953
+5698297022,node,Pondok E7,hostel,-6.9256193,107.6185057
+5750040967,node,Aston Pasteur,hotel,-6.8934438,107.5872882
+5833680550,node,The House Tour Hotel,hotel,-6.8669072,107.6034675
+5849852581,node,Bobopod Paskal,hotel,-6.9103665,107.5979685
+6087086135,node,,guest_house,-6.8890410,107.6049376
+6151203590,node,Hotel Harris,hotel,-6.8806352,107.6040432
+6278571391,node,Pinisi Backpacker,hostel,-6.9098781,107.5980272
+6777587530,node,Kos Pak H.E Sukendar,guest_house,-6.8858561,107.6057267
+6854504885,node,Home Mr Syarif Bastaman,guest_house,-6.8957688,107.5676580
+7076351776,node,Ostel by Ostic,guest_house,-6.9071595,107.5958223
+7081714941,node,Serelah,hotel,-6.9065098,107.6091000
+7081727464,node,Yokotel,hotel,-6.9037995,107.5982038
+7087017045,node,Sukaraja,guest_house,-6.8919497,107.5695634
+7661595392,node,Courtyard Bandung Dago,hotel,-6.9042201,107.6104174
+7661597002,node,Moxy Bandung,hotel,-6.9003149,107.6120720
+8050910212,node,Kost Putra Nyalindung ITB,guest_house,-6.8557726,107.6214015
+9800515672,node,Hotel Santika Pasir Koja,hotel,-6.9328758,107.5905365
+9803556199,node,Zodiak Taurus Hotel Bandung,hotel,-6.9114101,107.5979720
+9805277511,node,Hotel Pangarang Sari,hotel,-6.9232784,107.6098741
+9805299566,node,Cassadua Hotel,hotel,-6.8897003,107.5781911
+9805312659,node,Hotel Bandung Permai,hotel,-6.9138883,107.6338258
+9805316457,node,Hemangini Hotel Bandung,hotel,-6.8807048,107.5991540
+9805337893,node,Art Deco Luxury Hotel,hotel,-6.8700507,107.6076831
+9805348926,node,Hotel Image,hotel,-6.9311501,107.6126483
+9805414865,node,Hotel Ammeerra,hotel,-6.8725627,107.5889075
+9805536597,node,Geary Hotel Bandung,hotel,-6.9124558,107.6032680
+9805540456,node,Kembang Hotel Cihampelas Bandung,hotel,-6.8990997,107.6042331
+9805578775,node,Hotel Negla Sari Bandung,hotel,-6.9173347,107.6068068
+9805664420,node,Hotel Unik Bandung,hotel,-6.9114999,107.6002599
+9805727870,node,Hotel 10 Buah Batu,hotel,-6.9343535,107.6203907
+9805777954,node,Setrasari Hotel,hotel,-6.8818003,107.5812672
+9805811387,node,Ruby Hotel Bandung,hotel,-6.9054342,107.5989769
+9807670497,node,Sentra Inn Bandung,hotel,-6.9250651,107.6191501
+9807694443,node,Hostel Intech Kopo 538,hotel,-6.9547965,107.5834362
+9807795332,node,Pratidina Business Residence,hotel,-6.8923149,107.6317452
+9807817528,node,De Braga By Artotel Bandung,hotel,-6.9203601,107.6100633
+9808104016,node,Pass Hill House,hotel,-6.9437450,107.6210980
+9809020563,node,Greko Creative Hub Hotel Bandung,hotel,-6.9207546,107.6217651
+9813954095,node,OYO 2183 Cibeureum Residence,hotel,-6.9105986,107.5688325
+9816386508,node,The Regia by Ultimo,hotel,-6.8887597,107.6042216
+9816492337,node,Fox Harris Hotel Bandung,hotel,-6.9146486,107.6129062
+9843372844,node,U Janevalla Bandung,hotel,-6.9095807,107.6114617
+9943969629,node,Grandia,hotel,-6.9006929,107.6045328
+10653972830,node,,hotel,-6.8432792,107.6010680
+10740506117,node,Hotel Sanira,hotel,-6.9052842,107.6287133
+11047765437,node,Lucia Premium Kost,hostel,-6.9065906,107.6132795
+11064477660,node,ibis Styles,hotel,-6.9007876,107.6175076
+11070277751,node,Mercure Bandung City Centre,hotel,-6.9238563,107.6112694
+11335401298,node,Wisma Kangguru BMTI,guest_house,-6.8769718,107.5641039
+11546593921,node,Kost Bu Nia,hostel,-6.8736512,107.6080358
+11608070660,node,Gino Feruci Kebonjati Hotel,hotel,-6.9164956,107.5988392
+11915115699,node,Skyland Guest House Bandung,hotel,-6.8828173,107.5794872
+11984843791,node,Little Mykonos,hotel,-6.9111293,107.6059106
+12006584835,node,Hilton Bandung,hotel,-6.9126182,107.5974812
+12064373925,node,Puma Hotel,hotel,-6.8940622,107.6039465
+12299551187,node,Mess Cowo MAPID,guest_house,-6.9730238,107.5517623
+12299555535,node,Mess Cewe MAPID,guest_house,-6.9733231,107.5511485
+12326941361,node,Kosan Pak Soni,hostel,-6.9730895,107.5484688
+12637947272,node,Arion Suites Hotel,hotel,-6.9133823,107.6043728
+12794205200,node,Aristella Villa,hotel,-6.8678900,107.6472363
+13456067401,node,Panen Hotel Bandung (By Tebu Group),hotel,-6.9091331,107.6247100
+13460475168,node,pop hotels,hotel,-6.9292634,107.5857903
+13514149101,node,Rumah Oren,guest_house,-6.9085286,107.6948095
+13622908680,node,Rumah Aca.com,hostel,-6.8900964,107.6151910
+13713723687,node,Arwiga Hotel,hotel,-6.8927843,107.5989409
+13730213277,node,Suryakencana Boutique Guest House,guest_house,-6.8925507,107.6140648
+13737191450,node,Serela Hotel,hotel,-6.8946224,107.6038409
+13742517548,node,Mogen Villa Setiabudi Regency,hotel,-6.8409920,107.5874962
+13770681054,node,Truntum,hotel,-6.8994435,107.6039069
+13801732632,node,Hotel Madju,hotel,-6.9088213,107.6242604
+13834358543,node,The Kamalaya Hotel Wedding & Guest House,hotel,-6.8762768,107.6168981
+13990557159,node,KOST ELHAZ BANDUNG,hostel,-6.9181825,107.6462471
+14019864401,node,Abi hafidz house,guest_house,-6.8799265,107.6646128
+14023644201,node,Buton Backpacker Lodge,hostel,-6.9109944,107.6000419
+14085922101,node,Kos kos kos dago,guest_house,-6.8698425,107.6132904
+14179825202,node,Kosan Rangga Gempol RG10A,guest_house,-6.9013413,107.6144853
