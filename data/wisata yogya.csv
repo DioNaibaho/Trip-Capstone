@@ -1,86 +1,86 @@
-@id,@type,name,tourism,@lat,@lon
-591450980,node,Museum Perjuangan Yogyakarta,museum,-7.8164513,110.3718671
-1848508803,node,Museum Kapal,museum,-7.8012112,110.3496168
-1848508880,node,Museum Ki Amri Yahya,museum,-7.7992032,110.3538235
-1988467903,node,SD Perumnas,attraction,-7.7567811,110.4072218
-2000854488,node,Langgeng Art Foundation,museum,-7.8179393,110.3595464
-2000854823,node,Ruang MES 56,museum,-7.8117665,110.3577233
-2075197723,node,Candi Sambisari,attraction,-7.7623668,110.4469490
-2076069019,node,Candi Gebang,attraction,-7.7514278,110.4162240
-2712142975,node,Museum UGM,museum,-7.7738342,110.3779852
-2965701493,node,Candi Gunung Wukir,attraction,-7.6342417,110.2968186
-2965717627,node,Candi Sojiwan,attraction,-7.7608885,110.4961263
-3451917715,node,Gunung Kidul Viewpoint,viewpoint,-7.8455151,110.4800223
-3481033672,node,Blue Lagoon,attraction,-7.7043799,110.4503884
-3687817125,node,,viewpoint,-7.6588127,110.2354482
-4129601389,node,rumah jakal,viewpoint,-7.7247110,110.3945549
-4194971492,node,bird market,attraction,-7.8246758,110.3548719
-4212075290,node,Walk Path,attraction,-7.7951105,110.3561224
-4290032798,node,Wavang Puppets,attraction,-7.8087369,110.3622219
-4305463639,node,Gunungkidul,attraction,-7.8471675,110.4793346
-4359484697,node,Candi Morangan,viewpoint,-7.6848616,110.4694651
-4691760992,node,Batik Museum,museum,-7.7954010,110.3773503
-4756181021,node,Ruang Mes 56,museum,-7.8215003,110.3668668
-4769328924,node,TLCN Jeep Tour Merapi,attraction,-7.6022222,110.4384165
-4771123823,node,Museum Pangeran Diponegoro,museum,-7.7872136,110.3515190
-4832034854,node,Candi Sari,attraction,-7.7615065,110.4742174
-4933768622,node,,viewpoint,-7.6029124,110.2002670
-4934869580,node,Puncak Bucu,viewpoint,-7.8616038,110.4429140
-4957712121,node,Tugu Garuda,museum,-7.8473979,110.3854798
-4977885324,node,Pinnus Pengger,attraction,-7.8712189,110.4590975
-5085151623,node,,viewpoint,-7.6037962,110.4512542
-5085151624,node,,viewpoint,-7.6039172,110.4515938
-5201463082,node,Monument slemant sembada,attraction,-7.7545052,110.4084257
-5201463088,node,Monument sleman sembada,attraction,-7.7506852,110.4096055
-5201793691,node,Monumen sleman sembada,attraction,-7.7541555,110.4104937
-5201793692,node,Tugu Karangasem,attraction,-7.7514727,110.4125045
-5202337992,node,Gerbang karangasem,attraction,-7.7506676,110.4096068
-5203790261,node,Patung Persembahan,attraction,-7.7514456,110.4161973
-5203790263,node,Monumen Dero,attraction,-7.7541552,110.4105019
-5467416621,node,Sunset Temple Viewpoint,viewpoint,-7.7501559,110.4930720
-5467416622,node,Swing,attraction,-7.7501314,110.4932757
-5520104624,node,,viewpoint,-7.6271590,110.4685448
-5598659922,node,Bukit Bintang,viewpoint,-7.8460828,110.4796997
-5669763821,node,"Pulo Kenanga (highest building in Tamansari, ruins)",museum,-7.8079032,110.3605495
-5713275121,node,Sunset viewpoint,viewpoint,-7.6134429,110.2155449
-6512331985,node,Museum Mini Merapi Sisa Hartaku,museum,-7.6004719,110.4491062
-6512333485,node,Stonehenge Merapi,attraction,-7.6022985,110.4473977
-6595885190,node,Gong Perdamaian,attraction,-7.8009002,110.3673929
-6596244485,node,Batik and puppet workshop,attraction,-7.8088476,110.3621421
-6596244486,node,Puppet workshop,attraction,-7.8087580,110.3621185
-6596889692,node,Taman Sari Water Castle,museum,-7.8100524,110.3592071
-6611417897,node,Peraga Observatorium,attraction,-7.8009997,110.3677325
-6611450846,node,Katrol Taman Pintar,attraction,-7.8009251,110.3676488
-6611458948,node,Dinding Berdendang Taman Pintar,attraction,-7.8009366,110.3676055
-6611458949,node,Prasasti Tapak Presiden,attraction,-7.8009991,110.3673480
-6611458950,node,Air Laminer Taman Pintar,attraction,-7.8009472,110.3673909
-6611458951,node,Roket,attraction,-7.8012249,110.3677222
-6611458952,node,Parabola Berbisik,attraction,-7.8010456,110.3675572
-6781069394,node,Situs Warungboto,attraction,-7.8103543,110.3932221
-7097841489,node,Galeri Lorong,museum,-7.8196860,110.3433389
-7106574985,node,bale banjar sangkring art space,museum,-7.8122685,110.3430449
-7196730585,node,Plennger Pain Forest,viewpoint,-7.8697718,110.4589453
-8493661769,node,Grojogan Watu Purbo,attraction,-7.6298933,110.3397774
-9491384155,node,Puncak Kleco,viewpoint,-7.7123502,110.2069444
-9750683378,node,"Museum Pusat TNI AD ""Dharma Wiratama""",museum,-7.7824390,110.3754535
-9867149917,node,Freedom Batik Art Exposition,museum,-7.7942302,110.3650110
-9895186814,node,Jembatan & Talang Plunyon Kalikuning,viewpoint,-7.6015107,110.4358486
-10020006010,node,Candi Prambanan,attraction,-7.7520157,110.4914556
-10173231153,node,Museum Sidik Martowidjojo,museum,-7.8084912,110.3629211
-10281561688,node,Museum UII,museum,-7.6882076,110.4147306
-10281729744,node,Mandala Majapahit UGM,museum,-7.7723253,110.3790753
-10281931441,node,Museum RS Mata Dr Yap Prawirohusodo,museum,-7.7806873,110.3749667
-10302177858,node,Obelix Village,attraction,-7.6877751,110.3733915
-10561649222,node,Diorama Arsip Jogja,museum,-7.8003718,110.4068913
-10774607747,node,Jogja National Museum,museum,-7.8000614,110.3532393
-10774907815,node,Museum Dewantara Kirti Griya,museum,-7.8054562,110.3784127
-11341202005,node,Museum Istana Yogyakarta,museum,-7.8009419,110.3642119
-11795216273,node,Prambanan entrance,attraction,-7.7541917,110.4952926
-12003231019,node,Museum Kampung Hilang,museum,-7.6380708,110.4582379
-12022673171,node,Tirtodipuran Link Building B,museum,-7.8188868,110.3647112
-12730433279,node,Stasiun Trem Gamplong Studio,attraction,-7.8064917,110.2364793
-12989136501,node,Preparation area Temple access,attraction,-7.6070222,110.2079473
-13838851675,node,Bio-Paleoanthropology Museum,museum,-7.7704411,110.3753765
-13997680760,node,,viewpoint,-7.8632730,110.4692047
-14006037836,node,Picniq,attraction,-7.8415631,110.4845991
-14211235381,node,Museum Anaia dan Alisha,museum,-7.6001167,110.4292445
+osm_id,osm_type,name,tourism,historic,leisure,latitude,longtitude,city
+591450980,node,Museum Perjuangan Yogyakarta,museum,,,-7.8164513,110.3718671,yogyakarta
+1848508803,node,Museum Kapal,museum,,,-7.8012112,110.3496168,yogyakarta
+1848508880,node,Museum Ki Amri Yahya,museum,,,-7.7992032,110.3538235,yogyakarta
+1988467903,node,SD Perumnas,attraction,,,-7.7567811,110.4072218,yogyakarta
+2000854488,node,Langgeng Art Foundation,museum,,,-7.8179393,110.3595464,yogyakarta
+2000854823,node,Ruang MES 56,museum,,,-7.8117665,110.3577233,yogyakarta
+2075197723,node,Candi Sambisari,attraction,,,-7.7623668,110.446949,yogyakarta
+2076069019,node,Candi Gebang,attraction,,,-7.7514278,110.416224,yogyakarta
+2712142975,node,Museum UGM,museum,,,-7.7738342,110.3779852,yogyakarta
+2965701493,node,Candi Gunung Wukir,attraction,,,-7.6342417,110.2968186,yogyakarta
+2965717627,node,Candi Sojiwan,attraction,,,-7.7608885,110.4961263,yogyakarta
+3451917715,node,Gunung Kidul Viewpoint,viewpoint,,,-7.8455151,110.4800223,yogyakarta
+3481033672,node,Blue Lagoon,attraction,,,-7.7043799,110.4503884,yogyakarta
+3687817125,node,,viewpoint,,,-7.6588127,110.2354482,yogyakarta
+4129601389,node,rumah jakal,viewpoint,,,-7.724711,110.3945549,yogyakarta
+4194971492,node,bird market,attraction,,,-7.8246758,110.3548719,yogyakarta
+4212075290,node,Walk Path,attraction,,,-7.7951105,110.3561224,yogyakarta
+4290032798,node,Wavang Puppets,attraction,,,-7.8087369,110.3622219,yogyakarta
+4305463639,node,Gunungkidul,attraction,,,-7.8471675,110.4793346,yogyakarta
+4359484697,node,Candi Morangan,viewpoint,,,-7.6848616,110.4694651,yogyakarta
+4691760992,node,Batik Museum,museum,,,-7.795401,110.3773503,yogyakarta
+4756181021,node,Ruang Mes 56,museum,,,-7.8215003,110.3668668,yogyakarta
+4769328924,node,TLCN Jeep Tour Merapi,attraction,,,-7.6022222,110.4384165,yogyakarta
+4771123823,node,Museum Pangeran Diponegoro,museum,,,-7.7872136,110.351519,yogyakarta
+4832034854,node,Candi Sari,attraction,,,-7.7615065,110.4742174,yogyakarta
+4933768622,node,,viewpoint,,,-7.6029124,110.200267,yogyakarta
+4934869580,node,Puncak Bucu,viewpoint,,,-7.8616038,110.442914,yogyakarta
+4957712121,node,Tugu Garuda,museum,,,-7.8473979,110.3854798,yogyakarta
+4977885324,node,Pinnus Pengger,attraction,,,-7.8712189,110.4590975,yogyakarta
+5085151623,node,,viewpoint,,,-7.6037962,110.4512542,yogyakarta
+5085151624,node,,viewpoint,,,-7.6039172,110.4515938,yogyakarta
+5201463082,node,Monument slemant sembada,attraction,,,-7.7545052,110.4084257,yogyakarta
+5201463088,node,Monument sleman sembada,attraction,,,-7.7506852,110.4096055,yogyakarta
+5201793691,node,Monumen sleman sembada,attraction,,,-7.7541555,110.4104937,yogyakarta
+5201793692,node,Tugu Karangasem,attraction,,,-7.7514727,110.4125045,yogyakarta
+5202337992,node,Gerbang karangasem,attraction,,,-7.7506676,110.4096068,yogyakarta
+5203790261,node,Patung Persembahan,attraction,,,-7.7514456,110.4161973,yogyakarta
+5203790263,node,Monumen Dero,attraction,,,-7.7541552,110.4105019,yogyakarta
+5467416621,node,Sunset Temple Viewpoint,viewpoint,,,-7.7501559,110.493072,yogyakarta
+5467416622,node,Swing,attraction,,,-7.7501314,110.4932757,yogyakarta
+5520104624,node,,viewpoint,,,-7.627159,110.4685448,yogyakarta
+5598659922,node,Bukit Bintang,viewpoint,,,-7.8460828,110.4796997,yogyakarta
+5669763821,node,"Pulo Kenanga (highest building in Tamansari, ruins)",museum,,,-7.8079032,110.3605495,yogyakarta
+5713275121,node,Sunset viewpoint,viewpoint,,,-7.6134429,110.2155449,yogyakarta
+6512331985,node,Museum Mini Merapi Sisa Hartaku,museum,,,-7.6004719,110.4491062,yogyakarta
+6512333485,node,Stonehenge Merapi,attraction,,,-7.6022985,110.4473977,yogyakarta
+6595885190,node,Gong Perdamaian,attraction,,,-7.8009002,110.3673929,yogyakarta
+6596244485,node,Batik and puppet workshop,attraction,,,-7.8088476,110.3621421,yogyakarta
+6596244486,node,Puppet workshop,attraction,,,-7.808758,110.3621185,yogyakarta
+6596889692,node,Taman Sari Water Castle,museum,,,-7.8100524,110.3592071,yogyakarta
+6611417897,node,Peraga Observatorium,attraction,,,-7.8009997,110.3677325,yogyakarta
+6611450846,node,Katrol Taman Pintar,attraction,,,-7.8009251,110.3676488,yogyakarta
+6611458948,node,Dinding Berdendang Taman Pintar,attraction,,,-7.8009366,110.3676055,yogyakarta
+6611458949,node,Prasasti Tapak Presiden,attraction,,,-7.8009991,110.367348,yogyakarta
+6611458950,node,Air Laminer Taman Pintar,attraction,,,-7.8009472,110.3673909,yogyakarta
+6611458951,node,Roket,attraction,,,-7.8012249,110.3677222,yogyakarta
+6611458952,node,Parabola Berbisik,attraction,,,-7.8010456,110.3675572,yogyakarta
+6781069394,node,Situs Warungboto,attraction,,,-7.8103543,110.3932221,yogyakarta
+7097841489,node,Galeri Lorong,museum,,,-7.819686,110.3433389,yogyakarta
+7106574985,node,bale banjar sangkring art space,museum,,,-7.8122685,110.3430449,yogyakarta
+7196730585,node,Plennger Pain Forest,viewpoint,,,-7.8697718,110.4589453,yogyakarta
+8493661769,node,Grojogan Watu Purbo,attraction,,,-7.6298933,110.3397774,yogyakarta
+9491384155,node,Puncak Kleco,viewpoint,,,-7.7123502,110.2069444,yogyakarta
+9750683378,node,"Museum Pusat TNI AD ""Dharma Wiratama""",museum,,,-7.782439,110.3754535,yogyakarta
+9867149917,node,Freedom Batik Art Exposition,museum,,,-7.7942302,110.365011,yogyakarta
+9895186814,node,Jembatan & Talang Plunyon Kalikuning,viewpoint,,,-7.6015107,110.4358486,yogyakarta
+10020006010,node,Candi Prambanan,attraction,,,-7.7520157,110.4914556,yogyakarta
+10173231153,node,Museum Sidik Martowidjojo,museum,,,-7.8084912,110.3629211,yogyakarta
+10281561688,node,Museum UII,museum,,,-7.6882076,110.4147306,yogyakarta
+10281729744,node,Mandala Majapahit UGM,museum,,,-7.7723253,110.3790753,yogyakarta
+10281931441,node,Museum RS Mata Dr Yap Prawirohusodo,museum,,,-7.7806873,110.3749667,yogyakarta
+10302177858,node,Obelix Village,attraction,,,-7.6877751,110.3733915,yogyakarta
+10561649222,node,Diorama Arsip Jogja,museum,,,-7.8003718,110.4068913,yogyakarta
+10774607747,node,Jogja National Museum,museum,,,-7.8000614,110.3532393,yogyakarta
+10774907815,node,Museum Dewantara Kirti Griya,museum,,,-7.8054562,110.3784127,yogyakarta
+11341202005,node,Museum Istana Yogyakarta,museum,,,-7.8009419,110.3642119,yogyakarta
+11795216273,node,Prambanan entrance,attraction,,,-7.7541917,110.4952926,yogyakarta
+12003231019,node,Museum Kampung Hilang,museum,,,-7.6380708,110.4582379,yogyakarta
+12022673171,node,Tirtodipuran Link Building B,museum,,,-7.8188868,110.3647112,yogyakarta
+12730433279,node,Stasiun Trem Gamplong Studio,attraction,,,-7.8064917,110.2364793,yogyakarta
+12989136501,node,Preparation area Temple access,attraction,,,-7.6070222,110.2079473,yogyakarta
+13838851675,node,Bio-Paleoanthropology Museum,museum,,,-7.7704411,110.3753765,yogyakarta
+13997680760,node,,viewpoint,,,-7.863273,110.4692047,yogyakarta
+14006037836,node,Picniq,attraction,,,-7.8415631,110.4845991,yogyakarta
+14211235381,node,Museum Anaia dan Alisha,museum,,,-7.6001167,110.4292445,yogyakarta
