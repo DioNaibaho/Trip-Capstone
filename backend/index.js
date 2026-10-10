@@ -102,24 +102,19 @@ app.post('/api/auth/login', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`Server aktif di http://localhost:${PORT}`);
-});
-// Endpoint untuk mengambil detail destinasi berdasarkan nama kota
 app.get('/api/destinations/:city', async (req, res) => {
   const { city } = req.params;
 
   try {
-    // Ambil data hotel, wisata, dan kuliner berdasarkan nama kota 
-    const hotels = await db.query(
+    const hotels = await pool.query(
       'SELECT * FROM hotels WHERE LOWER(city) LIKE LOWER($1)',
       [`%${city}%`]
     );
-    const attractions = await db.query(
+    const attractions = await pool.query(
       'SELECT * FROM attractions WHERE LOWER(city) LIKE LOWER($1)',
       [`%${city}%`]
     );
-    const culinaries = await db.query(
+    const culinaries = await pool.query(
       'SELECT * FROM culinaries WHERE LOWER(city) LIKE LOWER($1)',
       [`%${city}%`]
     );
@@ -137,4 +132,7 @@ app.get('/api/destinations/:city', async (req, res) => {
     console.error('Error fetching destinations:', error);
     res.status(500).json({ success: false, message: 'Gagal mengambil data dari database' });
   }
+});
+app.listen(PORT, () => {
+    console.log(`Server aktif di http://localhost:${PORT}`);
 });

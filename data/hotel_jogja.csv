@@ -1,482 +1,482 @@
-@id,@type,name,tourism,@lat,@lon
-448834564,node,Metro,hotel,-7.8199270,110.3708270
-492167658,node,Griya Sentana,hotel,-7.7853525,110.3636240
-719147415,node,,hotel,-7.8187297,110.3716586
-1359116507,node,Hotel Trim Tiga,hotel,-7.7804558,110.3670381
-1366438107,node,Perwita Sari,hotel,-7.8189478,110.3715471
-1370749559,node,Ros In Hotel,hotel,-7.8356195,110.3680377
-1640323394,node,Delta Homestay,guest_house,-7.8196880,110.3694180
-1640328040,node,Mercury,hotel,-7.8196933,110.3687020
-1640508693,node,Asia Afrika,hotel,-7.7900951,110.3638906
-1640515471,node,Indraloka,hotel,-7.7795395,110.3752202
-1640517334,node,Dusun Jogja Village inn,hotel,-7.8242207,110.3688366
-1652912717,node,Grand Diamond Hotel Yogyakarta,hotel,-7.7825350,110.4234932
-1652969654,node,Villa Hanis,hotel,-7.7327152,110.3771558
-1652990181,node,Pondok terra,hotel,-7.8172496,110.3642294
-1654009037,node,Matahari,hotel,-7.8219210,110.3679880
-1654014636,node,Ruba Graha,hotel,-7.8212136,110.3619557
-1654208565,node,Rumah Mertua,hotel,-7.7408272,110.3687121
-1769538027,node,Rumah Palagan,hotel,-7.7320593,110.3832218
-1847978909,node,Hotel Graha Buana,hotel,-7.7436528,110.3622581
-1847997726,node,Hotel Melati,hotel,-7.7502036,110.3625482
-1848000010,node,Sahid Rich Jogja Hotel,hotel,-7.7524293,110.3611659
-2024675832,node,Sheraton Mustika Yogyakarta Resort & Spa,hotel,-7.7798783,110.4284082
-2037736373,node,Kalasan Inn,guest_house,-7.7833491,110.4455160
-2093265444,node,Hotel Brongto,hotel,-7.8168908,110.3597340
-2257634218,node,Indah Palace,hotel,-7.8183158,110.3724939
-2415513216,node,Betty losmen,guest_house,-7.7909254,110.3636914
-2524302492,node,Agung,hotel,-7.8199325,110.3719783
-2564076662,node,Hotel Ishiro Kencana,hotel,-7.7639032,110.3803462
-3120386138,node,Tiga Lima Homestay,hotel,-7.7801836,110.3870925
-3256672763,node,,hotel,-7.8145570,110.3657327
-3256672764,node,Puspita,hotel,-7.8147168,110.3665892
-3256672771,node,Posein,hotel,-7.8146354,110.3663900
-3305628217,node,Trans Yogya,hotel,-7.7937659,110.3739488
-3377547360,node,Tropis Homestay,guest_house,-7.8188791,110.3694870
-3472798344,node,favehotel Kusumanegara,hotel,-7.8014508,110.3882241
-3473031880,node,Homestay Ndalem Mbak Charly,guest_house,-7.7795465,110.3911680
-3473031886,node,Midtown Xpress,hotel,-7.7800918,110.3910186
-3473031889,node,Puri Artha Hotel,hotel,-7.7799907,110.3912565
-3473035399,node,Wisma Pu,hotel,-7.7828531,110.3945734
-3473955070,node,UNY Hotel,hotel,-7.7736153,110.3857337
-3487503061,node,Candra Kirana,hotel,-7.8216814,110.3678554
-3487503064,node,Dhina Finny Graha,hotel,-7.8214794,110.3679537
-3487503066,node,Homestay Ndalem MJ,guest_house,-7.8206242,110.3659364
-3487503068,node,Hotel Dewi Sri,hotel,-7.8219341,110.3673655
-3487503069,node,Hotel Puri Ganesha,hotel,-7.8218320,110.3663361
-3487503080,node,Nidia,hotel,-7.8218907,110.3673012
-3487503084,node,Pramesthi Hotel,hotel,-7.8216489,110.3653899
-3487503294,node,Yogyakarta Homestay,guest_house,-7.8214220,110.3678654
-3492884193,node,Kangen Hotel,hotel,-7.7536630,110.3619242
-3504109242,node,House Of Nasi Bungkus,guest_house,-7.8140001,110.3481490
-3530581765,node,Citihub Hotel Gejayan,hotel,-7.7591302,110.3948305
-3530590735,node,Sriwedari Hotel and Cottage,hotel,-7.7835198,110.4043703
-3530590736,node,Hotel Paku Mas,hotel,-7.7834848,110.4027952
-3530590737,node,LPP Garden Hotel,hotel,-7.7824029,110.4055656
-3530590738,node,Merapi Merbabu Hotels,hotel,-7.7715261,110.4099370
-3557258188,node,Hotel Kombokarno Utama,hotel,-7.7838761,110.3671107
-3557258190,node,The 101,hotel,-7.7843537,110.3665757
-3557258192,node,Hotel Citradream Yogyakarta,hotel,-7.7802120,110.3676243
-3557258293,node,Monginsidi Guest House,hotel,-7.7780727,110.3659077
-3557258296,node,Laxston Hotel,hotel,-7.7803009,110.3610956
-3557258298,node,Acacia Guest House,guest_house,-7.7704671,110.3578036
-3557258299,node,Crystal Lotus Hotel Yogyakarta Managed by Prabu,hotel,-7.7607878,110.3619963
-3557258300,node,Griya Kalimantan,guest_house,-7.7601889,110.3606526
-3557348913,node,Wisma Anugrah Wisata,hotel,-7.7592304,110.3817488
-3557380296,node,Cakra Kusuma Hotel,hotel,-7.7600869,110.3808206
-3557508868,node,Hyatt Regency,hotel,-7.7409592,110.3734285
-3557508870,node,LPP Convention Hotel,hotel,-7.7786287,110.3926237
-3557508871,node,Hotel Royal Ambarrukmo,hotel,-7.7824428,110.4029423
-3557508872,node,Hotel Jayakarta,hotel,-7.7836203,110.4195542
-3585118450,node,GreenHost Hotel,hotel,-7.8200358,110.3690878
-3585118451,node,Ki Agung Prestis,hotel,-7.8195224,110.3693568
-3600247125,node,Bugisan,hotel,-7.8119926,110.3515726
-3616855006,node,Pondok Gajah,hotel,-7.8241513,110.3333260
-3621485952,node,Amelia Hotel,hotel,-7.7770418,110.3924836
-3630324587,node,Fort Hotel,hotel,-7.8262747,110.3475353
-3661146382,node,Abadi,guest_house,-7.6029517,110.4275759
-3661146383,node,Adi Pangestu 2,guest_house,-7.6181179,110.4260693
-3661146385,node,Andhika,guest_house,-7.6002845,110.4245677
-3661146386,node,Anugeah Wisata 2,guest_house,-7.6021032,110.4280429
-3661146388,node,Arimbi,guest_house,-7.6000520,110.4257259
-3661146399,node,Bintaran,guest_house,-7.6018484,110.4283130
-3661146400,node,Borneo Homestay,guest_house,-7.6219092,110.4250602
-3661146403,node,Cendani,guest_house,-7.6025710,110.4280982
-3661146409,node,Gading,guest_house,-7.6086236,110.4275251
-3661146410,node,Giriharjo,guest_house,-7.5991234,110.4287620
-3661146411,node,Graha Kinasih,guest_house,-7.5991066,110.4234197
-3661146412,node,Hotel Eden 1,guest_house,-7.6006120,110.4290609
-3661146413,node,Hotel Joyo,guest_house,-7.5983033,110.4268835
-3661146414,node,Hotel Kana,guest_house,-7.6004565,110.4245166
-3661146415,node,Hotel Muria,guest_house,-7.5985022,110.4273526
-3661146416,node,Hotel Rayu Manis,guest_house,-7.5996820,110.4248541
-3661146417,node,Hotel Taman Eden 2,hotel,-7.6214547,110.4256782
-3661146422,node,Karya Mulia,guest_house,-7.6003578,110.4254939
-3661146424,node,Kinanti,guest_house,-7.6001419,110.4246356
-3661147629,node,Margo Asih,guest_house,-7.5991503,110.4288390
-3661147631,node,Mawar,guest_house,-7.5990000,110.4237074
-3661147632,node,Mayoni,guest_house,-7.6182364,110.4260718
-3661147634,node,Mentorogo,guest_house,-7.6013065,110.4282284
-3661147635,node,Merapi Hotel Villa,guest_house,-7.5984942,110.4276759
-3661147636,node,Merpati,guest_house,-7.5999503,110.4247691
-3661147637,node,Mitra 2,guest_house,-7.5994545,110.4244178
-3661147639,node,Murah,guest_house,-7.5987989,110.4281115
-3661147640,node,Oplosh,guest_house,-7.6181920,110.4258026
-3661147642,node,Pav Bougenvile,guest_house,-7.5993088,110.4238580
-3661147645,node,Putra Jaya,guest_house,-7.6183624,110.4260967
-3661147646,node,Restu Ibu,guest_house,-7.5994226,110.4301883
-3661147648,node,Sedyo Rahayu,guest_house,-7.5990051,110.4288203
-3661147653,node,Simponi,guest_house,-7.6004121,110.4256270
-3661147654,node,Sri Mulyo,guest_house,-7.5994405,110.4299207
-3661147656,node,Tanjung Anom,guest_house,-7.6008039,110.4289433
-3661147659,node,Vijaya 3 Hotel,guest_house,-7.6001362,110.4247484
-3661147660,node,Villa Alma,guest_house,-7.6029146,110.4276345
-3661147661,node,Villa Cemara,guest_house,-7.5992930,110.4247633
-3661147663,node,Villa Gosyen,guest_house,-7.5994481,110.4247394
-3661147664,node,Villa Millennium,guest_house,-7.5988989,110.4283116
-3661147666,node,Vogels Hostel,guest_house,-7.5988692,110.4268682
-3661147669,node,Wijaya 2 Hotel,guest_house,-7.5996728,110.4247218
-3661147670,node,Wijaya Hotel,guest_house,-7.5983859,110.4273687
-3661147671,node,Wisma Brotoseno,guest_house,-7.5989731,110.4282807
-3661147672,node,Wisma Citra,guest_house,-7.5993388,110.4244479
-3661147674,node,Wisma Kamboja,guest_house,-7.5993322,110.4240142
-3661199888,node,Anjasmara,guest_house,-7.5965721,110.4301077
-3661199889,node,Dewi Kunti,guest_house,-7.5980752,110.4303672
-3661199890,node,Griya Nalendra,hotel,-7.5983317,110.4288826
-3661199891,node,Hotel Wismancala,guest_house,-7.5956658,110.4293995
-3661199892,node,Karya Mulia,guest_house,-7.5965225,110.4300951
-3661199893,node,Lariza,guest_house,-7.5964277,110.4300626
-3661199894,node,Le Jardin,hotel,-7.5961418,110.4269770
-3661199895,node,Madukoro 2,guest_house,-7.5963646,110.4290584
-3661199896,node,Madukoro,guest_house,-7.5953194,110.4296012
-3661199897,node,Nayoga,guest_house,-7.5973780,110.4303879
-3661199898,node,Nirwana 2,guest_house,-7.5981805,110.4303400
-3661199900,node,Rinjani,guest_house,-7.5982050,110.4304194
-3661199901,node,Sederhana,guest_house,-7.5977342,110.4291917
-3661199902,node,Setia,guest_house,-7.5976127,110.4304578
-3661199903,node,Sri Handayani,guest_house,-7.5964355,110.4290714
-3661199904,node,Sri Pratala,guest_house,-7.5981229,110.4304361
-3661199905,node,Sri Rejeki,guest_house,-7.5964936,110.4290747
-3661199906,node,Srikandi,guest_house,-7.5952960,110.4296989
-3661199907,node,Vila van Resink,guest_house,-7.5967483,110.4261797
-3661199908,node,Villa Hanna,guest_house,-7.5952436,110.4301179
-3661199909,node,Widuri,guest_house,-7.5968562,110.4302167
-3661199910,node,Wisma Emalta,guest_house,-7.5941171,110.4306139
-3661199911,node,Wisma Erlanga,guest_house,-7.5950355,110.4302074
-3661199912,node,Wisma Hargo,guest_house,-7.5948290,110.4303148
-3661199913,node,Yoga Mandiri 1,guest_house,-7.5966503,110.4301419
-3661199914,node,Yoga Mandiri 3,guest_house,-7.5968736,110.4302230
-3679274915,node,Villa Alicia,guest_house,-7.7676206,110.4172241
-3732339032,node,Puri Pangeran Hotel,hotel,-7.8006644,110.3744796
-3765105783,node,Disaster Oasis,hotel,-7.6302724,110.4245641
-3765156964,node,Grand Omah Sastro,hotel,-7.7741531,110.3943190
-3782251857,node,Hotel Prime Syailendra,hotel,-7.8103899,110.3771829
-3884620633,node,Hotel Asih,hotel,-7.7768020,110.3818280
-3921534721,node,ViaVia,guest_house,-7.8182969,110.3699774
-4040128043,node,Tjiptorini Jaya Hotel,hotel,-7.7797378,110.4049191
-4113534818,node,Sabana Homestay,hotel,-7.7818456,110.3852788
-4168500297,node,Yogyakarta BnB,guest_house,-7.7966198,110.3629850
-4177878362,node,Puri Ageng,hotel,-7.8132093,110.3718549
-4269549591,node,Luwabica Art n Coffee House,guest_house,-7.8163132,110.3591907
-4271041096,node,Omah Guyub,hotel,-7.8152776,110.3484140
-4278281582,node,Hotel Panorama,hotel,-7.8020279,110.3787707
-4292814790,node,De Laxston Hotel by Quinn's,hotel,-7.7830255,110.3871283
-4293952752,node,Hotel BIFA (Bintang Fajar),hotel,-7.8185385,110.3938993
-4326459990,node,Ma Casa Es Tu Casa,guest_house,-7.8186317,110.3608648
-4330798191,node,Yabbiekayu,hotel,-7.8710540,110.3550020
-4338038990,node,Venezia Garden Homestay,hotel,-7.8205641,110.3665106
-4361980601,node,Hotel 1001 Malam,hotel,-7.7906474,110.3642042
-4368839693,node,,guest_house,-7.8220491,110.3418067
-4369642900,node,Grapyak Homestay,guest_house,-7.8025764,110.3451693
-4393626789,node,Jogja Dreams Bed and Breakfast,guest_house,-7.8181547,110.3581166
-4431678389,node,Kost Orange,guest_house,-7.7793452,110.3792420
-4438722097,node,Hotel Sekar Ayu,guest_house,-7.7889685,110.3709409
-4441696190,node,ichan house,guest_house,-7.8117611,110.3609385
-4496371191,node,Rumah Antonius Wijaya,guest_house,-7.9314802,110.3275829
-4505436489,node,,guest_house,-7.7544670,110.4241455
-4528072890,node,Lotus Losmen,guest_house,-7.7911289,110.3637267
-4562432090,node,Andrea hotel,hotel,-7.7904170,110.3640360
-4585536359,node,,hotel,-7.7786138,110.4151915
-4585536372,node,,hotel,-7.7788211,110.4158888
-4588967021,node,Kosan Mbah Mulyoharjo,hotel,-7.7538334,110.4118799
-4590099295,node,Alamo Homestay Limasan,guest_house,-7.8148207,110.3429914
-4590296603,node,Hotel Kusuma Condong Wisma Tamu,hotel,-7.7542356,110.4086467
-4590296614,node,Hotel Dafam Fortuna,hotel,-7.7652437,110.4110377
-4590677769,node,Hotel Omahkoe,hotel,-7.7852810,110.4272059
-4590677771,node,"D'Salvatore Art & Boutique Hotel 4,1",hotel,-7.7836040,110.4256113
-4590881638,node,Omahe Winahyu Homestay,hotel,-7.7567647,110.4140963
-4590940458,node,Hotel Brawijaya,hotel,-7.8143823,110.3919903
-4605820496,node,Erista Garden,guest_house,-7.6594450,110.4273660
-4637978542,node,Penginapan BeOne House,guest_house,-7.7830178,110.4455294
-4685626989,node,Omah Salam,hotel,-7.8180496,110.3700596
-4692238589,node,Hotel Gaotama,hotel,-7.7938706,110.3674656
-4693248299,node,Vidi Hotel 2,hotel,-7.7617833,110.3793242
-4698269491,node,Gaotama Hotel,hotel,-7.7937987,110.3675800
-4706061490,node,Langkanae,guest_house,-7.7876340,110.3942254
-4782416223,node,Eclipse hotel,hotel,-7.8190907,110.3720421
-4794827154,node,Losmen Rizki,guest_house,-7.7911654,110.3639277
-4799118030,node,Pak Heru,guest_house,-7.7887825,110.3511600
-4799168327,node,Pak Bambang,guest_house,-7.7873556,110.3517160
-4815329721,node,Giyatna,guest_house,-7.8379779,110.3579882
-4819918121,node,Boma House,guest_house,-7.8053983,110.3491240
-4830808726,node,Losmen Red Palm,guest_house,-7.7909201,110.3640396
-4847813021,node,griyakoe pakem,hotel,-7.6677740,110.4288317
-4851278881,node,Crystal Lotus,hotel,-7.7593574,110.3622608
-4851279316,node,Dom,hotel,-7.7330193,110.3959832
-4851279649,node,Sunrise,hotel,-7.7593401,110.3926722
-4893549821,node,,guest_house,-7.9420037,110.3759109
-4936351521,node,Dewaruci 2 hotel,hotel,-7.8283706,110.3898757
-4940665021,node,Cs,hotel,-7.8207172,110.3662781
-4946698256,node,Airlangga,hotel,-7.8191143,110.3689415
-4946718522,node,Wisam Gajah,hotel,-7.8190654,110.3685937
-4955111621,node,Rumah Yogya,guest_house,-7.8138272,110.3565452
-4957171921,node,Ismoyo,hotel,-7.7894726,110.3580319
-4959456824,node,Pego Homestay,guest_house,-7.7910787,110.3609986
-4975341823,node,3DI Backpacker Guesthouse,guest_house,-7.8199975,110.3641881
-5056528162,node,Rumah Senjakala,guest_house,-7.8354383,110.3394202
-5059843835,node,Jawajiwa Homestay,guest_house,-7.8169923,110.3402839
-5098735021,node,Homey Home,guest_house,-7.7904011,110.3698668
-5225391851,node,Maturnuwun,guest_house,-7.8198679,110.3662969
-5243957704,node,Omah Kaleva Syariah,guest_house,-7.7427823,110.3716567
-5248591934,node,Pondok jiwa,guest_house,-8.1359961,110.5745425
-5315171725,node,Agung Inn,hotel,-7.8193792,110.3715490
-5318487964,node,Pandanaran,hotel,-7.8194868,110.3723810
-5325463323,node,Villa Pondok Terra,hotel,-7.8171153,110.3655112
-5418151537,node,The Sawah,hotel,-7.8418017,110.3239257
-5418151543,node,Blue Steps,hotel,-7.8407854,110.3183275
-5418151583,node,Blue Garden,hotel,-7.8460348,110.3132970
-5432547502,node,Pondok Ijo,guest_house,-7.8168656,110.3648419
-5468132496,node,The Cabin,hotel,-7.7932823,110.3615290
-5492419722,node,Cornel Homestay,hotel,-7.7534752,110.4061297
-5507247629,node,Merbubu,hotel,-7.7914478,110.3650914
-5551609423,node,Arga Hotel actual location,hotel,-7.7851084,110.4169476
-5566207901,node,Villa Tropicana,guest_house,-7.8410293,110.3205210
-5566324706,node,Omah Sembungan,guest_house,-7.8358265,110.3382488
-5595942622,node,Hotel Pulung,hotel,-7.8197883,110.3675472
-5596159182,node,Jempol Homestay,guest_house,-7.8205240,110.3582823
-5738157722,node,Trava House,hotel,-7.8150881,110.3649120
-5809818555,node,D’Omah Hotel,hotel,-7.8720403,110.3535336
-5833614473,node,RedDoorz Plus near Lempuyangan Station 3,hotel,-7.7921597,110.3719753
-5833839182,node,Jasmine Heritage Homestay,guest_house,-7.8041651,110.3706682
-5835687804,node,Rumah Panjaitan Homestay,guest_house,-7.8169289,110.3622399
-5836038318,node,RedDoorz,guest_house,-7.8186528,110.3650020
-5838319686,node,nDalem Gamelan,guest_house,-7.8101354,110.3664476
-5847948755,node,The Wayang Homestay,guest_house,-7.8219339,110.3602820
-5903606985,node,Griya Asih,guest_house,-7.8131109,110.3648338
-5905752289,node,Grapyak Homestay Syariah,guest_house,-7.8025752,110.3450151
-5915697985,node,Habibi Homestay,guest_house,-7.7860004,110.4168831
-5927919186,node,Reddoorz@Mantrijeron 2,hotel,-7.8159408,110.3638593
-5970560685,node,Gaia Cosmo Hotel,hotel,-7.7989757,110.3926935
-6009385282,node,Athaya Hotel Jogja,hotel,-7.7614723,110.3835068
-6031280785,node,Omah Sundak Homestay (Real one),guest_house,-8.1465530,110.6069361
-6031280885,node,Omah Sundak Homestay is NOT here,guest_house,-8.1664087,110.6612585
-6039050685,node,Onze de Lokaindo,hotel,-7.7620745,110.3814793
-6065814387,node,Penginapan Kunthi,guest_house,-7.7937405,110.3623713
-6259023999,node,Cafe de Paris,guest_house,-8.0272029,110.3376396
-6259024279,node,Raharjo Penginapan & Rumah Makan,guest_house,-8.0244475,110.3331278
-6320266616,node,Zen Rooms Depok Sleman Syariha,hotel,-7.7794471,110.4079831
-6327278157,node,RedDoorz Plus Adya Nalendra,hotel,-7.7792534,110.3641780
-6367176147,node,Forriz,hotel,-7.7952564,110.3532699
-6596234985,node,Home@Ifa’s - Kitten,guest_house,-7.8081751,110.3663795
-6679862338,node,105 Homestay,guest_house,-7.7909083,110.3652133
-6679865106,node,Anda Losmen,guest_house,-7.7907431,110.3641136
-6679872558,node,Losmen Utar,guest_house,-7.7910251,110.3636114
-6685767286,node,La Casa Jogja,hotel,-7.7660476,110.3919211
-6730652819,node,Embe Enem,guest_house,-7.7762579,110.3915717
-6732248551,node,Embe Pitoe,guest_house,-7.7762936,110.3914111
-6732315339,node,Embe Joglo,guest_house,-7.7559934,110.4017806
-6811218788,node,Samanta Pura,guest_house,-7.7562680,110.4241017
-6855834428,node,Nextdoor Homestay,guest_house,-7.8169998,110.3690913
-6865613385,node,Joglo Wediombo,hotel,-8.1897941,110.7113725
-6899266842,node,Winatasastra,hotel,-7.8200387,110.3670974
-6899347341,node,Ndaleman Mantrijeroan,hotel,-7.8196522,110.3671904
-6899369099,node,Ndalem Mantrijeron,hotel,-7.8196349,110.3672193
-6899374154,node,Rumah Eyang,hotel,-7.8200400,110.3672849
-6939520399,node,Metro LMalioboro Living,hotel,-7.7935432,110.3740860
-7034780385,node,The Kresna Hotel,hotel,-7.8177060,110.3620197
-7063226686,node,Filistay Homestay,guest_house,-7.8498362,110.3310707
-7082264285,node,Ada Waktu B&B,hotel,-7.8708079,110.4029241
-7097539047,node,Nueve Malioboro Hotel Yogyakarta,guest_house,-7.7959471,110.3688927
-7097544036,node,Andika Putera,hotel,-7.8019600,110.3514880
-7097566670,node,The Edwin Syariah (OYO 611),hotel,-7.8080188,110.3408112
-7099223696,node,Omah Manis,guest_house,-7.8135499,110.3770670
-7100528075,node,Kristina,hotel,-7.7938157,110.3626817
-7114012187,node,Lia Homestay,guest_house,-7.8170564,110.3657486
-7117116848,node,Omah Konco Homestay,guest_house,-7.8088496,110.3626741
-7117199310,node,Ndalem Diajeng,guest_house,-7.8119214,110.3675176
-7140531832,node,D'HELOMI,guest_house,-7.7699441,110.4303603
-7152724240,node,Hotel Lafayette,hotel,-7.7592240,110.3874103
-7178810187,node,Hostel White Paal,hotel,-7.7830869,110.3651710
-7811256796,node,Ndalem Kotabaru,guest_house,-7.7882630,110.3731828
-7846239503,node,Fave Hotel,hotel,-7.7855389,110.3699615
-7846239505,node,Hotel Graha Kinasih,hotel,-7.7872569,110.3706366
-8333040371,node,Rumah Pak Dukuh Sambi,guest_house,-7.6462762,110.4271557
-9002853900,node,Hotel Olympic,hotel,-7.8220413,110.3736496
-9002853901,node,Cantya Hotel,hotel,-7.8222333,110.3735585
-9025585287,node,Joglo Mandapa Boutique Hotel & Resto,hotel,-7.8315706,110.3383718
-9118787717,node,Royal Malioboro,hotel,-7.7900260,110.3644978
-9175232116,node,Kutus-Kutus,guest_house,-7.7840128,110.3750648
-9187445817,node,Grand Rohan Jogja,hotel,-7.7982935,110.4051366
-9247001004,node,Tasik Jogja Hotel,hotel,-7.8155480,110.3563386
-9622538149,node,Rumah Kost Putri,guest_house,-7.7738994,110.3819078
-9671827938,node,Ndalem Jogja Cupuwatu,hotel,-7.7738264,110.4521780
-9679002748,node,Puri Cempaka Guest House,guest_house,-7.7438315,110.4809948
-9697446968,node,Grand Orchid Hotel,hotel,-7.7824738,110.4243269
-9697463558,node,Satoria,hotel,-7.7839031,110.4220532
-9725632642,node,Hotel Srikandi,hotel,-7.7685614,110.4698687
-9725891946,node,Platinum,hotel,-7.7828976,110.4372820
-9725892668,node,Grand Mercure,hotel,-7.7833818,110.3922092
-9725905457,node,Tickle Hotel,hotel,-7.7827723,110.3854390
-9725910131,node,ibis Hotels,hotel,-7.7839163,110.3920533
-9725917694,node,Duta Wisata 2 Hotel,hotel,-7.7834674,110.3883871
-9740803879,node,Clarista Homestay,guest_house,-7.7370423,110.4519743
-9742575759,node,Banyu Jiwo Guest House,guest_house,-7.7405076,110.4291724
-9748837975,node,Nabila Home Stay,guest_house,-7.7901016,110.4848874
-9763771868,node,Hotel Melia Purosani,hotel,-7.7969057,110.3689789
-9784588913,node,Hotel Pondok Anggun,hotel,-7.7612939,110.4114968
-9811855301,node,J-Ruby Guesthouse,hotel,-7.8286055,110.3573366
-9816754607,node,The Manohara Hotel,hotel,-7.7744133,110.3888951
-9818970770,node,OYO 1829 Zaira House,hotel,-7.7368999,110.3727360
-9819405184,node,The Cabin Hotel Sutomo,hotel,-7.7969982,110.3778556
-9819610150,node,Ndalem Suryo Saptono Guest House,guest_house,-7.7819846,110.3482204
-9821664235,node,Grand Senyum Hotel,hotel,-7.7831370,110.3653251
-9821757956,node,Hotel Citra Kita Yogyakarta,hotel,-7.7821776,110.3612494
-9823993300,node,OYO 524 Makuta Hotel,hotel,-7.8201788,110.3708472
-9824010696,node,Gallery Prawirotaman Hotel,hotel,-7.8202654,110.3712170
-9824029773,node,Royal Darmo Malioboro Hotel Yogyakarta,hotel,-7.7924892,110.3585358
-9824030311,node,OYO 1626 Alena Residence,hotel,-7.7930454,110.3582813
-9824224841,node,Tjokro Style Yogyakarta,hotel,-7.8167358,110.3805627
-9824258186,node,Seroja Kostel Golo,hotel,-7.8151374,110.3818528
-9831975705,node,Selaras Inn Hotel Yogyakarta,hotel,-7.7916775,110.3630563
-9835194948,node,The Amartya Hotel Yogyakarta,hotel,-7.7980772,110.3302820
-9835310919,node,Airy Eco Papringan Ambarrukmo,hotel,-7.7792783,110.3966533
-9835462835,node,Reddoorz Near Jogja City Mall 3,hotel,-7.7686485,110.3602554
-9835473201,node,Hotel Novatel,hotel,-7.8052424,110.3562836
-9835611291,node,Omah Permadi,hotel,-7.8106730,110.3779454
-9843367883,node,Hotel Srikandi Bandara,hotel,-7.7825666,110.4495941
-9857813359,node,Sato Loka,guest_house,-7.6231450,110.4249382
-9859649452,node,Hotel Wijaya,hotel,-7.7839847,110.4461723
-9863810827,node,Hotel Sahid Raya Yogyakarta,hotel,-7.7800255,110.4143124
-9914468817,node,Aloha Hotel,hotel,-7.8187833,110.3721733
-10033064161,node,Popi Hotel & Homestay,hotel,-7.6814154,110.4192355
-10094819117,node,Snooze,hotel,-7.8046805,110.3679131
-10198975863,node,,hotel,-7.7863041,110.3612321
-10225661691,node,Rumah Popuri,guest_house,-7.7330365,110.3331115
-10261917733,node,Ndalem Prataman,guest_house,-7.7427198,110.3710787
-10310697741,node,Puri Ganjuran,hotel,-7.9241666,110.3185571
-10658056005,node,Bobobox,hotel,-7.7949947,110.3654432
-11032099970,node,Sleepy Raccoon Hostel,hotel,-7.8350524,110.3676952
-11055547205,node,Rajaklana Resort and Spa,hotel,-7.8400087,110.2870328
-11079716670,node,PK-B4,guest_house,-7.7287135,110.3952784
-11262662737,node,Masjid As Sunnah,guest_house,-7.7137055,110.4167281
-11304573466,node,Wisma Yosoputro OYO 405,hotel,-7.7774009,110.4559033
-11323130269,node,Kirana Hotel,hotel,-7.8192907,110.3726911
-11329164925,node,Garrya Bianti Yogyakarta,hotel,-7.7088698,110.3642997
-11379083769,node,Oyo Art Guesthouse Syariah,guest_house,-7.8113408,110.3775239
-11379083770,node,Cailendra Hotel,hotel,-7.8106012,110.3777559
-11451288964,node,Sartika Hotel,hotel,-7.8195468,110.3727699
-11549921761,node,Asrama A BBPPMPV Seni dan Budaya,guest_house,-7.6983502,110.4272140
-11549944472,node,Asrama C BBPPMPV Seni dan Budaya,guest_house,-7.6984896,110.4269765
-11565843174,node,Asrama B BBPPMPV Seni dan Budaya,guest_house,-7.6982693,110.4268776
-11674437504,node,Riss Hotel Malioboro,hotel,-7.7874823,110.3644211
-11781137576,node,Hotel Ayaskara,hotel,-7.7804124,110.5032610
-11791998169,node,BSH (Bu Sud's House),hotel,-7.8068062,110.3607985
-11795374269,node,Villa Dora Jogja,hotel,-7.8054706,110.3775099
-12064977602,node,Rumah Dody,guest_house,-7.8135593,110.3792410
-12073067859,node,Manda Homestay,guest_house,-7.7509045,110.4812800
-12090413130,node,Omah Cangkringan,guest_house,-7.6618773,110.4446646
-12106220502,node,Pendowo Huis,hotel,-7.7733904,110.3902415
-12165236716,node,SekawanStay Guest House Malioboro,guest_house,-7.7925789,110.3707164
-12257325159,node,Booboo Homestay Yogyakarta,hotel,-7.7735024,110.4697891
-12298770182,node,,hotel,-7.7570311,110.3691071
-12338747935,node,,hotel,-7.7565729,110.3822355
-12338747988,node,,hotel,-7.7564105,110.3814054
-12353735009,node,Kos Putri Amanah,guest_house,-7.8198892,110.3925468
-12357538040,node,Red Doorz Near Jogja City Mall 4,guest_house,-7.7597817,110.3631960
-12357538041,node,Guest House Aster,guest_house,-7.7586620,110.3631882
-12357538043,node,Kost Kataji,guest_house,-7.7608957,110.3641162
-12357538048,node,Kos Pintu Orange,guest_house,-7.7613170,110.3648600
-12357538049,node,Ayla Homestay,guest_house,-7.7610511,110.3646256
-12357538051,node,Kos Putra,guest_house,-7.7603845,110.3637851
-12357538054,node,Kos TISAGA,guest_house,-7.7588230,110.3640773
-12357538055,node,Kos Alfariz Megamnedung,guest_house,-7.7589154,110.3643345
-12357538056,node,Kos Putra ar-Razzan,guest_house,-7.7588733,110.3646141
-12357538057,node,Kos Putra Jaya Laza,guest_house,-7.7593464,110.3656726
-12357538058,node,Kos Putri Kenyo Ayu,guest_house,-7.7593012,110.3654124
-12357538061,node,Homestay Podhomor,guest_house,-7.7581508,110.3652947
-12357538063,node,Kos Atap Biru,guest_house,-7.7587437,110.3660415
-12357538065,node,Tree Residence,guest_house,-7.7579850,110.3657468
-12357538067,node,Rumah Kirana,guest_house,-7.7578693,110.3660446
-12357538068,node,Kos Putra Dinke Jogja,guest_house,-7.7575234,110.3662630
-12357566596,node,TAJUGLORO.,guest_house,-7.7508424,110.3661795
-12357566597,node,Sugar Guest House 2,guest_house,-7.7510517,110.3661526
-12357566600,node,Kost JOMBRO,guest_house,-7.7509555,110.3653954
-12357573602,node,Kos Putra Bmth,guest_house,-7.7515268,110.3657217
-12357578893,node,Kost Bu Parni,guest_house,-7.7522258,110.3660708
-12357578894,node,Kos Afi Julantari,guest_house,-7.7522622,110.3662312
-12357578898,node,Kost war Wur,guest_house,-7.7512093,110.3660848
-12357578900,node,Wisma Haniyah,guest_house,-7.7522574,110.3663581
-12357595298,node,Bale Tradian Homestay,guest_house,-7.7558358,110.3643703
-12357606617,node,Kost Putri Bu Icuk,guest_house,-7.7533702,110.3650629
-12357606618,node,Kost Putra Arjuna Sinduadi,guest_house,-7.7534592,110.3653153
-12357612401,node,Qos-ku 146,guest_house,-7.7523395,110.3663314
-12357612402,node,Kost Muslimah Rafania,guest_house,-7.7524853,110.3663339
-12357612403,node,Kost Bu Ndari,guest_house,-7.7525484,110.3663409
-12357612404,node,Kos Mranggen,guest_house,-7.7527700,110.3662950
-12357612406,node,Kostan Bu Sugeng,guest_house,-7.7525061,110.3659988
-12357612407,node,Kost Candra,guest_house,-7.7525756,110.3654769
-12357612413,node,RUMAH KOST PUTRI MELATI,guest_house,-7.7530763,110.3649767
-12357612414,node,Kos Lingga Luvi,guest_house,-7.7531254,110.3652834
-12357612415,node,SUKA KOST,guest_house,-7.7531441,110.3660193
-12357612417,node,Mess JCM,guest_house,-7.7529245,110.3660272
-12357628724,node,Griya Garfita Mranggen,guest_house,-7.7577056,110.3640628
-12357632947,node,Kos Pak Sambudi,guest_house,-7.7542960,110.3649909
-12357632952,node,Kedai Makan Edelweyz,guest_house,-7.7544525,110.3648927
-12357632953,node,KOS WIJAYA,guest_house,-7.7543772,110.3651646
-12357632954,node,Kost Pak Rodjikin,guest_house,-7.7542572,110.3653993
-12357632957,node,Kos Putra Ceria,guest_house,-7.7545123,110.3657095
-12357632958,node,Kos Pak Roso,guest_house,-7.7541993,110.3656530
-12357632963,node,JOS Bale,guest_house,-7.7546670,110.3661269
-12357632966,node,Kost Rahayu (khusus Putri),guest_house,-7.7547703,110.3656479
-12357632970,node,Kost Muslimah A3 Perum Mranggen Lama,guest_house,-7.7548554,110.3650238
-12357632971,node,Kost Yoyafir,guest_house,-7.7548731,110.3651771
-12357632976,node,Mranggen Mansion,guest_house,-7.7551957,110.3656003
-12357632977,node,Kost Putri Eksklusif LA MAISON,guest_house,-7.7552101,110.3656788
-12357632979,node,Kost Putri Eksklusif Griya Anggrek 27,guest_house,-7.7553057,110.3661469
-12357642464,node,penginapan dgs suplier,guest_house,-7.7553993,110.3657777
-12357642467,node,kontrakan bulu bulu,guest_house,-7.7575049,110.3661036
-12357642468,node,kontrakan mbak pur,guest_house,-7.7573828,110.3661240
-12357642472,node,puri nastiti,guest_house,-7.7557971,110.3656172
-12357642473,node,kost putri msulimah azkayra,guest_house,-7.7551946,110.3645290
-12357642476,node,kost bu prapto,guest_house,-7.7551759,110.3647832
-12357642477,node,ndalem susilo,guest_house,-7.7552078,110.3648799
-12357642483,node,zhafira kost kutu tegal,guest_house,-7.7558611,110.3663770
-12357642487,node,bale tardian homestay,guest_house,-7.7558216,110.3643609
-12357642491,node,kost putri bintang,guest_house,-7.7560024,110.3660233
-12357642493,node,athome kost,guest_house,-7.7561724,110.3662293
-12357642498,node,kost pak suwardi,guest_house,-7.7573637,110.3654206
-12357647001,node,Kos Pak Ngadirin,guest_house,-7.7556263,110.3648701
-12357647002,node,Kos Putra & Paviliun Oma,guest_house,-7.7562717,110.3651861
-12357671702,node,homee 3p,guest_house,-7.7572038,110.3658216
-12357671704,node,paviliun laris mulya,guest_house,-7.7568418,110.3661755
-12468745199,node,Limasan 514,hotel,-7.8181140,110.3699802
-12473282634,node,Renjana Bed & Breakfast,guest_house,-7.8160765,110.3710841
-12643728879,node,Omah Watu Homestay,guest_house,-7.7914677,110.3621837
-12643740057,node,Selarus Inn,guest_house,-7.7916981,110.3632016
-12644647518,node,The Capsule,hotel,-7.7914592,110.3648190
-12644670787,node,Kartika Hotel,hotel,-7.7916467,110.3651881
-12644696325,node,Indonesia Hotel,hotel,-7.7918047,110.3653013
-12644702569,node,Aura Hotel,hotel,-7.7915514,110.3641233
-12648754858,node,Sans Nagari,hotel,-7.7986755,110.3563331
-12648754859,node,The Cabin Hotel,hotel,-7.8011335,110.3489923
-12727127901,node,Ndalem Sarengat,guest_house,-7.8105958,110.3680513
-12902907860,node,Mounty-land home,hotel,-7.7532728,110.4052585
-12919668663,node,Arrayan,hotel,-7.8002857,110.3619105
-12976432462,node,Wulenpari,hotel,-7.8853228,110.5119463
-13012960801,node,Kos Pak Basuki,guest_house,-7.6859654,110.4170445
-13045160352,node,Vrata Hotel,hotel,-7.7682998,110.4698654
-13355366602,node,Rumah Kalpataru,guest_house,-7.8175162,110.3685342
-13373480001,node,Omah Siliran Heritage,hotel,-7.8132379,110.3661825
-13495600114,node,Alfath's Hillside House,guest_house,-7.7146225,110.2890550
-13610868365,node,Kost Bu Yeti,guest_house,-7.8074874,110.3131371
-13666989770,node,Little Tokyo,hotel,-7.8955926,110.4401786
-13681519317,node,Shayana Villa,hotel,-7.7233450,110.3984546
-13685665029,node,Kost Putri Salsabila,hotel,-7.7241355,110.3999998
-13685665031,node,Pintu Barat Kos Griya Putri Nareswari (Kos Muslimah Exclusive),hotel,-7.7246582,110.3992544
-13685698805,node,Kos Putri,hotel,-7.7249987,110.3981508
-13742021412,node,Kost Dumess Exclusive,guest_house,-7.8276747,110.3465293
-13795936924,node,Kos Bu Tari,hotel,-7.8143892,110.4146047
-13800404270,node,Hotel Tentrem,hotel,-7.7738045,110.3686016
-13800423565,node,rumah simbah,guest_house,-7.7957012,110.3120624
-13800675261,node,Paradiso Hills,hotel,-8.1422442,110.5996348
-13866990251,node,Rumah Tara,guest_house,-7.7815938,110.3711707
-13895631601,node,Rumah Kecil BnB,guest_house,-7.6601106,110.4039757
-13970288501,node,,guest_house,-7.7407230,110.3919963
-14000419671,node,,hotel,-7.7452077,110.4204856
-14006023177,node,,hotel,-8.1674208,110.8002448
-14019000501,node,Mak Cik heritage villa & cafe,hotel,-7.6252229,110.4135374
-14085153726,node,Hotel Sansha,hotel,-7.9371088,110.5745403
-14087687147,node,Lokajajar Guesthouse,guest_house,-7.7839848,110.3405774
-14117751057,node,Regantris Malioboro Yogyakarta,hotel,-7.7918070,110.3638877
-14189479701,node,Damai Hotel,hotel,-7.7336690,110.3877851
-14211277530,node,Wisma Duta Wacana,guest_house,-7.6166505,110.4259210
+osm_id,osm_type,name,tourism,latitude,longtitude,city
+448834564,node,Metro,hotel,-7.819927,110.370827,yogyakarta
+492167658,node,Griya Sentana,hotel,-7.7853525,110.363624,yogyakarta
+719147415,node,,hotel,-7.8187297,110.3716586,yogyakarta
+1359116507,node,Hotel Trim Tiga,hotel,-7.7804558,110.3670381,yogyakarta
+1366438107,node,Perwita Sari,hotel,-7.8189478,110.3715471,yogyakarta
+1370749559,node,Ros In Hotel,hotel,-7.8356195,110.3680377,yogyakarta
+1640323394,node,Delta Homestay,guest_house,-7.819688,110.369418,yogyakarta
+1640328040,node,Mercury,hotel,-7.8196933,110.368702,yogyakarta
+1640508693,node,Asia Afrika,hotel,-7.7900951,110.3638906,yogyakarta
+1640515471,node,Indraloka,hotel,-7.7795395,110.3752202,yogyakarta
+1640517334,node,Dusun Jogja Village inn,hotel,-7.8242207,110.3688366,yogyakarta
+1652912717,node,Grand Diamond Hotel Yogyakarta,hotel,-7.782535,110.4234932,yogyakarta
+1652969654,node,Villa Hanis,hotel,-7.7327152,110.3771558,yogyakarta
+1652990181,node,Pondok terra,hotel,-7.8172496,110.3642294,yogyakarta
+1654009037,node,Matahari,hotel,-7.821921,110.367988,yogyakarta
+1654014636,node,Ruba Graha,hotel,-7.8212136,110.3619557,yogyakarta
+1654208565,node,Rumah Mertua,hotel,-7.7408272,110.3687121,yogyakarta
+1769538027,node,Rumah Palagan,hotel,-7.7320593,110.3832218,yogyakarta
+1847978909,node,Hotel Graha Buana,hotel,-7.7436528,110.3622581,yogyakarta
+1847997726,node,Hotel Melati,hotel,-7.7502036,110.3625482,yogyakarta
+1848000010,node,Sahid Rich Jogja Hotel,hotel,-7.7524293,110.3611659,yogyakarta
+2024675832,node,Sheraton Mustika Yogyakarta Resort & Spa,hotel,-7.7798783,110.4284082,yogyakarta
+2037736373,node,Kalasan Inn,guest_house,-7.7833491,110.445516,yogyakarta
+2093265444,node,Hotel Brongto,hotel,-7.8168908,110.359734,yogyakarta
+2257634218,node,Indah Palace,hotel,-7.8183158,110.3724939,yogyakarta
+2415513216,node,Betty losmen,guest_house,-7.7909254,110.3636914,yogyakarta
+2524302492,node,Agung,hotel,-7.8199325,110.3719783,yogyakarta
+2564076662,node,Hotel Ishiro Kencana,hotel,-7.7639032,110.3803462,yogyakarta
+3120386138,node,Tiga Lima Homestay,hotel,-7.7801836,110.3870925,yogyakarta
+3256672763,node,,hotel,-7.814557,110.3657327,yogyakarta
+3256672764,node,Puspita,hotel,-7.8147168,110.3665892,yogyakarta
+3256672771,node,Posein,hotel,-7.8146354,110.36639,yogyakarta
+3305628217,node,Trans Yogya,hotel,-7.7937659,110.3739488,yogyakarta
+3377547360,node,Tropis Homestay,guest_house,-7.8188791,110.369487,yogyakarta
+3472798344,node,favehotel Kusumanegara,hotel,-7.8014508,110.3882241,yogyakarta
+3473031880,node,Homestay Ndalem Mbak Charly,guest_house,-7.7795465,110.391168,yogyakarta
+3473031886,node,Midtown Xpress,hotel,-7.7800918,110.3910186,yogyakarta
+3473031889,node,Puri Artha Hotel,hotel,-7.7799907,110.3912565,yogyakarta
+3473035399,node,Wisma Pu,hotel,-7.7828531,110.3945734,yogyakarta
+3473955070,node,UNY Hotel,hotel,-7.7736153,110.3857337,yogyakarta
+3487503061,node,Candra Kirana,hotel,-7.8216814,110.3678554,yogyakarta
+3487503064,node,Dhina Finny Graha,hotel,-7.8214794,110.3679537,yogyakarta
+3487503066,node,Homestay Ndalem MJ,guest_house,-7.8206242,110.3659364,yogyakarta
+3487503068,node,Hotel Dewi Sri,hotel,-7.8219341,110.3673655,yogyakarta
+3487503069,node,Hotel Puri Ganesha,hotel,-7.821832,110.3663361,yogyakarta
+3487503080,node,Nidia,hotel,-7.8218907,110.3673012,yogyakarta
+3487503084,node,Pramesthi Hotel,hotel,-7.8216489,110.3653899,yogyakarta
+3487503294,node,Yogyakarta Homestay,guest_house,-7.821422,110.3678654,yogyakarta
+3492884193,node,Kangen Hotel,hotel,-7.753663,110.3619242,yogyakarta
+3504109242,node,House Of Nasi Bungkus,guest_house,-7.8140001,110.348149,yogyakarta
+3530581765,node,Citihub Hotel Gejayan,hotel,-7.7591302,110.3948305,yogyakarta
+3530590735,node,Sriwedari Hotel and Cottage,hotel,-7.7835198,110.4043703,yogyakarta
+3530590736,node,Hotel Paku Mas,hotel,-7.7834848,110.4027952,yogyakarta
+3530590737,node,LPP Garden Hotel,hotel,-7.7824029,110.4055656,yogyakarta
+3530590738,node,Merapi Merbabu Hotels,hotel,-7.7715261,110.409937,yogyakarta
+3557258188,node,Hotel Kombokarno Utama,hotel,-7.7838761,110.3671107,yogyakarta
+3557258190,node,The 101,hotel,-7.7843537,110.3665757,yogyakarta
+3557258192,node,Hotel Citradream Yogyakarta,hotel,-7.780212,110.3676243,yogyakarta
+3557258293,node,Monginsidi Guest House,hotel,-7.7780727,110.3659077,yogyakarta
+3557258296,node,Laxston Hotel,hotel,-7.7803009,110.3610956,yogyakarta
+3557258298,node,Acacia Guest House,guest_house,-7.7704671,110.3578036,yogyakarta
+3557258299,node,Crystal Lotus Hotel Yogyakarta Managed by Prabu,hotel,-7.7607878,110.3619963,yogyakarta
+3557258300,node,Griya Kalimantan,guest_house,-7.7601889,110.3606526,yogyakarta
+3557348913,node,Wisma Anugrah Wisata,hotel,-7.7592304,110.3817488,yogyakarta
+3557380296,node,Cakra Kusuma Hotel,hotel,-7.7600869,110.3808206,yogyakarta
+3557508868,node,Hyatt Regency,hotel,-7.7409592,110.3734285,yogyakarta
+3557508870,node,LPP Convention Hotel,hotel,-7.7786287,110.3926237,yogyakarta
+3557508871,node,Hotel Royal Ambarrukmo,hotel,-7.7824428,110.4029423,yogyakarta
+3557508872,node,Hotel Jayakarta,hotel,-7.7836203,110.4195542,yogyakarta
+3585118450,node,GreenHost Hotel,hotel,-7.8200358,110.3690878,yogyakarta
+3585118451,node,Ki Agung Prestis,hotel,-7.8195224,110.3693568,yogyakarta
+3600247125,node,Bugisan,hotel,-7.8119926,110.3515726,yogyakarta
+3616855006,node,Pondok Gajah,hotel,-7.8241513,110.333326,yogyakarta
+3621485952,node,Amelia Hotel,hotel,-7.7770418,110.3924836,yogyakarta
+3630324587,node,Fort Hotel,hotel,-7.8262747,110.3475353,yogyakarta
+3661146382,node,Abadi,guest_house,-7.6029517,110.4275759,yogyakarta
+3661146383,node,Adi Pangestu 2,guest_house,-7.6181179,110.4260693,yogyakarta
+3661146385,node,Andhika,guest_house,-7.6002845,110.4245677,yogyakarta
+3661146386,node,Anugeah Wisata 2,guest_house,-7.6021032,110.4280429,yogyakarta
+3661146388,node,Arimbi,guest_house,-7.600052,110.4257259,yogyakarta
+3661146399,node,Bintaran,guest_house,-7.6018484,110.428313,yogyakarta
+3661146400,node,Borneo Homestay,guest_house,-7.6219092,110.4250602,yogyakarta
+3661146403,node,Cendani,guest_house,-7.602571,110.4280982,yogyakarta
+3661146409,node,Gading,guest_house,-7.6086236,110.4275251,yogyakarta
+3661146410,node,Giriharjo,guest_house,-7.5991234,110.428762,yogyakarta
+3661146411,node,Graha Kinasih,guest_house,-7.5991066,110.4234197,yogyakarta
+3661146412,node,Hotel Eden 1,guest_house,-7.600612,110.4290609,yogyakarta
+3661146413,node,Hotel Joyo,guest_house,-7.5983033,110.4268835,yogyakarta
+3661146414,node,Hotel Kana,guest_house,-7.6004565,110.4245166,yogyakarta
+3661146415,node,Hotel Muria,guest_house,-7.5985022,110.4273526,yogyakarta
+3661146416,node,Hotel Rayu Manis,guest_house,-7.599682,110.4248541,yogyakarta
+3661146417,node,Hotel Taman Eden 2,hotel,-7.6214547,110.4256782,yogyakarta
+3661146422,node,Karya Mulia,guest_house,-7.6003578,110.4254939,yogyakarta
+3661146424,node,Kinanti,guest_house,-7.6001419,110.4246356,yogyakarta
+3661147629,node,Margo Asih,guest_house,-7.5991503,110.428839,yogyakarta
+3661147631,node,Mawar,guest_house,-7.599,110.4237074,yogyakarta
+3661147632,node,Mayoni,guest_house,-7.6182364,110.4260718,yogyakarta
+3661147634,node,Mentorogo,guest_house,-7.6013065,110.4282284,yogyakarta
+3661147635,node,Merapi Hotel Villa,guest_house,-7.5984942,110.4276759,yogyakarta
+3661147636,node,Merpati,guest_house,-7.5999503,110.4247691,yogyakarta
+3661147637,node,Mitra 2,guest_house,-7.5994545,110.4244178,yogyakarta
+3661147639,node,Murah,guest_house,-7.5987989,110.4281115,yogyakarta
+3661147640,node,Oplosh,guest_house,-7.618192,110.4258026,yogyakarta
+3661147642,node,Pav Bougenvile,guest_house,-7.5993088,110.423858,yogyakarta
+3661147645,node,Putra Jaya,guest_house,-7.6183624,110.4260967,yogyakarta
+3661147646,node,Restu Ibu,guest_house,-7.5994226,110.4301883,yogyakarta
+3661147648,node,Sedyo Rahayu,guest_house,-7.5990051,110.4288203,yogyakarta
+3661147653,node,Simponi,guest_house,-7.6004121,110.425627,yogyakarta
+3661147654,node,Sri Mulyo,guest_house,-7.5994405,110.4299207,yogyakarta
+3661147656,node,Tanjung Anom,guest_house,-7.6008039,110.4289433,yogyakarta
+3661147659,node,Vijaya 3 Hotel,guest_house,-7.6001362,110.4247484,yogyakarta
+3661147660,node,Villa Alma,guest_house,-7.6029146,110.4276345,yogyakarta
+3661147661,node,Villa Cemara,guest_house,-7.599293,110.4247633,yogyakarta
+3661147663,node,Villa Gosyen,guest_house,-7.5994481,110.4247394,yogyakarta
+3661147664,node,Villa Millennium,guest_house,-7.5988989,110.4283116,yogyakarta
+3661147666,node,Vogels Hostel,guest_house,-7.5988692,110.4268682,yogyakarta
+3661147669,node,Wijaya 2 Hotel,guest_house,-7.5996728,110.4247218,yogyakarta
+3661147670,node,Wijaya Hotel,guest_house,-7.5983859,110.4273687,yogyakarta
+3661147671,node,Wisma Brotoseno,guest_house,-7.5989731,110.4282807,yogyakarta
+3661147672,node,Wisma Citra,guest_house,-7.5993388,110.4244479,yogyakarta
+3661147674,node,Wisma Kamboja,guest_house,-7.5993322,110.4240142,yogyakarta
+3661199888,node,Anjasmara,guest_house,-7.5965721,110.4301077,yogyakarta
+3661199889,node,Dewi Kunti,guest_house,-7.5980752,110.4303672,yogyakarta
+3661199890,node,Griya Nalendra,hotel,-7.5983317,110.4288826,yogyakarta
+3661199891,node,Hotel Wismancala,guest_house,-7.5956658,110.4293995,yogyakarta
+3661199892,node,Karya Mulia,guest_house,-7.5965225,110.4300951,yogyakarta
+3661199893,node,Lariza,guest_house,-7.5964277,110.4300626,yogyakarta
+3661199894,node,Le Jardin,hotel,-7.5961418,110.426977,yogyakarta
+3661199895,node,Madukoro 2,guest_house,-7.5963646,110.4290584,yogyakarta
+3661199896,node,Madukoro,guest_house,-7.5953194,110.4296012,yogyakarta
+3661199897,node,Nayoga,guest_house,-7.597378,110.4303879,yogyakarta
+3661199898,node,Nirwana 2,guest_house,-7.5981805,110.43034,yogyakarta
+3661199900,node,Rinjani,guest_house,-7.598205,110.4304194,yogyakarta
+3661199901,node,Sederhana,guest_house,-7.5977342,110.4291917,yogyakarta
+3661199902,node,Setia,guest_house,-7.5976127,110.4304578,yogyakarta
+3661199903,node,Sri Handayani,guest_house,-7.5964355,110.4290714,yogyakarta
+3661199904,node,Sri Pratala,guest_house,-7.5981229,110.4304361,yogyakarta
+3661199905,node,Sri Rejeki,guest_house,-7.5964936,110.4290747,yogyakarta
+3661199906,node,Srikandi,guest_house,-7.595296,110.4296989,yogyakarta
+3661199907,node,Vila van Resink,guest_house,-7.5967483,110.4261797,yogyakarta
+3661199908,node,Villa Hanna,guest_house,-7.5952436,110.4301179,yogyakarta
+3661199909,node,Widuri,guest_house,-7.5968562,110.4302167,yogyakarta
+3661199910,node,Wisma Emalta,guest_house,-7.5941171,110.4306139,yogyakarta
+3661199911,node,Wisma Erlanga,guest_house,-7.5950355,110.4302074,yogyakarta
+3661199912,node,Wisma Hargo,guest_house,-7.594829,110.4303148,yogyakarta
+3661199913,node,Yoga Mandiri 1,guest_house,-7.5966503,110.4301419,yogyakarta
+3661199914,node,Yoga Mandiri 3,guest_house,-7.5968736,110.430223,yogyakarta
+3679274915,node,Villa Alicia,guest_house,-7.7676206,110.4172241,yogyakarta
+3732339032,node,Puri Pangeran Hotel,hotel,-7.8006644,110.3744796,yogyakarta
+3765105783,node,Disaster Oasis,hotel,-7.6302724,110.4245641,yogyakarta
+3765156964,node,Grand Omah Sastro,hotel,-7.7741531,110.394319,yogyakarta
+3782251857,node,Hotel Prime Syailendra,hotel,-7.8103899,110.3771829,yogyakarta
+3884620633,node,Hotel Asih,hotel,-7.776802,110.381828,yogyakarta
+3921534721,node,ViaVia,guest_house,-7.8182969,110.3699774,yogyakarta
+4040128043,node,Tjiptorini Jaya Hotel,hotel,-7.7797378,110.4049191,yogyakarta
+4113534818,node,Sabana Homestay,hotel,-7.7818456,110.3852788,yogyakarta
+4168500297,node,Yogyakarta BnB,guest_house,-7.7966198,110.362985,yogyakarta
+4177878362,node,Puri Ageng,hotel,-7.8132093,110.3718549,yogyakarta
+4269549591,node,Luwabica Art n Coffee House,guest_house,-7.8163132,110.3591907,yogyakarta
+4271041096,node,Omah Guyub,hotel,-7.8152776,110.348414,yogyakarta
+4278281582,node,Hotel Panorama,hotel,-7.8020279,110.3787707,yogyakarta
+4292814790,node,De Laxston Hotel by Quinn's,hotel,-7.7830255,110.3871283,yogyakarta
+4293952752,node,Hotel BIFA (Bintang Fajar),hotel,-7.8185385,110.3938993,yogyakarta
+4326459990,node,Ma Casa Es Tu Casa,guest_house,-7.8186317,110.3608648,yogyakarta
+4330798191,node,Yabbiekayu,hotel,-7.871054,110.355002,yogyakarta
+4338038990,node,Venezia Garden Homestay,hotel,-7.8205641,110.3665106,yogyakarta
+4361980601,node,Hotel 1001 Malam,hotel,-7.7906474,110.3642042,yogyakarta
+4368839693,node,,guest_house,-7.8220491,110.3418067,yogyakarta
+4369642900,node,Grapyak Homestay,guest_house,-7.8025764,110.3451693,yogyakarta
+4393626789,node,Jogja Dreams Bed and Breakfast,guest_house,-7.8181547,110.3581166,yogyakarta
+4431678389,node,Kost Orange,guest_house,-7.7793452,110.379242,yogyakarta
+4438722097,node,Hotel Sekar Ayu,guest_house,-7.7889685,110.3709409,yogyakarta
+4441696190,node,ichan house,guest_house,-7.8117611,110.3609385,yogyakarta
+4496371191,node,Rumah Antonius Wijaya,guest_house,-7.9314802,110.3275829,yogyakarta
+4505436489,node,,guest_house,-7.754467,110.4241455,yogyakarta
+4528072890,node,Lotus Losmen,guest_house,-7.7911289,110.3637267,yogyakarta
+4562432090,node,Andrea hotel,hotel,-7.790417,110.364036,yogyakarta
+4585536359,node,,hotel,-7.7786138,110.4151915,yogyakarta
+4585536372,node,,hotel,-7.7788211,110.4158888,yogyakarta
+4588967021,node,Kosan Mbah Mulyoharjo,hotel,-7.7538334,110.4118799,yogyakarta
+4590099295,node,Alamo Homestay Limasan,guest_house,-7.8148207,110.3429914,yogyakarta
+4590296603,node,Hotel Kusuma Condong Wisma Tamu,hotel,-7.7542356,110.4086467,yogyakarta
+4590296614,node,Hotel Dafam Fortuna,hotel,-7.7652437,110.4110377,yogyakarta
+4590677769,node,Hotel Omahkoe,hotel,-7.785281,110.4272059,yogyakarta
+4590677771,node,"D'Salvatore Art & Boutique Hotel 4,1",hotel,-7.783604,110.4256113,yogyakarta
+4590881638,node,Omahe Winahyu Homestay,hotel,-7.7567647,110.4140963,yogyakarta
+4590940458,node,Hotel Brawijaya,hotel,-7.8143823,110.3919903,yogyakarta
+4605820496,node,Erista Garden,guest_house,-7.659445,110.427366,yogyakarta
+4637978542,node,Penginapan BeOne House,guest_house,-7.7830178,110.4455294,yogyakarta
+4685626989,node,Omah Salam,hotel,-7.8180496,110.3700596,yogyakarta
+4692238589,node,Hotel Gaotama,hotel,-7.7938706,110.3674656,yogyakarta
+4693248299,node,Vidi Hotel 2,hotel,-7.7617833,110.3793242,yogyakarta
+4698269491,node,Gaotama Hotel,hotel,-7.7937987,110.36758,yogyakarta
+4706061490,node,Langkanae,guest_house,-7.787634,110.3942254,yogyakarta
+4782416223,node,Eclipse hotel,hotel,-7.8190907,110.3720421,yogyakarta
+4794827154,node,Losmen Rizki,guest_house,-7.7911654,110.3639277,yogyakarta
+4799118030,node,Pak Heru,guest_house,-7.7887825,110.35116,yogyakarta
+4799168327,node,Pak Bambang,guest_house,-7.7873556,110.351716,yogyakarta
+4815329721,node,Giyatna,guest_house,-7.8379779,110.3579882,yogyakarta
+4819918121,node,Boma House,guest_house,-7.8053983,110.349124,yogyakarta
+4830808726,node,Losmen Red Palm,guest_house,-7.7909201,110.3640396,yogyakarta
+4847813021,node,griyakoe pakem,hotel,-7.667774,110.4288317,yogyakarta
+4851278881,node,Crystal Lotus,hotel,-7.7593574,110.3622608,yogyakarta
+4851279316,node,Dom,hotel,-7.7330193,110.3959832,yogyakarta
+4851279649,node,Sunrise,hotel,-7.7593401,110.3926722,yogyakarta
+4893549821,node,,guest_house,-7.9420037,110.3759109,yogyakarta
+4936351521,node,Dewaruci 2 hotel,hotel,-7.8283706,110.3898757,yogyakarta
+4940665021,node,Cs,hotel,-7.8207172,110.3662781,yogyakarta
+4946698256,node,Airlangga,hotel,-7.8191143,110.3689415,yogyakarta
+4946718522,node,Wisam Gajah,hotel,-7.8190654,110.3685937,yogyakarta
+4955111621,node,Rumah Yogya,guest_house,-7.8138272,110.3565452,yogyakarta
+4957171921,node,Ismoyo,hotel,-7.7894726,110.3580319,yogyakarta
+4959456824,node,Pego Homestay,guest_house,-7.7910787,110.3609986,yogyakarta
+4975341823,node,3DI Backpacker Guesthouse,guest_house,-7.8199975,110.3641881,yogyakarta
+5056528162,node,Rumah Senjakala,guest_house,-7.8354383,110.3394202,yogyakarta
+5059843835,node,Jawajiwa Homestay,guest_house,-7.8169923,110.3402839,yogyakarta
+5098735021,node,Homey Home,guest_house,-7.7904011,110.3698668,yogyakarta
+5225391851,node,Maturnuwun,guest_house,-7.8198679,110.3662969,yogyakarta
+5243957704,node,Omah Kaleva Syariah,guest_house,-7.7427823,110.3716567,yogyakarta
+5248591934,node,Pondok jiwa,guest_house,-8.1359961,110.5745425,yogyakarta
+5315171725,node,Agung Inn,hotel,-7.8193792,110.371549,yogyakarta
+5318487964,node,Pandanaran,hotel,-7.8194868,110.372381,yogyakarta
+5325463323,node,Villa Pondok Terra,hotel,-7.8171153,110.3655112,yogyakarta
+5418151537,node,The Sawah,hotel,-7.8418017,110.3239257,yogyakarta
+5418151543,node,Blue Steps,hotel,-7.8407854,110.3183275,yogyakarta
+5418151583,node,Blue Garden,hotel,-7.8460348,110.313297,yogyakarta
+5432547502,node,Pondok Ijo,guest_house,-7.8168656,110.3648419,yogyakarta
+5468132496,node,The Cabin,hotel,-7.7932823,110.361529,yogyakarta
+5492419722,node,Cornel Homestay,hotel,-7.7534752,110.4061297,yogyakarta
+5507247629,node,Merbubu,hotel,-7.7914478,110.3650914,yogyakarta
+5551609423,node,Arga Hotel actual location,hotel,-7.7851084,110.4169476,yogyakarta
+5566207901,node,Villa Tropicana,guest_house,-7.8410293,110.320521,yogyakarta
+5566324706,node,Omah Sembungan,guest_house,-7.8358265,110.3382488,yogyakarta
+5595942622,node,Hotel Pulung,hotel,-7.8197883,110.3675472,yogyakarta
+5596159182,node,Jempol Homestay,guest_house,-7.820524,110.3582823,yogyakarta
+5738157722,node,Trava House,hotel,-7.8150881,110.364912,yogyakarta
+5809818555,node,D’Omah Hotel,hotel,-7.8720403,110.3535336,yogyakarta
+5833614473,node,RedDoorz Plus near Lempuyangan Station 3,hotel,-7.7921597,110.3719753,yogyakarta
+5833839182,node,Jasmine Heritage Homestay,guest_house,-7.8041651,110.3706682,yogyakarta
+5835687804,node,Rumah Panjaitan Homestay,guest_house,-7.8169289,110.3622399,yogyakarta
+5836038318,node,RedDoorz,guest_house,-7.8186528,110.365002,yogyakarta
+5838319686,node,nDalem Gamelan,guest_house,-7.8101354,110.3664476,yogyakarta
+5847948755,node,The Wayang Homestay,guest_house,-7.8219339,110.360282,yogyakarta
+5903606985,node,Griya Asih,guest_house,-7.8131109,110.3648338,yogyakarta
+5905752289,node,Grapyak Homestay Syariah,guest_house,-7.8025752,110.3450151,yogyakarta
+5915697985,node,Habibi Homestay,guest_house,-7.7860004,110.4168831,yogyakarta
+5927919186,node,Reddoorz@Mantrijeron 2,hotel,-7.8159408,110.3638593,yogyakarta
+5970560685,node,Gaia Cosmo Hotel,hotel,-7.7989757,110.3926935,yogyakarta
+6009385282,node,Athaya Hotel Jogja,hotel,-7.7614723,110.3835068,yogyakarta
+6031280785,node,Omah Sundak Homestay (Real one),guest_house,-8.146553,110.6069361,yogyakarta
+6031280885,node,Omah Sundak Homestay is NOT here,guest_house,-8.1664087,110.6612585,yogyakarta
+6039050685,node,Onze de Lokaindo,hotel,-7.7620745,110.3814793,yogyakarta
+6065814387,node,Penginapan Kunthi,guest_house,-7.7937405,110.3623713,yogyakarta
+6259023999,node,Cafe de Paris,guest_house,-8.0272029,110.3376396,yogyakarta
+6259024279,node,Raharjo Penginapan & Rumah Makan,guest_house,-8.0244475,110.3331278,yogyakarta
+6320266616,node,Zen Rooms Depok Sleman Syariha,hotel,-7.7794471,110.4079831,yogyakarta
+6327278157,node,RedDoorz Plus Adya Nalendra,hotel,-7.7792534,110.364178,yogyakarta
+6367176147,node,Forriz,hotel,-7.7952564,110.3532699,yogyakarta
+6596234985,node,Home@Ifa’s - Kitten,guest_house,-7.8081751,110.3663795,yogyakarta
+6679862338,node,105 Homestay,guest_house,-7.7909083,110.3652133,yogyakarta
+6679865106,node,Anda Losmen,guest_house,-7.7907431,110.3641136,yogyakarta
+6679872558,node,Losmen Utar,guest_house,-7.7910251,110.3636114,yogyakarta
+6685767286,node,La Casa Jogja,hotel,-7.7660476,110.3919211,yogyakarta
+6730652819,node,Embe Enem,guest_house,-7.7762579,110.3915717,yogyakarta
+6732248551,node,Embe Pitoe,guest_house,-7.7762936,110.3914111,yogyakarta
+6732315339,node,Embe Joglo,guest_house,-7.7559934,110.4017806,yogyakarta
+6811218788,node,Samanta Pura,guest_house,-7.756268,110.4241017,yogyakarta
+6855834428,node,Nextdoor Homestay,guest_house,-7.8169998,110.3690913,yogyakarta
+6865613385,node,Joglo Wediombo,hotel,-8.1897941,110.7113725,yogyakarta
+6899266842,node,Winatasastra,hotel,-7.8200387,110.3670974,yogyakarta
+6899347341,node,Ndaleman Mantrijeroan,hotel,-7.8196522,110.3671904,yogyakarta
+6899369099,node,Ndalem Mantrijeron,hotel,-7.8196349,110.3672193,yogyakarta
+6899374154,node,Rumah Eyang,hotel,-7.82004,110.3672849,yogyakarta
+6939520399,node,Metro LMalioboro Living,hotel,-7.7935432,110.374086,yogyakarta
+7034780385,node,The Kresna Hotel,hotel,-7.817706,110.3620197,yogyakarta
+7063226686,node,Filistay Homestay,guest_house,-7.8498362,110.3310707,yogyakarta
+7082264285,node,Ada Waktu B&B,hotel,-7.8708079,110.4029241,yogyakarta
+7097539047,node,Nueve Malioboro Hotel Yogyakarta,guest_house,-7.7959471,110.3688927,yogyakarta
+7097544036,node,Andika Putera,hotel,-7.80196,110.351488,yogyakarta
+7097566670,node,The Edwin Syariah (OYO 611),hotel,-7.8080188,110.3408112,yogyakarta
+7099223696,node,Omah Manis,guest_house,-7.8135499,110.377067,yogyakarta
+7100528075,node,Kristina,hotel,-7.7938157,110.3626817,yogyakarta
+7114012187,node,Lia Homestay,guest_house,-7.8170564,110.3657486,yogyakarta
+7117116848,node,Omah Konco Homestay,guest_house,-7.8088496,110.3626741,yogyakarta
+7117199310,node,Ndalem Diajeng,guest_house,-7.8119214,110.3675176,yogyakarta
+7140531832,node,D'HELOMI,guest_house,-7.7699441,110.4303603,yogyakarta
+7152724240,node,Hotel Lafayette,hotel,-7.759224,110.3874103,yogyakarta
+7178810187,node,Hostel White Paal,hotel,-7.7830869,110.365171,yogyakarta
+7811256796,node,Ndalem Kotabaru,guest_house,-7.788263,110.3731828,yogyakarta
+7846239503,node,Fave Hotel,hotel,-7.7855389,110.3699615,yogyakarta
+7846239505,node,Hotel Graha Kinasih,hotel,-7.7872569,110.3706366,yogyakarta
+8333040371,node,Rumah Pak Dukuh Sambi,guest_house,-7.6462762,110.4271557,yogyakarta
+9002853900,node,Hotel Olympic,hotel,-7.8220413,110.3736496,yogyakarta
+9002853901,node,Cantya Hotel,hotel,-7.8222333,110.3735585,yogyakarta
+9025585287,node,Joglo Mandapa Boutique Hotel & Resto,hotel,-7.8315706,110.3383718,yogyakarta
+9118787717,node,Royal Malioboro,hotel,-7.790026,110.3644978,yogyakarta
+9175232116,node,Kutus-Kutus,guest_house,-7.7840128,110.3750648,yogyakarta
+9187445817,node,Grand Rohan Jogja,hotel,-7.7982935,110.4051366,yogyakarta
+9247001004,node,Tasik Jogja Hotel,hotel,-7.815548,110.3563386,yogyakarta
+9622538149,node,Rumah Kost Putri,guest_house,-7.7738994,110.3819078,yogyakarta
+9671827938,node,Ndalem Jogja Cupuwatu,hotel,-7.7738264,110.452178,yogyakarta
+9679002748,node,Puri Cempaka Guest House,guest_house,-7.7438315,110.4809948,yogyakarta
+9697446968,node,Grand Orchid Hotel,hotel,-7.7824738,110.4243269,yogyakarta
+9697463558,node,Satoria,hotel,-7.7839031,110.4220532,yogyakarta
+9725632642,node,Hotel Srikandi,hotel,-7.7685614,110.4698687,yogyakarta
+9725891946,node,Platinum,hotel,-7.7828976,110.437282,yogyakarta
+9725892668,node,Grand Mercure,hotel,-7.7833818,110.3922092,yogyakarta
+9725905457,node,Tickle Hotel,hotel,-7.7827723,110.385439,yogyakarta
+9725910131,node,ibis Hotels,hotel,-7.7839163,110.3920533,yogyakarta
+9725917694,node,Duta Wisata 2 Hotel,hotel,-7.7834674,110.3883871,yogyakarta
+9740803879,node,Clarista Homestay,guest_house,-7.7370423,110.4519743,yogyakarta
+9742575759,node,Banyu Jiwo Guest House,guest_house,-7.7405076,110.4291724,yogyakarta
+9748837975,node,Nabila Home Stay,guest_house,-7.7901016,110.4848874,yogyakarta
+9763771868,node,Hotel Melia Purosani,hotel,-7.7969057,110.3689789,yogyakarta
+9784588913,node,Hotel Pondok Anggun,hotel,-7.7612939,110.4114968,yogyakarta
+9811855301,node,J-Ruby Guesthouse,hotel,-7.8286055,110.3573366,yogyakarta
+9816754607,node,The Manohara Hotel,hotel,-7.7744133,110.3888951,yogyakarta
+9818970770,node,OYO 1829 Zaira House,hotel,-7.7368999,110.372736,yogyakarta
+9819405184,node,The Cabin Hotel Sutomo,hotel,-7.7969982,110.3778556,yogyakarta
+9819610150,node,Ndalem Suryo Saptono Guest House,guest_house,-7.7819846,110.3482204,yogyakarta
+9821664235,node,Grand Senyum Hotel,hotel,-7.783137,110.3653251,yogyakarta
+9821757956,node,Hotel Citra Kita Yogyakarta,hotel,-7.7821776,110.3612494,yogyakarta
+9823993300,node,OYO 524 Makuta Hotel,hotel,-7.8201788,110.3708472,yogyakarta
+9824010696,node,Gallery Prawirotaman Hotel,hotel,-7.8202654,110.371217,yogyakarta
+9824029773,node,Royal Darmo Malioboro Hotel Yogyakarta,hotel,-7.7924892,110.3585358,yogyakarta
+9824030311,node,OYO 1626 Alena Residence,hotel,-7.7930454,110.3582813,yogyakarta
+9824224841,node,Tjokro Style Yogyakarta,hotel,-7.8167358,110.3805627,yogyakarta
+9824258186,node,Seroja Kostel Golo,hotel,-7.8151374,110.3818528,yogyakarta
+9831975705,node,Selaras Inn Hotel Yogyakarta,hotel,-7.7916775,110.3630563,yogyakarta
+9835194948,node,The Amartya Hotel Yogyakarta,hotel,-7.7980772,110.330282,yogyakarta
+9835310919,node,Airy Eco Papringan Ambarrukmo,hotel,-7.7792783,110.3966533,yogyakarta
+9835462835,node,Reddoorz Near Jogja City Mall 3,hotel,-7.7686485,110.3602554,yogyakarta
+9835473201,node,Hotel Novatel,hotel,-7.8052424,110.3562836,yogyakarta
+9835611291,node,Omah Permadi,hotel,-7.810673,110.3779454,yogyakarta
+9843367883,node,Hotel Srikandi Bandara,hotel,-7.7825666,110.4495941,yogyakarta
+9857813359,node,Sato Loka,guest_house,-7.623145,110.4249382,yogyakarta
+9859649452,node,Hotel Wijaya,hotel,-7.7839847,110.4461723,yogyakarta
+9863810827,node,Hotel Sahid Raya Yogyakarta,hotel,-7.7800255,110.4143124,yogyakarta
+9914468817,node,Aloha Hotel,hotel,-7.8187833,110.3721733,yogyakarta
+10033064161,node,Popi Hotel & Homestay,hotel,-7.6814154,110.4192355,yogyakarta
+10094819117,node,Snooze,hotel,-7.8046805,110.3679131,yogyakarta
+10198975863,node,,hotel,-7.7863041,110.3612321,yogyakarta
+10225661691,node,Rumah Popuri,guest_house,-7.7330365,110.3331115,yogyakarta
+10261917733,node,Ndalem Prataman,guest_house,-7.7427198,110.3710787,yogyakarta
+10310697741,node,Puri Ganjuran,hotel,-7.9241666,110.3185571,yogyakarta
+10658056005,node,Bobobox,hotel,-7.7949947,110.3654432,yogyakarta
+11032099970,node,Sleepy Raccoon Hostel,hotel,-7.8350524,110.3676952,yogyakarta
+11055547205,node,Rajaklana Resort and Spa,hotel,-7.8400087,110.2870328,yogyakarta
+11079716670,node,PK-B4,guest_house,-7.7287135,110.3952784,yogyakarta
+11262662737,node,Masjid As Sunnah,guest_house,-7.7137055,110.4167281,yogyakarta
+11304573466,node,Wisma Yosoputro OYO 405,hotel,-7.7774009,110.4559033,yogyakarta
+11323130269,node,Kirana Hotel,hotel,-7.8192907,110.3726911,yogyakarta
+11329164925,node,Garrya Bianti Yogyakarta,hotel,-7.7088698,110.3642997,yogyakarta
+11379083769,node,Oyo Art Guesthouse Syariah,guest_house,-7.8113408,110.3775239,yogyakarta
+11379083770,node,Cailendra Hotel,hotel,-7.8106012,110.3777559,yogyakarta
+11451288964,node,Sartika Hotel,hotel,-7.8195468,110.3727699,yogyakarta
+11549921761,node,Asrama A BBPPMPV Seni dan Budaya,guest_house,-7.6983502,110.427214,yogyakarta
+11549944472,node,Asrama C BBPPMPV Seni dan Budaya,guest_house,-7.6984896,110.4269765,yogyakarta
+11565843174,node,Asrama B BBPPMPV Seni dan Budaya,guest_house,-7.6982693,110.4268776,yogyakarta
+11674437504,node,Riss Hotel Malioboro,hotel,-7.7874823,110.3644211,yogyakarta
+11781137576,node,Hotel Ayaskara,hotel,-7.7804124,110.503261,yogyakarta
+11791998169,node,BSH (Bu Sud's House),hotel,-7.8068062,110.3607985,yogyakarta
+11795374269,node,Villa Dora Jogja,hotel,-7.8054706,110.3775099,yogyakarta
+12064977602,node,Rumah Dody,guest_house,-7.8135593,110.379241,yogyakarta
+12073067859,node,Manda Homestay,guest_house,-7.7509045,110.48128,yogyakarta
+12090413130,node,Omah Cangkringan,guest_house,-7.6618773,110.4446646,yogyakarta
+12106220502,node,Pendowo Huis,hotel,-7.7733904,110.3902415,yogyakarta
+12165236716,node,SekawanStay Guest House Malioboro,guest_house,-7.7925789,110.3707164,yogyakarta
+12257325159,node,Booboo Homestay Yogyakarta,hotel,-7.7735024,110.4697891,yogyakarta
+12298770182,node,,hotel,-7.7570311,110.3691071,yogyakarta
+12338747935,node,,hotel,-7.7565729,110.3822355,yogyakarta
+12338747988,node,,hotel,-7.7564105,110.3814054,yogyakarta
+12353735009,node,Kos Putri Amanah,guest_house,-7.8198892,110.3925468,yogyakarta
+12357538040,node,Red Doorz Near Jogja City Mall 4,guest_house,-7.7597817,110.363196,yogyakarta
+12357538041,node,Guest House Aster,guest_house,-7.758662,110.3631882,yogyakarta
+12357538043,node,Kost Kataji,guest_house,-7.7608957,110.3641162,yogyakarta
+12357538048,node,Kos Pintu Orange,guest_house,-7.761317,110.36486,yogyakarta
+12357538049,node,Ayla Homestay,guest_house,-7.7610511,110.3646256,yogyakarta
+12357538051,node,Kos Putra,guest_house,-7.7603845,110.3637851,yogyakarta
+12357538054,node,Kos TISAGA,guest_house,-7.758823,110.3640773,yogyakarta
+12357538055,node,Kos Alfariz Megamnedung,guest_house,-7.7589154,110.3643345,yogyakarta
+12357538056,node,Kos Putra ar-Razzan,guest_house,-7.7588733,110.3646141,yogyakarta
+12357538057,node,Kos Putra Jaya Laza,guest_house,-7.7593464,110.3656726,yogyakarta
+12357538058,node,Kos Putri Kenyo Ayu,guest_house,-7.7593012,110.3654124,yogyakarta
+12357538061,node,Homestay Podhomor,guest_house,-7.7581508,110.3652947,yogyakarta
+12357538063,node,Kos Atap Biru,guest_house,-7.7587437,110.3660415,yogyakarta
+12357538065,node,Tree Residence,guest_house,-7.757985,110.3657468,yogyakarta
+12357538067,node,Rumah Kirana,guest_house,-7.7578693,110.3660446,yogyakarta
+12357538068,node,Kos Putra Dinke Jogja,guest_house,-7.7575234,110.366263,yogyakarta
+12357566596,node,TAJUGLORO.,guest_house,-7.7508424,110.3661795,yogyakarta
+12357566597,node,Sugar Guest House 2,guest_house,-7.7510517,110.3661526,yogyakarta
+12357566600,node,Kost JOMBRO,guest_house,-7.7509555,110.3653954,yogyakarta
+12357573602,node,Kos Putra Bmth,guest_house,-7.7515268,110.3657217,yogyakarta
+12357578893,node,Kost Bu Parni,guest_house,-7.7522258,110.3660708,yogyakarta
+12357578894,node,Kos Afi Julantari,guest_house,-7.7522622,110.3662312,yogyakarta
+12357578898,node,Kost war Wur,guest_house,-7.7512093,110.3660848,yogyakarta
+12357578900,node,Wisma Haniyah,guest_house,-7.7522574,110.3663581,yogyakarta
+12357595298,node,Bale Tradian Homestay,guest_house,-7.7558358,110.3643703,yogyakarta
+12357606617,node,Kost Putri Bu Icuk,guest_house,-7.7533702,110.3650629,yogyakarta
+12357606618,node,Kost Putra Arjuna Sinduadi,guest_house,-7.7534592,110.3653153,yogyakarta
+12357612401,node,Qos-ku 146,guest_house,-7.7523395,110.3663314,yogyakarta
+12357612402,node,Kost Muslimah Rafania,guest_house,-7.7524853,110.3663339,yogyakarta
+12357612403,node,Kost Bu Ndari,guest_house,-7.7525484,110.3663409,yogyakarta
+12357612404,node,Kos Mranggen,guest_house,-7.75277,110.366295,yogyakarta
+12357612406,node,Kostan Bu Sugeng,guest_house,-7.7525061,110.3659988,yogyakarta
+12357612407,node,Kost Candra,guest_house,-7.7525756,110.3654769,yogyakarta
+12357612413,node,RUMAH KOST PUTRI MELATI,guest_house,-7.7530763,110.3649767,yogyakarta
+12357612414,node,Kos Lingga Luvi,guest_house,-7.7531254,110.3652834,yogyakarta
+12357612415,node,SUKA KOST,guest_house,-7.7531441,110.3660193,yogyakarta
+12357612417,node,Mess JCM,guest_house,-7.7529245,110.3660272,yogyakarta
+12357628724,node,Griya Garfita Mranggen,guest_house,-7.7577056,110.3640628,yogyakarta
+12357632947,node,Kos Pak Sambudi,guest_house,-7.754296,110.3649909,yogyakarta
+12357632952,node,Kedai Makan Edelweyz,guest_house,-7.7544525,110.3648927,yogyakarta
+12357632953,node,KOS WIJAYA,guest_house,-7.7543772,110.3651646,yogyakarta
+12357632954,node,Kost Pak Rodjikin,guest_house,-7.7542572,110.3653993,yogyakarta
+12357632957,node,Kos Putra Ceria,guest_house,-7.7545123,110.3657095,yogyakarta
+12357632958,node,Kos Pak Roso,guest_house,-7.7541993,110.365653,yogyakarta
+12357632963,node,JOS Bale,guest_house,-7.754667,110.3661269,yogyakarta
+12357632966,node,Kost Rahayu (khusus Putri),guest_house,-7.7547703,110.3656479,yogyakarta
+12357632970,node,Kost Muslimah A3 Perum Mranggen Lama,guest_house,-7.7548554,110.3650238,yogyakarta
+12357632971,node,Kost Yoyafir,guest_house,-7.7548731,110.3651771,yogyakarta
+12357632976,node,Mranggen Mansion,guest_house,-7.7551957,110.3656003,yogyakarta
+12357632977,node,Kost Putri Eksklusif LA MAISON,guest_house,-7.7552101,110.3656788,yogyakarta
+12357632979,node,Kost Putri Eksklusif Griya Anggrek 27,guest_house,-7.7553057,110.3661469,yogyakarta
+12357642464,node,penginapan dgs suplier,guest_house,-7.7553993,110.3657777,yogyakarta
+12357642467,node,kontrakan bulu bulu,guest_house,-7.7575049,110.3661036,yogyakarta
+12357642468,node,kontrakan mbak pur,guest_house,-7.7573828,110.366124,yogyakarta
+12357642472,node,puri nastiti,guest_house,-7.7557971,110.3656172,yogyakarta
+12357642473,node,kost putri msulimah azkayra,guest_house,-7.7551946,110.364529,yogyakarta
+12357642476,node,kost bu prapto,guest_house,-7.7551759,110.3647832,yogyakarta
+12357642477,node,ndalem susilo,guest_house,-7.7552078,110.3648799,yogyakarta
+12357642483,node,zhafira kost kutu tegal,guest_house,-7.7558611,110.366377,yogyakarta
+12357642487,node,bale tardian homestay,guest_house,-7.7558216,110.3643609,yogyakarta
+12357642491,node,kost putri bintang,guest_house,-7.7560024,110.3660233,yogyakarta
+12357642493,node,athome kost,guest_house,-7.7561724,110.3662293,yogyakarta
+12357642498,node,kost pak suwardi,guest_house,-7.7573637,110.3654206,yogyakarta
+12357647001,node,Kos Pak Ngadirin,guest_house,-7.7556263,110.3648701,yogyakarta
+12357647002,node,Kos Putra & Paviliun Oma,guest_house,-7.7562717,110.3651861,yogyakarta
+12357671702,node,homee 3p,guest_house,-7.7572038,110.3658216,yogyakarta
+12357671704,node,paviliun laris mulya,guest_house,-7.7568418,110.3661755,yogyakarta
+12468745199,node,Limasan 514,hotel,-7.818114,110.3699802,yogyakarta
+12473282634,node,Renjana Bed & Breakfast,guest_house,-7.8160765,110.3710841,yogyakarta
+12643728879,node,Omah Watu Homestay,guest_house,-7.7914677,110.3621837,yogyakarta
+12643740057,node,Selarus Inn,guest_house,-7.7916981,110.3632016,yogyakarta
+12644647518,node,The Capsule,hotel,-7.7914592,110.364819,yogyakarta
+12644670787,node,Kartika Hotel,hotel,-7.7916467,110.3651881,yogyakarta
+12644696325,node,Indonesia Hotel,hotel,-7.7918047,110.3653013,yogyakarta
+12644702569,node,Aura Hotel,hotel,-7.7915514,110.3641233,yogyakarta
+12648754858,node,Sans Nagari,hotel,-7.7986755,110.3563331,yogyakarta
+12648754859,node,The Cabin Hotel,hotel,-7.8011335,110.3489923,yogyakarta
+12727127901,node,Ndalem Sarengat,guest_house,-7.8105958,110.3680513,yogyakarta
+12902907860,node,Mounty-land home,hotel,-7.7532728,110.4052585,yogyakarta
+12919668663,node,Arrayan,hotel,-7.8002857,110.3619105,yogyakarta
+12976432462,node,Wulenpari,hotel,-7.8853228,110.5119463,yogyakarta
+13012960801,node,Kos Pak Basuki,guest_house,-7.6859654,110.4170445,yogyakarta
+13045160352,node,Vrata Hotel,hotel,-7.7682998,110.4698654,yogyakarta
+13355366602,node,Rumah Kalpataru,guest_house,-7.8175162,110.3685342,yogyakarta
+13373480001,node,Omah Siliran Heritage,hotel,-7.8132379,110.3661825,yogyakarta
+13495600114,node,Alfath's Hillside House,guest_house,-7.7146225,110.289055,yogyakarta
+13610868365,node,Kost Bu Yeti,guest_house,-7.8074874,110.3131371,yogyakarta
+13666989770,node,Little Tokyo,hotel,-7.8955926,110.4401786,yogyakarta
+13681519317,node,Shayana Villa,hotel,-7.723345,110.3984546,yogyakarta
+13685665029,node,Kost Putri Salsabila,hotel,-7.7241355,110.3999998,yogyakarta
+13685665031,node,Pintu Barat Kos Griya Putri Nareswari (Kos Muslimah Exclusive),hotel,-7.7246582,110.3992544,yogyakarta
+13685698805,node,Kos Putri,hotel,-7.7249987,110.3981508,yogyakarta
+13742021412,node,Kost Dumess Exclusive,guest_house,-7.8276747,110.3465293,yogyakarta
+13795936924,node,Kos Bu Tari,hotel,-7.8143892,110.4146047,yogyakarta
+13800404270,node,Hotel Tentrem,hotel,-7.7738045,110.3686016,yogyakarta
+13800423565,node,rumah simbah,guest_house,-7.7957012,110.3120624,yogyakarta
+13800675261,node,Paradiso Hills,hotel,-8.1422442,110.5996348,yogyakarta
+13866990251,node,Rumah Tara,guest_house,-7.7815938,110.3711707,yogyakarta
+13895631601,node,Rumah Kecil BnB,guest_house,-7.6601106,110.4039757,yogyakarta
+13970288501,node,,guest_house,-7.740723,110.3919963,yogyakarta
+14000419671,node,,hotel,-7.7452077,110.4204856,yogyakarta
+14006023177,node,,hotel,-8.1674208,110.8002448,yogyakarta
+14019000501,node,Mak Cik heritage villa & cafe,hotel,-7.6252229,110.4135374,yogyakarta
+14085153726,node,Hotel Sansha,hotel,-7.9371088,110.5745403,yogyakarta
+14087687147,node,Lokajajar Guesthouse,guest_house,-7.7839848,110.3405774,yogyakarta
+14117751057,node,Regantris Malioboro Yogyakarta,hotel,-7.791807,110.3638877,yogyakarta
+14189479701,node,Damai Hotel,hotel,-7.733669,110.3877851,yogyakarta
+14211277530,node,Wisma Duta Wacana,guest_house,-7.6166505,110.425921,yogyakarta

@@ -11,6 +11,7 @@ import axios from 'axios'; // Buat nembak AI Backend (kalau udah jalan)
 import LoginView from './login';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import CityDetail from './CityDetail'; // Sesuaikan lokasi filenya
 
 let DefaultIcon = L.icon({
   iconUrl: icon, shadowUrl: iconShadow, iconSize: [25, 41], iconAnchor: [12, 41]
@@ -124,6 +125,9 @@ function MyTripsView({ hasTrip, tripInfo, setCurrentTab }) {
   );
 }
 
+// ==========================================
+// KOMPONEN HALAMAN: EXPLORE
+// ==========================================
 function ExploreView() {
   // Hanya fokus ke Yogyakarta dan Bandung
   const destinations = [
@@ -138,6 +142,17 @@ function ExploreView() {
       img: 'https://unsplash.com/id/foto/orang-orang-yang-berjalan-di-jalan-o4tUA3yxuH4?auto=format&fit=crop&w=400&q=80'
     }
   ];
+  
+  const [selectedCity, setSelectedCity] = useState(null);
+  
+  // Kalau ada kota yang diklik, pindah ke CityDetail
+  if (selectedCity) {
+    return (
+      <div style={{ flexGrow: 1, overflowY: 'auto', width: '100%', height: '100%' }}>
+        <CityDetail cityName={selectedCity} onBack={() => setSelectedCity(null)} />
+      </div>
+    );
+  }
 
   return (
     <div style={{ padding: '24px', flexGrow: 1, overflowY: 'auto' }}>
@@ -150,7 +165,11 @@ function ExploreView() {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '16px' }}>
         {destinations.map((dest, idx) => (
-          <div key={idx} style={{ backgroundColor: '#fff', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0', position: 'relative', cursor: 'pointer' }}>
+          <div 
+            key={idx} 
+            onClick={() => setSelectedCity(dest.name)} // KODE INI YANG BIKIN BISA DIKLIK
+            style={{ backgroundColor: '#fff', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0', position: 'relative', cursor: 'pointer' }}
+          >
             <img src={dest.img} style={{ width: '100%', height: '160px', objectFit: 'cover' }} />
             <div style={{ position: 'absolute', top: '10px', right: '10px', backgroundColor: 'rgba(255,255,255,0.8)', padding: '6px', borderRadius: '50%', color: '#ef4444' }}>
               <Heart size={14} />
