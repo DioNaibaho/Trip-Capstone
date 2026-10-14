@@ -133,6 +133,7 @@ app.get('/api/destinations/:city', async (req, res) => {
     res.status(500).json({ success: false, message: 'Gagal mengambil data dari database' });
   }
 });
-app.listen(PORT, () => {
-    console.log(`Server aktif di http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server lokal jalan di port: ${PORT}`);
+  console.log(`Server publik Ngrok aktif di: https://scrappier-anthony-adnate.ngrok-free.dev`);
 });

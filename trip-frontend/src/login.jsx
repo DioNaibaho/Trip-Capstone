@@ -25,12 +25,14 @@ export default function Login({ onLoginSuccess }) {
     const bodyData = isRegisterMode ? { name, email, password } : { email, password };
 
     try {
-      const response = await fetch(`http://localhost:5000${endpoint}`, {
+      // PERBAIKAN DI SINI: Menyimpan hasil fetch ke dalam variabel 'response' 
+      // dan menggunakan variabel endpoint & bodyData agar dinamis.
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(bodyData),
+        body: JSON.stringify(bodyData)
       });
 
       const result = await response.json();
@@ -249,7 +251,7 @@ export default function Login({ onLoginSuccess }) {
       </div>
 
       <footer style={{ position: 'absolute', bottom: '12px', fontSize: '11px', color: '#ffffff', textShadow: '0 1px 4px rgba(0,0,0,0.8)' }}>
-        © 2024 TripBuddy Smart Travel Planner. All Rights Reserved.
+        © 2026 TripBuddy Smart Travel Planner. All Rights Reserved.
       </footer>
 
     </div>
