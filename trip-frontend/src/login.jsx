@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Compass, Eye, EyeOff, User } from 'lucide-react';
+import Swal from 'sweetalert2';
 
 export default function Login({ onLoginSuccess }) {
   // Mode: true = Halaman Daftar, false = Halaman Login
@@ -24,12 +25,14 @@ export default function Login({ onLoginSuccess }) {
     const bodyData = isRegisterMode ? { name, email, password } : { email, password };
 
     try {
-      const response = await fetch(`http://localhost:5000${endpoint}`, {
+      // PERBAIKAN DI SINI: Menyimpan hasil fetch ke dalam variabel 'response' 
+      // dan menggunakan variabel endpoint & bodyData agar dinamis.
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(bodyData),
+        body: JSON.stringify(bodyData)
       });
 
       const result = await response.json();
@@ -37,9 +40,19 @@ export default function Login({ onLoginSuccess }) {
       if (result.success) {
         if (isRegisterMode) {
           // Kalau sukses daftar
-          alert('Pendaftaran berhasil! Silakan login dengan akun baru Anda.');
-          setIsRegisterMode(false); // Balik ke halaman login otomatis
-          setPassword(''); // Kosongin password biar aman
+          Swal.fire({
+            title: 'Berhasil!',
+            text: 'Pendaftaran berhasil! Silakan login dengan akun baru Anda.',
+            icon: 'success',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK'
+          }).then((res) => {
+            if (res.isConfirmed) {
+              setIsRegisterMode(false); // BALIK KE TAMPILAN LOGIN AUTOMATIS
+              setPassword('');          // Kosongin password
+              setName('');              // Kosongin nama
+            }
+          });
         } else {
           // Kalau sukses login
           localStorage.setItem('token', result.token);
@@ -228,7 +241,6 @@ export default function Login({ onLoginSuccess }) {
           {isRegisterMode ? 'Sudah punya akun? ' : 'Belum punya akun? '}
           <button 
             type="button"
-            // INI YANG BIKIN BISA GANTI HALAMAN DAFTAR/LOGIN
             onClick={() => setIsRegisterMode(!isRegisterMode)} 
             style={{ background: 'none', border: 'none', color: '#0f172a', fontWeight: '700', cursor: 'pointer', textDecoration: 'underline', fontSize: '11px', padding: 0 }}
           >
@@ -239,7 +251,7 @@ export default function Login({ onLoginSuccess }) {
       </div>
 
       <footer style={{ position: 'absolute', bottom: '12px', fontSize: '11px', color: '#ffffff', textShadow: '0 1px 4px rgba(0,0,0,0.8)' }}>
-        © 2024 TripBuddy Smart Travel Planner. All Rights Reserved.
+        © 2026 TripBuddy Smart Travel Planner. All Rights Reserved.
       </footer>
 
     </div>

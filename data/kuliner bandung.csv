@@ -1,1080 +1,1080 @@
-@id,@type,name,amenity,@lat,@lon
-31288741,node,Terazza,restaurant,-6.8869435,107.5811614
-31288745,node,Inti Laut,restaurant,-6.8873695,107.5816872
-32041537,node,Grace,restaurant,-6.8815495,107.5944013
-32041585,node,Tomodachi,restaurant,-6.8807109,107.5959997
-32041593,node,Suis Butcher Steak House,restaurant,-6.8715552,107.5940509
-32041600,node,Ikan Bakar Pak Chi Met,restaurant,-6.8858733,107.5962969
-32041651,node,Ikan Bakar Cianjur,restaurant,-6.8752093,107.5964539
-32041698,node,Ny. Suharti,restaurant,-6.8843694,107.6012683
-32041903,node,Bumbu Desa Pasir Kaliki,restaurant,-6.9027926,107.5978878
-32519040,node,Sapu Lidi,restaurant,-6.8977742,107.6036158
-32519044,node,Raja Rasa,restaurant,-6.8799127,107.5838387
-32519045,node,Oishii Steak,restaurant,-6.9058695,107.5931889
-32519051,node,Dakken,restaurant,-6.9057417,107.6176217
-32519052,node,Dago Panyawangan,restaurant,-6.8914029,107.6128100
-32519055,node,Simpang Raya,restaurant,-6.8990133,107.6195912
-32519056,node,Sindang Reret,restaurant,-6.8990098,107.6197139
-32519340,node,Yoghurt Cisangkuy,restaurant,-6.9018456,107.6214397
-32519342,node,Road Cafe,restaurant,-6.9055352,107.6271646
-1107877729,node,Sate Pak Ginno,restaurant,-6.9167625,107.6183923
-1108586477,node,Madthari,restaurant,-6.9027613,107.6104139
-1108586489,node,Sate Maulana Yusuf,restaurant,-6.9009918,107.6134343
-1158819807,node,Sate Karjan,restaurant,-6.9126453,107.5983597
-1308708818,node,Barbar Wing's,restaurant,-6.8987510,107.6030848
-1341941792,node,dago panyawangan,restaurant,-6.8867215,107.6167462
-1342896154,node,Dago Panineungan,restaurant,-6.8872957,107.6138988
-1346794366,node,B'gana restoran,restaurant,-6.8972541,107.6147191
-1346794387,node,Victoria,restaurant,-6.8968401,107.6152372
-1352129471,node,Ampera,restaurant,-6.8982722,107.6369137
-1385420759,node,Rumah Makan Padang,restaurant,-6.8837407,107.6148998
-1656979199,node,RM Padang Mirasari,restaurant,-6.8823595,107.5758245
-1656979200,node,RM Padang Siang Malam,restaurant,-6.8823742,107.5762796
-1657013613,node,RM Daun Pisang,restaurant,-6.8737530,107.5957989
-1657158617,node,Warung Tekko,restaurant,-6.8744394,107.5962776
-1657158618,node,Kambing Bakar Cairo,restaurant,-6.8703438,107.5917527
-1660110853,node,Pizza Hut,restaurant,-6.8831642,107.6025761
-1666758044,node,RM Padang Sederhana,restaurant,-6.8828983,107.6005782
-1668245119,node,Kantin Garasi,restaurant,-6.8943171,107.6089129
-1676404546,node,Bebek Goreng H. Slamet,restaurant,-6.8716969,107.5941246
-1700556142,node,Ayam Cobek Langganan,restaurant,-6.9010333,107.6016546
-1746761936,node,Starbucks,cafe,-6.8939696,107.6055017
-1746761937,node,Bebek Crispy,restaurant,-6.8934997,107.6050826
-1873943402,node,Pempek Pak Raden,restaurant,-6.8825278,107.5802874
-1924435646,node,BMK,restaurant,-6.8939367,107.6050187
-1924450381,node,Mama’s Greman Restaurant,restaurant,-6.8959285,107.6031089
-1969331842,node,Pizza Hut,restaurant,-6.9009712,107.6125356
-2429254335,node,Atmosphere Resort Cafe,restaurant,-6.9267334,107.6132906
-2429258324,node,Baso Malang Enggal,restaurant,-6.9248690,107.6196988
-2429262280,node,Pempek Pak Raden,restaurant,-6.8879183,107.6155150
-2490686956,node,Baso Semar,restaurant,-6.9198235,107.6170063
-2491840024,node,Warung Steak and Shake,restaurant,-6.9230613,107.6131868
-2491855814,node,Bloemen,restaurant,-6.8880195,107.6016212
-2492054087,node,Gokana,restaurant,-6.8936141,107.6057343
-2496127734,node,Gudeg Banda,restaurant,-6.9067229,107.6208472
-2496127739,node,Kopi Saring Sinar Pagi,cafe,-6.9069786,107.6208901
-2496127740,node,Bebek van Java,restaurant,-6.9070680,107.6200544
-2496127741,node,Tama Gochi All You Can Eat,restaurant,-6.9068905,107.6197771
-2496127742,node,Warung Steak and Shake,restaurant,-6.9104934,107.6184011
-2497173677,node,Mujigae,restaurant,-6.8937286,107.6050758
-2497173678,node,Gigglebox,restaurant,-6.8931108,107.6050973
-2497173763,node,Pizza Hut,restaurant,-6.9110685,107.6267052
-2725732963,node,Warung Nasi Kang EWOK,restaurant,-6.9052749,107.5961955
-3001806573,node,Chicken Farms,restaurant,-6.9196306,107.5935729
-3017729954,node,Kantin Salman,restaurant,-6.8942667,107.6109790
-3017729959,node,Kantin GKU,restaurant,-6.8903481,107.6087349
-3017729960,node,Kantin Borju,restaurant,-6.8905771,107.6093626
-3017729961,node,Kantin Barak,restaurant,-6.8917009,107.6116156
-3017729963,node,KBL,restaurant,-6.8883084,107.6088476
-3064180843,node,,restaurant,-6.8792672,107.6127822
-3064183062,node,,restaurant,-6.8898807,107.6172141
-3148868098,node,Jackstar,restaurant,-6.9256802,107.6276337
-3155746370,node,Bandung Suki Restaurant,restaurant,-6.9169297,107.6093123
-3386314313,node,Angkringan Losari,restaurant,-6.9188476,107.6067686
-3421238301,node,Habenagen Coffeeshop,cafe,-6.9021325,107.6040636
-3424716400,node,Sederhana,restaurant,-6.9115700,107.6272660
-3428599973,node,Point Coffee,cafe,-6.9060828,107.6202185
-3429603279,node,Ayam Bakar Wong Song,restaurant,-6.9136255,107.6289496
-3429603356,node,The Oldway Cafe,cafe,-6.9070431,107.6230593
-3429872583,node,Cizz,restaurant,-6.9161351,107.6304057
-3431431053,node,Kopi Anjis,restaurant,-6.9287447,107.6222637
-3757788976,node,Gangnam Pocha,restaurant,-6.8838733,107.6150099
-3797907540,node,Sop Kaki,restaurant,-6.8986257,107.6131950
-3797908063,node,Lontong Kari Gempol,restaurant,-6.9031083,107.6154995
-3797908082,node,Bakso Arief,restaurant,-6.9045738,107.6140864
-3797908083,node,Dianti Daily,restaurant,-6.9045936,107.6141887
-3797908084,node,Soo Moo Hun,restaurant,-6.9046556,107.6141388
-3797908134,node,Kabut Salju,cafe,-6.9183143,107.6143286
-3797908148,node,Ayam Goreng Nikmat,restaurant,-6.9192860,107.6169434
-3802205384,node,Bebek Kaleyo,restaurant,-6.9007525,107.5970316
-3803628057,node,Ambun Pagi,restaurant,-6.8964177,107.5958820
-3806721273,node,Aem Pek 322 Dago,restaurant,-6.8782448,107.6169053
-3806721278,node,Baso Malang 336,restaurant,-6.8781490,107.6169412
-3806721279,node,Baso dan Batagor H.Dartowahab,restaurant,-6.8846311,107.6140131
-3806721281,node,Cokotetra,cafe,-6.8784830,107.6168390
-3806721290,node,Goelali,restaurant,-6.8803626,107.6163564
-3806721295,node,Kebab Turki,restaurant,-6.8811193,107.6161344
-3806721296,node,Kedai Chinese Food Nikmat,restaurant,-6.8786715,107.6167870
-3806721297,node,Kedai Roti 280,restaurant,-6.8804359,107.6163385
-3806721298,node,Lomie & Bakmie Inam Bonjol,restaurant,-6.8811754,107.6161217
-3806721299,node,Mie Baso Sapi Panghegar,restaurant,-6.8787037,107.6167785
-3806721300,node,Nasi Timbal,restaurant,-6.8788817,107.6167362
-3806721308,node,RAMEN HOUSE YAGAMI,restaurant,-6.8845352,107.6135695
-3806721322,node,Toko Restu,restaurant,-6.8834273,107.6147436
-3806721325,node,YUTAKANA,cafe,-6.8834511,107.6147196
-3806746614,node,Dendeng Batokok Dago,restaurant,-6.8767404,107.6179507
-3806758498,node,Bakmi Jogja,restaurant,-6.8745715,107.6191251
-3806758500,node,Roti Gareng,restaurant,-6.8745072,107.6191486
-3806758502,node,Warteg Dua Putri,restaurant,-6.8746857,107.6190813
-3807746627,node,Kambing Soon,restaurant,-6.8717491,107.6201250
-3807746639,node,Warung Tegal Makga Jaya,restaurant,-6.8734448,107.6196056
-3809662418,node,Ngopi Doeloe,restaurant,-6.9267440,107.6276202
-3809666549,node,Nasi Penjara,restaurant,-6.9027187,107.6136333
-3816558659,node,Dapur Thailand,restaurant,-6.9194536,107.6161559
-3818319733,node,Herb & Spice,restaurant,-6.9026858,107.5973876
-3818634238,node,Bakmi Jogja,restaurant,-6.8966337,107.5970159
-3818634239,node,Waroeng Milk and Shake,restaurant,-6.8967854,107.5970217
-3820681048,node,Ampera,restaurant,-6.8951185,107.5880348
-4084457201,node,Raa Cha,restaurant,-6.8933510,107.6051095
-4087805054,node,Madame Sari,restaurant,-6.8975809,107.6121376
-4087805724,node,Raja Sunda,restaurant,-6.8969429,107.5907416
-4142931293,node,Tizi's Cafe,restaurant,-6.8829482,107.6137095
-4143048396,node,Roti Gempol & Kopi Anjis!,cafe,-6.9091910,107.6276245
-4143072990,node,KAFE SISHA FURDAN,cafe,-6.9089804,107.6274290
-4150283093,node,Two Cents,cafe,-6.9072246,107.6203843
-4169205936,node,Cafe Oz,restaurant,-6.8805774,107.5942858
-4169205937,node,District 29,restaurant,-6.8799945,107.5940974
-4177764076,node,Bebek Gareng;Bandung Coffee House,restaurant;cafe,-6.8991760,107.6208066
-4177773891,node,Kopi kamu,cafe,-6.8979598,107.6098119
-4256123806,node,Karnivor,cafe,-6.9079727,107.6239556
-4256131112,node,Batagor Kingsley,restaurant,-6.9190972,107.6153692
-4256137089,node,Beehive Cafe & Eatery,restaurant,-6.8875201,107.6127573
-4256140907,node,Noah's Barn,cafe,-6.8869895,107.6126856
-4256164272,node,Hanamasa,restaurant,-6.9010104,107.6123933
-4256331317,node,Badung Cafe & Resto,cafe,-6.9061929,107.5981092
-4258313505,node,Hummingbird Eatery,cafe,-6.9047280,107.6178751
-4258324190,node,Sushi Tei,restaurant,-6.9173914,107.6133076
-4258347459,node,Dapoer Pandan Wangi,restaurant,-6.9284008,107.6240018
-4272686695,node,Eatboss Cafe,cafe,-6.9088982,107.6184895
-4320535079,node,Glosis Restaurant,restaurant,-6.9049365,107.6227839
-4320599452,node,Winner Bratwurst,restaurant,-6.9019264,107.6214808
-4320607780,node,Bober,cafe,-6.9174530,107.6132859
-4320639466,node,Brusselsspring,cafe,-6.9164146,107.6138316
-4320643325,node,Soleluna,cafe,-6.9165930,107.6138143
-4320644772,node,Kedai Ling-Ling,restaurant,-6.8856245,107.5962474
-4320655631,node,Two Cents,cafe,-6.9054890,107.6206005
-4320683854,node,Wingz O Wingz Cafe And Resto,restaurant,-6.9205607,107.6141360
-4320691228,node,Gaya Brasserie,restaurant,-6.9082315,107.6244010
-4320702955,node,BonChon,restaurant,-6.9047843,107.6165469
-4320704774,node,Kedai Nasi Bajamba Kapau,restaurant,-6.9065739,107.6158864
-4320705419,node,Little White Cafe,cafe,-6.9291255,107.6196615
-4320707953,node,Vanilla Kitchen & Wine,cafe,-6.9036224,107.6209866
-4320710020,node,Waroeng Ethnic,restaurant,-6.8710838,107.6076398
-4320715786,node,Kopi Progo,cafe,-6.9046421,107.6187470
-4320722067,node,Giggle Box Cafe And Resto,cafe,-6.9045688,107.6197076
-4320729128,node,Warung Sangrai,restaurant,-6.9055992,107.6167620
-4320737157,node,Feast Restaurant,restaurant,-6.8742543,107.6192351
-4320749637,node,Balista Signature,restaurant,-6.9056190,107.6167643
-4320793364,node,Vermont Restaurant,restaurant,-6.8810535,107.5983139
-4320805756,node,Blackball,restaurant,-6.8799997,107.5981916
-4320821104,node,Ikan Pesmol Cianjur,restaurant,-6.8755338,107.5966884
-4320824982,node,East and West Resto & Bar,restaurant,-6.9167187,107.6138110
-4320841831,node,Eatalia,restaurant,-6.9241260,107.6118868
-4320853779,node,Praoe Seafood,restaurant,-6.9141550,107.6135284
-4320864438,node,Saisan Japanese Cuisine,restaurant,-6.8791733,107.6009453
-4320870346,node,Parit 9 Seafood,restaurant,-6.9104912,107.6306581
-4320923689,node,Southville,cafe,-6.9286472,107.5868038
-4320925493,node,Grand Eastern,restaurant,-6.9151627,107.5982134
-4320928124,node,Wiki Koffie,cafe,-6.9160557,107.6091519
-4320934811,node,Thai Palace,restaurant,-6.8748841,107.6188318
-4320941004,node,Saka Bistro & Bar,restaurant,-6.8810858,107.5986064
-4321003454,node,TJENDANA BISTRO,restaurant,-6.8826195,107.5964138
-4321020958,node,Bornga,restaurant,-6.9039231,107.5989336
-4321036011,node,sudirman street food,restaurant,-6.9204002,107.6002017
-4321049832,node,Cibadak Food Market,restaurant,-6.9216518,107.6003966
-4322633063,node,Everjoy Coffee and Cafe,cafe,-6.9052965,107.6138859
-4322668890,node,Ayam Geprek Pangeran,restaurant,-6.9185493,107.6096852
-4322669484,node,Porto Restaurant,restaurant,-6.8797792,107.5984107
-4322674972,node,Jubilare Dine and Wine,restaurant,-6.8810021,107.5982247
-4322677519,node,Rijsttafel Resto,restaurant,-6.9097236,107.5977039
-4322680459,node,The Dreams Cake,restaurant,-6.9379902,107.6193999
-4322684148,node,Fuku Ramen,restaurant,-6.9095532,107.5976897
-4322688658,node,THE HARVEST DAGO,restaurant,-6.9053550,107.6104147
-4326457996,node,Chingu Cafe,cafe,-6.9010768,107.6097423
-4326481406,node,Kenken Bigul Kitchen,restaurant,-6.9153616,107.5982452
-4326486305,node,Hanken Kitchen,restaurant,-6.9072846,107.6190397
-4326487152,node,Kandang Ayam Kebon Kawung,restaurant,-6.9124832,107.5992553
-4326490087,node,Mandarin Restaurant,restaurant,-6.9124458,107.5983485
-4326505745,node,Warung Nasi Ampera,restaurant,-6.9123909,107.6011252
-4326510048,node,Red Tulip Resto Restoran,restaurant,-6.9125398,107.6038437
-4326555372,node,Roemah Nenek,restaurant,-6.9043132,107.6237201
-4326595197,node,Perky Pedro: Comidas Y Bebidas Planet Daging,restaurant,-6.9111906,107.6271109
-4326600885,node,Myeong Ga,restaurant,-6.8775851,107.5895741
-4326603897,node,Hakata Ikkousha,restaurant,-6.9154611,107.6295070
-4326610522,node,Bakso Barbel Agung Hercules,restaurant,-6.9159462,107.6678531
-4326619590,node,Anata Cake & Bakery,restaurant,-6.9018086,107.5973555
-4326640119,node,Kedai Nyonya Rumah,restaurant,-6.9211852,107.6170492
-4326646566,node,Kupu Bistro,cafe,-6.9025783,107.6097557
-4326747446,node,Tomodachi Restaurant,restaurant,-6.8898640,107.5969999
-4326767332,node,ETC Etcetera,cafe,-6.9024057,107.6143369
-4326775715,node,Blackpepper resto & cafe,restaurant,-6.9011504,107.6134266
-4326781690,node,Oldbens Cafe,cafe,-6.9003320,107.6136806
-4326815228,node,Lumiere Bistro and Art Gallery,restaurant,-6.9051622,107.6095953
-4326817355,node,Sapi Unggul Indonesia,restaurant,-6.9127336,107.6289424
-4326817808,node,Javan Steak,restaurant,-6.9000351,107.6115953
-4326818793,node,Warunk Upnormal,restaurant,-6.9022555,107.6044599
-4326822673,node,Yellow Truck Coffee,restaurant,-6.9118683,107.5779293
-4326823777,node,The Larder,restaurant,-6.9130997,107.6262194
-4326829300,node,NINE'SQUARE Bar&Resto,restaurant,-6.8999000,107.6114260
-4326832448,node,Lucio Luciano Patisseries,restaurant,-6.8926493,107.6144085
-4326833521,node,Love Meat Tender,restaurant,-6.8959401,107.6031687
-4326834404,node,Legian Terrace Cafe,restaurant,-6.8997957,107.6115847
-4326837928,node,Le Marly,restaurant,-6.9051254,107.6223404
-4326840306,node,RM Alas Daun,restaurant,-6.9016748,107.6250691
-4326855496,node,Bakso Boedjangan,restaurant,-6.9268716,107.6193988
-4326871085,node,Old Ben's Garage & Coffee,restaurant,-6.8802525,107.5806276
-4326872989,node,Kane Pizzeria,restaurant,-6.9053390,107.6135667
-4326873539,node,Ludwick Café,cafe,-6.8725270,107.5932983
-4326876027,node,Uncle's Storage,cafe,-6.9204024,107.6130499
-4326877060,node,Monsoon Cafe,cafe,-6.8842570,107.5968352
-4326880572,node,Bubur Ayam Mang H. Oyo,restaurant,-6.8994560,107.6106804
-4326883566,node,Indischetafel Resto,restaurant,-6.9164865,107.6136019
-4326884850,node,Hoppers,cafe,-6.8997615,107.6104078
-4326886137,node,Giannis,restaurant,-6.8869718,107.6039360
-4326888054,node,Kedai Persib,cafe,-6.8996949,107.6102940
-4327152529,node,Eerma'sm Kitchen,restaurant,-6.8815585,107.5757293
-4327190059,node,CAWIT (Cabe Rawit),restaurant,-6.8768509,107.6040580
-4327246099,node,Kedai Pantai Timur,cafe,-6.8979361,107.5928670
-4327947541,node,Dominos Pizza,restaurant,-6.8816289,107.5816811
-4327947863,node,Kedai Waka Waka,restaurant,-6.8810961,107.5812270
-4327951247,node,Take Ichi Japanese Cafe,cafe,-6.8851859,107.5815401
-4327975257,node,Hongkong Restaurant,restaurant,-6.9202649,107.5990520
-4327978185,node,Nasi Goreng Mafia,restaurant,-6.8919882,107.6174367
-4327980993,node,Sari Sunda Restaurant,restaurant,-6.9489967,107.6234324
-4327985397,node,Sugar Rush,cafe,-6.8891532,107.5822790
-4327989798,node,Saung Kabayan,restaurant,-6.8958519,107.5893761
-4327993521,node,Kafetaria 170,restaurant,-6.9021588,107.5975823
-4327994060,node,Otten Inn & Viit Cafe,cafe,-6.9013700,107.5990705
-4327995101,node,Melbourne Kitchen,restaurant,-6.9027733,107.6026978
-4328013345,node,Kambing Bakar Cairo,restaurant,-6.8968528,107.6037639
-4328025912,node,Milan Cafe,cafe,-6.9309098,107.6262291
-4328027160,node,Abuba Steak,restaurant,-6.9330981,107.6254099
-4328028634,node,Okoh Japanese Restaurant,restaurant,-6.9352035,107.6247857
-4328031796,node,Hungry Station,restaurant,-6.9257329,107.6201892
-4328069510,node,Magic Wok Tavern,cafe,-6.9120068,107.5960795
-4328076556,node,Pokatiam,cafe,-6.9109614,107.5979568
-4328084639,node,Lomie Karuhun,restaurant,-6.9106044,107.5979615
-4328085896,node,Strudel's Signature,restaurant,-6.9104931,107.5979568
-4328090099,node,Rumah Makan Santung,restaurant,-6.9093991,107.5978750
-4328092026,node,Gepuk Ny. Ong,restaurant,-6.9089610,107.5978563
-4328100799,node,Magma Lounge,restaurant,-6.9129657,107.5977580
-4328103422,node,Ayam Goreng Tempo Doeloe,restaurant,-6.9156161,107.5982369
-4328109076,node,Tjiang Restaurant,restaurant,-6.9162559,107.5975410
-4328112767,node,Bubur Ahong,restaurant,-6.9164135,107.5968616
-4328122520,node,He Fu Restaurant,restaurant,-6.9172755,107.5981687
-4328124994,node,Ming Yen Asli,restaurant,-6.9173543,107.5981524
-4328126842,node,Seafood Mas Gondrong,restaurant,-6.9182827,107.5931426
-4328127549,node,Bebek Kelenteng Restaurant,restaurant,-6.9193230,107.5929285
-4328129180,node,Bubur Ayam Pa' Otong,restaurant,-6.9189280,107.5889867
-4328129194,node,Yoss Coffe,cafe,-6.9173440,107.5983109
-4328137008,node,Mie Pangsit Pematang Siantar,restaurant,-6.9370934,107.5954123
-4328146492,node,Lee Ramen Bar,restaurant,-6.9493489,107.6254604
-4328159384,node,Bakmie Karet,restaurant,-6.9204135,107.5927319
-4328160941,node,Mie Rica Kejaksaan,restaurant,-6.9150458,107.5965701
-4328171595,node,beri kopi,cafe,-6.9049710,107.6102432
-4328175741,node,SWG COFFEE,cafe,-6.9025596,107.6104052
-4328178661,node,Sushi Den,restaurant,-6.9024950,107.6093707
-4328179212,node,Cafe Pohon Durian Bandung,cafe,-6.9023283,107.6102359
-4328180206,node,Udin Ramen,restaurant,-6.9003010,107.6092063
-4328187726,node,Nasi Goreng Gentayangan,restaurant,-6.8885603,107.6137119
-4328198157,node,Warung Steak Pasadena,restaurant,-6.8895762,107.5990536
-4328211453,node,Starbucks,cafe,-6.8861336,107.5816203
-4328218462,node,The Volcano Resto & Cafe,restaurant,-6.8810304,107.5825971
-4329252652,node,Buthcer's Bill Cafe & Resto,cafe,-6.9095825,107.6273878
-4329254729,node,Bakmi Jogja Bengawan,restaurant,-6.9105624,107.6276613
-4329257063,node,Sop Konro Marannu,restaurant,-6.9113656,107.6276989
-4329266751,node,Fruitopia,restaurant,-6.9118276,107.6281662
-4329272990,node,Mie Jogja Pak Karso,restaurant,-6.9124405,107.6281825
-4329436128,node,CFC,restaurant,-6.8994995,107.6340900
-4329439350,node,Mie Merapi,restaurant,-6.8986559,107.6338765
-4329445347,node,Heidami Ramen,restaurant,-6.8980078,107.6347887
-4329459744,node,Gotcha Ice Cream,cafe,-6.8958583,107.6348705
-4329462845,node,Resep Moyang,restaurant,-6.8954547,107.6346062
-4329483915,node,Koffiechino,cafe,-6.8946071,107.6346631
-4329494632,node,Trends Cafe & Resto,cafe,-6.8940138,107.6348136
-4329495286,node,Gaza Mediterranean,cafe,-6.8943992,107.6352770
-4329510946,node,Ceker Setan,restaurant,-6.8876325,107.6154079
-4329511638,node,CFC Kebun Binatang,restaurant,-6.8902920,107.6079525
-4329516993,node,Saisan,restaurant,-6.8874739,107.6132269
-4329523439,node,Steak Ranjang,restaurant,-6.8905250,107.6169022
-4329526433,node,Kedai Lontong Medan Ka' Zahra,restaurant,-6.8922074,107.6176016
-4329530805,node,Lomie Imam Bonjol,restaurant,-6.8924156,107.6153131
-4329532364,node,Hangout Cafe,cafe,-6.8949494,107.6164681
-4329535509,node,Kerang Ajaib DU,restaurant,-6.8948256,107.6173147
-4329536233,node,Starbucks,cafe,-6.8960232,107.6168462
-4329539516,node,Kedai Kecil,cafe,-6.8961805,107.6166992
-4329541106,node,B'Owl!,cafe,-6.8969548,107.6156562
-4329546450,node,Aji Anom,restaurant,-6.8976182,107.6156768
-4329561884,node,L'Societe Dine & Bar,restaurant,-6.8981525,107.6149453
-4329565488,node,Bale Gazeeboe,restaurant,-6.8990246,107.6194663
-4329573255,node,Blackjack Coffee,cafe,-6.9189145,107.5889524
-4329575240,node,Istana Raja Cobra,restaurant,-6.9195683,107.5927733
-4329577520,node,Sate Dj,restaurant,-6.9195066,107.5939635
-4329579352,node,KwangMing Vegetarian,restaurant,-6.9198568,107.5954646
-4329580936,node,Tahu YUN-YI,restaurant,-6.9199557,107.5963305
-4329599521,node,Jigoku Ramen,restaurant,-6.8982719,107.6435216
-4329601853,node,Chillax Coffee And Tea,cafe,-6.8975816,107.6437749
-4329604283,node,Jigoku Kitchen,restaurant,-6.8983404,107.6436331
-4329605668,node,Angkringan Si Meong,restaurant,-6.8989500,107.6434172
-4329605943,node,Yurin,restaurant,-6.8991169,107.6435269
-4329610998,node,Bober,cafe,-6.8869859,107.6149061
-4329641605,node,Nobu Ramen & Sushi,restaurant,-6.8713736,107.5946010
-4329643263,node,Abuba Steak,restaurant,-6.8707908,107.5937423
-4329644625,node,18 Hrs Cafe,cafe,-6.8710748,107.5936203
-4329652298,node,Ayam Djogja,restaurant,-6.8747901,107.5964663
-4329667846,node,Ramen 38 Chaya Bandung,restaurant,-6.8794456,107.5964269
-4329668751,node,MENARA BAKMI,restaurant,-6.8791683,107.5960754
-4329670481,node,Bridge Coffee Boutique & Dining,restaurant,-6.8809958,107.5972527
-4329674547,node,MARLO KITCHEN,restaurant,-6.9190800,107.6125521
-4329679223,node,Rumah Tungku,restaurant,-6.9053771,107.6009336
-4329700089,node,Saung Radjiman,restaurant,-6.9038425,107.6007520
-4352496389,node,Resto Keluarga,restaurant,-6.9039846,107.6672996
-4354988714,node,Soda Resto,cafe,-6.9063815,107.6103688
-4365930312,node,Wisata Kuliner Bandara Huseinsastranegara,restaurant,-6.9040985,107.5794215
-4365960649,node,Starbucks,cafe,-6.9169485,107.6091118
-4366097668,node,Bober,cafe,-6.9071717,107.6233922
-4367024650,node,Tsuka Ramen,restaurant,-6.9105164,107.6259586
-4367437571,node,Mie Baso Akung,restaurant,-6.9320455,107.6252304
-4367985891,node,Yoshinoya,restaurant,-6.8939186,107.6054344
-4368837989,node,Baso Cuanki & Batagor Serayu,restaurant,-6.9090714,107.6257541
-4368869904,node,"Please, Please, Please",cafe,-6.9045305,107.6199423
-4369040400,node,RM Ampera,restaurant,-6.8989615,107.6050417
-4370063123,node,Warunk Upnormal,restaurant,-6.9167985,107.6092222
-4370113727,node,Le Delice Cafe And Bakery,cafe,-6.9248412,107.6213740
-4370466980,node,Dapur Dahapati,restaurant,-6.8873777,107.6023400
-4370477176,node,Nanny's Pavillon,cafe,-6.9078484,107.6237768
-4370478568,node,Bebek Kaleyo,restaurant,-6.9448984,107.6305201
-4373086558,node,Bumbu Desa Rumah Mode,restaurant,-6.8825002,107.5997553
-4373091810,node,Eaton Bakery,restaurant,-6.8829404,107.5992425
-4373091831,node,Surabi Rumah Mode,restaurant,-6.8829031,107.6000043
-4373118986,node,Warung Sate Shinta,restaurant,-6.8937427,107.5868538
-4373144304,node,Mouton Slice And Grill,restaurant,-6.9116564,107.6268819
-4373206434,node,Bellamie Boulangerie,restaurant,-6.9070587,107.6237299
-4374132496,node,Tokyo Connection,restaurant,-6.9045876,107.6175664
-4374235509,node,Waroeng Steak And Shake,restaurant,-6.9001488,107.6094398
-4375120920,node,Rumah Makan Legoh,restaurant,-6.9043768,107.6119068
-4375134546,node,Ujenk Gemi Bar,cafe,-6.9070236,107.6057856
-4398549923,node,CO&CO Space,restaurant,-6.8979509,107.6137089
-4398549924,node,Butterfield Kitchen,restaurant,-6.8978850,107.6138041
-4402479636,node,Ayam Penyet Surabaya,restaurant,-6.9190188,107.6078605
-4404017506,node,Kue Tiau Sapi Asli A88,restaurant,-6.9207251,107.5984722
-4407610669,node,Tahu SB,restaurant,-6.9229988,107.5985499
-4446613135,node,Lacamera Coffee,cafe,-6.9206091,107.6154775
-4468009743,node,Warteg Hipster,restaurant,-6.9052744,107.6141365
-4470387372,node,Bakso Boedjangan,restaurant,-6.9073948,107.5833286
-4515219205,node,Flores Number Five,restaurant,-6.9084123,107.6181452
-4526894252,node,N Cafe,cafe,-6.8767124,107.5728814
-4542484993,node,Bakso Tjap Haji,restaurant,-6.9248012,107.6199116
-4547680368,node,Pepper Lunch,restaurant,-6.9058067,107.5968488
-4550655407,node,Uncle A Urban Town,cafe,-6.9061810,107.6144313
-4550671036,node,Fella,restaurant,-6.9061987,107.6143036
-4554066323,node,Katsunyaka,restaurant,-6.8933618,107.6057065
-4560221630,node,Tjoenkie,restaurant,-6.9202633,107.6017398
-4561525204,node,Cop-Copine,restaurant,-6.8875410,107.5968379
-4564568005,node,Borobudor,restaurant,-6.8999911,107.6039898
-4566756042,node,Koffie Tijd!,restaurant,-6.9021861,107.6247453
-4567988592,node,Trailer Cafe,restaurant,-6.8939783,107.5863210
-4691521502,node,de Keuken van Elsje,restaurant,-6.9185448,107.6155488
-4784488922,node,Iga Bakar Si Jangkung,restaurant,-6.8952024,107.6022782
-4788348021,node,Loco Chiks and Chill,cafe,-6.9307280,107.6219372
-4936436721,node,Brussels Spring,cafe,-6.9186286,107.6141221
-4971536021,node,sfroastery,cafe,-6.9161264,107.5887671
-4991479921,node,Rumah Makan Partugoan,restaurant,-6.8780412,107.5773986
-5058394221,node,S'ei Sapi Lamalera,restaurant,-6.8982686,107.6173956
-5061207022,node,Soto Sedaap Boyolali,restaurant,-6.9023115,107.6135993
-5119336923,node,Pepper Lunch,restaurant,-6.8903288,107.5961947
-5119336924,node,The People's Cafe,cafe,-6.8901174,107.5960789
-5119336925,node,,restaurant,-6.8903231,107.5963214
-5119336926,node,Starbucks Reserve,cafe,-6.8901104,107.5965612
-5119336927,node,Zen Bu,restaurant,-6.8896550,107.5960529
-5119336928,node,I-Tasuki,restaurant,-6.8890381,107.5960491
-5119336929,node,Zuki Suki,restaurant,-6.8884652,107.5960213
-5119339540,node,Djournál,cafe,-6.8901004,107.5961777
-5119339730,node,Shin Men,restaurant,-6.8903255,107.5962561
-5119339731,node,Domino's,restaurant,-6.8903206,107.5963924
-5119339734,node,Rempah Bistro,restaurant,-6.8897910,107.5960614
-5119339735,node,Gula Merah,restaurant,-6.8887545,107.5960331
-5119339736,node,Caribou Coffee,cafe,-6.8886602,107.5960294
-5119339737,node,Black Canyon,cafe,-6.8885606,107.5960266
-5119341922,node,Sumo Boo!,restaurant,-6.8903808,107.5964328
-5119341923,node,The Duck King,restaurant,-6.8883223,107.5961745
-5119357421,node,Halaman,cafe,-6.8889259,107.5960428
-5119357521,node,Red Bean,restaurant,-6.8888380,107.5960375
-5119724827,node,Tawan,restaurant,-6.8902714,107.5960569
-5175797665,node,Warteg Hipster,restaurant,-6.9195711,107.6157894
-5181200166,node,Istana Boneka,restaurant,-6.8917426,107.6044205
-5181202343,node,Baso Solo Luwes 2,restaurant,-6.8846654,107.6073974
-5181203097,node,Simpang Tigo Jaya,restaurant,-6.8914629,107.6043639
-5214626822,node,Jifast The Power Of Durian,cafe,-6.9157346,107.6304829
-5268872149,node,Rumah Makan Cibiuk,restaurant,-6.9468855,107.6384563
-5268872150,node,Rumah Makan Sederhana,restaurant,-6.9470200,107.6382191
-5318324079,node,Starbucks,cafe,-6.8733449,107.6050402
-5332544175,node,Chiba,restaurant,-6.9045335,107.5993145
-5403427622,node,Rumah Makan Tjap Ajam,restaurant,-6.9205355,107.6137582
-5518516429,node,Restoran Simpang Raya,restaurant,-6.8926072,107.5852302
-5518555023,node,Warung Cepot,restaurant,-6.9085032,107.5984194
-5518555025,node,Sushi Tei,restaurant,-6.8783734,107.5963943
-5539416555,node,Gormetaria,restaurant,-6.9016624,107.5975610
-5539416558,node,Eatboss,restaurant,-6.9044343,107.5976590
-5542883063,node,Starbucks,cafe,-6.9064912,107.6170456
-5550171082,node,Resto & Coffee 1001,restaurant,-6.8938140,107.6057222
-5550171792,node,Kenzu,restaurant,-6.8942378,107.6056125
-5550171863,node,Ikugo,restaurant,-6.8939722,107.6057199
-5550171878,node,Upnormal,restaurant,-6.8941224,107.6056536
-5552457062,node,Warung Bu Eha,restaurant,-6.9084924,107.6225601
-5556174885,node,Batagor Kahuripan,restaurant,-6.9086216,107.6247886
-5556987041,node,Restoran Sederhana Pasteur Masakan Padang,restaurant,-6.8948961,107.5891041
-5558373737,node,Kembang Deli Kopitiam,cafe,-6.9106431,107.6260908
-5558512491,node,Warung Manado,restaurant,-6.9005394,107.6030518
-5558799026,node,Simpang Raya Bandung,restaurant,-6.9227199,107.6077303
-5564099646,node,Bakso So'un & Mie Ayam Lodaya,restaurant,-6.9183508,107.6138211
-5566331130,node,Bakso Malang Enggal,restaurant,-6.8970431,107.5914757
-5724575421,node,La petite corner,cafe,-6.9296717,107.6035086
-5749156621,node,Batagor & mie baso,restaurant,-6.9062762,107.5907880
-5803815254,node,The Suga Rush,restaurant,-6.9174178,107.6092353
-5803815256,node,Nasi Goreng Rempah Abang,restaurant,-6.9169772,107.6088360
-5803815257,node,Justus Steakhouse,restaurant,-6.9170955,107.6087448
-5803815259,node,Uday,restaurant,-6.9171422,107.6085855
-5803815260,node,Giggle Box,restaurant,-6.9172020,107.6083850
-5803815356,node,Warung Bu Tris,restaurant,-6.9174600,107.6094194
-5803815453,node,Kopi Toko Djawa,cafe,-6.9174934,107.6092599
-5803815553,node,Warung C'mar,restaurant,-6.9176115,107.6092962
-5803815654,node,Punya Cerita,restaurant,-6.9173678,107.6093892
-5803815655,node,Art,cafe,-6.9171923,107.6093407
-5803815657,node,Tokyo Connection,restaurant,-6.9171028,107.6083528
-5803815755,node,Bakso Boedjangan,restaurant,-6.9169993,107.6087546
-5803824053,node,Chatime,cafe,-6.9169517,107.6089282
-5818209256,node,Kapulaga,restaurant,-6.8875130,107.6124870
-5829065094,node,Gyu Katu,restaurant,-6.8993196,107.6133452
-6091307649,node,Warnet Nur,cafe,-6.9165534,107.5889526
-6151203589,node,Dalaraos,restaurant,-6.8844734,107.6063465
-6162914473,node,Se'Indonesia,restaurant,-6.9041234,107.5973403
-6165491454,node,Gokana,restaurant,-6.9056495,107.5965298
-6170790695,node,Kiosk,restaurant,-6.9170210,107.6084609
-6178047242,node,Raacha,restaurant,-6.9056577,107.5973527
-6180070466,node,Richeese Pizza,restaurant,-6.9129873,107.6285112
-6243860290,node,Cafe Bali,cafe,-6.9137601,107.6294757
-6325289085,node,Gajua Kopi,cafe,-6.9018765,107.6097400
-6348952797,node,Tiga Outdoor Cafe,cafe,-6.8949433,107.6162456
-6390196086,node,Kopi Siologi,cafe,-6.8868433,107.6266658
-6418849588,node,Sate Ahmad Naswawi,restaurant,-6.9125227,107.6286872
-6418849593,node,Sha-Waregna,restaurant,-6.8780483,107.5922348
-6520452488,node,The Goodlife,cafe,-6.8813092,107.5826337
-6593020150,node,Kedai Makmoer,cafe,-6.9059425,107.6191508
-6593020153,node,Bakso Boedjangan,restaurant,-6.9063930,107.6173966
-6593983973,node,Tjiang,restaurant,-6.9107160,107.5977589
-6656658444,node,CFC,restaurant,-6.8913214,107.5718325
-6679908485,node,ROBAKUS Roti Bakar Kukus,restaurant,-6.8886687,107.6189787
-6711694594,node,Mangkok Ayam,restaurant,-6.9058303,107.5973504
-6711695723,node,Chatime,cafe,-6.9062428,107.5978201
-6715441648,node,Roti'O,restaurant,-6.9145711,107.6021311
-6728835591,node,Kantin Tong Tong,restaurant,-6.8808327,107.5819186
-6728852430,node,Raja Sunda,restaurant,-6.8970234,107.5912071
-6790495486,node,Talago Biru,restaurant,-6.9040399,107.6664854
-6794719088,node,Jingga,restaurant,-6.9029451,107.6655565
-6856906886,node,Indonesian yummy street food,restaurant,-6.9226022,107.6119813
-7076329914,node,Chiba,cafe,-6.9097811,107.5969413
-7079247770,node,Se'i Sapi Lamalera,restaurant,-6.9249539,107.6183981
-7079868210,node,Popia Tiam,restaurant,-6.9313423,107.6125525
-7083442360,node,Toko Lily,restaurant,-6.9000896,107.6040806
-7083454191,node,Mi Nampol,restaurant,-6.9041311,107.6240760
-7085999286,node,Jardin,cafe,-6.9054216,107.6202311
-7087733240,node,D'Cost,restaurant,-6.8937250,107.6057251
-7298044874,node,Bagul Gianyar,restaurant,-6.9107444,107.5977119
-7466927535,node,Dono Reborn,cafe,-6.8924838,107.6251253
-7655404507,node,Baso Aci Ciwang 88,cafe,-6.9071388,107.6180169
-8045853136,node,Nasi Kapau Uni Iyang,restaurant,-6.9288257,107.6250214
-8062550327,node,Ayam Goreng Karawaci,restaurant,-6.8772699,107.6172128
-8442837466,node,Mie Rica Kejaksaan,restaurant,-6.9184679,107.6101923
-9209462330,node,Sushi Tei,restaurant,-6.8902387,107.5955503
-9213367317,node,Mr. Roastman Experience,restaurant,-6.8731826,107.6053069
-9213367417,node,Kuro Coffee,cafe,-6.8711062,107.6056926
-9248886117,node,Waroeng Milenial,restaurant,-6.8730196,107.6051703
-9286108642,node,Kopipi,cafe,-6.9032558,107.6139508
-9558304917,node,Jenderal Kopi Nusantara Buwas coffee,cafe,-6.9142367,107.6297314
-9676827227,node,,cafe,-6.8840587,107.6177097
-9742472715,node,Ngopo Doeloe Sangkurian,cafe,-6.8840265,107.6116969
-9805774343,node,Chung Gi Wa - Sukajadi,restaurant,-6.8825712,107.5800790
-9833516017,node,Ponyo,restaurant,-6.9249268,107.6236929
-9835239617,node,Kampung Kuring,restaurant,-6.9044740,107.6046209
-9842973417,node,Spice Affair,restaurant,-6.8844363,107.5967400
-9932988485,node,Padang Merdeka,restaurant,-6.9003961,107.6142255
-9933897081,node,The White Clover,restaurant,-6.9051142,107.6015846
-9933920605,node,Sate Maranggi Hj Maya Pasteur,restaurant,-6.8946760,107.5885194
-9936823889,node,Mimi teh,restaurant,-6.9028428,107.6135049
-9938373551,node,Solaria,restaurant,-6.9162226,107.6416342
-9938661332,node,Bumahai,restaurant,-6.9165173,107.6417667
-9938891182,node,Joomba,cafe,-6.9156712,107.6418632
-9939299283,node,Wingz o Wingz,restaurant,-6.9041351,107.6280099
-9941468156,node,Joh-Eun Keopi,cafe,-6.9160279,107.6407122
-9942283587,node,Bakmitopia,restaurant,-6.8940427,107.6056890
-9944377821,node,Mixue,cafe,-6.9182851,107.6094729
-10000802733,node,Warung Nenek Nafisah,restaurant,-6.8853060,107.5777699
-10153299526,node,Calf Coffee Industry,cafe,-6.9107304,107.6329394
-10153301887,node,AYAM PENYET RIA,restaurant,-6.9094781,107.6321409
-10232370517,node,otto iskandardinata 305,cafe,-6.9248453,107.6039702
-10303849506,node,Bahari,restaurant,-6.9172988,107.6596812
-10573724816,node,Warung Kopi Imah Babaturan,cafe,-6.8980574,107.6076980
-10725880605,node,Bagi Kopi,cafe,-6.8776541,107.6168476
-10732021605,node,Nasi campur Bintang,restaurant,-6.9177994,107.5932634
-10732021705,node,Teman Lama,cafe,-6.9093416,107.5922661
-10734191605,node,Kilogram,cafe,-6.8855533,107.5955189
-10740306005,node,Kedai Bu Ai,restaurant,-6.9069909,107.5883826
-10742670249,node,Liliwetan,restaurant,-6.9052088,107.6286944
-10743117494,node,Dapur Angklung,restaurant,-6.8980160,107.6548620
-10743200032,node,Mie Baso Ngidam Sari,restaurant,-6.9242587,107.6452348
-10772813657,node,Point Coffee,cafe,-6.9453718,107.6304886
-10772813659,node,Fore Coffee,cafe,-6.9410924,107.6268912
-10772813660,node,Kopi Kenangan,cafe,-6.9411448,107.6270712
-10772994513,node,Suki & Grill Time,restaurant,-6.9389573,107.6249953
-10772994548,node,Chatime,cafe,-6.9398319,107.6257750
-10800580601,node,Dapoer Sadoloer,restaurant,-6.9144606,107.6364708
-10898696307,node,Kydin Bahari,restaurant,-6.9470408,107.6627296
-10996454907,node,Kopi Mandja,cafe,-6.9160953,107.6678117
-10996460507,node,Starbucks,cafe,-6.9158532,107.5944292
-11009504905,node,Fork (24h),cafe,-6.9161426,107.6101371
-11010808889,node,Khoe Pek Goan Bloemenstad Bandung,restaurant,-6.9083222,107.6291177
-11013530705,node,Justus,restaurant,-6.8934069,107.6050563
-11032812909,node,Point Coffee,cafe,-6.9293268,107.6383175
-11043877834,node,Sederhana,restaurant,-6.9048976,107.6284471
-11047567832,node,Kedai Kalaman,restaurant,-6.9044402,107.5800838
-11047621610,node,Roti'O,restaurant,-6.9040791,107.5802488
-11047679855,node,Wingz Stop,restaurant,-6.9068088,107.6134529
-11049057895,node,Waroeng Steak and Shake,restaurant,-6.8901476,107.6162257
-11052098364,node,Bumus,restaurant,-6.9040033,107.6204620
-11052105148,node,Chabu Hachi,restaurant,-6.9053582,107.6270058
-11052508433,node,Chatime,cafe,-6.9011192,107.6117927
-11054226150,node,Dapur Solo,restaurant,-6.8947462,107.6047328
-11054250607,node,Fresh Suki,restaurant,-6.8936666,107.6050894
-11054255706,node,Kopi Kenangan,cafe,-6.8936026,107.6051072
-11055954375,node,Garden Coffee,cafe,-6.9130481,107.6326629
-11057708376,node,Kofu,cafe,-6.9024399,107.6217955
-11059462325,node,Starbucks,cafe,-6.9063298,107.5977616
-11062722750,node,Eiger Coffee,cafe,-6.9052076,107.6045701
-11063089366,node,Bakmie Tjo Kin,restaurant,-6.9173701,107.6092183
-11064401812,node,Warung Lodeh,restaurant,-6.9058136,107.6188161
-11064404581,node,Ampera,restaurant,-6.8983318,107.6374414
-11066404381,node,150 Coffee and Garden,restaurant,-6.9087814,107.6486620
-11070379388,node,Dapur Thailand,restaurant,-6.9235780,107.6167183
-11101225745,node,Mixue,cafe,-6.9237589,107.6170370
-11101257625,node,Point Coffee,cafe,-6.9241793,107.6201345
-11102885594,node,RM Padang Malah Dicubo,restaurant,-6.9156425,107.6028187
-11107825847,node,Warung Cobek Aneka,restaurant,-6.8799160,107.6120978
-11107825858,node,Bebek Ali Borme,restaurant,-6.8918986,107.6167681
-11135462905,node,Pecel Madun,restaurant,-6.9024389,107.6088905
-11142011598,node,Warteg Simpang Dago,restaurant,-6.8851580,107.6139102
-11231047001,node,Kamasan,cafe,-6.9072927,107.6158218
-11232419507,node,Bright Cafe,cafe,-6.8902542,107.6127312
-11388907823,node,Starbucks,cafe,-6.8991191,107.6211357
-11415319632,node,Durian NdoL,restaurant,-6.9176973,107.5981544
-11473161269,node,Ma'Oin Ayam Bakar Dan Goreng,restaurant,-6.8901223,107.6043047
-11515156250,node,Kopi Kenangan,cafe,-6.8949076,107.5887755
-11536111669,node,Kozi x Marawa,cafe,-6.8821567,107.6139604
-11550132512,node,Kopi Kenangan,cafe,-6.9074390,107.6089496
-11553149013,node,Bahari,restaurant,-6.9439022,107.6307980
-11608070659,node,Bakmie Maman 3 Gardujati,restaurant,-6.9181860,107.5983421
-11697917789,node,Saraga Coffee,cafe,-6.8766336,107.6234896
-11727625146,node,Chatime,cafe,-6.8755511,107.6042704
-11727625147,node,Kopi Kenangan,cafe,-6.8756006,107.6042621
-11727625148,node,Kopi Kenangan,cafe,-6.9183441,107.6182166
-11727625149,node,Point Coffee,cafe,-6.9170677,107.6178618
-11727650397,node,Maxx Coffee,cafe,-6.9136374,107.6023798
-11729913198,node,Bomber Burger,restaurant,-6.9035798,107.6007649
-11732804363,node,,restaurant,-6.8959950,107.6352498
-11738983540,node,Point Coffee,cafe,-6.9086249,107.6149449
-11866561174,node,Warung Cepot Hidangan Indonesia,restaurant,-6.9083690,107.5981989
-11898859974,node,Kopi Kenangan,cafe,-6.9235043,107.6058278
-11916191487,node,Kopi Kursi Kayu × Hayam Lengkuas,restaurant,-6.8825421,107.5794318
-11984849397,node,Bakso Mantep,restaurant,-6.9105149,107.6074018
-11987427565,node,Raa Chaa Suki & BBQ,restaurant,-6.9088771,107.6113549
-11987473754,node,D'Cost,restaurant,-6.9091554,107.6109231
-11987489552,node,Baso by Mister Baso,restaurant,-6.9082061,107.6111349
-11987497230,node,Bakso Diet Bandung,restaurant,-6.9083419,107.6115292
-11987500955,node,Ramen Ya!,restaurant,-6.9084071,107.6108989
-11987503915,node,Mie Tarik King,restaurant,-6.9087306,107.6113495
-11987504013,node,Maxx Coffee,cafe,-6.9087306,107.6109311
-11987506951,node,Kimukatsu,restaurant,-6.9085789,107.6109526
-11987510412,node,Ayam Goreng Fatmawati,restaurant,-6.9084883,107.6114541
-11987511740,node,Chatime,cafe,-6.9088052,107.6112583
-11987514068,node,Steak Moen Moen,restaurant,-6.9082993,107.6114166
-11987515778,node,Kedai C-Meonk,restaurant,-6.9083632,107.6114166
-11987520648,node,Ramen N Sushi Box,restaurant,-6.9085256,107.6115681
-11987524029,node,Gokana Ramen,restaurant,-6.9087559,107.6111779
-11987524179,node,Yamie Hot Plate,restaurant,-6.9085163,107.6113468
-11987524438,node,Lucky Ducky,restaurant,-6.9086281,107.6114501
-11987526833,node,Shigeru Sushi,restaurant,-6.9087014,107.6114890
-11987527994,node,Justus Burger & Steak,restaurant,-6.9084444,107.6113683
-11987528958,node,Asian Grill Express,restaurant,-6.9084005,107.6113442
-11987529015,node,Issy Lacha Pratta,restaurant,-6.9083046,107.6113696
-11987529194,node,Nasi Bakar Kama-Kan,restaurant,-6.9084111,107.6115024
-11987532224,node,Xing Fu Tang,cafe,-6.9088105,107.6114756
-11987533081,node,Fore Coffee,cafe,-6.9086534,107.6113254
-11987539703,node,Saung Soto,restaurant,-6.9084750,107.6113160
-11987541415,node,TOMORO Coffee,cafe,-6.9089357,107.6112758
-11987576565,node,Point Coffee,cafe,-6.9137299,107.6027866
-11988975410,node,Sushi Tei,restaurant,-6.9262618,107.6363128
-11989036241,node,Kimukatsu,restaurant,-6.9259848,107.6368761
-11989061356,node,Zenbu,restaurant,-6.9265200,107.6360553
-11989063564,node,ShushiGo!,restaurant,-6.9265200,107.6363960
-11989065668,node,Bakmi GM,restaurant,-6.9258357,107.6364309
-11989072573,node,The Coffee Bean,cafe,-6.9261260,107.6365703
-11989076895,node,Shigeru,restaurant,-6.9251168,107.6368090
-11989076896,node,Ichiban Sushi,restaurant,-6.9255375,107.6367205
-11989076897,node,Go! Go! Curry,restaurant,-6.9263124,107.6366374
-11989076899,node,Dapur Solo,restaurant,-6.9252979,107.6368815
-11989077906,node,Rempah Bistro,restaurant,-6.9248133,107.6370290
-11989077907,node,Ta Wan,restaurant,-6.9262245,107.6364657
-11989079605,node,Fore Coffee,cafe,-6.9261073,107.6362726
-11989080204,node,Kopi Guyu,cafe,-6.9252899,107.6369539
-11989081537,node,Yakiniku Like,restaurant,-6.9255482,107.6364925
-11989081549,node,KOI The,cafe,-6.9258118,107.6366320
-11989082926,node,Ojju,restaurant,-6.9251168,107.6365945
-11989083592,node,Tom Sushi,restaurant,-6.9256094,107.6368976
-11989085592,node,Giggle Box,restaurant,-6.9259156,107.6367205
-11989085736,node,A&W,restaurant,-6.9253112,107.6365301
-11989085740,node,The Duck King,restaurant,-6.9265520,107.6366293
-11989086599,node,Solaria,restaurant,-6.9260541,107.6367983
-11989086600,node,Gokana,restaurant,-6.9253911,107.6366642
-11989086867,node,Pepper Lunch,restaurant,-6.9263550,107.6362619
-11989087017,node,Grill Time,restaurant,-6.9252553,107.6366669
-11989087378,node,Gyu Katsu Nikaido,restaurant,-6.9257479,107.6365301
-11989087858,node,Arigato Sushi,restaurant,-6.9248639,107.6365972
-11989088773,node,Ramen Ya!,restaurant,-6.9260008,107.6364014
-11989091188,node,Raa Cha,restaurant,-6.9253591,107.6368305
-11989096024,node,Gulu Gulu,cafe,-6.9256946,107.6369002
-11989099470,node,Golden Lamian,restaurant,-6.9255242,107.6366213
-11989185368,node,Warung Mie CGV,restaurant,-6.9080037,107.6089302
-11989217726,node,Chatime,cafe,-6.9080783,107.6089945
-11989228007,node,Soto Dirra,restaurant,-6.9082354,107.6090696
-11989238235,node,Resto Ramsteak Cianjur,restaurant,-6.9368350,107.6100232
-11989261489,node,Asian Grill Express,restaurant,-6.9081608,107.6088604
-11989264999,node,Pempek Sungai Musi,restaurant,-6.9081262,107.6087585
-11989266842,node,Mixue,cafe,-6.9077481,107.6089409
-11989268478,node,Miehotplet Express,restaurant,-6.9080024,107.6088363
-11989268916,node,Dapur Neng Geulis,restaurant,-6.9081781,107.6091112
-11989268921,node,Coffee Dreams,cafe,-6.9080543,107.6088041
-11989270018,node,Bean Spot,cafe,-6.9346690,107.6126719
-11989280172,node,Nasi Goreng Bistik Sawah Kurung,restaurant,-6.9360102,107.6116238
-11989401250,node,Mie Baso Ramdhan,restaurant,-6.9345318,107.6132378
-11989401251,node,Ayam Geprek Jogja,restaurant,-6.9342203,107.6136810
-11989402140,node,Ayam Goreng Sinar Pemuda 2,restaurant,-6.9303070,107.6158590
-11989406494,node,Bean Spot,cafe,-6.9305899,107.6158027
-11989412687,node,Bebek Garang,restaurant,-6.9270739,107.6167414
-11989412992,node,Es Teh Indonesia,cafe,-6.9299948,107.6159549
-11989413333,node,HPWBR Bahari,restaurant,-6.9295947,107.6164155
-11989415208,node,Kokka Pan & Pot,restaurant,-6.9268196,107.6167897
-11989415305,node,Baso Aci Ganteng,restaurant,-6.9324097,107.6151797
-11989415537,node,Warung Steak Warjo,restaurant,-6.9241882,107.6175300
-11989417973,node,RM Sabana Kapau,restaurant,-6.9327352,107.6145561
-11989418360,node,Kantin Rai,restaurant,-6.9327759,107.6145018
-11989422319,node,Ayam Gepuk Pak Gembus,restaurant,-6.9301445,107.6159099
-11989423045,node,Korner,cafe,-6.9300680,107.6158972
-11989425916,node,SirLoin Beef House,restaurant,-6.9255309,107.6170888
-11989431419,node,Sate Gule Kambing HM Haris,restaurant,-6.9221679,107.6170928
-11989433992,node,Tenong Cilukba,restaurant,-6.9277988,107.6168266
-11989436159,node,Jala Kopi,cafe,-6.9222099,107.6174482
-11989437369,node,Sambal Bakar Sultan,restaurant,-6.9266146,107.6171330
-11989521613,node,Kisah Manis,restaurant,-6.9188256,107.6177895
-11989536453,node,Kedai Kopi Oh,cafe,-6.9182591,107.6182294
-11989537474,node,Pinuka Catering & Resto,restaurant,-6.9212620,107.6186579
-11989585079,node,Ayam Taliwang Khas Lombok,restaurant,-6.9112789,107.6182602
-11989586228,node,Lumiko,restaurant,-6.9118054,107.6165396
-11989768835,node,Wingz O Wingz,restaurant,-6.9380957,107.6143395
-11989769631,node,Secbowl Cloud Kitchen,restaurant,-6.9374400,107.6106354
-11989786316,node,Gepuk Ny. Ong,restaurant,-6.9382861,107.6242523
-11989797530,node,Spesial Soto Boyolali,restaurant,-6.9381716,107.6241980
-11989797571,node,Bean Spot,cafe,-6.9385433,107.6240548
-11989798285,node,Ayam Serundeng Ceu Odah,restaurant,-6.9382688,107.6242342
-11989877213,node,Shaburi & Kintan Buffet,restaurant,-6.8902070,107.5961944
-11989894102,node,RamenYa!,restaurant,-6.8903994,107.5961870
-11989899094,node,Marugame Udon,restaurant,-6.8903841,107.5963546
-11989904876,node,Fish and Co,restaurant,-6.8903694,107.5962594
-11989909206,node,Kopi Soe,cafe,-6.8895732,107.5957994
-11989912458,node,CGV Cafe,cafe,-6.8881792,107.5960006
-11989920371,node,Solaria,restaurant,-6.8904560,107.5963399
-11989920848,node,Kopi Kenangan,cafe,-6.8904932,107.5962339
-11989936280,node,Janji Jiwa,cafe,-6.8901338,107.5963640
-11989936282,node,Kopi Lay,cafe,-6.8893096,107.5961320
-11989938460,node,Tom Sushi,restaurant,-6.8900725,107.5963064
-11989944589,node,Ramen 1,restaurant,-6.8902802,107.5958919
-11989945576,node,Fore Coffee,cafe,-6.8884167,107.5962458
-11989945577,node,Gyukaku,restaurant,-6.8895219,107.5960441
-11989945578,node,Kasugai Ramen,restaurant,-6.8902775,107.5964820
-11989946038,node,Justus Steak House,restaurant,-6.8893868,107.5957847
-11989946949,node,Tiga Wonton,restaurant,-6.8904280,107.5960730
-11989951680,node,Sate Khas Senayan,restaurant,-6.8882644,107.5961830
-11989952373,node,Rempah Bistro,restaurant,-6.8904733,107.5962031
-11989952374,node,Sushi Hiro,restaurant,-6.8903055,107.5956801
-11989962066,node,Chatime,cafe,-6.9057311,107.5971955
-11989966553,node,Yamie Hot Plate,restaurant,-6.9056512,107.5970440
-11989968828,node,Kupi Pass,cafe,-6.8981169,107.5968488
-11989976186,node,Happy Suki Gyukatsu & BBQ,restaurant,-6.9056885,107.5968039
-11989978376,node,Otten Coffee,cafe,-6.9014214,107.5976649
-11989981680,node,Janji Jiwa,cafe,-6.9057404,107.5969756
-11989989345,node,Mie Tarik King,restaurant,-6.9058176,107.5967395
-11990103354,node,Bandung People's Place,restaurant,-6.9063555,107.5985943
-11990113951,node,Rumah Makan Santung,restaurant,-6.9069959,107.5998294
-11990117134,node,Ganefo,cafe,-6.9213245,107.6189710
-11990120305,node,Point Coffee,cafe,-6.9191878,107.6240437
-11990121205,node,Rose Flower Restaurant,restaurant,-6.9217839,107.6188999
-11990123401,node,Warung Nasi Indra Rasa,restaurant,-6.9452646,107.5953092
-11990128302,node,Baso Putra Solo,restaurant,-6.9461256,107.5954263
-11990131577,node,Non Kitchen Coffee,cafe,-6.9221320,107.6181697
-11990136347,node,Ayam Bakar Merot,restaurant,-6.9451361,107.5953548
-11990142257,node,Bebek Gahar,restaurant,-6.9202968,107.6216733
-11990149267,node,Chatime,cafe,-6.9237935,107.6059891
-11990150155,node,Sinar Gobah Masakan Padang,restaurant,-6.9461539,107.5954259
-11990161478,node,Dunkin Donuts,cafe,-6.9452040,107.5953253
-11990165407,node,Mie Aceh 86,restaurant,-6.9235752,107.6056619
-11990172950,node,Nasi Pecel Surabaya,restaurant,-6.9236763,107.6054339
-11990173382,node,Mie Bakso Tulang Sapi & Ayam AA,restaurant,-6.9243673,107.6060823
-11990174760,node,Yo Ramen,restaurant,-6.9236444,107.6059704
-11990180299,node,Saung Nikmat GMR,restaurant,-6.9237482,107.6057692
-11990181113,node,Bakmi Djogja Arjuna,restaurant,-6.9237296,107.6054500
-11990185016,node,Nasi Kebuli 1881,restaurant,-6.9237802,107.6053990
-11990189711,node,Iga Bakar Si Jangkung,restaurant,-6.9235539,107.6054902
-11990189712,node,Bebek Ireng Suroboyo Cak Baz,restaurant,-6.9236138,107.6055989
-11990189833,node,Rumah Makan Basalero Masakan Padang,restaurant,-6.9240138,107.6039962
-11990190440,node,Alam Sunda,restaurant,-6.9237882,107.6039701
-11990198033,node,Baso Malang Raos,restaurant,-6.9236444,107.6055224
-11990199572,node,CFC,restaurant,-6.9238787,107.6058979
-11990220085,node,Warung Nasi Ampera,restaurant,-6.9238740,107.6040030
-11990909758,node,Solaria,restaurant,-6.9229401,107.6046829
-11990914043,node,Baso Cuanki,restaurant,-6.9226938,107.6051804
-11990917429,node,Dapoer Saranguan,restaurant,-6.9228123,107.6052837
-11990954668,node,Fruity,cafe,-6.9229907,107.6049753
-11990955196,node,Janji Jiwa,cafe,-6.9226965,107.6048411
-11990962308,node,Ow My Plate,restaurant,-6.9226579,107.6047526
-11990963318,node,Steak Moen Moen,restaurant,-6.9228136,107.6047888
-11990967821,node,Pa Oyen,cafe,-6.9230413,107.6048908
-11990967827,node,Sate Taichan Senayan,restaurant,-6.9227351,107.6050195
-11990971371,node,Kimiku,cafe,-6.9229215,107.6049189
-11990973385,node,Mie Tarik King,restaurant,-6.9228070,107.6049913
-11990976885,node,Raa Cha Suki & BBQ,restaurant,-6.9229721,107.6050892
-11990977130,node,Gokana Ramen & Teppan,restaurant,-6.9225966,107.6051563
-11990977131,node,Chatime,cafe,-6.9228323,107.6052207
-11990977899,node,D'Bakmie,restaurant,-6.9228802,107.6048747
-11990977900,node,Ayam & Bebek Goreng Kalasan,restaurant,-6.9226273,107.6050879
-11990977901,node,Gokimura,restaurant,-6.9228549,107.6047271
-11990978573,node,Tokio Kitchen,restaurant,-6.9227617,107.6047271
-11990987726,node,Puyo,cafe,-6.9230826,107.6048143
-11990993160,node,Warung Nasi Ampera,restaurant,-6.9273328,107.6069219
-11990997307,node,Dapoer Kabita 1444,restaurant,-6.9230772,107.6043570
-11991014566,node,Gulu Gulu,cafe,-6.9230346,107.6048197
-11991014568,node,Point Coffee,cafe,-6.9300880,107.6035886
-11991015451,node,Warung Nasi Ampera,restaurant,-6.9231248,107.6061197
-11991020072,node,Bebek Salero,restaurant,-6.9230207,107.6062144
-11991024500,node,Bakso Tulang Iga Sanguan,restaurant,-6.9316429,107.6041022
-11991064803,node,Warung Nasi Bu Imas,restaurant,-6.9258890,107.6072538
-11991085618,node,Korner,cafe,-6.9214217,107.6100741
-11991116447,node,Bean Spot,cafe,-6.9170250,107.6083052
-11991130867,node,Bahagia Kopi,cafe,-6.9181992,107.6094452
-11991131503,node,Mixue,cafe,-6.9214803,107.6087008
-11991132643,node,Janji Jiwa,cafe,-6.9172247,107.6086070
-11991134877,node,Flash Coffee,cafe,-6.9171821,107.6087317
-11991137424,node,Korner,cafe,-6.9158827,107.6090844
-11991143423,node,Shooters Pool & Cafe,cafe,-6.9157469,107.6088571
-11991143507,node,Why Not?,cafe,-6.9181054,107.6095813
-11991144711,node,Goedang Kopi Braga,cafe,-6.9205344,107.6098582
-11991153715,node,Kopi Toko Djawa,cafe,-6.9172487,107.6083790
-11991155141,node,Jabarano Coffee,cafe,-6.9201483,107.6098461
-11991157736,node,Suis Butcher,cafe,-6.9189781,107.6096597
-11991158915,node,Braga Weg,restaurant,-6.9167135,107.6092165
-11991160314,node,Bean Spot,cafe,-6.9163094,107.6082294
-11991160660,node,Korner,cafe,-6.9208865,107.6058892
-11991168031,node,Jiwa Toast,cafe,-6.9170396,107.6086271
-11991168071,node,Mie Jowo Pak Slamet,restaurant,-6.9164565,107.6089409
-11991168673,node,Warung Kopi Limarasa,cafe,-6.9184282,107.6096812
-11991169399,node,Freezh,cafe,-6.9181387,107.6095866
-11991172352,node,MyLoc Coffee,cafe,-6.9167108,107.6090294
-11991172536,node,Korner,cafe,-6.9196038,107.6098227
-11991173220,node,Noi Nan Pat Chawadee,restaurant,-6.9192969,107.6097395
-11991173221,node,RestoeBoemi,restaurant,-6.9186106,107.6097429
-11991173995,node,Gas Inc Coffee& Gelato,cafe,-6.9182265,107.6096222
-11991178366,node,Mih Kocok Mang Dadeng,restaurant,-6.9168559,107.6090750
-11991184981,node,18 Coffee & Brew,cafe,-6.9167960,107.6090569
-11991184982,node,Wing Lok,restaurant,-6.9161583,107.6088376
-11991186703,node,Bebek Kaleyo,restaurant,-6.9172726,107.6132740
-11991332686,node,Ikugo Grill & Hot Pot,restaurant,-6.8929137,107.6055492
-11991332711,node,Raa Cha Suki & BBQ,restaurant,-6.8936953,107.6054004
-11991332821,node,Xiyue,cafe,-6.8929457,107.6054862
-11991339204,node,Kelapa Mueda,cafe,-6.8929670,107.6056096
-11991339595,node,Re-Juve,restaurant,-6.8932160,107.6050745
-11991339909,node,Ta Wan,restaurant,-6.8935368,107.6057437
-11991340247,node,Solaria,restaurant,-6.8936633,107.6054889
-11991342390,node,Es Teh Nusantara,cafe,-6.8938431,107.6055559
-11991347614,node,Sour Sally,cafe,-6.8931774,107.6057169
-11991347743,node,Ichiban Sushi,restaurant,-6.8934144,107.6051952
-11991352067,node,Warung Talaga,restaurant,-6.8937579,107.6053856
-11991352502,node,Tong Tji Express,cafe,-6.8935395,107.6052113
-11991359995,node,Puyo,cafe,-6.8936633,107.6057263
-11991360053,node,Dapur Cihampelas,restaurant,-6.8977654,107.6041733
-11991360222,node,J.CO Donuts & Coffee,cafe,-6.8934543,107.6059368
-11991369942,node,Bakmi GM,restaurant,-6.8931720,107.6051965
-11991375196,node,Imperial Kitchen & Dimsum,restaurant,-6.8930389,107.6050571
-11991375197,node,Ramen 10,restaurant,-6.8938710,107.6054648
-11991375215,node,Bakso Malang Karapitan,restaurant,-6.8930149,107.6054701
-11991379579,node,Mochi Mochi,cafe,-6.8938151,107.6054902
-11991379837,node,Upnormal Coffee Roasters,cafe,-6.8994802,107.6043275
-11991381206,node,Fore Coffee,cafe,-6.8936474,107.6053038
-11991382145,node,Kopilatinum,cafe,-6.8939469,107.6053146
-11991382146,node,Chatime,cafe,-6.8928805,107.6054969
-11991388513,node,Bean Spot,cafe,-6.8980223,107.6038112
-11991392920,node,RM Rajo Minang,restaurant,-6.8981342,107.6039091
-11991394119,node,Mangkok Manis,restaurant,-6.8988891,107.6039252
-11991399573,node,Warung Nasi Ampera,restaurant,-6.8978799,107.6042028
-11991403170,node,Janji Jiwa,cafe,-6.8970045,107.6037307
-12010088512,node,Hutanika,restaurant,-6.9215477,107.6125981
-12012280713,node,Justus,restaurant,-6.8884196,107.5961276
-12012295246,node,Tous les Jours,cafe,-6.8906713,107.5962338
-12064408217,node,Reunion Grill and Resto,restaurant,-6.8817703,107.5993530
-12064485588,node,The People's Cafe,restaurant,-6.8934898,107.6057076
-12066200766,node,Martabak Pecenongan 78,restaurant,-6.8886642,107.6157453
-12066215655,node,Hittobitto,restaurant,-6.9019393,107.6156563
-12071610838,node,Bomber Burger,restaurant,-6.9267296,107.6192632
-12090457339,node,CFC,restaurant,-6.9145662,107.6020322
-12128022548,node,Kantin ISBI,restaurant,-6.9424857,107.6276045
-12354273199,node,Little Social Space,cafe,-6.8815672,107.5788046
-12373141856,node,TOMORO Coffee,cafe,-6.8854024,107.6134807
-12373215653,node,Point Coffee,cafe,-6.8857827,107.6139375
-12435853364,node,Bakso Haji Ma'il,restaurant,-6.9184788,107.6100202
-12473218163,node,Persegi Coffee,cafe,-6.8959269,107.6048656
-12482391289,node,Sagori,restaurant,-6.8741234,107.6045594
-12482391290,node,Jati,cafe,-6.8741674,107.6046198
-12482391292,node,Ayam Gepuk Pak Gembus Ciumbuleuit,restaurant,-6.8740529,107.6045701
-12482391293,node,MIXUE Ciumbuleuit,cafe,-6.8739650,107.6045856
-12482476002,node,Ditokokopi,cafe,-6.8794269,107.6032186
-12624664319,node,Baso Padasuka,restaurant,-6.9031839,107.6529325
-12624770447,node,kosan jojo,restaurant,-6.8967323,107.6381555
-12625091280,node,,restaurant,-6.9040552,107.6527098
-12625095868,node,Wizzmie,restaurant,-6.9039042,107.6527236
-12625099349,node,wizzmie,restaurant,-6.9039203,107.6527231
-12625460941,node,TUKU - Ambon,cafe,-6.9075012,107.6182495
-12628047186,node,Rumah Makan Taliwang Bersaudara,restaurant,-6.9026301,107.6237638
-12658003789,node,Flash Coffee,cafe,-6.9468381,107.6413621
-12658003790,node,Fore Coffee,cafe,-6.9463283,107.6411971
-12728534901,node,Phi Pho,restaurant,-6.9058713,107.6165201
-12800756180,node,Solaria,restaurant,-6.9020182,107.6126236
-12809507140,node,Kopi Kenangan,cafe,-6.9066586,107.6171308
-12843689353,node,Art Coffee,cafe,-6.9171857,107.6093430
-12843690500,node,Wiki Coffe,cafe,-6.9160496,107.6091452
-12843711959,node,flash coffee,cafe,-6.9171712,107.6087343
-12843721485,node,Kopi Toko Djawa,cafe,-6.9174913,107.6092602
-12843737863,node,Bean Spot Cafe,cafe,-6.9163066,107.6082247
-12866014133,node,,restaurant,-6.9130379,107.6042570
-12887254413,node,Kopi Kenangan,cafe,-6.9236101,107.6278801
-12895414980,node,Dua Saudara,restaurant,-6.9417207,107.6346637
-12956269076,node,Toebroek Coffee,cafe,-6.8831467,107.5860352
-12965822167,node,Temu Roti,cafe,-6.8764579,107.6232361
-12966385300,node,Furama Restaurant Bandung,restaurant,-6.9158673,107.6104730
-12984617473,node,Nasi Goreng Tongkeng,restaurant,-6.9120427,107.6231671
-12991042843,node,Warung Nenek,restaurant,-6.8865621,107.6200137
-12994036955,node,Point Coffee,cafe,-6.9155748,107.6156562
-13028370352,node,Paskal 219,restaurant,-6.8984645,107.5970953
-13031332535,node,Bodas,restaurant,-6.9216840,107.6124486
-13031375915,node,Roti'O,restaurant,-6.8972018,107.5972083
-13033549221,node,Emados,restaurant,-6.9056770,107.6216854
-13033570834,node,90 Gourmet,restaurant,-6.9085228,107.6239245
-13034037539,node,Golden Bay,restaurant,-6.9110387,107.6274018
-13036985906,node,Tobo,restaurant,-6.9079386,107.6221334
-13040420173,node,The Square Restaurant Bandung,restaurant,-6.9049367,107.6037473
-13040439475,node,Rooftop Coffee 1896,cafe,-6.9069845,107.6039968
-13042429225,node,Ibu Haji,restaurant,-6.8968452,107.5918421
-13042445685,node,Wardjoe,restaurant,-6.9000246,107.5967562
-13045226122,node,Bakso Malang Enggal,restaurant,-6.9273798,107.6351340
-13045918709,node,Pesona Kampung Sunda,restaurant,-6.9025236,107.6218961
-13047913339,node,SKY Steak & Pasta,restaurant,-6.9054977,107.6039072
-13049347981,node,Srabi Notosuman Ny. Handayani Kebon Jukut,restaurant,-6.9143585,107.6052506
-13049552745,node,Altero,restaurant,-6.9004947,107.6025507
-13058918034,node,Warmindo Gede Milik,restaurant,-6.8893282,107.6160743
-13058924874,node,Warkop Suka Rasa,cafe,-6.8876954,107.6154204
-13058925433,node,Baso Aci Tulang Muda,restaurant,-6.8883837,107.6156720
-13058928930,node,Bakmi Jowo DU 67,restaurant,-6.8897924,107.6158406
-13058935500,node,Es Coklat Impian Dipati Ukur,cafe,-6.8895414,107.6162461
-13058936812,node,Warung  Nasi Toeang By Tjahja,restaurant,-6.8894273,107.6161589
-13058937983,node,Warteg Dipatiukur Bahari,restaurant,-6.8885934,107.6157335
-13058940691,node,Douwes Dekker Kitchen,cafe,-6.8897156,107.6155163
-13058949623,node,Warung Nasi TOEANG By Tjahja,restaurant,-6.8894248,107.6161882
-13058950358,node,TOMORO Coffee,cafe,-6.8880494,107.6152539
-13058954253,node,Rumah Makan Padang Babeda,restaurant,-6.8875422,107.6153737
-13058955535,node,Warmindo Betuah,restaurant,-6.8882793,107.6156360
-13059145530,node,Pelagia f&b station,cafe,-6.9165847,107.6005901
-13062660917,node,Aroem Resto,restaurant,-6.8866152,107.6131840
-13073370692,node,East Indies,cafe,-6.8979085,107.6131797
-13083815916,node,Ichiyo Ramen,restaurant,-6.9414209,107.6267707
-13083895162,node,Putra Minang,restaurant,-6.9386826,107.6241875
-13083895164,node,Ayam Keprabon Express,restaurant,-6.9385697,107.6240745
-13086303842,node,Tiramisusu,restaurant,-6.9372816,107.6226773
-13086303844,node,Artomoro,restaurant,-6.9378566,107.6233102
-13092337601,node,Fore Coffee,cafe,-6.9090414,107.6109495
-13095749458,node,Ampera,restaurant,-6.9405229,107.6263702
-13273484352,node,Point Coffee,cafe,-6.9143573,107.6323363
-13334575526,node,Cerita di,cafe,-6.9035058,107.6041268
-13335214088,node,Nescafe,cafe,-6.8868740,107.6233729
-13357245367,node,Sate Braga Taichan dan Yakitori,restaurant,-6.9196996,107.6087865
-13366619343,node,Nowala Coffee and Eatery,cafe,-6.9166642,107.6167624
-13373685473,node,Rumah Makan Ahong,restaurant,-6.9124509,107.5985737
-13373734633,node,Kopi Kenangan,cafe,-6.9064704,107.5957325
-13373774904,node,Tjuankie Stasiun,restaurant,-6.9124771,107.5993197
-13373782010,node,Roempi Coffee,cafe,-6.9124674,107.5987521
-13373783761,node,Sambal Bakar Dek Ray,restaurant,-6.9274440,107.6352768
-13373811119,node,Sate Cempe Baba+,restaurant,-6.9269491,107.6343391
-13373812336,node,Soto Padang Uda Ujang,restaurant,-6.9267388,107.6340585
-13373825240,node,Warkop Putra Agam,restaurant,-6.9271837,107.6348004
-13373825241,node,Soerabi Bandung enhaii,restaurant,-6.9270839,107.6345955
-13373827955,node,Kopitiam 136,cafe,-6.9242636,107.6275601
-13373840638,node,Kozi,cafe,-6.9269543,107.6344668
-13410062993,node,Kopi Celah Kota,cafe,-6.9402128,107.6256352
-13516034045,node,Nasi Pecel Kediri & Pawon Pak Tono,restaurant,-6.8778043,107.6171442
-13516178856,node,TOMORO Coffee,cafe,-6.9085799,107.6092991
-13520030576,node,Terracotta ST.26,cafe,-6.9150163,107.6016859
-13534155856,node,Warung Surabi Cihampelas,restaurant,-6.8926555,107.6043715
-13542452081,node,Checo,restaurant,-6.9079689,107.6130690
-13563421168,node,Soto Pak Min Klaten,restaurant,-6.9270689,107.6192846
-13563715021,node,Bakso Rusuk Jos,restaurant,-6.9280383,107.6187527
-13563730871,node,Jabarano Coffee,cafe,-6.9176171,107.6307007
-13595500462,node,The Houseplants Coffee,cafe,-6.8948816,107.6127494
-13595511270,node,Iganaga,restaurant,-6.8963411,107.6132718
-13595563366,node,Ayam Sari Rasa,restaurant,-6.9095088,107.6111162
-13595567572,node,Roemah Helena,restaurant,-6.9095556,107.6113091
-13605881790,node,Riel's,cafe,-6.8918716,107.6133905
-13608911096,node,ko.pi.mu.,cafe,-6.8980342,107.6163401
-13608949321,node,Padang Keren,restaurant,-6.8984383,107.6159839
-13609049733,node,Yumaju,cafe,-6.8921407,107.6124655
-13611603017,node,Qaca,cafe,-6.8892293,107.6131281
-13613927312,node,Foursis,cafe,-6.8881675,107.6152842
-13613947533,node,belikopi.,cafe,-6.8914987,107.6172107
-13613963824,node,coffeebawa,cafe,-6.8898536,107.6160484
-13613972219,node,Goffee,cafe,-6.8855907,107.6148415
-13613994127,node,Brother Chang,restaurant,-6.8889548,107.6155118
-13614530844,node,Joglo Ndalem,restaurant,-6.9310198,107.6258390
-13619276655,node,Lupba Cafe,cafe,-6.9000525,107.6529964
-13620450181,node,RM Putra Tanjung,restaurant,-6.9271073,107.6332585
-13620482359,node,Kedai D'Dimas,restaurant,-6.9266876,107.6333859
-13620531443,node,Bubur Ayam Katineung Mang Ajat,restaurant,-6.9279161,107.6362954
-13620566517,node,Taman Kopie,cafe,-6.9299892,107.6352792
-13620605940,node,Point Coffee,cafe,-6.9280321,107.6370132
-13621729032,node,,restaurant,-6.8970967,107.6365302
-13622895417,node,ta.lu.pa,cafe,-6.8907528,107.6161511
-13622928581,node,Bakmie Ayam 58,restaurant,-6.8918942,107.6166874
-13622928582,node,Waroeng Setiabudhi,restaurant,-6.8914827,107.6156109
-13622934471,node,yanie's,cafe,-6.8906056,107.6160495
-13622942997,node,Spicy Yakiniku,restaurant,-6.8918848,107.6166415
-13634007864,node,Dapoer Pandanwangi,restaurant,-6.8765407,107.6181533
-13634010024,node,District Dago,restaurant,-6.8753120,107.6184837
-13638557518,node,Grobak Koering,restaurant,-6.8811227,107.6119462
-13638681604,node,RM Padang Bapak Atang,restaurant,-6.8836294,107.6140853
-13647704786,node,Sate Taichan Masgib,restaurant,-6.8917073,107.6134038
-13647829460,node,DeBunzi Risol,restaurant,-6.8964979,107.6130858
-13647892100,node,Jiwan Coffee & Things,cafe,-6.9008433,107.6124960
-13647894656,node,Kisah Manis,cafe,-6.8952504,107.6131845
-13695626664,node,Tedja Coffee Saparua,cafe,-6.9096731,107.6162313
-13713682959,node,RM Maju Jaya,restaurant,-6.8944650,107.5983911
-13713697182,node,Yumaju Pavilion,cafe,-6.8963792,107.5987441
-13713788083,node,Ayam Gepuk Pak Gembus,restaurant,-6.8940407,107.5985376
-13732284010,node,Nasi Goreng Jando Babah Bayu,restaurant,-6.8832063,107.6113047
-13734392228,node,Bumi Aki,restaurant,-6.9061934,107.6151485
-13737072663,node,Point Coffee,cafe,-6.8915557,107.6043872
-13737118766,node,Warung Tilu Nini,restaurant,-6.8937287,107.5995911
-13737200650,node,Point Coffee,cafe,-6.8943944,107.6039259
-13742262463,node,Point Coffee,cafe,-6.9130852,107.6465293
-13742297237,node,Point Coffee,cafe,-6.9129243,107.6516685
-13742306698,node,Bebeke Om Aris,restaurant,-6.9127413,107.6525613
-13742321767,node,TOMORO Coffee,cafe,-6.9126104,107.6538134
-13742324755,node,Pizza Hut,restaurant,-6.9126494,107.6506356
-13742347878,node,Kopi Kenangan,cafe,-6.9123773,107.6525651
-13742351913,node,Mixue,cafe,-6.9127387,107.6526405
-13742363563,node,Point Coffee,cafe,-6.9124721,107.6517295
-13742370747,node,CFC,restaurant,-6.9127618,107.6493448
-13745090903,node,Point Coffee,cafe,-6.9182472,107.5813747
-13745100074,node,Rumah Makan Megawati,restaurant,-6.9183459,107.5849341
-13745274099,node,Fullmoon Coffee,cafe,-6.9182475,107.5804134
-13751877801,node,Umanari,restaurant,-6.9205271,107.6135394
-13752358132,node,CFC,restaurant,-6.8770552,107.6178560
-13752361507,node,Bakso Rusuk Samanhudi,restaurant,-6.8775925,107.6174203
-13752366816,node,Soto & Sate H. Muhammad Bagul Asan,restaurant,-6.8775429,107.6170574
-13752380801,node,Point Coffee,cafe,-6.8774561,107.6170449
-13752416439,node,Kedai u'nay,restaurant,-6.8784466,107.6139820
-13754321801,node,Justus,restaurant,-6.9155978,107.5937096
-13760235868,node,Wheel's Coffee Roasters,cafe,-6.8815954,107.6162590
-13760569233,node,Ranah Minang,restaurant,-6.8922258,107.6287630
-13760571215,node,Do'a Mande,restaurant,-6.8879203,107.6242164
-13760571263,node,Do'a Mande,restaurant,-6.8919188,107.6300910
-13760590074,node,Waras,cafe,-6.8910393,107.6251659
-13760591097,node,Kebuli Abuya,restaurant,-6.8872565,107.6234177
-13760591263,node,Saung Kuring,restaurant,-6.8875334,107.6236200
-13760648027,node,Talago Minang,restaurant,-6.8909919,107.6269369
-13783844093,node,Yumaju,cafe,-6.9368512,107.6223351
-13789600036,node,Madalangu Bakehouse,cafe,-6.8969480,107.6148570
-13794929972,node,Point Coffee,cafe,-6.9066218,107.6131991
-13794936143,node,Jumbo Eatery,restaurant,-6.9067598,107.6145458
-13794959499,node,kedai inn.,cafe,-6.9062454,107.6157037
-13794963500,node,Bengawan Solo,restaurant,-6.9058600,107.6178486
-13794976289,node,Satu Atap Mayasari,cafe,-6.9057747,107.6193288
-13794977240,node,Taeun Coffee & Works,cafe,-6.9062859,107.6180785
-13794981248,node,Wheels,cafe,-6.9058137,107.6173510
-13795044530,node,Tok You,restaurant,-6.9057602,107.6191803
-13795192344,node,Nasi Bakar Riau,restaurant,-6.9060537,107.6221924
-13795193359,node,Bakso Bintang Asia,restaurant,-6.9077486,107.6227160
-13795202515,node,Kambing Bakar Cairo,restaurant,-6.9070949,107.6232606
-13795210827,node,Bubur Cihapit,restaurant,-6.9081478,107.6226311
-13795232699,node,Hello Summer,restaurant,-6.9054228,107.6193253
-13795264929,node,Mahkopi,cafe,-6.9075049,107.6209281
-13795275247,node,Warung Lombok,cafe,-6.9064186,107.6209169
-13795278874,node,Legenda Tiga Ayam,restaurant,-6.9070994,107.6208694
-13795315895,node,Fore Coffee,cafe,-6.9064483,107.6165251
-13795334430,node,La Loba,restaurant,-6.9065509,107.6162582
-13798918291,node,Nasi Goreng Pak Lemu,restaurant,-6.8798069,107.6142771
-13801500390,node,Skytree Coffee & Eatery,cafe,-6.9140149,107.6296844
-13801618827,node,Nasi Kalong,restaurant,-6.9123448,107.6286759
-13801618898,node,Ramu Saji Heritage,restaurant,-6.9147750,107.6293298
-13801631044,node,Cuanki,restaurant,-6.9165886,107.6306212
-13801639126,node,Sop Buntut Sapi Ma'emun,restaurant,-6.9163793,107.6305265
-13801643500,node,Oracle,restaurant,-6.9117289,107.6281040
-13801662256,node,Kopi Toko Djawa,cafe,-6.9129930,107.6291312
-13801662283,node,Fore Coffee,cafe,-6.9153705,107.6301256
-13801673930,node,Holycow,restaurant,-6.9127525,107.6281915
-13801704610,node,Iga Bakar Mas Giri,restaurant,-6.9123566,107.6281132
-13801730853,node,Bonfire,restaurant,-6.9085147,107.6247093
-13801745946,node,Okinawa Sushi,restaurant,-6.9090901,107.6253905
-13801753118,node,Alas Cobek,restaurant,-6.9111364,107.6276007
-13806635096,node,Kopitera,cafe,-6.9254817,107.6194728
-13807787946,node,Plateia Hot Plate,restaurant,-6.8965660,107.6157874
-13807798937,node,Bakmee Botak,restaurant,-6.8965223,107.6157986
-13807812520,node,Soto Seteran Semarang,restaurant,-6.8965588,107.6157818
-13808931414,node,Nasi Gila & Goreng Roni Rizky,restaurant,-6.8894696,107.5813872
-13808932502,node,Calf,cafe,-6.8895141,107.5813579
-13808939901,node,Warung Nasi Padang Wa'uda,restaurant,-6.8894107,107.5813624
-13810583960,node,Point Coffee,cafe,-6.8852291,107.6181781
-13810637071,node,Waroeng Bebek Ngarasan,restaurant,-6.8849634,107.6174846
-13810700693,node,Putra Minang,restaurant,-6.8849064,107.6181821
-13832216963,node,Fore Coffee,cafe,-6.9227525,107.6062100
-13832243998,node,Solaria,restaurant,-6.9224820,107.6059797
-13914011756,node,Mie Kocok Pak H. Endan,restaurant,-6.9142631,107.6051053
-13921209275,node,ICE CRIME - Ice Cream Store with Jail Experience,cafe,-6.9194978,107.6081650
-13937520269,node,Soto Padang Pak Ujang,restaurant,-6.9176550,107.6694901
-13968240101,node,Sate Padang MJ,restaurant,-6.9433141,107.6421598
-14003890530,node,Warkop ADD,cafe,-6.8889401,107.6184435
-14014054109,node,Saji Rasa,restaurant,-6.8855117,107.6147103
-14023758779,node,Nasi Liwet Cisitu,restaurant,-6.8804358,107.6120432
-14023763451,node,Warung Kameumeut,restaurant,-6.8807838,107.6119828
-14023777933,node,Rumah Makan Ngalau Indah,restaurant,-6.8801156,107.6119668
-14023788608,node,Kantin Ibu Olis,restaurant,-6.8801825,107.6120879
-14029887768,node,Mie Bakso Kelud,restaurant,-6.8802063,107.6119540
-14038373463,node,Pempek Ny. Kamto,restaurant,-6.9164001,107.6093829
-14038409720,node,Warung Nasi Ajeng,restaurant,-6.9456193,107.5941615
-14038481547,node,Aerobus,cafe,-6.9457145,107.5928993
-14053598145,node,Ketoprak,restaurant,-6.8807658,107.6119795
-14064068898,node,Delapan Padi,restaurant,-6.8981648,107.6141504
-14074673674,node,Nomora,cafe,-6.9165190,107.6435029
-14074674953,node,Steak Ranjang,restaurant,-6.9162700,107.6434722
-14074679954,node,Bakso Malang Kiara,restaurant,-6.9164822,107.6434968
-14074682848,node,Siloka,cafe,-6.9163429,107.6434817
-14074686105,node,RD Coffee & Eatery,cafe,-6.9167521,107.6435496
-14077854124,node,Lasco Koffie Haus,cafe,-6.9324628,107.6184606
-14091329401,node,Awi Legit,restaurant,-6.8990267,107.6195497
-14093529901,node,Kisah Manis,cafe,-6.8702536,107.6074788
-14094523339,node,Haus,cafe,-6.8918928,107.6173905
-14111481301,node,Sushigo!,restaurant,-6.8792059,107.5983418
-14111952602,node,Mode Kitchen,restaurant,-6.8824190,107.6001198
-14111954302,node,Pizza Hut,restaurant,-6.8748545,107.5961809
-14152594602,node,Tomoro,cafe,-6.9461299,107.6313006
-14159257401,node,Kopi Goy,cafe,-6.9082388,107.6271414
-14179677368,node,CFC,restaurant,-6.9137633,107.6026939
-14210372888,node,Susu Mbok Darmi,cafe,-6.9251261,107.6463315
-14210581366,node,Point Coffee,cafe,-6.9077649,107.6091787
-14232958555,node,Swike Asli Jatiwangi,restaurant,-6.9215898,107.5993469
-14232958556,node,Nasi Goreng Samcan AHIEN,restaurant,-6.9214631,107.5990829
-14232995675,node,Cuanki Kelenteng,restaurant,-6.9185421,107.5930249
-14245280937,node,Set n Rise,restaurant,-6.9049684,107.6238323
-14245706568,node,Chatime,cafe,-6.9018314,107.6124913
+osm_id,osm_type,name,amenity,latitude,longtitude,city
+31288741,node,Terazza,restaurant,-6.8869435,107.5811614,bandung
+31288745,node,Inti Laut,restaurant,-6.8873695,107.5816872,bandung
+32041537,node,Grace,restaurant,-6.8815495,107.5944013,bandung
+32041585,node,Tomodachi,restaurant,-6.8807109,107.5959997,bandung
+32041593,node,Suis Butcher Steak House,restaurant,-6.8715552,107.5940509,bandung
+32041600,node,Ikan Bakar Pak Chi Met,restaurant,-6.8858733,107.5962969,bandung
+32041651,node,Ikan Bakar Cianjur,restaurant,-6.8752093,107.5964539,bandung
+32041698,node,Ny. Suharti,restaurant,-6.8843694,107.6012683,bandung
+32041903,node,Bumbu Desa Pasir Kaliki,restaurant,-6.9027926,107.5978878,bandung
+32519040,node,Sapu Lidi,restaurant,-6.8977742,107.6036158,bandung
+32519044,node,Raja Rasa,restaurant,-6.8799127,107.5838387,bandung
+32519045,node,Oishii Steak,restaurant,-6.9058695,107.5931889,bandung
+32519051,node,Dakken,restaurant,-6.9057417,107.6176217,bandung
+32519052,node,Dago Panyawangan,restaurant,-6.8914029,107.61281,bandung
+32519055,node,Simpang Raya,restaurant,-6.8990133,107.6195912,bandung
+32519056,node,Sindang Reret,restaurant,-6.8990098,107.6197139,bandung
+32519340,node,Yoghurt Cisangkuy,restaurant,-6.9018456,107.6214397,bandung
+32519342,node,Road Cafe,restaurant,-6.9055352,107.6271646,bandung
+1107877729,node,Sate Pak Ginno,restaurant,-6.9167625,107.6183923,bandung
+1108586477,node,Madthari,restaurant,-6.9027613,107.6104139,bandung
+1108586489,node,Sate Maulana Yusuf,restaurant,-6.9009918,107.6134343,bandung
+1158819807,node,Sate Karjan,restaurant,-6.9126453,107.5983597,bandung
+1308708818,node,Barbar Wing's,restaurant,-6.898751,107.6030848,bandung
+1341941792,node,dago panyawangan,restaurant,-6.8867215,107.6167462,bandung
+1342896154,node,Dago Panineungan,restaurant,-6.8872957,107.6138988,bandung
+1346794366,node,B'gana restoran,restaurant,-6.8972541,107.6147191,bandung
+1346794387,node,Victoria,restaurant,-6.8968401,107.6152372,bandung
+1352129471,node,Ampera,restaurant,-6.8982722,107.6369137,bandung
+1385420759,node,Rumah Makan Padang,restaurant,-6.8837407,107.6148998,bandung
+1656979199,node,RM Padang Mirasari,restaurant,-6.8823595,107.5758245,bandung
+1656979200,node,RM Padang Siang Malam,restaurant,-6.8823742,107.5762796,bandung
+1657013613,node,RM Daun Pisang,restaurant,-6.873753,107.5957989,bandung
+1657158617,node,Warung Tekko,restaurant,-6.8744394,107.5962776,bandung
+1657158618,node,Kambing Bakar Cairo,restaurant,-6.8703438,107.5917527,bandung
+1660110853,node,Pizza Hut,restaurant,-6.8831642,107.6025761,bandung
+1666758044,node,RM Padang Sederhana,restaurant,-6.8828983,107.6005782,bandung
+1668245119,node,Kantin Garasi,restaurant,-6.8943171,107.6089129,bandung
+1676404546,node,Bebek Goreng H. Slamet,restaurant,-6.8716969,107.5941246,bandung
+1700556142,node,Ayam Cobek Langganan,restaurant,-6.9010333,107.6016546,bandung
+1746761936,node,Starbucks,cafe,-6.8939696,107.6055017,bandung
+1746761937,node,Bebek Crispy,restaurant,-6.8934997,107.6050826,bandung
+1873943402,node,Pempek Pak Raden,restaurant,-6.8825278,107.5802874,bandung
+1924435646,node,BMK,restaurant,-6.8939367,107.6050187,bandung
+1924450381,node,Mama’s Greman Restaurant,restaurant,-6.8959285,107.6031089,bandung
+1969331842,node,Pizza Hut,restaurant,-6.9009712,107.6125356,bandung
+2429254335,node,Atmosphere Resort Cafe,restaurant,-6.9267334,107.6132906,bandung
+2429258324,node,Baso Malang Enggal,restaurant,-6.924869,107.6196988,bandung
+2429262280,node,Pempek Pak Raden,restaurant,-6.8879183,107.615515,bandung
+2490686956,node,Baso Semar,restaurant,-6.9198235,107.6170063,bandung
+2491840024,node,Warung Steak and Shake,restaurant,-6.9230613,107.6131868,bandung
+2491855814,node,Bloemen,restaurant,-6.8880195,107.6016212,bandung
+2492054087,node,Gokana,restaurant,-6.8936141,107.6057343,bandung
+2496127734,node,Gudeg Banda,restaurant,-6.9067229,107.6208472,bandung
+2496127739,node,Kopi Saring Sinar Pagi,cafe,-6.9069786,107.6208901,bandung
+2496127740,node,Bebek van Java,restaurant,-6.907068,107.6200544,bandung
+2496127741,node,Tama Gochi All You Can Eat,restaurant,-6.9068905,107.6197771,bandung
+2496127742,node,Warung Steak and Shake,restaurant,-6.9104934,107.6184011,bandung
+2497173677,node,Mujigae,restaurant,-6.8937286,107.6050758,bandung
+2497173678,node,Gigglebox,restaurant,-6.8931108,107.6050973,bandung
+2497173763,node,Pizza Hut,restaurant,-6.9110685,107.6267052,bandung
+2725732963,node,Warung Nasi Kang EWOK,restaurant,-6.9052749,107.5961955,bandung
+3001806573,node,Chicken Farms,restaurant,-6.9196306,107.5935729,bandung
+3017729954,node,Kantin Salman,restaurant,-6.8942667,107.610979,bandung
+3017729959,node,Kantin GKU,restaurant,-6.8903481,107.6087349,bandung
+3017729960,node,Kantin Borju,restaurant,-6.8905771,107.6093626,bandung
+3017729961,node,Kantin Barak,restaurant,-6.8917009,107.6116156,bandung
+3017729963,node,KBL,restaurant,-6.8883084,107.6088476,bandung
+3064180843,node,,restaurant,-6.8792672,107.6127822,bandung
+3064183062,node,,restaurant,-6.8898807,107.6172141,bandung
+3148868098,node,Jackstar,restaurant,-6.9256802,107.6276337,bandung
+3155746370,node,Bandung Suki Restaurant,restaurant,-6.9169297,107.6093123,bandung
+3386314313,node,Angkringan Losari,restaurant,-6.9188476,107.6067686,bandung
+3421238301,node,Habenagen Coffeeshop,cafe,-6.9021325,107.6040636,bandung
+3424716400,node,Sederhana,restaurant,-6.91157,107.627266,bandung
+3428599973,node,Point Coffee,cafe,-6.9060828,107.6202185,bandung
+3429603279,node,Ayam Bakar Wong Song,restaurant,-6.9136255,107.6289496,bandung
+3429603356,node,The Oldway Cafe,cafe,-6.9070431,107.6230593,bandung
+3429872583,node,Cizz,restaurant,-6.9161351,107.6304057,bandung
+3431431053,node,Kopi Anjis,restaurant,-6.9287447,107.6222637,bandung
+3757788976,node,Gangnam Pocha,restaurant,-6.8838733,107.6150099,bandung
+3797907540,node,Sop Kaki,restaurant,-6.8986257,107.613195,bandung
+3797908063,node,Lontong Kari Gempol,restaurant,-6.9031083,107.6154995,bandung
+3797908082,node,Bakso Arief,restaurant,-6.9045738,107.6140864,bandung
+3797908083,node,Dianti Daily,restaurant,-6.9045936,107.6141887,bandung
+3797908084,node,Soo Moo Hun,restaurant,-6.9046556,107.6141388,bandung
+3797908134,node,Kabut Salju,cafe,-6.9183143,107.6143286,bandung
+3797908148,node,Ayam Goreng Nikmat,restaurant,-6.919286,107.6169434,bandung
+3802205384,node,Bebek Kaleyo,restaurant,-6.9007525,107.5970316,bandung
+3803628057,node,Ambun Pagi,restaurant,-6.8964177,107.595882,bandung
+3806721273,node,Aem Pek 322 Dago,restaurant,-6.8782448,107.6169053,bandung
+3806721278,node,Baso Malang 336,restaurant,-6.878149,107.6169412,bandung
+3806721279,node,Baso dan Batagor H.Dartowahab,restaurant,-6.8846311,107.6140131,bandung
+3806721281,node,Cokotetra,cafe,-6.878483,107.616839,bandung
+3806721290,node,Goelali,restaurant,-6.8803626,107.6163564,bandung
+3806721295,node,Kebab Turki,restaurant,-6.8811193,107.6161344,bandung
+3806721296,node,Kedai Chinese Food Nikmat,restaurant,-6.8786715,107.616787,bandung
+3806721297,node,Kedai Roti 280,restaurant,-6.8804359,107.6163385,bandung
+3806721298,node,Lomie & Bakmie Inam Bonjol,restaurant,-6.8811754,107.6161217,bandung
+3806721299,node,Mie Baso Sapi Panghegar,restaurant,-6.8787037,107.6167785,bandung
+3806721300,node,Nasi Timbal,restaurant,-6.8788817,107.6167362,bandung
+3806721308,node,RAMEN HOUSE YAGAMI,restaurant,-6.8845352,107.6135695,bandung
+3806721322,node,Toko Restu,restaurant,-6.8834273,107.6147436,bandung
+3806721325,node,YUTAKANA,cafe,-6.8834511,107.6147196,bandung
+3806746614,node,Dendeng Batokok Dago,restaurant,-6.8767404,107.6179507,bandung
+3806758498,node,Bakmi Jogja,restaurant,-6.8745715,107.6191251,bandung
+3806758500,node,Roti Gareng,restaurant,-6.8745072,107.6191486,bandung
+3806758502,node,Warteg Dua Putri,restaurant,-6.8746857,107.6190813,bandung
+3807746627,node,Kambing Soon,restaurant,-6.8717491,107.620125,bandung
+3807746639,node,Warung Tegal Makga Jaya,restaurant,-6.8734448,107.6196056,bandung
+3809662418,node,Ngopi Doeloe,restaurant,-6.926744,107.6276202,bandung
+3809666549,node,Nasi Penjara,restaurant,-6.9027187,107.6136333,bandung
+3816558659,node,Dapur Thailand,restaurant,-6.9194536,107.6161559,bandung
+3818319733,node,Herb & Spice,restaurant,-6.9026858,107.5973876,bandung
+3818634238,node,Bakmi Jogja,restaurant,-6.8966337,107.5970159,bandung
+3818634239,node,Waroeng Milk and Shake,restaurant,-6.8967854,107.5970217,bandung
+3820681048,node,Ampera,restaurant,-6.8951185,107.5880348,bandung
+4084457201,node,Raa Cha,restaurant,-6.893351,107.6051095,bandung
+4087805054,node,Madame Sari,restaurant,-6.8975809,107.6121376,bandung
+4087805724,node,Raja Sunda,restaurant,-6.8969429,107.5907416,bandung
+4142931293,node,Tizi's Cafe,restaurant,-6.8829482,107.6137095,bandung
+4143048396,node,Roti Gempol & Kopi Anjis!,cafe,-6.909191,107.6276245,bandung
+4143072990,node,KAFE SISHA FURDAN,cafe,-6.9089804,107.627429,bandung
+4150283093,node,Two Cents,cafe,-6.9072246,107.6203843,bandung
+4169205936,node,Cafe Oz,restaurant,-6.8805774,107.5942858,bandung
+4169205937,node,District 29,restaurant,-6.8799945,107.5940974,bandung
+4177764076,node,Bebek Gareng;Bandung Coffee House,restaurant;cafe,-6.899176,107.6208066,bandung
+4177773891,node,Kopi kamu,cafe,-6.8979598,107.6098119,bandung
+4256123806,node,Karnivor,cafe,-6.9079727,107.6239556,bandung
+4256131112,node,Batagor Kingsley,restaurant,-6.9190972,107.6153692,bandung
+4256137089,node,Beehive Cafe & Eatery,restaurant,-6.8875201,107.6127573,bandung
+4256140907,node,Noah's Barn,cafe,-6.8869895,107.6126856,bandung
+4256164272,node,Hanamasa,restaurant,-6.9010104,107.6123933,bandung
+4256331317,node,Badung Cafe & Resto,cafe,-6.9061929,107.5981092,bandung
+4258313505,node,Hummingbird Eatery,cafe,-6.904728,107.6178751,bandung
+4258324190,node,Sushi Tei,restaurant,-6.9173914,107.6133076,bandung
+4258347459,node,Dapoer Pandan Wangi,restaurant,-6.9284008,107.6240018,bandung
+4272686695,node,Eatboss Cafe,cafe,-6.9088982,107.6184895,bandung
+4320535079,node,Glosis Restaurant,restaurant,-6.9049365,107.6227839,bandung
+4320599452,node,Winner Bratwurst,restaurant,-6.9019264,107.6214808,bandung
+4320607780,node,Bober,cafe,-6.917453,107.6132859,bandung
+4320639466,node,Brusselsspring,cafe,-6.9164146,107.6138316,bandung
+4320643325,node,Soleluna,cafe,-6.916593,107.6138143,bandung
+4320644772,node,Kedai Ling-Ling,restaurant,-6.8856245,107.5962474,bandung
+4320655631,node,Two Cents,cafe,-6.905489,107.6206005,bandung
+4320683854,node,Wingz O Wingz Cafe And Resto,restaurant,-6.9205607,107.614136,bandung
+4320691228,node,Gaya Brasserie,restaurant,-6.9082315,107.624401,bandung
+4320702955,node,BonChon,restaurant,-6.9047843,107.6165469,bandung
+4320704774,node,Kedai Nasi Bajamba Kapau,restaurant,-6.9065739,107.6158864,bandung
+4320705419,node,Little White Cafe,cafe,-6.9291255,107.6196615,bandung
+4320707953,node,Vanilla Kitchen & Wine,cafe,-6.9036224,107.6209866,bandung
+4320710020,node,Waroeng Ethnic,restaurant,-6.8710838,107.6076398,bandung
+4320715786,node,Kopi Progo,cafe,-6.9046421,107.618747,bandung
+4320722067,node,Giggle Box Cafe And Resto,cafe,-6.9045688,107.6197076,bandung
+4320729128,node,Warung Sangrai,restaurant,-6.9055992,107.616762,bandung
+4320737157,node,Feast Restaurant,restaurant,-6.8742543,107.6192351,bandung
+4320749637,node,Balista Signature,restaurant,-6.905619,107.6167643,bandung
+4320793364,node,Vermont Restaurant,restaurant,-6.8810535,107.5983139,bandung
+4320805756,node,Blackball,restaurant,-6.8799997,107.5981916,bandung
+4320821104,node,Ikan Pesmol Cianjur,restaurant,-6.8755338,107.5966884,bandung
+4320824982,node,East and West Resto & Bar,restaurant,-6.9167187,107.613811,bandung
+4320841831,node,Eatalia,restaurant,-6.924126,107.6118868,bandung
+4320853779,node,Praoe Seafood,restaurant,-6.914155,107.6135284,bandung
+4320864438,node,Saisan Japanese Cuisine,restaurant,-6.8791733,107.6009453,bandung
+4320870346,node,Parit 9 Seafood,restaurant,-6.9104912,107.6306581,bandung
+4320923689,node,Southville,cafe,-6.9286472,107.5868038,bandung
+4320925493,node,Grand Eastern,restaurant,-6.9151627,107.5982134,bandung
+4320928124,node,Wiki Koffie,cafe,-6.9160557,107.6091519,bandung
+4320934811,node,Thai Palace,restaurant,-6.8748841,107.6188318,bandung
+4320941004,node,Saka Bistro & Bar,restaurant,-6.8810858,107.5986064,bandung
+4321003454,node,TJENDANA BISTRO,restaurant,-6.8826195,107.5964138,bandung
+4321020958,node,Bornga,restaurant,-6.9039231,107.5989336,bandung
+4321036011,node,sudirman street food,restaurant,-6.9204002,107.6002017,bandung
+4321049832,node,Cibadak Food Market,restaurant,-6.9216518,107.6003966,bandung
+4322633063,node,Everjoy Coffee and Cafe,cafe,-6.9052965,107.6138859,bandung
+4322668890,node,Ayam Geprek Pangeran,restaurant,-6.9185493,107.6096852,bandung
+4322669484,node,Porto Restaurant,restaurant,-6.8797792,107.5984107,bandung
+4322674972,node,Jubilare Dine and Wine,restaurant,-6.8810021,107.5982247,bandung
+4322677519,node,Rijsttafel Resto,restaurant,-6.9097236,107.5977039,bandung
+4322680459,node,The Dreams Cake,restaurant,-6.9379902,107.6193999,bandung
+4322684148,node,Fuku Ramen,restaurant,-6.9095532,107.5976897,bandung
+4322688658,node,THE HARVEST DAGO,restaurant,-6.905355,107.6104147,bandung
+4326457996,node,Chingu Cafe,cafe,-6.9010768,107.6097423,bandung
+4326481406,node,Kenken Bigul Kitchen,restaurant,-6.9153616,107.5982452,bandung
+4326486305,node,Hanken Kitchen,restaurant,-6.9072846,107.6190397,bandung
+4326487152,node,Kandang Ayam Kebon Kawung,restaurant,-6.9124832,107.5992553,bandung
+4326490087,node,Mandarin Restaurant,restaurant,-6.9124458,107.5983485,bandung
+4326505745,node,Warung Nasi Ampera,restaurant,-6.9123909,107.6011252,bandung
+4326510048,node,Red Tulip Resto Restoran,restaurant,-6.9125398,107.6038437,bandung
+4326555372,node,Roemah Nenek,restaurant,-6.9043132,107.6237201,bandung
+4326595197,node,Perky Pedro: Comidas Y Bebidas Planet Daging,restaurant,-6.9111906,107.6271109,bandung
+4326600885,node,Myeong Ga,restaurant,-6.8775851,107.5895741,bandung
+4326603897,node,Hakata Ikkousha,restaurant,-6.9154611,107.629507,bandung
+4326610522,node,Bakso Barbel Agung Hercules,restaurant,-6.9159462,107.6678531,bandung
+4326619590,node,Anata Cake & Bakery,restaurant,-6.9018086,107.5973555,bandung
+4326640119,node,Kedai Nyonya Rumah,restaurant,-6.9211852,107.6170492,bandung
+4326646566,node,Kupu Bistro,cafe,-6.9025783,107.6097557,bandung
+4326747446,node,Tomodachi Restaurant,restaurant,-6.889864,107.5969999,bandung
+4326767332,node,ETC Etcetera,cafe,-6.9024057,107.6143369,bandung
+4326775715,node,Blackpepper resto & cafe,restaurant,-6.9011504,107.6134266,bandung
+4326781690,node,Oldbens Cafe,cafe,-6.900332,107.6136806,bandung
+4326815228,node,Lumiere Bistro and Art Gallery,restaurant,-6.9051622,107.6095953,bandung
+4326817355,node,Sapi Unggul Indonesia,restaurant,-6.9127336,107.6289424,bandung
+4326817808,node,Javan Steak,restaurant,-6.9000351,107.6115953,bandung
+4326818793,node,Warunk Upnormal,restaurant,-6.9022555,107.6044599,bandung
+4326822673,node,Yellow Truck Coffee,restaurant,-6.9118683,107.5779293,bandung
+4326823777,node,The Larder,restaurant,-6.9130997,107.6262194,bandung
+4326829300,node,NINE'SQUARE Bar&Resto,restaurant,-6.8999,107.611426,bandung
+4326832448,node,Lucio Luciano Patisseries,restaurant,-6.8926493,107.6144085,bandung
+4326833521,node,Love Meat Tender,restaurant,-6.8959401,107.6031687,bandung
+4326834404,node,Legian Terrace Cafe,restaurant,-6.8997957,107.6115847,bandung
+4326837928,node,Le Marly,restaurant,-6.9051254,107.6223404,bandung
+4326840306,node,RM Alas Daun,restaurant,-6.9016748,107.6250691,bandung
+4326855496,node,Bakso Boedjangan,restaurant,-6.9268716,107.6193988,bandung
+4326871085,node,Old Ben's Garage & Coffee,restaurant,-6.8802525,107.5806276,bandung
+4326872989,node,Kane Pizzeria,restaurant,-6.905339,107.6135667,bandung
+4326873539,node,Ludwick Café,cafe,-6.872527,107.5932983,bandung
+4326876027,node,Uncle's Storage,cafe,-6.9204024,107.6130499,bandung
+4326877060,node,Monsoon Cafe,cafe,-6.884257,107.5968352,bandung
+4326880572,node,Bubur Ayam Mang H. Oyo,restaurant,-6.899456,107.6106804,bandung
+4326883566,node,Indischetafel Resto,restaurant,-6.9164865,107.6136019,bandung
+4326884850,node,Hoppers,cafe,-6.8997615,107.6104078,bandung
+4326886137,node,Giannis,restaurant,-6.8869718,107.603936,bandung
+4326888054,node,Kedai Persib,cafe,-6.8996949,107.610294,bandung
+4327152529,node,Eerma'sm Kitchen,restaurant,-6.8815585,107.5757293,bandung
+4327190059,node,CAWIT (Cabe Rawit),restaurant,-6.8768509,107.604058,bandung
+4327246099,node,Kedai Pantai Timur,cafe,-6.8979361,107.592867,bandung
+4327947541,node,Dominos Pizza,restaurant,-6.8816289,107.5816811,bandung
+4327947863,node,Kedai Waka Waka,restaurant,-6.8810961,107.581227,bandung
+4327951247,node,Take Ichi Japanese Cafe,cafe,-6.8851859,107.5815401,bandung
+4327975257,node,Hongkong Restaurant,restaurant,-6.9202649,107.599052,bandung
+4327978185,node,Nasi Goreng Mafia,restaurant,-6.8919882,107.6174367,bandung
+4327980993,node,Sari Sunda Restaurant,restaurant,-6.9489967,107.6234324,bandung
+4327985397,node,Sugar Rush,cafe,-6.8891532,107.582279,bandung
+4327989798,node,Saung Kabayan,restaurant,-6.8958519,107.5893761,bandung
+4327993521,node,Kafetaria 170,restaurant,-6.9021588,107.5975823,bandung
+4327994060,node,Otten Inn & Viit Cafe,cafe,-6.90137,107.5990705,bandung
+4327995101,node,Melbourne Kitchen,restaurant,-6.9027733,107.6026978,bandung
+4328013345,node,Kambing Bakar Cairo,restaurant,-6.8968528,107.6037639,bandung
+4328025912,node,Milan Cafe,cafe,-6.9309098,107.6262291,bandung
+4328027160,node,Abuba Steak,restaurant,-6.9330981,107.6254099,bandung
+4328028634,node,Okoh Japanese Restaurant,restaurant,-6.9352035,107.6247857,bandung
+4328031796,node,Hungry Station,restaurant,-6.9257329,107.6201892,bandung
+4328069510,node,Magic Wok Tavern,cafe,-6.9120068,107.5960795,bandung
+4328076556,node,Pokatiam,cafe,-6.9109614,107.5979568,bandung
+4328084639,node,Lomie Karuhun,restaurant,-6.9106044,107.5979615,bandung
+4328085896,node,Strudel's Signature,restaurant,-6.9104931,107.5979568,bandung
+4328090099,node,Rumah Makan Santung,restaurant,-6.9093991,107.597875,bandung
+4328092026,node,Gepuk Ny. Ong,restaurant,-6.908961,107.5978563,bandung
+4328100799,node,Magma Lounge,restaurant,-6.9129657,107.597758,bandung
+4328103422,node,Ayam Goreng Tempo Doeloe,restaurant,-6.9156161,107.5982369,bandung
+4328109076,node,Tjiang Restaurant,restaurant,-6.9162559,107.597541,bandung
+4328112767,node,Bubur Ahong,restaurant,-6.9164135,107.5968616,bandung
+4328122520,node,He Fu Restaurant,restaurant,-6.9172755,107.5981687,bandung
+4328124994,node,Ming Yen Asli,restaurant,-6.9173543,107.5981524,bandung
+4328126842,node,Seafood Mas Gondrong,restaurant,-6.9182827,107.5931426,bandung
+4328127549,node,Bebek Kelenteng Restaurant,restaurant,-6.919323,107.5929285,bandung
+4328129180,node,Bubur Ayam Pa' Otong,restaurant,-6.918928,107.5889867,bandung
+4328129194,node,Yoss Coffe,cafe,-6.917344,107.5983109,bandung
+4328137008,node,Mie Pangsit Pematang Siantar,restaurant,-6.9370934,107.5954123,bandung
+4328146492,node,Lee Ramen Bar,restaurant,-6.9493489,107.6254604,bandung
+4328159384,node,Bakmie Karet,restaurant,-6.9204135,107.5927319,bandung
+4328160941,node,Mie Rica Kejaksaan,restaurant,-6.9150458,107.5965701,bandung
+4328171595,node,beri kopi,cafe,-6.904971,107.6102432,bandung
+4328175741,node,SWG COFFEE,cafe,-6.9025596,107.6104052,bandung
+4328178661,node,Sushi Den,restaurant,-6.902495,107.6093707,bandung
+4328179212,node,Cafe Pohon Durian Bandung,cafe,-6.9023283,107.6102359,bandung
+4328180206,node,Udin Ramen,restaurant,-6.900301,107.6092063,bandung
+4328187726,node,Nasi Goreng Gentayangan,restaurant,-6.8885603,107.6137119,bandung
+4328198157,node,Warung Steak Pasadena,restaurant,-6.8895762,107.5990536,bandung
+4328211453,node,Starbucks,cafe,-6.8861336,107.5816203,bandung
+4328218462,node,The Volcano Resto & Cafe,restaurant,-6.8810304,107.5825971,bandung
+4329252652,node,Buthcer's Bill Cafe & Resto,cafe,-6.9095825,107.6273878,bandung
+4329254729,node,Bakmi Jogja Bengawan,restaurant,-6.9105624,107.6276613,bandung
+4329257063,node,Sop Konro Marannu,restaurant,-6.9113656,107.6276989,bandung
+4329266751,node,Fruitopia,restaurant,-6.9118276,107.6281662,bandung
+4329272990,node,Mie Jogja Pak Karso,restaurant,-6.9124405,107.6281825,bandung
+4329436128,node,CFC,restaurant,-6.8994995,107.63409,bandung
+4329439350,node,Mie Merapi,restaurant,-6.8986559,107.6338765,bandung
+4329445347,node,Heidami Ramen,restaurant,-6.8980078,107.6347887,bandung
+4329459744,node,Gotcha Ice Cream,cafe,-6.8958583,107.6348705,bandung
+4329462845,node,Resep Moyang,restaurant,-6.8954547,107.6346062,bandung
+4329483915,node,Koffiechino,cafe,-6.8946071,107.6346631,bandung
+4329494632,node,Trends Cafe & Resto,cafe,-6.8940138,107.6348136,bandung
+4329495286,node,Gaza Mediterranean,cafe,-6.8943992,107.635277,bandung
+4329510946,node,Ceker Setan,restaurant,-6.8876325,107.6154079,bandung
+4329511638,node,CFC Kebun Binatang,restaurant,-6.890292,107.6079525,bandung
+4329516993,node,Saisan,restaurant,-6.8874739,107.6132269,bandung
+4329523439,node,Steak Ranjang,restaurant,-6.890525,107.6169022,bandung
+4329526433,node,Kedai Lontong Medan Ka' Zahra,restaurant,-6.8922074,107.6176016,bandung
+4329530805,node,Lomie Imam Bonjol,restaurant,-6.8924156,107.6153131,bandung
+4329532364,node,Hangout Cafe,cafe,-6.8949494,107.6164681,bandung
+4329535509,node,Kerang Ajaib DU,restaurant,-6.8948256,107.6173147,bandung
+4329536233,node,Starbucks,cafe,-6.8960232,107.6168462,bandung
+4329539516,node,Kedai Kecil,cafe,-6.8961805,107.6166992,bandung
+4329541106,node,B'Owl!,cafe,-6.8969548,107.6156562,bandung
+4329546450,node,Aji Anom,restaurant,-6.8976182,107.6156768,bandung
+4329561884,node,L'Societe Dine & Bar,restaurant,-6.8981525,107.6149453,bandung
+4329565488,node,Bale Gazeeboe,restaurant,-6.8990246,107.6194663,bandung
+4329573255,node,Blackjack Coffee,cafe,-6.9189145,107.5889524,bandung
+4329575240,node,Istana Raja Cobra,restaurant,-6.9195683,107.5927733,bandung
+4329577520,node,Sate Dj,restaurant,-6.9195066,107.5939635,bandung
+4329579352,node,KwangMing Vegetarian,restaurant,-6.9198568,107.5954646,bandung
+4329580936,node,Tahu YUN-YI,restaurant,-6.9199557,107.5963305,bandung
+4329599521,node,Jigoku Ramen,restaurant,-6.8982719,107.6435216,bandung
+4329601853,node,Chillax Coffee And Tea,cafe,-6.8975816,107.6437749,bandung
+4329604283,node,Jigoku Kitchen,restaurant,-6.8983404,107.6436331,bandung
+4329605668,node,Angkringan Si Meong,restaurant,-6.89895,107.6434172,bandung
+4329605943,node,Yurin,restaurant,-6.8991169,107.6435269,bandung
+4329610998,node,Bober,cafe,-6.8869859,107.6149061,bandung
+4329641605,node,Nobu Ramen & Sushi,restaurant,-6.8713736,107.594601,bandung
+4329643263,node,Abuba Steak,restaurant,-6.8707908,107.5937423,bandung
+4329644625,node,18 Hrs Cafe,cafe,-6.8710748,107.5936203,bandung
+4329652298,node,Ayam Djogja,restaurant,-6.8747901,107.5964663,bandung
+4329667846,node,Ramen 38 Chaya Bandung,restaurant,-6.8794456,107.5964269,bandung
+4329668751,node,MENARA BAKMI,restaurant,-6.8791683,107.5960754,bandung
+4329670481,node,Bridge Coffee Boutique & Dining,restaurant,-6.8809958,107.5972527,bandung
+4329674547,node,MARLO KITCHEN,restaurant,-6.91908,107.6125521,bandung
+4329679223,node,Rumah Tungku,restaurant,-6.9053771,107.6009336,bandung
+4329700089,node,Saung Radjiman,restaurant,-6.9038425,107.600752,bandung
+4352496389,node,Resto Keluarga,restaurant,-6.9039846,107.6672996,bandung
+4354988714,node,Soda Resto,cafe,-6.9063815,107.6103688,bandung
+4365930312,node,Wisata Kuliner Bandara Huseinsastranegara,restaurant,-6.9040985,107.5794215,bandung
+4365960649,node,Starbucks,cafe,-6.9169485,107.6091118,bandung
+4366097668,node,Bober,cafe,-6.9071717,107.6233922,bandung
+4367024650,node,Tsuka Ramen,restaurant,-6.9105164,107.6259586,bandung
+4367437571,node,Mie Baso Akung,restaurant,-6.9320455,107.6252304,bandung
+4367985891,node,Yoshinoya,restaurant,-6.8939186,107.6054344,bandung
+4368837989,node,Baso Cuanki & Batagor Serayu,restaurant,-6.9090714,107.6257541,bandung
+4368869904,node,"Please, Please, Please",cafe,-6.9045305,107.6199423,bandung
+4369040400,node,RM Ampera,restaurant,-6.8989615,107.6050417,bandung
+4370063123,node,Warunk Upnormal,restaurant,-6.9167985,107.6092222,bandung
+4370113727,node,Le Delice Cafe And Bakery,cafe,-6.9248412,107.621374,bandung
+4370466980,node,Dapur Dahapati,restaurant,-6.8873777,107.60234,bandung
+4370477176,node,Nanny's Pavillon,cafe,-6.9078484,107.6237768,bandung
+4370478568,node,Bebek Kaleyo,restaurant,-6.9448984,107.6305201,bandung
+4373086558,node,Bumbu Desa Rumah Mode,restaurant,-6.8825002,107.5997553,bandung
+4373091810,node,Eaton Bakery,restaurant,-6.8829404,107.5992425,bandung
+4373091831,node,Surabi Rumah Mode,restaurant,-6.8829031,107.6000043,bandung
+4373118986,node,Warung Sate Shinta,restaurant,-6.8937427,107.5868538,bandung
+4373144304,node,Mouton Slice And Grill,restaurant,-6.9116564,107.6268819,bandung
+4373206434,node,Bellamie Boulangerie,restaurant,-6.9070587,107.6237299,bandung
+4374132496,node,Tokyo Connection,restaurant,-6.9045876,107.6175664,bandung
+4374235509,node,Waroeng Steak And Shake,restaurant,-6.9001488,107.6094398,bandung
+4375120920,node,Rumah Makan Legoh,restaurant,-6.9043768,107.6119068,bandung
+4375134546,node,Ujenk Gemi Bar,cafe,-6.9070236,107.6057856,bandung
+4398549923,node,CO&CO Space,restaurant,-6.8979509,107.6137089,bandung
+4398549924,node,Butterfield Kitchen,restaurant,-6.897885,107.6138041,bandung
+4402479636,node,Ayam Penyet Surabaya,restaurant,-6.9190188,107.6078605,bandung
+4404017506,node,Kue Tiau Sapi Asli A88,restaurant,-6.9207251,107.5984722,bandung
+4407610669,node,Tahu SB,restaurant,-6.9229988,107.5985499,bandung
+4446613135,node,Lacamera Coffee,cafe,-6.9206091,107.6154775,bandung
+4468009743,node,Warteg Hipster,restaurant,-6.9052744,107.6141365,bandung
+4470387372,node,Bakso Boedjangan,restaurant,-6.9073948,107.5833286,bandung
+4515219205,node,Flores Number Five,restaurant,-6.9084123,107.6181452,bandung
+4526894252,node,N Cafe,cafe,-6.8767124,107.5728814,bandung
+4542484993,node,Bakso Tjap Haji,restaurant,-6.9248012,107.6199116,bandung
+4547680368,node,Pepper Lunch,restaurant,-6.9058067,107.5968488,bandung
+4550655407,node,Uncle A Urban Town,cafe,-6.906181,107.6144313,bandung
+4550671036,node,Fella,restaurant,-6.9061987,107.6143036,bandung
+4554066323,node,Katsunyaka,restaurant,-6.8933618,107.6057065,bandung
+4560221630,node,Tjoenkie,restaurant,-6.9202633,107.6017398,bandung
+4561525204,node,Cop-Copine,restaurant,-6.887541,107.5968379,bandung
+4564568005,node,Borobudor,restaurant,-6.8999911,107.6039898,bandung
+4566756042,node,Koffie Tijd!,restaurant,-6.9021861,107.6247453,bandung
+4567988592,node,Trailer Cafe,restaurant,-6.8939783,107.586321,bandung
+4691521502,node,de Keuken van Elsje,restaurant,-6.9185448,107.6155488,bandung
+4784488922,node,Iga Bakar Si Jangkung,restaurant,-6.8952024,107.6022782,bandung
+4788348021,node,Loco Chiks and Chill,cafe,-6.930728,107.6219372,bandung
+4936436721,node,Brussels Spring,cafe,-6.9186286,107.6141221,bandung
+4971536021,node,sfroastery,cafe,-6.9161264,107.5887671,bandung
+4991479921,node,Rumah Makan Partugoan,restaurant,-6.8780412,107.5773986,bandung
+5058394221,node,S'ei Sapi Lamalera,restaurant,-6.8982686,107.6173956,bandung
+5061207022,node,Soto Sedaap Boyolali,restaurant,-6.9023115,107.6135993,bandung
+5119336923,node,Pepper Lunch,restaurant,-6.8903288,107.5961947,bandung
+5119336924,node,The People's Cafe,cafe,-6.8901174,107.5960789,bandung
+5119336925,node,,restaurant,-6.8903231,107.5963214,bandung
+5119336926,node,Starbucks Reserve,cafe,-6.8901104,107.5965612,bandung
+5119336927,node,Zen Bu,restaurant,-6.889655,107.5960529,bandung
+5119336928,node,I-Tasuki,restaurant,-6.8890381,107.5960491,bandung
+5119336929,node,Zuki Suki,restaurant,-6.8884652,107.5960213,bandung
+5119339540,node,Djournál,cafe,-6.8901004,107.5961777,bandung
+5119339730,node,Shin Men,restaurant,-6.8903255,107.5962561,bandung
+5119339731,node,Domino's,restaurant,-6.8903206,107.5963924,bandung
+5119339734,node,Rempah Bistro,restaurant,-6.889791,107.5960614,bandung
+5119339735,node,Gula Merah,restaurant,-6.8887545,107.5960331,bandung
+5119339736,node,Caribou Coffee,cafe,-6.8886602,107.5960294,bandung
+5119339737,node,Black Canyon,cafe,-6.8885606,107.5960266,bandung
+5119341922,node,Sumo Boo!,restaurant,-6.8903808,107.5964328,bandung
+5119341923,node,The Duck King,restaurant,-6.8883223,107.5961745,bandung
+5119357421,node,Halaman,cafe,-6.8889259,107.5960428,bandung
+5119357521,node,Red Bean,restaurant,-6.888838,107.5960375,bandung
+5119724827,node,Tawan,restaurant,-6.8902714,107.5960569,bandung
+5175797665,node,Warteg Hipster,restaurant,-6.9195711,107.6157894,bandung
+5181200166,node,Istana Boneka,restaurant,-6.8917426,107.6044205,bandung
+5181202343,node,Baso Solo Luwes 2,restaurant,-6.8846654,107.6073974,bandung
+5181203097,node,Simpang Tigo Jaya,restaurant,-6.8914629,107.6043639,bandung
+5214626822,node,Jifast The Power Of Durian,cafe,-6.9157346,107.6304829,bandung
+5268872149,node,Rumah Makan Cibiuk,restaurant,-6.9468855,107.6384563,bandung
+5268872150,node,Rumah Makan Sederhana,restaurant,-6.94702,107.6382191,bandung
+5318324079,node,Starbucks,cafe,-6.8733449,107.6050402,bandung
+5332544175,node,Chiba,restaurant,-6.9045335,107.5993145,bandung
+5403427622,node,Rumah Makan Tjap Ajam,restaurant,-6.9205355,107.6137582,bandung
+5518516429,node,Restoran Simpang Raya,restaurant,-6.8926072,107.5852302,bandung
+5518555023,node,Warung Cepot,restaurant,-6.9085032,107.5984194,bandung
+5518555025,node,Sushi Tei,restaurant,-6.8783734,107.5963943,bandung
+5539416555,node,Gormetaria,restaurant,-6.9016624,107.597561,bandung
+5539416558,node,Eatboss,restaurant,-6.9044343,107.597659,bandung
+5542883063,node,Starbucks,cafe,-6.9064912,107.6170456,bandung
+5550171082,node,Resto & Coffee 1001,restaurant,-6.893814,107.6057222,bandung
+5550171792,node,Kenzu,restaurant,-6.8942378,107.6056125,bandung
+5550171863,node,Ikugo,restaurant,-6.8939722,107.6057199,bandung
+5550171878,node,Upnormal,restaurant,-6.8941224,107.6056536,bandung
+5552457062,node,Warung Bu Eha,restaurant,-6.9084924,107.6225601,bandung
+5556174885,node,Batagor Kahuripan,restaurant,-6.9086216,107.6247886,bandung
+5556987041,node,Restoran Sederhana Pasteur Masakan Padang,restaurant,-6.8948961,107.5891041,bandung
+5558373737,node,Kembang Deli Kopitiam,cafe,-6.9106431,107.6260908,bandung
+5558512491,node,Warung Manado,restaurant,-6.9005394,107.6030518,bandung
+5558799026,node,Simpang Raya Bandung,restaurant,-6.9227199,107.6077303,bandung
+5564099646,node,Bakso So'un & Mie Ayam Lodaya,restaurant,-6.9183508,107.6138211,bandung
+5566331130,node,Bakso Malang Enggal,restaurant,-6.8970431,107.5914757,bandung
+5724575421,node,La petite corner,cafe,-6.9296717,107.6035086,bandung
+5749156621,node,Batagor & mie baso,restaurant,-6.9062762,107.590788,bandung
+5803815254,node,The Suga Rush,restaurant,-6.9174178,107.6092353,bandung
+5803815256,node,Nasi Goreng Rempah Abang,restaurant,-6.9169772,107.608836,bandung
+5803815257,node,Justus Steakhouse,restaurant,-6.9170955,107.6087448,bandung
+5803815259,node,Uday,restaurant,-6.9171422,107.6085855,bandung
+5803815260,node,Giggle Box,restaurant,-6.917202,107.608385,bandung
+5803815356,node,Warung Bu Tris,restaurant,-6.91746,107.6094194,bandung
+5803815453,node,Kopi Toko Djawa,cafe,-6.9174934,107.6092599,bandung
+5803815553,node,Warung C'mar,restaurant,-6.9176115,107.6092962,bandung
+5803815654,node,Punya Cerita,restaurant,-6.9173678,107.6093892,bandung
+5803815655,node,Art,cafe,-6.9171923,107.6093407,bandung
+5803815657,node,Tokyo Connection,restaurant,-6.9171028,107.6083528,bandung
+5803815755,node,Bakso Boedjangan,restaurant,-6.9169993,107.6087546,bandung
+5803824053,node,Chatime,cafe,-6.9169517,107.6089282,bandung
+5818209256,node,Kapulaga,restaurant,-6.887513,107.612487,bandung
+5829065094,node,Gyu Katu,restaurant,-6.8993196,107.6133452,bandung
+6091307649,node,Warnet Nur,cafe,-6.9165534,107.5889526,bandung
+6151203589,node,Dalaraos,restaurant,-6.8844734,107.6063465,bandung
+6162914473,node,Se'Indonesia,restaurant,-6.9041234,107.5973403,bandung
+6165491454,node,Gokana,restaurant,-6.9056495,107.5965298,bandung
+6170790695,node,Kiosk,restaurant,-6.917021,107.6084609,bandung
+6178047242,node,Raacha,restaurant,-6.9056577,107.5973527,bandung
+6180070466,node,Richeese Pizza,restaurant,-6.9129873,107.6285112,bandung
+6243860290,node,Cafe Bali,cafe,-6.9137601,107.6294757,bandung
+6325289085,node,Gajua Kopi,cafe,-6.9018765,107.60974,bandung
+6348952797,node,Tiga Outdoor Cafe,cafe,-6.8949433,107.6162456,bandung
+6390196086,node,Kopi Siologi,cafe,-6.8868433,107.6266658,bandung
+6418849588,node,Sate Ahmad Naswawi,restaurant,-6.9125227,107.6286872,bandung
+6418849593,node,Sha-Waregna,restaurant,-6.8780483,107.5922348,bandung
+6520452488,node,The Goodlife,cafe,-6.8813092,107.5826337,bandung
+6593020150,node,Kedai Makmoer,cafe,-6.9059425,107.6191508,bandung
+6593020153,node,Bakso Boedjangan,restaurant,-6.906393,107.6173966,bandung
+6593983973,node,Tjiang,restaurant,-6.910716,107.5977589,bandung
+6656658444,node,CFC,restaurant,-6.8913214,107.5718325,bandung
+6679908485,node,ROBAKUS Roti Bakar Kukus,restaurant,-6.8886687,107.6189787,bandung
+6711694594,node,Mangkok Ayam,restaurant,-6.9058303,107.5973504,bandung
+6711695723,node,Chatime,cafe,-6.9062428,107.5978201,bandung
+6715441648,node,Roti'O,restaurant,-6.9145711,107.6021311,bandung
+6728835591,node,Kantin Tong Tong,restaurant,-6.8808327,107.5819186,bandung
+6728852430,node,Raja Sunda,restaurant,-6.8970234,107.5912071,bandung
+6790495486,node,Talago Biru,restaurant,-6.9040399,107.6664854,bandung
+6794719088,node,Jingga,restaurant,-6.9029451,107.6655565,bandung
+6856906886,node,Indonesian yummy street food,restaurant,-6.9226022,107.6119813,bandung
+7076329914,node,Chiba,cafe,-6.9097811,107.5969413,bandung
+7079247770,node,Se'i Sapi Lamalera,restaurant,-6.9249539,107.6183981,bandung
+7079868210,node,Popia Tiam,restaurant,-6.9313423,107.6125525,bandung
+7083442360,node,Toko Lily,restaurant,-6.9000896,107.6040806,bandung
+7083454191,node,Mi Nampol,restaurant,-6.9041311,107.624076,bandung
+7085999286,node,Jardin,cafe,-6.9054216,107.6202311,bandung
+7087733240,node,D'Cost,restaurant,-6.893725,107.6057251,bandung
+7298044874,node,Bagul Gianyar,restaurant,-6.9107444,107.5977119,bandung
+7466927535,node,Dono Reborn,cafe,-6.8924838,107.6251253,bandung
+7655404507,node,Baso Aci Ciwang 88,cafe,-6.9071388,107.6180169,bandung
+8045853136,node,Nasi Kapau Uni Iyang,restaurant,-6.9288257,107.6250214,bandung
+8062550327,node,Ayam Goreng Karawaci,restaurant,-6.8772699,107.6172128,bandung
+8442837466,node,Mie Rica Kejaksaan,restaurant,-6.9184679,107.6101923,bandung
+9209462330,node,Sushi Tei,restaurant,-6.8902387,107.5955503,bandung
+9213367317,node,Mr. Roastman Experience,restaurant,-6.8731826,107.6053069,bandung
+9213367417,node,Kuro Coffee,cafe,-6.8711062,107.6056926,bandung
+9248886117,node,Waroeng Milenial,restaurant,-6.8730196,107.6051703,bandung
+9286108642,node,Kopipi,cafe,-6.9032558,107.6139508,bandung
+9558304917,node,Jenderal Kopi Nusantara Buwas coffee,cafe,-6.9142367,107.6297314,bandung
+9676827227,node,,cafe,-6.8840587,107.6177097,bandung
+9742472715,node,Ngopo Doeloe Sangkurian,cafe,-6.8840265,107.6116969,bandung
+9805774343,node,Chung Gi Wa - Sukajadi,restaurant,-6.8825712,107.580079,bandung
+9833516017,node,Ponyo,restaurant,-6.9249268,107.6236929,bandung
+9835239617,node,Kampung Kuring,restaurant,-6.904474,107.6046209,bandung
+9842973417,node,Spice Affair,restaurant,-6.8844363,107.59674,bandung
+9932988485,node,Padang Merdeka,restaurant,-6.9003961,107.6142255,bandung
+9933897081,node,The White Clover,restaurant,-6.9051142,107.6015846,bandung
+9933920605,node,Sate Maranggi Hj Maya Pasteur,restaurant,-6.894676,107.5885194,bandung
+9936823889,node,Mimi teh,restaurant,-6.9028428,107.6135049,bandung
+9938373551,node,Solaria,restaurant,-6.9162226,107.6416342,bandung
+9938661332,node,Bumahai,restaurant,-6.9165173,107.6417667,bandung
+9938891182,node,Joomba,cafe,-6.9156712,107.6418632,bandung
+9939299283,node,Wingz o Wingz,restaurant,-6.9041351,107.6280099,bandung
+9941468156,node,Joh-Eun Keopi,cafe,-6.9160279,107.6407122,bandung
+9942283587,node,Bakmitopia,restaurant,-6.8940427,107.605689,bandung
+9944377821,node,Mixue,cafe,-6.9182851,107.6094729,bandung
+10000802733,node,Warung Nenek Nafisah,restaurant,-6.885306,107.5777699,bandung
+10153299526,node,Calf Coffee Industry,cafe,-6.9107304,107.6329394,bandung
+10153301887,node,AYAM PENYET RIA,restaurant,-6.9094781,107.6321409,bandung
+10232370517,node,otto iskandardinata 305,cafe,-6.9248453,107.6039702,bandung
+10303849506,node,Bahari,restaurant,-6.9172988,107.6596812,bandung
+10573724816,node,Warung Kopi Imah Babaturan,cafe,-6.8980574,107.607698,bandung
+10725880605,node,Bagi Kopi,cafe,-6.8776541,107.6168476,bandung
+10732021605,node,Nasi campur Bintang,restaurant,-6.9177994,107.5932634,bandung
+10732021705,node,Teman Lama,cafe,-6.9093416,107.5922661,bandung
+10734191605,node,Kilogram,cafe,-6.8855533,107.5955189,bandung
+10740306005,node,Kedai Bu Ai,restaurant,-6.9069909,107.5883826,bandung
+10742670249,node,Liliwetan,restaurant,-6.9052088,107.6286944,bandung
+10743117494,node,Dapur Angklung,restaurant,-6.898016,107.654862,bandung
+10743200032,node,Mie Baso Ngidam Sari,restaurant,-6.9242587,107.6452348,bandung
+10772813657,node,Point Coffee,cafe,-6.9453718,107.6304886,bandung
+10772813659,node,Fore Coffee,cafe,-6.9410924,107.6268912,bandung
+10772813660,node,Kopi Kenangan,cafe,-6.9411448,107.6270712,bandung
+10772994513,node,Suki & Grill Time,restaurant,-6.9389573,107.6249953,bandung
+10772994548,node,Chatime,cafe,-6.9398319,107.625775,bandung
+10800580601,node,Dapoer Sadoloer,restaurant,-6.9144606,107.6364708,bandung
+10898696307,node,Kydin Bahari,restaurant,-6.9470408,107.6627296,bandung
+10996454907,node,Kopi Mandja,cafe,-6.9160953,107.6678117,bandung
+10996460507,node,Starbucks,cafe,-6.9158532,107.5944292,bandung
+11009504905,node,Fork (24h),cafe,-6.9161426,107.6101371,bandung
+11010808889,node,Khoe Pek Goan Bloemenstad Bandung,restaurant,-6.9083222,107.6291177,bandung
+11013530705,node,Justus,restaurant,-6.8934069,107.6050563,bandung
+11032812909,node,Point Coffee,cafe,-6.9293268,107.6383175,bandung
+11043877834,node,Sederhana,restaurant,-6.9048976,107.6284471,bandung
+11047567832,node,Kedai Kalaman,restaurant,-6.9044402,107.5800838,bandung
+11047621610,node,Roti'O,restaurant,-6.9040791,107.5802488,bandung
+11047679855,node,Wingz Stop,restaurant,-6.9068088,107.6134529,bandung
+11049057895,node,Waroeng Steak and Shake,restaurant,-6.8901476,107.6162257,bandung
+11052098364,node,Bumus,restaurant,-6.9040033,107.620462,bandung
+11052105148,node,Chabu Hachi,restaurant,-6.9053582,107.6270058,bandung
+11052508433,node,Chatime,cafe,-6.9011192,107.6117927,bandung
+11054226150,node,Dapur Solo,restaurant,-6.8947462,107.6047328,bandung
+11054250607,node,Fresh Suki,restaurant,-6.8936666,107.6050894,bandung
+11054255706,node,Kopi Kenangan,cafe,-6.8936026,107.6051072,bandung
+11055954375,node,Garden Coffee,cafe,-6.9130481,107.6326629,bandung
+11057708376,node,Kofu,cafe,-6.9024399,107.6217955,bandung
+11059462325,node,Starbucks,cafe,-6.9063298,107.5977616,bandung
+11062722750,node,Eiger Coffee,cafe,-6.9052076,107.6045701,bandung
+11063089366,node,Bakmie Tjo Kin,restaurant,-6.9173701,107.6092183,bandung
+11064401812,node,Warung Lodeh,restaurant,-6.9058136,107.6188161,bandung
+11064404581,node,Ampera,restaurant,-6.8983318,107.6374414,bandung
+11066404381,node,150 Coffee and Garden,restaurant,-6.9087814,107.648662,bandung
+11070379388,node,Dapur Thailand,restaurant,-6.923578,107.6167183,bandung
+11101225745,node,Mixue,cafe,-6.9237589,107.617037,bandung
+11101257625,node,Point Coffee,cafe,-6.9241793,107.6201345,bandung
+11102885594,node,RM Padang Malah Dicubo,restaurant,-6.9156425,107.6028187,bandung
+11107825847,node,Warung Cobek Aneka,restaurant,-6.879916,107.6120978,bandung
+11107825858,node,Bebek Ali Borme,restaurant,-6.8918986,107.6167681,bandung
+11135462905,node,Pecel Madun,restaurant,-6.9024389,107.6088905,bandung
+11142011598,node,Warteg Simpang Dago,restaurant,-6.885158,107.6139102,bandung
+11231047001,node,Kamasan,cafe,-6.9072927,107.6158218,bandung
+11232419507,node,Bright Cafe,cafe,-6.8902542,107.6127312,bandung
+11388907823,node,Starbucks,cafe,-6.8991191,107.6211357,bandung
+11415319632,node,Durian NdoL,restaurant,-6.9176973,107.5981544,bandung
+11473161269,node,Ma'Oin Ayam Bakar Dan Goreng,restaurant,-6.8901223,107.6043047,bandung
+11515156250,node,Kopi Kenangan,cafe,-6.8949076,107.5887755,bandung
+11536111669,node,Kozi x Marawa,cafe,-6.8821567,107.6139604,bandung
+11550132512,node,Kopi Kenangan,cafe,-6.907439,107.6089496,bandung
+11553149013,node,Bahari,restaurant,-6.9439022,107.630798,bandung
+11608070659,node,Bakmie Maman 3 Gardujati,restaurant,-6.918186,107.5983421,bandung
+11697917789,node,Saraga Coffee,cafe,-6.8766336,107.6234896,bandung
+11727625146,node,Chatime,cafe,-6.8755511,107.6042704,bandung
+11727625147,node,Kopi Kenangan,cafe,-6.8756006,107.6042621,bandung
+11727625148,node,Kopi Kenangan,cafe,-6.9183441,107.6182166,bandung
+11727625149,node,Point Coffee,cafe,-6.9170677,107.6178618,bandung
+11727650397,node,Maxx Coffee,cafe,-6.9136374,107.6023798,bandung
+11729913198,node,Bomber Burger,restaurant,-6.9035798,107.6007649,bandung
+11732804363,node,,restaurant,-6.895995,107.6352498,bandung
+11738983540,node,Point Coffee,cafe,-6.9086249,107.6149449,bandung
+11866561174,node,Warung Cepot Hidangan Indonesia,restaurant,-6.908369,107.5981989,bandung
+11898859974,node,Kopi Kenangan,cafe,-6.9235043,107.6058278,bandung
+11916191487,node,Kopi Kursi Kayu × Hayam Lengkuas,restaurant,-6.8825421,107.5794318,bandung
+11984849397,node,Bakso Mantep,restaurant,-6.9105149,107.6074018,bandung
+11987427565,node,Raa Chaa Suki & BBQ,restaurant,-6.9088771,107.6113549,bandung
+11987473754,node,D'Cost,restaurant,-6.9091554,107.6109231,bandung
+11987489552,node,Baso by Mister Baso,restaurant,-6.9082061,107.6111349,bandung
+11987497230,node,Bakso Diet Bandung,restaurant,-6.9083419,107.6115292,bandung
+11987500955,node,Ramen Ya!,restaurant,-6.9084071,107.6108989,bandung
+11987503915,node,Mie Tarik King,restaurant,-6.9087306,107.6113495,bandung
+11987504013,node,Maxx Coffee,cafe,-6.9087306,107.6109311,bandung
+11987506951,node,Kimukatsu,restaurant,-6.9085789,107.6109526,bandung
+11987510412,node,Ayam Goreng Fatmawati,restaurant,-6.9084883,107.6114541,bandung
+11987511740,node,Chatime,cafe,-6.9088052,107.6112583,bandung
+11987514068,node,Steak Moen Moen,restaurant,-6.9082993,107.6114166,bandung
+11987515778,node,Kedai C-Meonk,restaurant,-6.9083632,107.6114166,bandung
+11987520648,node,Ramen N Sushi Box,restaurant,-6.9085256,107.6115681,bandung
+11987524029,node,Gokana Ramen,restaurant,-6.9087559,107.6111779,bandung
+11987524179,node,Yamie Hot Plate,restaurant,-6.9085163,107.6113468,bandung
+11987524438,node,Lucky Ducky,restaurant,-6.9086281,107.6114501,bandung
+11987526833,node,Shigeru Sushi,restaurant,-6.9087014,107.611489,bandung
+11987527994,node,Justus Burger & Steak,restaurant,-6.9084444,107.6113683,bandung
+11987528958,node,Asian Grill Express,restaurant,-6.9084005,107.6113442,bandung
+11987529015,node,Issy Lacha Pratta,restaurant,-6.9083046,107.6113696,bandung
+11987529194,node,Nasi Bakar Kama-Kan,restaurant,-6.9084111,107.6115024,bandung
+11987532224,node,Xing Fu Tang,cafe,-6.9088105,107.6114756,bandung
+11987533081,node,Fore Coffee,cafe,-6.9086534,107.6113254,bandung
+11987539703,node,Saung Soto,restaurant,-6.908475,107.611316,bandung
+11987541415,node,TOMORO Coffee,cafe,-6.9089357,107.6112758,bandung
+11987576565,node,Point Coffee,cafe,-6.9137299,107.6027866,bandung
+11988975410,node,Sushi Tei,restaurant,-6.9262618,107.6363128,bandung
+11989036241,node,Kimukatsu,restaurant,-6.9259848,107.6368761,bandung
+11989061356,node,Zenbu,restaurant,-6.92652,107.6360553,bandung
+11989063564,node,ShushiGo!,restaurant,-6.92652,107.636396,bandung
+11989065668,node,Bakmi GM,restaurant,-6.9258357,107.6364309,bandung
+11989072573,node,The Coffee Bean,cafe,-6.926126,107.6365703,bandung
+11989076895,node,Shigeru,restaurant,-6.9251168,107.636809,bandung
+11989076896,node,Ichiban Sushi,restaurant,-6.9255375,107.6367205,bandung
+11989076897,node,Go! Go! Curry,restaurant,-6.9263124,107.6366374,bandung
+11989076899,node,Dapur Solo,restaurant,-6.9252979,107.6368815,bandung
+11989077906,node,Rempah Bistro,restaurant,-6.9248133,107.637029,bandung
+11989077907,node,Ta Wan,restaurant,-6.9262245,107.6364657,bandung
+11989079605,node,Fore Coffee,cafe,-6.9261073,107.6362726,bandung
+11989080204,node,Kopi Guyu,cafe,-6.9252899,107.6369539,bandung
+11989081537,node,Yakiniku Like,restaurant,-6.9255482,107.6364925,bandung
+11989081549,node,KOI The,cafe,-6.9258118,107.636632,bandung
+11989082926,node,Ojju,restaurant,-6.9251168,107.6365945,bandung
+11989083592,node,Tom Sushi,restaurant,-6.9256094,107.6368976,bandung
+11989085592,node,Giggle Box,restaurant,-6.9259156,107.6367205,bandung
+11989085736,node,A&W,restaurant,-6.9253112,107.6365301,bandung
+11989085740,node,The Duck King,restaurant,-6.926552,107.6366293,bandung
+11989086599,node,Solaria,restaurant,-6.9260541,107.6367983,bandung
+11989086600,node,Gokana,restaurant,-6.9253911,107.6366642,bandung
+11989086867,node,Pepper Lunch,restaurant,-6.926355,107.6362619,bandung
+11989087017,node,Grill Time,restaurant,-6.9252553,107.6366669,bandung
+11989087378,node,Gyu Katsu Nikaido,restaurant,-6.9257479,107.6365301,bandung
+11989087858,node,Arigato Sushi,restaurant,-6.9248639,107.6365972,bandung
+11989088773,node,Ramen Ya!,restaurant,-6.9260008,107.6364014,bandung
+11989091188,node,Raa Cha,restaurant,-6.9253591,107.6368305,bandung
+11989096024,node,Gulu Gulu,cafe,-6.9256946,107.6369002,bandung
+11989099470,node,Golden Lamian,restaurant,-6.9255242,107.6366213,bandung
+11989185368,node,Warung Mie CGV,restaurant,-6.9080037,107.6089302,bandung
+11989217726,node,Chatime,cafe,-6.9080783,107.6089945,bandung
+11989228007,node,Soto Dirra,restaurant,-6.9082354,107.6090696,bandung
+11989238235,node,Resto Ramsteak Cianjur,restaurant,-6.936835,107.6100232,bandung
+11989261489,node,Asian Grill Express,restaurant,-6.9081608,107.6088604,bandung
+11989264999,node,Pempek Sungai Musi,restaurant,-6.9081262,107.6087585,bandung
+11989266842,node,Mixue,cafe,-6.9077481,107.6089409,bandung
+11989268478,node,Miehotplet Express,restaurant,-6.9080024,107.6088363,bandung
+11989268916,node,Dapur Neng Geulis,restaurant,-6.9081781,107.6091112,bandung
+11989268921,node,Coffee Dreams,cafe,-6.9080543,107.6088041,bandung
+11989270018,node,Bean Spot,cafe,-6.934669,107.6126719,bandung
+11989280172,node,Nasi Goreng Bistik Sawah Kurung,restaurant,-6.9360102,107.6116238,bandung
+11989401250,node,Mie Baso Ramdhan,restaurant,-6.9345318,107.6132378,bandung
+11989401251,node,Ayam Geprek Jogja,restaurant,-6.9342203,107.613681,bandung
+11989402140,node,Ayam Goreng Sinar Pemuda 2,restaurant,-6.930307,107.615859,bandung
+11989406494,node,Bean Spot,cafe,-6.9305899,107.6158027,bandung
+11989412687,node,Bebek Garang,restaurant,-6.9270739,107.6167414,bandung
+11989412992,node,Es Teh Indonesia,cafe,-6.9299948,107.6159549,bandung
+11989413333,node,HPWBR Bahari,restaurant,-6.9295947,107.6164155,bandung
+11989415208,node,Kokka Pan & Pot,restaurant,-6.9268196,107.6167897,bandung
+11989415305,node,Baso Aci Ganteng,restaurant,-6.9324097,107.6151797,bandung
+11989415537,node,Warung Steak Warjo,restaurant,-6.9241882,107.61753,bandung
+11989417973,node,RM Sabana Kapau,restaurant,-6.9327352,107.6145561,bandung
+11989418360,node,Kantin Rai,restaurant,-6.9327759,107.6145018,bandung
+11989422319,node,Ayam Gepuk Pak Gembus,restaurant,-6.9301445,107.6159099,bandung
+11989423045,node,Korner,cafe,-6.930068,107.6158972,bandung
+11989425916,node,SirLoin Beef House,restaurant,-6.9255309,107.6170888,bandung
+11989431419,node,Sate Gule Kambing HM Haris,restaurant,-6.9221679,107.6170928,bandung
+11989433992,node,Tenong Cilukba,restaurant,-6.9277988,107.6168266,bandung
+11989436159,node,Jala Kopi,cafe,-6.9222099,107.6174482,bandung
+11989437369,node,Sambal Bakar Sultan,restaurant,-6.9266146,107.617133,bandung
+11989521613,node,Kisah Manis,restaurant,-6.9188256,107.6177895,bandung
+11989536453,node,Kedai Kopi Oh,cafe,-6.9182591,107.6182294,bandung
+11989537474,node,Pinuka Catering & Resto,restaurant,-6.921262,107.6186579,bandung
+11989585079,node,Ayam Taliwang Khas Lombok,restaurant,-6.9112789,107.6182602,bandung
+11989586228,node,Lumiko,restaurant,-6.9118054,107.6165396,bandung
+11989768835,node,Wingz O Wingz,restaurant,-6.9380957,107.6143395,bandung
+11989769631,node,Secbowl Cloud Kitchen,restaurant,-6.93744,107.6106354,bandung
+11989786316,node,Gepuk Ny. Ong,restaurant,-6.9382861,107.6242523,bandung
+11989797530,node,Spesial Soto Boyolali,restaurant,-6.9381716,107.624198,bandung
+11989797571,node,Bean Spot,cafe,-6.9385433,107.6240548,bandung
+11989798285,node,Ayam Serundeng Ceu Odah,restaurant,-6.9382688,107.6242342,bandung
+11989877213,node,Shaburi & Kintan Buffet,restaurant,-6.890207,107.5961944,bandung
+11989894102,node,RamenYa!,restaurant,-6.8903994,107.596187,bandung
+11989899094,node,Marugame Udon,restaurant,-6.8903841,107.5963546,bandung
+11989904876,node,Fish and Co,restaurant,-6.8903694,107.5962594,bandung
+11989909206,node,Kopi Soe,cafe,-6.8895732,107.5957994,bandung
+11989912458,node,CGV Cafe,cafe,-6.8881792,107.5960006,bandung
+11989920371,node,Solaria,restaurant,-6.890456,107.5963399,bandung
+11989920848,node,Kopi Kenangan,cafe,-6.8904932,107.5962339,bandung
+11989936280,node,Janji Jiwa,cafe,-6.8901338,107.596364,bandung
+11989936282,node,Kopi Lay,cafe,-6.8893096,107.596132,bandung
+11989938460,node,Tom Sushi,restaurant,-6.8900725,107.5963064,bandung
+11989944589,node,Ramen 1,restaurant,-6.8902802,107.5958919,bandung
+11989945576,node,Fore Coffee,cafe,-6.8884167,107.5962458,bandung
+11989945577,node,Gyukaku,restaurant,-6.8895219,107.5960441,bandung
+11989945578,node,Kasugai Ramen,restaurant,-6.8902775,107.596482,bandung
+11989946038,node,Justus Steak House,restaurant,-6.8893868,107.5957847,bandung
+11989946949,node,Tiga Wonton,restaurant,-6.890428,107.596073,bandung
+11989951680,node,Sate Khas Senayan,restaurant,-6.8882644,107.596183,bandung
+11989952373,node,Rempah Bistro,restaurant,-6.8904733,107.5962031,bandung
+11989952374,node,Sushi Hiro,restaurant,-6.8903055,107.5956801,bandung
+11989962066,node,Chatime,cafe,-6.9057311,107.5971955,bandung
+11989966553,node,Yamie Hot Plate,restaurant,-6.9056512,107.597044,bandung
+11989968828,node,Kupi Pass,cafe,-6.8981169,107.5968488,bandung
+11989976186,node,Happy Suki Gyukatsu & BBQ,restaurant,-6.9056885,107.5968039,bandung
+11989978376,node,Otten Coffee,cafe,-6.9014214,107.5976649,bandung
+11989981680,node,Janji Jiwa,cafe,-6.9057404,107.5969756,bandung
+11989989345,node,Mie Tarik King,restaurant,-6.9058176,107.5967395,bandung
+11990103354,node,Bandung People's Place,restaurant,-6.9063555,107.5985943,bandung
+11990113951,node,Rumah Makan Santung,restaurant,-6.9069959,107.5998294,bandung
+11990117134,node,Ganefo,cafe,-6.9213245,107.618971,bandung
+11990120305,node,Point Coffee,cafe,-6.9191878,107.6240437,bandung
+11990121205,node,Rose Flower Restaurant,restaurant,-6.9217839,107.6188999,bandung
+11990123401,node,Warung Nasi Indra Rasa,restaurant,-6.9452646,107.5953092,bandung
+11990128302,node,Baso Putra Solo,restaurant,-6.9461256,107.5954263,bandung
+11990131577,node,Non Kitchen Coffee,cafe,-6.922132,107.6181697,bandung
+11990136347,node,Ayam Bakar Merot,restaurant,-6.9451361,107.5953548,bandung
+11990142257,node,Bebek Gahar,restaurant,-6.9202968,107.6216733,bandung
+11990149267,node,Chatime,cafe,-6.9237935,107.6059891,bandung
+11990150155,node,Sinar Gobah Masakan Padang,restaurant,-6.9461539,107.5954259,bandung
+11990161478,node,Dunkin Donuts,cafe,-6.945204,107.5953253,bandung
+11990165407,node,Mie Aceh 86,restaurant,-6.9235752,107.6056619,bandung
+11990172950,node,Nasi Pecel Surabaya,restaurant,-6.9236763,107.6054339,bandung
+11990173382,node,Mie Bakso Tulang Sapi & Ayam AA,restaurant,-6.9243673,107.6060823,bandung
+11990174760,node,Yo Ramen,restaurant,-6.9236444,107.6059704,bandung
+11990180299,node,Saung Nikmat GMR,restaurant,-6.9237482,107.6057692,bandung
+11990181113,node,Bakmi Djogja Arjuna,restaurant,-6.9237296,107.60545,bandung
+11990185016,node,Nasi Kebuli 1881,restaurant,-6.9237802,107.605399,bandung
+11990189711,node,Iga Bakar Si Jangkung,restaurant,-6.9235539,107.6054902,bandung
+11990189712,node,Bebek Ireng Suroboyo Cak Baz,restaurant,-6.9236138,107.6055989,bandung
+11990189833,node,Rumah Makan Basalero Masakan Padang,restaurant,-6.9240138,107.6039962,bandung
+11990190440,node,Alam Sunda,restaurant,-6.9237882,107.6039701,bandung
+11990198033,node,Baso Malang Raos,restaurant,-6.9236444,107.6055224,bandung
+11990199572,node,CFC,restaurant,-6.9238787,107.6058979,bandung
+11990220085,node,Warung Nasi Ampera,restaurant,-6.923874,107.604003,bandung
+11990909758,node,Solaria,restaurant,-6.9229401,107.6046829,bandung
+11990914043,node,Baso Cuanki,restaurant,-6.9226938,107.6051804,bandung
+11990917429,node,Dapoer Saranguan,restaurant,-6.9228123,107.6052837,bandung
+11990954668,node,Fruity,cafe,-6.9229907,107.6049753,bandung
+11990955196,node,Janji Jiwa,cafe,-6.9226965,107.6048411,bandung
+11990962308,node,Ow My Plate,restaurant,-6.9226579,107.6047526,bandung
+11990963318,node,Steak Moen Moen,restaurant,-6.9228136,107.6047888,bandung
+11990967821,node,Pa Oyen,cafe,-6.9230413,107.6048908,bandung
+11990967827,node,Sate Taichan Senayan,restaurant,-6.9227351,107.6050195,bandung
+11990971371,node,Kimiku,cafe,-6.9229215,107.6049189,bandung
+11990973385,node,Mie Tarik King,restaurant,-6.922807,107.6049913,bandung
+11990976885,node,Raa Cha Suki & BBQ,restaurant,-6.9229721,107.6050892,bandung
+11990977130,node,Gokana Ramen & Teppan,restaurant,-6.9225966,107.6051563,bandung
+11990977131,node,Chatime,cafe,-6.9228323,107.6052207,bandung
+11990977899,node,D'Bakmie,restaurant,-6.9228802,107.6048747,bandung
+11990977900,node,Ayam & Bebek Goreng Kalasan,restaurant,-6.9226273,107.6050879,bandung
+11990977901,node,Gokimura,restaurant,-6.9228549,107.6047271,bandung
+11990978573,node,Tokio Kitchen,restaurant,-6.9227617,107.6047271,bandung
+11990987726,node,Puyo,cafe,-6.9230826,107.6048143,bandung
+11990993160,node,Warung Nasi Ampera,restaurant,-6.9273328,107.6069219,bandung
+11990997307,node,Dapoer Kabita 1444,restaurant,-6.9230772,107.604357,bandung
+11991014566,node,Gulu Gulu,cafe,-6.9230346,107.6048197,bandung
+11991014568,node,Point Coffee,cafe,-6.930088,107.6035886,bandung
+11991015451,node,Warung Nasi Ampera,restaurant,-6.9231248,107.6061197,bandung
+11991020072,node,Bebek Salero,restaurant,-6.9230207,107.6062144,bandung
+11991024500,node,Bakso Tulang Iga Sanguan,restaurant,-6.9316429,107.6041022,bandung
+11991064803,node,Warung Nasi Bu Imas,restaurant,-6.925889,107.6072538,bandung
+11991085618,node,Korner,cafe,-6.9214217,107.6100741,bandung
+11991116447,node,Bean Spot,cafe,-6.917025,107.6083052,bandung
+11991130867,node,Bahagia Kopi,cafe,-6.9181992,107.6094452,bandung
+11991131503,node,Mixue,cafe,-6.9214803,107.6087008,bandung
+11991132643,node,Janji Jiwa,cafe,-6.9172247,107.608607,bandung
+11991134877,node,Flash Coffee,cafe,-6.9171821,107.6087317,bandung
+11991137424,node,Korner,cafe,-6.9158827,107.6090844,bandung
+11991143423,node,Shooters Pool & Cafe,cafe,-6.9157469,107.6088571,bandung
+11991143507,node,Why Not?,cafe,-6.9181054,107.6095813,bandung
+11991144711,node,Goedang Kopi Braga,cafe,-6.9205344,107.6098582,bandung
+11991153715,node,Kopi Toko Djawa,cafe,-6.9172487,107.608379,bandung
+11991155141,node,Jabarano Coffee,cafe,-6.9201483,107.6098461,bandung
+11991157736,node,Suis Butcher,cafe,-6.9189781,107.6096597,bandung
+11991158915,node,Braga Weg,restaurant,-6.9167135,107.6092165,bandung
+11991160314,node,Bean Spot,cafe,-6.9163094,107.6082294,bandung
+11991160660,node,Korner,cafe,-6.9208865,107.6058892,bandung
+11991168031,node,Jiwa Toast,cafe,-6.9170396,107.6086271,bandung
+11991168071,node,Mie Jowo Pak Slamet,restaurant,-6.9164565,107.6089409,bandung
+11991168673,node,Warung Kopi Limarasa,cafe,-6.9184282,107.6096812,bandung
+11991169399,node,Freezh,cafe,-6.9181387,107.6095866,bandung
+11991172352,node,MyLoc Coffee,cafe,-6.9167108,107.6090294,bandung
+11991172536,node,Korner,cafe,-6.9196038,107.6098227,bandung
+11991173220,node,Noi Nan Pat Chawadee,restaurant,-6.9192969,107.6097395,bandung
+11991173221,node,RestoeBoemi,restaurant,-6.9186106,107.6097429,bandung
+11991173995,node,Gas Inc Coffee& Gelato,cafe,-6.9182265,107.6096222,bandung
+11991178366,node,Mih Kocok Mang Dadeng,restaurant,-6.9168559,107.609075,bandung
+11991184981,node,18 Coffee & Brew,cafe,-6.916796,107.6090569,bandung
+11991184982,node,Wing Lok,restaurant,-6.9161583,107.6088376,bandung
+11991186703,node,Bebek Kaleyo,restaurant,-6.9172726,107.613274,bandung
+11991332686,node,Ikugo Grill & Hot Pot,restaurant,-6.8929137,107.6055492,bandung
+11991332711,node,Raa Cha Suki & BBQ,restaurant,-6.8936953,107.6054004,bandung
+11991332821,node,Xiyue,cafe,-6.8929457,107.6054862,bandung
+11991339204,node,Kelapa Mueda,cafe,-6.892967,107.6056096,bandung
+11991339595,node,Re-Juve,restaurant,-6.893216,107.6050745,bandung
+11991339909,node,Ta Wan,restaurant,-6.8935368,107.6057437,bandung
+11991340247,node,Solaria,restaurant,-6.8936633,107.6054889,bandung
+11991342390,node,Es Teh Nusantara,cafe,-6.8938431,107.6055559,bandung
+11991347614,node,Sour Sally,cafe,-6.8931774,107.6057169,bandung
+11991347743,node,Ichiban Sushi,restaurant,-6.8934144,107.6051952,bandung
+11991352067,node,Warung Talaga,restaurant,-6.8937579,107.6053856,bandung
+11991352502,node,Tong Tji Express,cafe,-6.8935395,107.6052113,bandung
+11991359995,node,Puyo,cafe,-6.8936633,107.6057263,bandung
+11991360053,node,Dapur Cihampelas,restaurant,-6.8977654,107.6041733,bandung
+11991360222,node,J.CO Donuts & Coffee,cafe,-6.8934543,107.6059368,bandung
+11991369942,node,Bakmi GM,restaurant,-6.893172,107.6051965,bandung
+11991375196,node,Imperial Kitchen & Dimsum,restaurant,-6.8930389,107.6050571,bandung
+11991375197,node,Ramen 10,restaurant,-6.893871,107.6054648,bandung
+11991375215,node,Bakso Malang Karapitan,restaurant,-6.8930149,107.6054701,bandung
+11991379579,node,Mochi Mochi,cafe,-6.8938151,107.6054902,bandung
+11991379837,node,Upnormal Coffee Roasters,cafe,-6.8994802,107.6043275,bandung
+11991381206,node,Fore Coffee,cafe,-6.8936474,107.6053038,bandung
+11991382145,node,Kopilatinum,cafe,-6.8939469,107.6053146,bandung
+11991382146,node,Chatime,cafe,-6.8928805,107.6054969,bandung
+11991388513,node,Bean Spot,cafe,-6.8980223,107.6038112,bandung
+11991392920,node,RM Rajo Minang,restaurant,-6.8981342,107.6039091,bandung
+11991394119,node,Mangkok Manis,restaurant,-6.8988891,107.6039252,bandung
+11991399573,node,Warung Nasi Ampera,restaurant,-6.8978799,107.6042028,bandung
+11991403170,node,Janji Jiwa,cafe,-6.8970045,107.6037307,bandung
+12010088512,node,Hutanika,restaurant,-6.9215477,107.6125981,bandung
+12012280713,node,Justus,restaurant,-6.8884196,107.5961276,bandung
+12012295246,node,Tous les Jours,cafe,-6.8906713,107.5962338,bandung
+12064408217,node,Reunion Grill and Resto,restaurant,-6.8817703,107.599353,bandung
+12064485588,node,The People's Cafe,restaurant,-6.8934898,107.6057076,bandung
+12066200766,node,Martabak Pecenongan 78,restaurant,-6.8886642,107.6157453,bandung
+12066215655,node,Hittobitto,restaurant,-6.9019393,107.6156563,bandung
+12071610838,node,Bomber Burger,restaurant,-6.9267296,107.6192632,bandung
+12090457339,node,CFC,restaurant,-6.9145662,107.6020322,bandung
+12128022548,node,Kantin ISBI,restaurant,-6.9424857,107.6276045,bandung
+12354273199,node,Little Social Space,cafe,-6.8815672,107.5788046,bandung
+12373141856,node,TOMORO Coffee,cafe,-6.8854024,107.6134807,bandung
+12373215653,node,Point Coffee,cafe,-6.8857827,107.6139375,bandung
+12435853364,node,Bakso Haji Ma'il,restaurant,-6.9184788,107.6100202,bandung
+12473218163,node,Persegi Coffee,cafe,-6.8959269,107.6048656,bandung
+12482391289,node,Sagori,restaurant,-6.8741234,107.6045594,bandung
+12482391290,node,Jati,cafe,-6.8741674,107.6046198,bandung
+12482391292,node,Ayam Gepuk Pak Gembus Ciumbuleuit,restaurant,-6.8740529,107.6045701,bandung
+12482391293,node,MIXUE Ciumbuleuit,cafe,-6.873965,107.6045856,bandung
+12482476002,node,Ditokokopi,cafe,-6.8794269,107.6032186,bandung
+12624664319,node,Baso Padasuka,restaurant,-6.9031839,107.6529325,bandung
+12624770447,node,kosan jojo,restaurant,-6.8967323,107.6381555,bandung
+12625091280,node,,restaurant,-6.9040552,107.6527098,bandung
+12625095868,node,Wizzmie,restaurant,-6.9039042,107.6527236,bandung
+12625099349,node,wizzmie,restaurant,-6.9039203,107.6527231,bandung
+12625460941,node,TUKU - Ambon,cafe,-6.9075012,107.6182495,bandung
+12628047186,node,Rumah Makan Taliwang Bersaudara,restaurant,-6.9026301,107.6237638,bandung
+12658003789,node,Flash Coffee,cafe,-6.9468381,107.6413621,bandung
+12658003790,node,Fore Coffee,cafe,-6.9463283,107.6411971,bandung
+12728534901,node,Phi Pho,restaurant,-6.9058713,107.6165201,bandung
+12800756180,node,Solaria,restaurant,-6.9020182,107.6126236,bandung
+12809507140,node,Kopi Kenangan,cafe,-6.9066586,107.6171308,bandung
+12843689353,node,Art Coffee,cafe,-6.9171857,107.609343,bandung
+12843690500,node,Wiki Coffe,cafe,-6.9160496,107.6091452,bandung
+12843711959,node,flash coffee,cafe,-6.9171712,107.6087343,bandung
+12843721485,node,Kopi Toko Djawa,cafe,-6.9174913,107.6092602,bandung
+12843737863,node,Bean Spot Cafe,cafe,-6.9163066,107.6082247,bandung
+12866014133,node,,restaurant,-6.9130379,107.604257,bandung
+12887254413,node,Kopi Kenangan,cafe,-6.9236101,107.6278801,bandung
+12895414980,node,Dua Saudara,restaurant,-6.9417207,107.6346637,bandung
+12956269076,node,Toebroek Coffee,cafe,-6.8831467,107.5860352,bandung
+12965822167,node,Temu Roti,cafe,-6.8764579,107.6232361,bandung
+12966385300,node,Furama Restaurant Bandung,restaurant,-6.9158673,107.610473,bandung
+12984617473,node,Nasi Goreng Tongkeng,restaurant,-6.9120427,107.6231671,bandung
+12991042843,node,Warung Nenek,restaurant,-6.8865621,107.6200137,bandung
+12994036955,node,Point Coffee,cafe,-6.9155748,107.6156562,bandung
+13028370352,node,Paskal 219,restaurant,-6.8984645,107.5970953,bandung
+13031332535,node,Bodas,restaurant,-6.921684,107.6124486,bandung
+13031375915,node,Roti'O,restaurant,-6.8972018,107.5972083,bandung
+13033549221,node,Emados,restaurant,-6.905677,107.6216854,bandung
+13033570834,node,90 Gourmet,restaurant,-6.9085228,107.6239245,bandung
+13034037539,node,Golden Bay,restaurant,-6.9110387,107.6274018,bandung
+13036985906,node,Tobo,restaurant,-6.9079386,107.6221334,bandung
+13040420173,node,The Square Restaurant Bandung,restaurant,-6.9049367,107.6037473,bandung
+13040439475,node,Rooftop Coffee 1896,cafe,-6.9069845,107.6039968,bandung
+13042429225,node,Ibu Haji,restaurant,-6.8968452,107.5918421,bandung
+13042445685,node,Wardjoe,restaurant,-6.9000246,107.5967562,bandung
+13045226122,node,Bakso Malang Enggal,restaurant,-6.9273798,107.635134,bandung
+13045918709,node,Pesona Kampung Sunda,restaurant,-6.9025236,107.6218961,bandung
+13047913339,node,SKY Steak & Pasta,restaurant,-6.9054977,107.6039072,bandung
+13049347981,node,Srabi Notosuman Ny. Handayani Kebon Jukut,restaurant,-6.9143585,107.6052506,bandung
+13049552745,node,Altero,restaurant,-6.9004947,107.6025507,bandung
+13058918034,node,Warmindo Gede Milik,restaurant,-6.8893282,107.6160743,bandung
+13058924874,node,Warkop Suka Rasa,cafe,-6.8876954,107.6154204,bandung
+13058925433,node,Baso Aci Tulang Muda,restaurant,-6.8883837,107.615672,bandung
+13058928930,node,Bakmi Jowo DU 67,restaurant,-6.8897924,107.6158406,bandung
+13058935500,node,Es Coklat Impian Dipati Ukur,cafe,-6.8895414,107.6162461,bandung
+13058936812,node,Warung  Nasi Toeang By Tjahja,restaurant,-6.8894273,107.6161589,bandung
+13058937983,node,Warteg Dipatiukur Bahari,restaurant,-6.8885934,107.6157335,bandung
+13058940691,node,Douwes Dekker Kitchen,cafe,-6.8897156,107.6155163,bandung
+13058949623,node,Warung Nasi TOEANG By Tjahja,restaurant,-6.8894248,107.6161882,bandung
+13058950358,node,TOMORO Coffee,cafe,-6.8880494,107.6152539,bandung
+13058954253,node,Rumah Makan Padang Babeda,restaurant,-6.8875422,107.6153737,bandung
+13058955535,node,Warmindo Betuah,restaurant,-6.8882793,107.615636,bandung
+13059145530,node,Pelagia f&b station,cafe,-6.9165847,107.6005901,bandung
+13062660917,node,Aroem Resto,restaurant,-6.8866152,107.613184,bandung
+13073370692,node,East Indies,cafe,-6.8979085,107.6131797,bandung
+13083815916,node,Ichiyo Ramen,restaurant,-6.9414209,107.6267707,bandung
+13083895162,node,Putra Minang,restaurant,-6.9386826,107.6241875,bandung
+13083895164,node,Ayam Keprabon Express,restaurant,-6.9385697,107.6240745,bandung
+13086303842,node,Tiramisusu,restaurant,-6.9372816,107.6226773,bandung
+13086303844,node,Artomoro,restaurant,-6.9378566,107.6233102,bandung
+13092337601,node,Fore Coffee,cafe,-6.9090414,107.6109495,bandung
+13095749458,node,Ampera,restaurant,-6.9405229,107.6263702,bandung
+13273484352,node,Point Coffee,cafe,-6.9143573,107.6323363,bandung
+13334575526,node,Cerita di,cafe,-6.9035058,107.6041268,bandung
+13335214088,node,Nescafe,cafe,-6.886874,107.6233729,bandung
+13357245367,node,Sate Braga Taichan dan Yakitori,restaurant,-6.9196996,107.6087865,bandung
+13366619343,node,Nowala Coffee and Eatery,cafe,-6.9166642,107.6167624,bandung
+13373685473,node,Rumah Makan Ahong,restaurant,-6.9124509,107.5985737,bandung
+13373734633,node,Kopi Kenangan,cafe,-6.9064704,107.5957325,bandung
+13373774904,node,Tjuankie Stasiun,restaurant,-6.9124771,107.5993197,bandung
+13373782010,node,Roempi Coffee,cafe,-6.9124674,107.5987521,bandung
+13373783761,node,Sambal Bakar Dek Ray,restaurant,-6.927444,107.6352768,bandung
+13373811119,node,Sate Cempe Baba+,restaurant,-6.9269491,107.6343391,bandung
+13373812336,node,Soto Padang Uda Ujang,restaurant,-6.9267388,107.6340585,bandung
+13373825240,node,Warkop Putra Agam,restaurant,-6.9271837,107.6348004,bandung
+13373825241,node,Soerabi Bandung enhaii,restaurant,-6.9270839,107.6345955,bandung
+13373827955,node,Kopitiam 136,cafe,-6.9242636,107.6275601,bandung
+13373840638,node,Kozi,cafe,-6.9269543,107.6344668,bandung
+13410062993,node,Kopi Celah Kota,cafe,-6.9402128,107.6256352,bandung
+13516034045,node,Nasi Pecel Kediri & Pawon Pak Tono,restaurant,-6.8778043,107.6171442,bandung
+13516178856,node,TOMORO Coffee,cafe,-6.9085799,107.6092991,bandung
+13520030576,node,Terracotta ST.26,cafe,-6.9150163,107.6016859,bandung
+13534155856,node,Warung Surabi Cihampelas,restaurant,-6.8926555,107.6043715,bandung
+13542452081,node,Checo,restaurant,-6.9079689,107.613069,bandung
+13563421168,node,Soto Pak Min Klaten,restaurant,-6.9270689,107.6192846,bandung
+13563715021,node,Bakso Rusuk Jos,restaurant,-6.9280383,107.6187527,bandung
+13563730871,node,Jabarano Coffee,cafe,-6.9176171,107.6307007,bandung
+13595500462,node,The Houseplants Coffee,cafe,-6.8948816,107.6127494,bandung
+13595511270,node,Iganaga,restaurant,-6.8963411,107.6132718,bandung
+13595563366,node,Ayam Sari Rasa,restaurant,-6.9095088,107.6111162,bandung
+13595567572,node,Roemah Helena,restaurant,-6.9095556,107.6113091,bandung
+13605881790,node,Riel's,cafe,-6.8918716,107.6133905,bandung
+13608911096,node,ko.pi.mu.,cafe,-6.8980342,107.6163401,bandung
+13608949321,node,Padang Keren,restaurant,-6.8984383,107.6159839,bandung
+13609049733,node,Yumaju,cafe,-6.8921407,107.6124655,bandung
+13611603017,node,Qaca,cafe,-6.8892293,107.6131281,bandung
+13613927312,node,Foursis,cafe,-6.8881675,107.6152842,bandung
+13613947533,node,belikopi.,cafe,-6.8914987,107.6172107,bandung
+13613963824,node,coffeebawa,cafe,-6.8898536,107.6160484,bandung
+13613972219,node,Goffee,cafe,-6.8855907,107.6148415,bandung
+13613994127,node,Brother Chang,restaurant,-6.8889548,107.6155118,bandung
+13614530844,node,Joglo Ndalem,restaurant,-6.9310198,107.625839,bandung
+13619276655,node,Lupba Cafe,cafe,-6.9000525,107.6529964,bandung
+13620450181,node,RM Putra Tanjung,restaurant,-6.9271073,107.6332585,bandung
+13620482359,node,Kedai D'Dimas,restaurant,-6.9266876,107.6333859,bandung
+13620531443,node,Bubur Ayam Katineung Mang Ajat,restaurant,-6.9279161,107.6362954,bandung
+13620566517,node,Taman Kopie,cafe,-6.9299892,107.6352792,bandung
+13620605940,node,Point Coffee,cafe,-6.9280321,107.6370132,bandung
+13621729032,node,,restaurant,-6.8970967,107.6365302,bandung
+13622895417,node,ta.lu.pa,cafe,-6.8907528,107.6161511,bandung
+13622928581,node,Bakmie Ayam 58,restaurant,-6.8918942,107.6166874,bandung
+13622928582,node,Waroeng Setiabudhi,restaurant,-6.8914827,107.6156109,bandung
+13622934471,node,yanie's,cafe,-6.8906056,107.6160495,bandung
+13622942997,node,Spicy Yakiniku,restaurant,-6.8918848,107.6166415,bandung
+13634007864,node,Dapoer Pandanwangi,restaurant,-6.8765407,107.6181533,bandung
+13634010024,node,District Dago,restaurant,-6.875312,107.6184837,bandung
+13638557518,node,Grobak Koering,restaurant,-6.8811227,107.6119462,bandung
+13638681604,node,RM Padang Bapak Atang,restaurant,-6.8836294,107.6140853,bandung
+13647704786,node,Sate Taichan Masgib,restaurant,-6.8917073,107.6134038,bandung
+13647829460,node,DeBunzi Risol,restaurant,-6.8964979,107.6130858,bandung
+13647892100,node,Jiwan Coffee & Things,cafe,-6.9008433,107.612496,bandung
+13647894656,node,Kisah Manis,cafe,-6.8952504,107.6131845,bandung
+13695626664,node,Tedja Coffee Saparua,cafe,-6.9096731,107.6162313,bandung
+13713682959,node,RM Maju Jaya,restaurant,-6.894465,107.5983911,bandung
+13713697182,node,Yumaju Pavilion,cafe,-6.8963792,107.5987441,bandung
+13713788083,node,Ayam Gepuk Pak Gembus,restaurant,-6.8940407,107.5985376,bandung
+13732284010,node,Nasi Goreng Jando Babah Bayu,restaurant,-6.8832063,107.6113047,bandung
+13734392228,node,Bumi Aki,restaurant,-6.9061934,107.6151485,bandung
+13737072663,node,Point Coffee,cafe,-6.8915557,107.6043872,bandung
+13737118766,node,Warung Tilu Nini,restaurant,-6.8937287,107.5995911,bandung
+13737200650,node,Point Coffee,cafe,-6.8943944,107.6039259,bandung
+13742262463,node,Point Coffee,cafe,-6.9130852,107.6465293,bandung
+13742297237,node,Point Coffee,cafe,-6.9129243,107.6516685,bandung
+13742306698,node,Bebeke Om Aris,restaurant,-6.9127413,107.6525613,bandung
+13742321767,node,TOMORO Coffee,cafe,-6.9126104,107.6538134,bandung
+13742324755,node,Pizza Hut,restaurant,-6.9126494,107.6506356,bandung
+13742347878,node,Kopi Kenangan,cafe,-6.9123773,107.6525651,bandung
+13742351913,node,Mixue,cafe,-6.9127387,107.6526405,bandung
+13742363563,node,Point Coffee,cafe,-6.9124721,107.6517295,bandung
+13742370747,node,CFC,restaurant,-6.9127618,107.6493448,bandung
+13745090903,node,Point Coffee,cafe,-6.9182472,107.5813747,bandung
+13745100074,node,Rumah Makan Megawati,restaurant,-6.9183459,107.5849341,bandung
+13745274099,node,Fullmoon Coffee,cafe,-6.9182475,107.5804134,bandung
+13751877801,node,Umanari,restaurant,-6.9205271,107.6135394,bandung
+13752358132,node,CFC,restaurant,-6.8770552,107.617856,bandung
+13752361507,node,Bakso Rusuk Samanhudi,restaurant,-6.8775925,107.6174203,bandung
+13752366816,node,Soto & Sate H. Muhammad Bagul Asan,restaurant,-6.8775429,107.6170574,bandung
+13752380801,node,Point Coffee,cafe,-6.8774561,107.6170449,bandung
+13752416439,node,Kedai u'nay,restaurant,-6.8784466,107.613982,bandung
+13754321801,node,Justus,restaurant,-6.9155978,107.5937096,bandung
+13760235868,node,Wheel's Coffee Roasters,cafe,-6.8815954,107.616259,bandung
+13760569233,node,Ranah Minang,restaurant,-6.8922258,107.628763,bandung
+13760571215,node,Do'a Mande,restaurant,-6.8879203,107.6242164,bandung
+13760571263,node,Do'a Mande,restaurant,-6.8919188,107.630091,bandung
+13760590074,node,Waras,cafe,-6.8910393,107.6251659,bandung
+13760591097,node,Kebuli Abuya,restaurant,-6.8872565,107.6234177,bandung
+13760591263,node,Saung Kuring,restaurant,-6.8875334,107.62362,bandung
+13760648027,node,Talago Minang,restaurant,-6.8909919,107.6269369,bandung
+13783844093,node,Yumaju,cafe,-6.9368512,107.6223351,bandung
+13789600036,node,Madalangu Bakehouse,cafe,-6.896948,107.614857,bandung
+13794929972,node,Point Coffee,cafe,-6.9066218,107.6131991,bandung
+13794936143,node,Jumbo Eatery,restaurant,-6.9067598,107.6145458,bandung
+13794959499,node,kedai inn.,cafe,-6.9062454,107.6157037,bandung
+13794963500,node,Bengawan Solo,restaurant,-6.90586,107.6178486,bandung
+13794976289,node,Satu Atap Mayasari,cafe,-6.9057747,107.6193288,bandung
+13794977240,node,Taeun Coffee & Works,cafe,-6.9062859,107.6180785,bandung
+13794981248,node,Wheels,cafe,-6.9058137,107.617351,bandung
+13795044530,node,Tok You,restaurant,-6.9057602,107.6191803,bandung
+13795192344,node,Nasi Bakar Riau,restaurant,-6.9060537,107.6221924,bandung
+13795193359,node,Bakso Bintang Asia,restaurant,-6.9077486,107.622716,bandung
+13795202515,node,Kambing Bakar Cairo,restaurant,-6.9070949,107.6232606,bandung
+13795210827,node,Bubur Cihapit,restaurant,-6.9081478,107.6226311,bandung
+13795232699,node,Hello Summer,restaurant,-6.9054228,107.6193253,bandung
+13795264929,node,Mahkopi,cafe,-6.9075049,107.6209281,bandung
+13795275247,node,Warung Lombok,cafe,-6.9064186,107.6209169,bandung
+13795278874,node,Legenda Tiga Ayam,restaurant,-6.9070994,107.6208694,bandung
+13795315895,node,Fore Coffee,cafe,-6.9064483,107.6165251,bandung
+13795334430,node,La Loba,restaurant,-6.9065509,107.6162582,bandung
+13798918291,node,Nasi Goreng Pak Lemu,restaurant,-6.8798069,107.6142771,bandung
+13801500390,node,Skytree Coffee & Eatery,cafe,-6.9140149,107.6296844,bandung
+13801618827,node,Nasi Kalong,restaurant,-6.9123448,107.6286759,bandung
+13801618898,node,Ramu Saji Heritage,restaurant,-6.914775,107.6293298,bandung
+13801631044,node,Cuanki,restaurant,-6.9165886,107.6306212,bandung
+13801639126,node,Sop Buntut Sapi Ma'emun,restaurant,-6.9163793,107.6305265,bandung
+13801643500,node,Oracle,restaurant,-6.9117289,107.628104,bandung
+13801662256,node,Kopi Toko Djawa,cafe,-6.912993,107.6291312,bandung
+13801662283,node,Fore Coffee,cafe,-6.9153705,107.6301256,bandung
+13801673930,node,Holycow,restaurant,-6.9127525,107.6281915,bandung
+13801704610,node,Iga Bakar Mas Giri,restaurant,-6.9123566,107.6281132,bandung
+13801730853,node,Bonfire,restaurant,-6.9085147,107.6247093,bandung
+13801745946,node,Okinawa Sushi,restaurant,-6.9090901,107.6253905,bandung
+13801753118,node,Alas Cobek,restaurant,-6.9111364,107.6276007,bandung
+13806635096,node,Kopitera,cafe,-6.9254817,107.6194728,bandung
+13807787946,node,Plateia Hot Plate,restaurant,-6.896566,107.6157874,bandung
+13807798937,node,Bakmee Botak,restaurant,-6.8965223,107.6157986,bandung
+13807812520,node,Soto Seteran Semarang,restaurant,-6.8965588,107.6157818,bandung
+13808931414,node,Nasi Gila & Goreng Roni Rizky,restaurant,-6.8894696,107.5813872,bandung
+13808932502,node,Calf,cafe,-6.8895141,107.5813579,bandung
+13808939901,node,Warung Nasi Padang Wa'uda,restaurant,-6.8894107,107.5813624,bandung
+13810583960,node,Point Coffee,cafe,-6.8852291,107.6181781,bandung
+13810637071,node,Waroeng Bebek Ngarasan,restaurant,-6.8849634,107.6174846,bandung
+13810700693,node,Putra Minang,restaurant,-6.8849064,107.6181821,bandung
+13832216963,node,Fore Coffee,cafe,-6.9227525,107.60621,bandung
+13832243998,node,Solaria,restaurant,-6.922482,107.6059797,bandung
+13914011756,node,Mie Kocok Pak H. Endan,restaurant,-6.9142631,107.6051053,bandung
+13921209275,node,ICE CRIME - Ice Cream Store with Jail Experience,cafe,-6.9194978,107.608165,bandung
+13937520269,node,Soto Padang Pak Ujang,restaurant,-6.917655,107.6694901,bandung
+13968240101,node,Sate Padang MJ,restaurant,-6.9433141,107.6421598,bandung
+14003890530,node,Warkop ADD,cafe,-6.8889401,107.6184435,bandung
+14014054109,node,Saji Rasa,restaurant,-6.8855117,107.6147103,bandung
+14023758779,node,Nasi Liwet Cisitu,restaurant,-6.8804358,107.6120432,bandung
+14023763451,node,Warung Kameumeut,restaurant,-6.8807838,107.6119828,bandung
+14023777933,node,Rumah Makan Ngalau Indah,restaurant,-6.8801156,107.6119668,bandung
+14023788608,node,Kantin Ibu Olis,restaurant,-6.8801825,107.6120879,bandung
+14029887768,node,Mie Bakso Kelud,restaurant,-6.8802063,107.611954,bandung
+14038373463,node,Pempek Ny. Kamto,restaurant,-6.9164001,107.6093829,bandung
+14038409720,node,Warung Nasi Ajeng,restaurant,-6.9456193,107.5941615,bandung
+14038481547,node,Aerobus,cafe,-6.9457145,107.5928993,bandung
+14053598145,node,Ketoprak,restaurant,-6.8807658,107.6119795,bandung
+14064068898,node,Delapan Padi,restaurant,-6.8981648,107.6141504,bandung
+14074673674,node,Nomora,cafe,-6.916519,107.6435029,bandung
+14074674953,node,Steak Ranjang,restaurant,-6.91627,107.6434722,bandung
+14074679954,node,Bakso Malang Kiara,restaurant,-6.9164822,107.6434968,bandung
+14074682848,node,Siloka,cafe,-6.9163429,107.6434817,bandung
+14074686105,node,RD Coffee & Eatery,cafe,-6.9167521,107.6435496,bandung
+14077854124,node,Lasco Koffie Haus,cafe,-6.9324628,107.6184606,bandung
+14091329401,node,Awi Legit,restaurant,-6.8990267,107.6195497,bandung
+14093529901,node,Kisah Manis,cafe,-6.8702536,107.6074788,bandung
+14094523339,node,Haus,cafe,-6.8918928,107.6173905,bandung
+14111481301,node,Sushigo!,restaurant,-6.8792059,107.5983418,bandung
+14111952602,node,Mode Kitchen,restaurant,-6.882419,107.6001198,bandung
+14111954302,node,Pizza Hut,restaurant,-6.8748545,107.5961809,bandung
+14152594602,node,Tomoro,cafe,-6.9461299,107.6313006,bandung
+14159257401,node,Kopi Goy,cafe,-6.9082388,107.6271414,bandung
+14179677368,node,CFC,restaurant,-6.9137633,107.6026939,bandung
+14210372888,node,Susu Mbok Darmi,cafe,-6.9251261,107.6463315,bandung
+14210581366,node,Point Coffee,cafe,-6.9077649,107.6091787,bandung
+14232958555,node,Swike Asli Jatiwangi,restaurant,-6.9215898,107.5993469,bandung
+14232958556,node,Nasi Goreng Samcan AHIEN,restaurant,-6.9214631,107.5990829,bandung
+14232995675,node,Cuanki Kelenteng,restaurant,-6.9185421,107.5930249,bandung
+14245280937,node,Set n Rise,restaurant,-6.9049684,107.6238323,bandung
+14245706568,node,Chatime,cafe,-6.9018314,107.6124913,bandung
