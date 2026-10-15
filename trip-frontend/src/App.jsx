@@ -4,7 +4,7 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { 
   Compass, Clock, Share2, User, Sparkles, Download, Plus, Info, 
   GripVertical, CloudSun, Eye, EyeOff, Send, CheckCircle, ArrowLeft, 
-  X, Calendar, MapPin, DollarSign, Users, Bot, Settings, LogOut, Heart, Map, Wallet, Building2, Utensils
+  X, Calendar, MapPin, DollarSign, Users, Bot, Settings, LogOut, Heart, Map, Wallet, Building2, Utensils, AlertTriangle
 } from 'lucide-react';
 import L from 'leaflet';
 import axios from 'axios';
@@ -25,6 +25,99 @@ const createNumberIcon = (number) => {
     className: '', iconSize: [26, 26], iconAnchor: [13, 13]
   });
 };
+
+// ==========================================
+// 🛡️ ERROR BOUNDARY (Jaring Pengaman Error Runtime)
+// ==========================================
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, errorInfo: "" };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error("ErrorBoundary menangkap kegagalan:", error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', width: '100vw', padding: '24px', backgroundColor: '#f8fafc', zIndex: 10000, position: 'fixed', top: 0, left: 0, boxSizing: 'border-box' }}>
+          <div style={{ backgroundColor: '#ffffff', padding: '32px 24px', borderRadius: '16px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)', maxWidth: '400px', width: '100%', textAlign: 'center', border: '1px solid #f1f5f9' }}>
+            <div style={{ backgroundColor: '#fef2f2', color: '#ef4444', width: '56px', height: '56px', borderRadius: '50%', display: 'flex', alignItems: 'center', justify: 'center', margin: '0 auto 16px auto' }}>
+              <AlertTriangle size={32} />
+            </div>
+            <h2 style={{ fontSize: '18px', fontWeight: '800', color: '#0f172a', margin: '0 0 8px 0' }}>Yah, Ada Sedikit Masalah!</h2>
+            <p style={{ fontSize: '12px', color: '#64748b', margin: '0 0 24px 0', lineHeight: '1.6' }}>
+              Tampilan mengalami kesalahan runtime (biasanya akibat koneksi map / API terganggu). Coba segarkan halaman.
+            </p>
+            <button 
+              onClick={() => window.location.reload()} 
+              style={{ backgroundColor: '#0f172a', color: '#ffffff', fontWeight: '700', fontSize: '13px', padding: '10px 24px', borderRadius: '8px', border: 'none', cursor: 'pointer', width: '100%' }}
+            >
+              Muat Ulang Halaman
+            </button>
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
+// ==========================================
+// ✨ STYLE & KEYFRAMES SKELETON (Injected)
+// ==========================================
+const skeletonStyles = `
+  @keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+  }
+  .skeleton-item {
+    animation: pulse 1.5s infinite ease-in-out;
+    background-color: #e2e8f0;
+  }
+`;
+
+// ==========================================
+// 📦 KOMPONEN SKELETON PLACEHOLDERS
+// ==========================================
+function DestinationPickerSkeleton() {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+      {[1, 2, 3].map((i) => (
+        <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', border: '1px solid #f1f5f9', borderRadius: '10px', backgroundColor: '#fff' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', width: '70%' }}>
+            <div className="skeleton-item" style={{ height: '14px', width: '80%', borderRadius: '4px' }} />
+            <div className="skeleton-item" style={{ height: '10px', width: '40%', borderRadius: '4px' }} />
+          </div>
+          <div className="skeleton-item" style={{ height: '28px', width: '70px', borderRadius: '8px' }} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function ExploreSkeleton() {
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
+      {[1, 2].map((i) => (
+        <div key={i} style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.6)' }}>
+          <div className="skeleton-item" style={{ width: '100%', height: '140px' }} />
+          <div style={{ padding: '12px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div className="skeleton-item" style={{ height: '16px', width: '50%', borderRadius: '4px' }} />
+            <div className="skeleton-item" style={{ height: '12px', width: '90%', borderRadius: '4px' }} />
+            <div className="skeleton-item" style={{ height: '12px', width: '75%', borderRadius: '4px' }} />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 // ==========================================
 // KOMPONEN: AI CHATBOT WIDGET
@@ -84,7 +177,7 @@ function AIChatbotWidget() {
 }
 
 // ==========================================
-// KOMPONEN HALAMAN: MY TRIPS & EXPLORE
+// KOMPONEN HALAMAN: MY TRIPS & EXPLORE (With Skeleton)
 // ==========================================
 function MyTripsView({ savedTrips, onSelectTrip, setIsModalOpen }) {
   return (
@@ -124,7 +217,10 @@ function MyTripsView({ savedTrips, onSelectTrip, setIsModalOpen }) {
   );
 }
 
-function ExploreView() {
+function ExploreView({ onAddPlace, hasTrip }) {
+  const [loading, setLoading] = useState(true);
+  const [selectedCity, setSelectedCity] = useState(null);
+
   const destinations = [
     { 
       name: 'Yogyakarta', 
@@ -137,13 +233,23 @@ function ExploreView() {
       img: 'https://images.unsplash.com/photo-1549887534-1541e9326642?auto=format&fit=crop&w=400&q=80'
     }
   ];
-  
-  const [selectedCity, setSelectedCity] = useState(null);
+
+  // Simulasi Loading Skeleton di awal muat view
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 800);
+    return () => clearTimeout(timer);
+  }, []);
   
   if (selectedCity) {
     return (
       <div style={{ flexGrow: 1, overflowY: 'auto', width: '100%', height: '100%' }}>
-        <CityDetail cityName={selectedCity} onBack={() => setSelectedCity(null)} />
+        {/* Sisipkan onAddPlace dan hasTrip di sini biar tembus ke CityDetail */}
+        <CityDetail 
+          cityName={selectedCity} 
+          onBack={() => setSelectedCity(null)} 
+          onAddPlace={onAddPlace}
+          hasTrip={hasTrip}
+        />
       </div>
     );
   }
@@ -157,24 +263,28 @@ function ExploreView() {
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
-        {destinations.map((dest, idx) => (
-          <div 
-            key={idx} 
-            onClick={() => setSelectedCity(dest.name)}
-            style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.6)', position: 'relative', cursor: 'pointer', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }}
-          >
-            <img src={dest.img} style={{ width: '100%', height: '140px', objectFit: 'cover' }} />
-            <div style={{ position: 'absolute', top: '10px', right: '10px', backgroundColor: 'rgba(255,255,255,0.9)', padding: '6px', borderRadius: '50%', color: '#ef4444' }}>
-              <Heart size={14} />
+      {loading ? (
+        <ExploreSkeleton />
+      ) : (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
+          {destinations.map((dest, idx) => (
+            <div 
+              key={idx} 
+              onClick={() => setSelectedCity(dest.name)}
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.6)', position: 'relative', cursor: 'pointer', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }}
+            >
+              <img src={dest.img} style={{ width: '100%', height: '140px', objectFit: 'cover' }} />
+              <div style={{ position: 'absolute', top: '10px', right: '10px', backgroundColor: 'rgba(255,255,255,0.9)', padding: '6px', borderRadius: '50%', color: '#ef4444' }}>
+                <Heart size={14} />
+              </div>
+              <div style={{ padding: '12px' }}>
+                <h3 style={{ fontSize: '14px', fontWeight: '800', margin: '0 0 4px 0', color: '#0f172a' }}>{dest.name}</h3>
+                <p style={{ fontSize: '11px', color: '#475569', margin: 0 }}>{dest.desc}</p>
+              </div>
             </div>
-            <div style={{ padding: '12px' }}>
-              <h3 style={{ fontSize: '14px', fontWeight: '800', margin: '0 0 4px 0', color: '#0f172a' }}>{dest.name}</h3>
-              <p style={{ fontSize: '11px', color: '#475569', margin: 0 }}>{dest.desc}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -262,7 +372,8 @@ function DestinationPickerModal({ isOpen, onClose, city, onAdd }) {
         .then((res) => res.json())
         .then((resData) => {
           if (resData.success) setData(resData.data);
-          setLoading(false);
+          // Simulasi sedikit waktu loading agar skeleton terlihat natural
+          setTimeout(() => setLoading(false), 500);
         })
         .catch(() => setLoading(false));
     }
@@ -299,9 +410,9 @@ function DestinationPickerModal({ isOpen, onClose, city, onAdd }) {
 
         <div style={{ padding: '16px', overflowY: 'auto', flexGrow: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
           {loading ? (
-            <div style={{ textAlign: 'center', color: '#64748b', fontSize: '12px' }}>Memuat data...</div>
+            <DestinationPickerSkeleton />
           ) : currentList.length === 0 ? (
-            <div style={{ textAlign: 'center', color: '#94a3b8', fontSize: '12px' }}>Tidak ada data tersedia.</div>
+            <div style={{ textAlign: 'center', color: '#94a3b8', fontSize: '12px', padding: '24px' }}>Tidak ada data tersedia.</div>
           ) : (
             currentList.map((item) => (
               <div key={item.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', border: '1px solid #e2e8f0', borderRadius: '10px', backgroundColor: '#fff' }}>
@@ -326,7 +437,7 @@ function DestinationPickerModal({ isOpen, onClose, city, onAdd }) {
 }
 
 // ==========================================
-// MAIN APP
+// MAIN APP WITH ERROR BOUNDARY & SKELETON
 // ==========================================
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -337,14 +448,24 @@ export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isPickerOpen, setIsPickerOpen] = useState(false);
   
-  // DETEKTOR LAYAR HP (RESPONSIF)
+  // Deteksi Layar HP
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [mapLoading, setMapLoading] = useState(true);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  // Animasi Peta Loader
+  useEffect(() => {
+    if (hasTrip) {
+      setMapLoading(true);
+      const timer = setTimeout(() => setMapLoading(false), 700);
+      return () => clearTimeout(timer);
+    }
+  }, [hasTrip, currentTab]);
   
   const [savedTrips, setSavedTrips] = useState([]);
   const [tripInfo, setTripInfo] = useState({ id: null, city: '', budget: '0', passengers: '2', days: 3, preferences: [] });
@@ -419,205 +540,218 @@ export default function App() {
   }
 
   return (
-    <div style={{ height: '100vh', width: '100vw', overflow: 'hidden', display: 'flex', flexDirection: 'column', fontFamily: "'Inter', system-ui, sans-serif", color: '#1e293b', position: 'relative' }}>
-      
-      {/* BACKGROUND IMAGE BLUR */}
-      <div style={{
-        position: 'absolute',
-        top: 0, left: 0, right: 0, bottom: 0,
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.55)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        filter: 'blur(8px)',
-        transform: 'scale(1.08)',
-        zIndex: 0
-      }} />
+    <ErrorBoundary>
+      {/* Inject Style Animasi Skeleton ke Dokumen */}
+      <style>{skeletonStyles}</style>
 
-      {/* KONTEN UTAMA */}
-      <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', height: '100%', width: '100%' }}>
+      <div style={{ height: '100vh', width: '100vw', overflow: 'hidden', display: 'flex', flexDirection: 'column', fontFamily: "'Inter', system-ui, sans-serif", color: '#1e293b', position: 'relative' }}>
         
-        <AIChatbotWidget />
-        
-        <CreateTripModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={handleCreateTripSubmit} />
-        <DestinationPickerModal isOpen={isPickerOpen} onClose={() => setIsPickerOpen(false)} city={tripInfo.city} onAdd={handleAddDestination} />
+        {/* BACKGROUND IMAGE BLUR */}
+        <div style={{
+          position: 'absolute',
+          top: 0, left: 0, right: 0, bottom: 0,
+          backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.55)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'blur(8px)',
+          transform: 'scale(1.08)',
+          zIndex: 0
+        }} />
 
-        {/* TOP NAVBAR YANG SUDAH RESPONSIF */}
-        <header style={{ 
-          backgroundColor: 'rgba(255, 255, 255, 0.88)', 
-          backdropFilter: 'blur(12px)', 
-          padding: isMobile ? '8px 12px' : '8px 24px', 
-          height: isMobile ? 'auto' : '52px', 
-          minHeight: '52px',
-          display: 'flex', 
-          flexDirection: isMobile ? 'column' : 'row',
-          alignItems: 'center', 
-          justifyContent: 'space-between', 
-          gap: isMobile ? '8px' : '0px',
-          borderBottom: '1px solid rgba(255, 255, 255, 0.5)', 
-          flexShrink: 0 
-        }}>
-          {/* Baris Atas di HP (Logo & User) */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: isMobile ? '100%' : 'auto' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <div style={{ backgroundColor: '#0f172a', padding: '5px', borderRadius: '50%', display: 'flex', color: '#f97316' }}>
-                <Compass size={18} />
+        {/* KONTEN UTAMA */}
+        <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', height: '100%', width: '100%' }}>
+          
+          <AIChatbotWidget />
+          
+          <CreateTripModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={handleCreateTripSubmit} />
+          <DestinationPickerModal isOpen={isPickerOpen} onClose={() => setIsPickerOpen(false)} city={tripInfo.city} onAdd={handleAddDestination} />
+
+          {/* TOP NAVBAR */}
+          <header style={{ 
+            backgroundColor: 'rgba(255, 255, 255, 0.88)', 
+            backdropFilter: 'blur(12px)', 
+            padding: isMobile ? '8px 12px' : '8px 24px', 
+            height: isMobile ? 'auto' : '52px', 
+            minHeight: '52px',
+            display: 'flex', 
+            flexDirection: isMobile ? 'column' : 'row',
+            alignItems: 'center', 
+            justifyContent: 'space-between', 
+            gap: isMobile ? '8px' : '0px',
+            borderBottom: '1px solid rgba(255, 255, 255, 0.5)', 
+            flexShrink: 0 
+          }}>
+            {/* Baris Atas di HP (Logo & User) */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: isMobile ? '100%' : 'auto' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{ backgroundColor: '#0f172a', padding: '5px', borderRadius: '50%', display: 'flex', color: '#f97316' }}>
+                  <Compass size={18} />
+                </div>
+                <h1 style={{ fontSize: '16px', fontWeight: '800', margin: 0, color: '#0f172a', lineHeight: 1 }}>Trip<span style={{ color: '#f97316' }}>Buddy</span></h1>
               </div>
-              <h1 style={{ fontSize: '16px', fontWeight: '800', margin: 0, color: '#0f172a', lineHeight: 1 }}>Trip<span style={{ color: '#f97316' }}>Buddy</span></h1>
+
+              {/* Tombol Buat Trip & Profil khusus tampilan Mobile */}
+              {isMobile && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <button onClick={() => setIsModalOpen(true)} style={{ display: 'flex', alignItems: 'center', gap: '4px', backgroundColor: '#f97316', border: 'none', color: '#fff', padding: '5px 10px', borderRadius: '16px', fontWeight: '700', fontSize: '10px', cursor: 'pointer' }}>
+                    <Sparkles size={11} /> + Trip
+                  </button>
+                  <div onClick={() => setIsProfileOpen(!isProfileOpen)} style={{ width: '26px', height: '26px', borderRadius: '50%', backgroundColor: '#38bdf8', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', cursor: 'pointer' }}>
+                    <User size={14} />
+                  </div>
+                </div>
+              )}
             </div>
 
-            {/* Tombol Buat Trip & Profil khusus tampilan Mobile */}
-            {isMobile && (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <button onClick={() => setIsModalOpen(true)} style={{ display: 'flex', alignItems: 'center', gap: '4px', backgroundColor: '#f97316', border: 'none', color: '#fff', padding: '5px 10px', borderRadius: '16px', fontWeight: '700', fontSize: '10px', cursor: 'pointer' }}>
-                  <Sparkles size={11} /> + Trip
+            {/* Menu Navigasi Tengah */}
+            <nav style={{ display: 'flex', gap: isMobile ? '12px' : '16px', fontSize: isMobile ? '11px' : '13px', fontWeight: '600' }}>
+              <span onClick={() => setCurrentTab('dashboard')} style={{ color: currentTab === 'dashboard' ? '#0f172a' : '#475569', borderBottom: currentTab === 'dashboard' ? '2px solid #0f172a' : 'none', paddingBottom: '2px', cursor: 'pointer' }}>Dashboard</span>
+              <span onClick={() => setCurrentTab('mytrips')} style={{ color: currentTab === 'mytrips' ? '#0f172a' : '#475569', borderBottom: currentTab === 'mytrips' ? '2px solid #0f172a' : 'none', paddingBottom: '2px', cursor: 'pointer' }}>My Trips ({savedTrips.length})</span>
+              <span onClick={() => setCurrentTab('explore')} style={{ color: currentTab === 'explore' ? '#0f172a' : '#475569', borderBottom: currentTab === 'explore' ? '2px solid #0f172a' : 'none', paddingBottom: '2px', cursor: 'pointer' }}>Explore</span>
+            </nav>
+
+            {/* Tombol Desktop */}
+            {!isMobile && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                <button onClick={() => setIsModalOpen(true)} style={{ display: 'flex', alignItems: 'center', gap: '6px', backgroundColor: '#f97316', border: 'none', color: '#fff', padding: '6px 14px', borderRadius: '20px', fontWeight: '700', fontSize: '11px', cursor: 'pointer' }}>
+                  <Sparkles size={13} /> + Buat Trip Baru
                 </button>
-                <div onClick={() => setIsProfileOpen(!isProfileOpen)} style={{ width: '26px', height: '26px', borderRadius: '50%', backgroundColor: '#38bdf8', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', cursor: 'pointer' }}>
-                  <User size={14} />
+
+                <div style={{ position: 'relative' }}>
+                  <div onClick={() => setIsProfileOpen(!isProfileOpen)} style={{ display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer', padding: '4px', borderRadius: '20px', backgroundColor: isProfileOpen ? 'rgba(255,255,255,0.8)' : 'transparent' }}>
+                    <div style={{ width: '30px', height: '30px', borderRadius: '50%', backgroundColor: '#38bdf8', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
+                      <User size={16} />
+                    </div>
+                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#0f172a' }}>User ∨</span>
+                  </div>
                 </div>
               </div>
             )}
-          </div>
 
-          {/* Menu Navigasi Tengah */}
-          <nav style={{ display: 'flex', gap: isMobile ? '12px' : '16px', fontSize: isMobile ? '11px' : '13px', fontWeight: '600' }}>
-            <span onClick={() => setCurrentTab('dashboard')} style={{ color: currentTab === 'dashboard' ? '#0f172a' : '#475569', borderBottom: currentTab === 'dashboard' ? '2px solid #0f172a' : 'none', paddingBottom: '2px', cursor: 'pointer' }}>Dashboard</span>
-            <span onClick={() => setCurrentTab('mytrips')} style={{ color: currentTab === 'mytrips' ? '#0f172a' : '#475569', borderBottom: currentTab === 'mytrips' ? '2px solid #0f172a' : 'none', paddingBottom: '2px', cursor: 'pointer' }}>My Trips ({savedTrips.length})</span>
-            <span onClick={() => setCurrentTab('explore')} style={{ color: currentTab === 'explore' ? '#0f172a' : '#475569', borderBottom: currentTab === 'explore' ? '2px solid #0f172a' : 'none', paddingBottom: '2px', cursor: 'pointer' }}>Explore</span>
-          </nav>
-
-          {/* Tombol Desktop */}
-          {!isMobile && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-              <button onClick={() => setIsModalOpen(true)} style={{ display: 'flex', alignItems: 'center', gap: '6px', backgroundColor: '#f97316', border: 'none', color: '#fff', padding: '6px 14px', borderRadius: '20px', fontWeight: '700', fontSize: '11px', cursor: 'pointer' }}>
-                <Sparkles size={13} /> + Buat Trip Baru
-              </button>
-
-              <div style={{ position: 'relative' }}>
-                <div onClick={() => setIsProfileOpen(!isProfileOpen)} style={{ display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer', padding: '4px', borderRadius: '20px', backgroundColor: isProfileOpen ? 'rgba(255,255,255,0.8)' : 'transparent' }}>
-                  <div style={{ width: '30px', height: '30px', borderRadius: '50%', backgroundColor: '#38bdf8', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
-                    <User size={16} />
-                  </div>
-                  <span style={{ fontSize: '12px', fontWeight: '600', color: '#0f172a' }}>User ∨</span>
+            {/* Dropdown Logout */}
+            {isProfileOpen && (
+              <div style={{ position: 'absolute', top: isMobile ? '80px' : '45px', right: '16px', backgroundColor: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(12px)', width: '160px', borderRadius: '12px', boxShadow: '0 10px 25px rgba(0,0,0,0.15)', border: '1px solid rgba(255,255,255,0.6)', zIndex: 999, overflow: 'hidden' }}>
+                <div onClick={() => { setIsLoggedIn(false); setIsProfileOpen(false); }} style={{ padding: '12px', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', backgroundColor: '#fef2f2' }}>
+                  <LogOut size={14} color="#ef4444" /> <span style={{ fontSize: '12px', fontWeight: '700', color: '#ef4444' }}>Keluar (Logout)</span>
                 </div>
               </div>
-            </div>
-          )}
+            )}
+          </header>
 
-          {/* Dropdown Logout */}
-          {isProfileOpen && (
-            <div style={{ position: 'absolute', top: isMobile ? '80px' : '45px', right: '16px', backgroundColor: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(12px)', width: '160px', borderRadius: '12px', boxShadow: '0 10px 25px rgba(0,0,0,0.15)', border: '1px solid rgba(255,255,255,0.6)', zIndex: 999, overflow: 'hidden' }}>
-              <div onClick={() => { setIsLoggedIn(false); setIsProfileOpen(false); }} style={{ padding: '12px', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', backgroundColor: '#fef2f2' }}>
-                <LogOut size={14} color="#ef4444" /> <span style={{ fontSize: '12px', fontWeight: '700', color: '#ef4444' }}>Keluar (Logout)</span>
-              </div>
-            </div>
+          {/* RENDER KONTEN */}
+          {currentTab === 'mytrips' && (
+            <MyTripsView 
+              savedTrips={savedTrips} 
+              onSelectTrip={handleSelectTripFromHistory} 
+              setIsModalOpen={setIsModalOpen} 
+            />
           )}
-        </header>
-
-        {/* RENDER KONTEN BERDASARKAN TAB AKTIF */}
-        {currentTab === 'mytrips' && (
-          <MyTripsView 
-            savedTrips={savedTrips} 
-            onSelectTrip={handleSelectTripFromHistory} 
-            setIsModalOpen={setIsModalOpen} 
-          />
-        )}
-        
-        {currentTab === 'explore' && <ExploreView />}
-        
-        {currentTab === 'dashboard' && (
-          !hasTrip ? (
-            <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
-              <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', borderRadius: '20px', padding: '30px 20px', textAlign: 'center', maxWidth: '420px', border: '1px solid rgba(255, 255, 255, 0.6)', boxShadow: '0 8px 32px rgba(0,0,0,0.15)' }}>
-                <div style={{ width: '56px', height: '56px', borderRadius: '50%', backgroundColor: '#fff7ed', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px auto', color: '#f97316' }}><Compass size={30} /></div>
-                <h2 style={{ fontSize: '16px', fontWeight: '800', margin: '0 0 6px 0', color: '#0f172a' }}>Belum Ada Rencana Aktif</h2>
-                <p style={{ fontSize: '11px', color: '#64748b', marginBottom: '20px' }}>Mulai rencanakan liburan impianmu!</p>
-                <button onClick={() => setIsModalOpen(true)} style={{ padding: '10px 20px', borderRadius: '10px', border: 'none', backgroundColor: '#f97316', color: '#fff', fontWeight: '700', fontSize: '12px', cursor: 'pointer' }}>Buat Rencana Sekarang</button>
-              </div>
-            </div>
-          ) : (
-            <div style={{ 
-              display: 'grid', 
-              // RESPONSIF: Di HP jadi 1 kolom ke bawah, di laptop jadi 3 kolom
-              gridTemplateColumns: isMobile ? '1fr' : '230px 1fr 310px', 
-              gap: '10px', 
-              padding: isMobile ? '10px 12px' : '10px 24px 14px 24px', 
-              flexGrow: 1, 
-              overflowY: isMobile ? 'auto' : 'hidden' 
-            }}>
-              
-              {/* KIRI - Info Trip */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', padding: '12px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.6)', boxShadow: '0 4px 16px rgba(0,0,0,0.1)' }}>
-                  <h3 style={{ fontSize: '12px', fontWeight: '700', margin: '0 0 6px 0', color: '#0f172a' }}>Ringkasan Perjalanan</h3>
-                  <div style={{ fontSize: '10px', color: '#64748b', fontWeight: '600' }}>Estimasi Budget:</div>
-                  <div style={{ fontSize: '14px', fontWeight: '800', color: '#0f172a' }}>Rp {tripInfo.budget}</div>
+          
+          {currentTab === 'explore' && <ExploreView onAddPlace={handleAddDestination} hasTrip={hasTrip} />}
+          
+          {currentTab === 'dashboard' && (
+            !hasTrip ? (
+              <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
+                <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', borderRadius: '20px', padding: '30px 20px', textAlign: 'center', maxWidth: '420px', border: '1px solid rgba(255, 255, 255, 0.6)', boxShadow: '0 8px 32px rgba(0,0,0,0.15)' }}>
+                  <div style={{ width: '56px', height: '56px', borderRadius: '50%', backgroundColor: '#fff7ed', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px auto', color: '#f97316' }}><Compass size={30} /></div>
+                  <h2 style={{ fontSize: '16px', fontWeight: '800', margin: '0 0 6px 0', color: '#0f172a' }}>Belum Ada Rencana Aktif</h2>
+                  <p style={{ fontSize: '11px', color: '#64748b', marginBottom: '20px' }}>Mulai rencanakan liburan impianmu!</p>
+                  <button onClick={() => setIsModalOpen(true)} style={{ padding: '10px 20px', borderRadius: '10px', border: 'none', backgroundColor: '#f97316', color: '#fff', fontWeight: '700', fontSize: '12px', cursor: 'pointer' }}>Buat Rencana Sekarang</button>
                 </div>
               </div>
-
-              {/* TENGAH - Drag & Drop Itinerary */}
-              <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', padding: '14px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.6)', boxShadow: '0 4px 16px rgba(0,0,0,0.1)' }}>
+            ) : (
+              <div style={{ 
+                display: 'grid', 
+                gridTemplateColumns: isMobile ? '1fr' : '230px 1fr 310px', 
+                gap: '10px', 
+                padding: isMobile ? '10px 12px' : '10px 24px 14px 24px', 
+                flexGrow: 1, 
+                overflowY: isMobile ? 'auto' : 'hidden' 
+              }}>
                 
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                  <h2 style={{ fontSize: '14px', fontWeight: '800', margin: 0, color: '#0f172a' }}>Rencana: {tripInfo.city}</h2>
-                  <button 
-                    onClick={() => setIsPickerOpen(true)} 
-                    style={{ display: 'flex', alignItems: 'center', gap: '4px', backgroundColor: '#0f172a', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: '8px', fontSize: '11px', fontWeight: '700', cursor: 'pointer' }}
-                  >
-                    <Plus size={12} /> Tambah Tempat
-                  </button>
+                {/* KIRI - Info Trip */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', padding: '12px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.6)', boxShadow: '0 4px 16px rgba(0,0,0,0.1)' }}>
+                    <h3 style={{ fontSize: '12px', fontWeight: '700', margin: '0 0 6px 0', color: '#0f172a' }}>Ringkasan Perjalanan</h3>
+                    <div style={{ fontSize: '10px', color: '#64748b', fontWeight: '600' }}>Estimasi Budget:</div>
+                    <div style={{ fontSize: '14px', fontWeight: '800', color: '#0f172a' }}>Rp {tripInfo.budget}</div>
+                  </div>
                 </div>
 
-                <DragDropContext onDragEnd={handleOnDragEnd}>
-                  <Droppable droppableId="itinerary-list" direction="horizontal">
-                    {(provided) => (
-                      <div {...provided.droppableProps} ref={provided.innerRef} style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '6px', minHeight: '90px' }}>
-                        
-                        {destinations.length === 0 && (
-                          <div style={{ width: '100%', textAlign: 'center', color: '#64748b', fontSize: '11px', padding: '16px 0', border: '1px dashed #cbd5e1', borderRadius: '8px', backgroundColor: 'rgba(255, 255, 255, 0.5)' }}>
-                            Rencana masih kosong. Klik "Tambah Tempat"!
-                          </div>
-                        )}
+                {/* TENGAH - Drag & Drop Itinerary */}
+                <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', padding: '14px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.6)', boxShadow: '0 4px 16px rgba(0,0,0,0.1)' }}>
+                  
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                    <h2 style={{ fontSize: '14px', fontWeight: '800', margin: 0, color: '#0f172a' }}>Rencana: {tripInfo.city}</h2>
+                    <button 
+                      onClick={() => setIsPickerOpen(true)} 
+                      style={{ display: 'flex', alignItems: 'center', gap: '4px', backgroundColor: '#0f172a', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: '8px', fontSize: '11px', fontWeight: '700', cursor: 'pointer' }}
+                    >
+                      <Plus size={12} /> Tambah Tempat
+                    </button>
+                  </div>
 
-                        {destinations.map((place, index) => (
-                          <Draggable key={place.id} draggableId={place.id} index={index}>
-                            {(provided) => (
-                              <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} style={{ minWidth: '140px', backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e2e8f0', padding: '6px', boxShadow: '0 2px 8px rgba(0,0,0,0.05)', ...provided.draggableProps.style }}>
-                                <img src={place.image} style={{ width: '100%', height: '55px', borderRadius: '6px', objectFit: 'cover', marginBottom: '4px' }} />
-                                <div style={{ fontSize: '11px', fontWeight: '700', color: '#0f172a', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{place.name}</div>
-                                <div style={{ fontSize: '9px', color: '#64748b' }}>{place.category}</div>
-                              </div>
-                            )}
-                          </Draggable>
-                        ))}
-                        {provided.placeholder}
+                  <DragDropContext onDragEnd={handleOnDragEnd}>
+                    <Droppable droppableId="itinerary-list" direction="horizontal">
+                      {(provided) => (
+                        <div {...provided.droppableProps} ref={provided.innerRef} style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '6px', minHeight: '90px' }}>
+                          
+                          {destinations.length === 0 && (
+                            <div style={{ width: '100%', textAlign: 'center', color: '#64748b', fontSize: '11px', padding: '16px 0', border: '1px dashed #cbd5e1', borderRadius: '8px', backgroundColor: 'rgba(255, 255, 255, 0.5)' }}>
+                              Rencana masih kosong. Klik "Tambah Tempat"!
+                            </div>
+                          )}
+
+                          {destinations.map((place, index) => (
+                            <Draggable key={place.id} draggableId={place.id} index={index}>
+                              {(provided) => (
+                                <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} style={{ minWidth: '140px', backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e2e8f0', padding: '6px', boxShadow: '0 2px 8px rgba(0,0,0,0.05)', ...provided.draggableProps.style }}>
+                                  <img src={place.image} style={{ width: '100%', height: '55px', borderRadius: '6px', objectFit: 'cover', marginBottom: '4px' }} />
+                                  <div style={{ fontSize: '11px', fontWeight: '700', color: '#0f172a', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{place.name}</div>
+                                  <div style={{ fontSize: '9px', color: '#64748b' }}>{place.category}</div>
+                                </div>
+                              )}
+                            </Draggable>
+                          ))}
+                          {provided.placeholder}
+                        </div>
+                      )}
+                    </Droppable>
+                  </DragDropContext>
+                </div>
+
+                {/* KANAN - Leaflet Map dengan Skeleton Fallback */}
+                <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', padding: '10px', borderRadius: '12px', display: 'flex', flexDirection: 'column', border: '1px solid rgba(255, 255, 255, 0.6)', boxShadow: '0 4px 16px rgba(0,0,0,0.1)' }}>
+                  <div style={{ fontSize: '12px', fontWeight: '700', marginBottom: '6px', color: '#0f172a' }}>Map View</div>
+                  
+                  {/* Pintu Pengaman Map loading / Crash di level lokal component */}
+                  <div style={{ flexGrow: 1, minHeight: isMobile ? '280px' : '160px', borderRadius: '8px', overflow: 'hidden', position: 'relative' }}>
+                    {mapLoading ? (
+                      <div className="skeleton-item" style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '8px' }}>
+                        <span style={{ color: '#475569', fontSize: '11px', fontWeight: '700' }}>Menyiapkan Peta Lokasi...</span>
                       </div>
+                    ) : (
+                      <ErrorBoundary>
+                        <MapContainer key={currentMapCenter.toString()} center={currentMapCenter} zoom={12} style={{ width: '100%', height: '100%' }}>
+                          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                          {destinations.map((p, i) => (
+                            <Marker key={p.id} position={[p.lat, p.lng]} icon={createNumberIcon(i+1)}>
+                              <Popup><b>{p.name}</b></Popup>
+                            </Marker>
+                          ))}
+                          <Polyline positions={routeCoordinates} color="#f97316" weight={3} />
+                        </MapContainer>
+                      </ErrorBoundary>
                     )}
-                  </Droppable>
-                </DragDropContext>
-              </div>
-
-              {/* KANAN - Leaflet Map */}
-              <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', padding: '10px', borderRadius: '12px', display: 'flex', flexDirection: 'column', border: '1px solid rgba(255, 255, 255, 0.6)', boxShadow: '0 4px 16px rgba(0,0,0,0.1)' }}>
-                <div style={{ fontSize: '12px', fontWeight: '700', marginBottom: '6px', color: '#0f172a' }}>Map View</div>
-                {/* RESPONSIF: Tinggi peta otomatis menyesuaikan device */}
-                <div style={{ flexGrow: 1, minHeight: isMobile ? '280px' : '160px', borderRadius: '8px', overflow: 'hidden' }}>
-                  <MapContainer key={currentMapCenter.toString()} center={currentMapCenter} zoom={12} style={{ width: '100%', height: '100%' }}>
-                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                    {destinations.map((p, i) => (
-                      <Marker key={p.id} position={[p.lat, p.lng]} icon={createNumberIcon(i+1)}>
-                        <Popup><b>{p.name}</b></Popup>
-                      </Marker>
-                    ))}
-                    <Polyline positions={routeCoordinates} color="#f97316" weight={3} />
-                  </MapContainer>
+                  </div>
                 </div>
+
               </div>
+            )
+          )}
+        </div>
 
-            </div>
-          )
-        )}
       </div>
-
-    </div>
+    </ErrorBoundary>
   );
 }
