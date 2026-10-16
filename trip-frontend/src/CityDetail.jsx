@@ -71,7 +71,7 @@ export default function CityDetail({ cityName, onBack, onAddPlace, hasTrip }) {
       </button>
 
       <h1 style={{ fontSize: '26px', fontWeight: '800', color: '#0f172a', marginBottom: '8px' }}>Eksplor {cityName}</h1>
-      <p style={{ color: '#64748b', marginBottom: '20px', fontSize: '13px' }}>Temukan tempat wisata terbaik, hotel nyaman, dan kuliner lezat di {cityName}.</p>
+      <p style={{ color: '#000104', marginBottom: '20px', fontSize: '13px' }}>Temukan tempat wisata terbaik, hotel nyaman, dan kuliner lezat di {cityName}.</p>
 
       {/* NAVIGASI TAB */}
       <div style={{ display: 'flex', gap: '8px', marginBottom: '20px', borderBottom: '2px solid #e2e8f0', paddingBottom: '12px', overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
@@ -127,20 +127,51 @@ export default function CityDetail({ cityName, onBack, onAddPlace, hasTrip }) {
         )}
       </div>
 
-      {/* GRID DAFTAR KARTU */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px', paddingBottom: '40px' }}>
-        {currentList.length === 0 ? <p style={{ color: '#94a3b8' }}>Belum ada data tersedia.</p> : (
-          currentList.map((item) => (
-            <div key={item.id} onClick={() => setSelectedPlace(item)} style={{ backgroundColor: '#ffffff', borderRadius: '16px', padding: '16px', boxShadow: selectedPlace?.id === item.id ? '0 8px 24px rgba(249,115,22,0.2)' : '0 4px 12px rgba(0,0,0,0.05)', border: selectedPlace?.id === item.id ? '2px solid #f97316' : '1px solid #f1f5f9', cursor: 'pointer', transition: 'all 0.2s ease-in-out', transform: selectedPlace?.id === item.id ? 'translateY(-2px)' : 'none' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                <h3 style={{ fontSize: '15px', fontWeight: '700', color: '#0f172a', marginBottom: '6px', maxWidth: '80%' }}>{item.name}</h3>
-                <span style={{ fontSize: '11px', color: '#f59e0b', fontWeight: '700', display: 'flex', alignItems: 'center', gap: '2px' }}><Star size={12} fill="currentColor"/> {item.rating || '4.5'}</span>
-              </div>
-              <p style={{ fontSize: '12px', color: '#64748b', margin: '4px 0' }}>📍 {item.category || item.tourism || item.amenity || 'Umum'}</p>
-              <p style={{ fontSize: '12px', fontWeight: '700', color: '#0ea5e9', marginTop: '10px' }}>{getDisplayPrice(item)}</p>
-            </div>
-          ))
-        )}
+      {/* PEMBUNGKUS DAFTAR KARTU (WISATA, HOTEL, KULINER) */}
+<div style={{ 
+  display: 'grid', 
+  gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : 'repeat(2, 1fr)', // 2 Kolom di PC, 1 Kolom di HP
+  gap: '16px', 
+  marginTop: '16px',
+  width: '100%' 
+}}>
+  {currentList.map((item) => (
+    <div 
+      key={item.id} 
+      style={{ 
+        backgroundColor: 'rgba(255, 255, 255, 0.95)', 
+        backdropFilter: 'blur(12px)',
+        borderRadius: '12px', 
+        padding: '14px 16px', 
+        border: '1px solid rgba(255, 255, 255, 0.6)', 
+        boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+        display: 'flex',
+        justify: 'space-between',
+        alignItems: 'center'
+      }}
+    >
+      <div>
+        <h3 style={{ margin: '0 0 6px 0', fontSize: '14px', fontWeight: '800', color: '#0f172a' }}>
+          {item.name}
+        </h3>
+        <p style={{ margin: '0 0 6px 0', fontSize: '11px', color: '#64748b', display: 'flex', alignItems: 'center', gap: '4px' }}>
+          📍 {item.category || item.amenity || 'Umum'}
+        </p>
+        <div style={{ fontSize: '12px', fontWeight: '700', color: '#0ea5e9' }}>
+          {activeTab === 'culinaries' 
+            ? (item.price_range || 'Harga belum tersedia') 
+            : activeTab === 'hotels' 
+              ? (item.price ? `Rp ${Number(item.price).toLocaleString('id-ID')} / malam` : 'Harga belum tersedia')
+              : (item.price || 'Harga belum tersedia')
+          }
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', fontWeight: '700', color: '#f59e0b' }}>
+        ⭐ {item.rating || '4.5'}
+      </div>
+    </div>
+  ))}
       </div>
     </div>
   );
