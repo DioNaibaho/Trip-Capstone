@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { 
@@ -460,6 +460,7 @@ export default function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [mapLoading, setMapLoading] = useState(true);
 
+
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', handleResize);
@@ -479,6 +480,50 @@ export default function App() {
   
   const [destinations, setDestinations] = useState({});
   
+  // ==============================================================
+  // 🚀 COPY DARI SINI: LOGIKA SMART BACK BUTTON
+  // ==============================================================
+  
+  // 1. Simpan state terakhir biar gampang dicek sama tombol back
+  const appStateRef = useRef({ isModalOpen, isPickerOpen, selectedExploreCity, currentTab });
+  useEffect(() => {
+    appStateRef.current = { isModalOpen, isPickerOpen, selectedExploreCity, currentTab };
+  }, [isModalOpen, isPickerOpen, selectedExploreCity, currentTab]);
+
+  // 2. Bajak tombol back browser/HP
+  useEffect(() => {
+    // Injeksi 'history' palsu saat web pertama kali diload
+    window.history.pushState(null, "", window.location.href);
+
+    const handleBackButton = (e) => {
+      const state = appStateRef.current;
+      
+      // Cek apakah user lagi buka sesuatu yang bisa di-back
+      if (state.isModalOpen || state.isPickerOpen || state.selectedExploreCity || state.currentTab !== 'dashboard') {
+        
+        // TAHAN! Jangan biarkan user keluar dari web
+        window.history.pushState(null, "", window.location.href);
+
+        // Eksekusi aksi back sesuai urutan hierarki
+        if (state.isPickerOpen) {
+          setIsPickerOpen(false); // Tutup modal pilih tempat dulu
+        } else if (state.isModalOpen) {
+          setIsModalOpen(false);  // Tutup modal buat trip
+        } else if (state.selectedExploreCity) {
+          setSelectedExploreCity(''); // Balik ke katalog kota Explore
+        } else if (state.currentTab !== 'dashboard') {
+          setCurrentTab('dashboard'); // Balik ke menu Dashboard utama
+        }
+        
+      } else {
+        // Kalau user udah di Dashboard bersih tanpa modal, biarkan keluar web
+      }
+    };
+
+    window.addEventListener('popstate', handleBackButton);
+    return () => window.removeEventListener('popstate', handleBackButton);
+  }, []);
+
   const handleOnDragEnd = (result) => {
     if (!result.destination) return;
     
@@ -695,11 +740,14 @@ export default function App() {
 
           {/* TOP NAVBAR */}
           <header style={{ 
+            position: 'relative', /* TAMBAHAN BARU */
+            zIndex: 9999,         /* TAMBAHAN BARU: Biar dropdown ga ketimpa peta */
             backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', 
             padding: isMobile ? '8px 12px' : '8px 24px', height: isMobile ? 'auto' : '52px', minHeight: '52px',
             display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: 'center', justifyContent: 'space-between', 
             gap: isMobile ? '8px' : '0px', borderBottom: '1px solid rgba(255, 255, 255, 0.5)', flexShrink: 0 
           }}>
+          
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: isMobile ? '100%' : 'auto' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <div style={{ backgroundColor: '#0f172a', padding: '5px', borderRadius: '50%', display: 'flex', color: '#f97316' }}><Compass size={18} /></div>
