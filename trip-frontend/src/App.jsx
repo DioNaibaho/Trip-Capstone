@@ -275,6 +275,11 @@ function DestinationPickerModal({ isOpen, onClose, city, onAdd }) {
                     <h3 style={{ margin: 0, fontSize: '13px', fontWeight: '700', color: '#0f172a', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                       {item.name || 'Nama Lokasi Belum Tersedia'}
                     </h3>
+                    <img src={item.image_url || 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e'} alt={item.name} style={{ width: '70px', height: '70px', borderRadius: '10px', objectFit: 'cover', flexShrink: 0 }}
+                     onError={(e) => {
+                         e.target.src = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e';
+                     }}
+                   />
                     {item.rating && (
                       <span style={{ fontSize: '10px', fontWeight: '700', color: '#f59e0b', backgroundColor: '#fef3c7', padding: '2px 6px', borderRadius: '4px', flexShrink: 0 }}>
                         ⭐ {item.rating}

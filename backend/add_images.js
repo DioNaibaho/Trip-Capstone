@@ -30,6 +30,11 @@ async function updateSpecificImages() {
     try {
         console.log('🔄 Memperbarui kolom image_url dengan kategori yang lebih spesifik...');
 
+        // Tambahkan 3 baris ini biar kolomnya otomatis dibuat jika belum ada
+        await pool.query('ALTER TABLE culinaries ADD COLUMN IF NOT EXISTS image_url TEXT;');
+        await pool.query('ALTER TABLE hotels ADD COLUMN IF NOT EXISTS image_url TEXT;');
+        await pool.query('ALTER TABLE attractions ADD COLUMN IF NOT EXISTS image_url TEXT;');
+
         async function assignImages(tableName, imagesArray) {
             const result = await pool.query(`SELECT id, name FROM ${tableName}`);
             const rows = result.rows;
