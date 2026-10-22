@@ -133,6 +133,43 @@ app.get('/api/destinations/:city', async (req, res) => {
     res.status(500).json({ success: false, message: 'Gagal mengambil data dari database' });
   }
 });
+
+// ==========================================
+// API UNTUK MENYIMPAN / UPDATE TRIP
+// ==========================================
+app.post('/api/trips', async (req, res) => {
+    try {
+        const { id, city, startDate, endDate, budget, rawBudget, passengers, days, destinations, image } = req.body;
+
+        // Cek apakah trip dengan ID ini udah ada di database (Mode Edit)
+        const checkTrip = await pool.query('SELECT id FROM trips WHERE id = $1', [id]);
+
+        if (checkTrip.rows.length > 0) {
+            // Kalau udah ada, kita UPDATE datanya
+            await pool.query(
+                `UPDATE trips 
+                 SET city = $1, start_date = $2, end_date = $3, budget = $4, raw_budget = $5, 
+                     passengers = $6, days = $7, destinations = $8, image = $9, saved_at = NOW() 
+                 WHERE id = $10`,
+                [city, startDate, endDate, budget, rawBudget, passengers, days, JSON.stringify(destinations), image, id]
+            );
+        } else {
+            // Kalau belum ada, kita INSERT data baru
+            await pool.query(
+                `INSERT INTO trips (id, city, start_date, end_date, budget, raw_budget, passengers, days, destinations, image) 
+                 VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)`,
+                [id, city, startDate, endDate, budget, rawBudget, passengers, days, JSON.stringify(destinations), image]
+            );
+        }
+
+        res.json({ success: true, message: 'Trip berhasil disimpan permanen ke database!' });
+    } catch (error) {
+        console.error('Gagal menyimpan trip:', error);
+        res.status(500).json({ success: false, message: 'Terjadi kesalahan pada server.' });
+    }
+});
+
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server lokal jalan di port: ${PORT}`);
   console.log(`Server publik Ngrok aktif di: https://scrappier-anthony-adnate.ngrok-free.dev`);

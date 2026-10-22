@@ -127,51 +127,75 @@ export default function CityDetail({ cityName, onBack, onAddPlace, hasTrip }) {
         )}
       </div>
 
-      {/* PEMBUNGKUS DAFTAR KARTU (WISATA, HOTEL, KULINER) */}
-<div style={{ 
-  display: 'grid', 
-  gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : 'repeat(2, 1fr)', // 2 Kolom di PC, 1 Kolom di HP
-  gap: '16px', 
-  marginTop: '16px',
-  width: '100%' 
-}}>
-  {currentList.map((item) => (
-    <div 
-      key={item.id} 
-      style={{ 
-        backgroundColor: 'rgba(255, 255, 255, 0.95)', 
-        backdropFilter: 'blur(12px)',
-        borderRadius: '12px', 
-        padding: '14px 16px', 
-        border: '1px solid rgba(255, 255, 255, 0.6)', 
-        boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
-        display: 'flex',
-        justify: 'space-between',
-        alignItems: 'center'
-      }}
-    >
-      <div>
-        <h3 style={{ margin: '0 0 6px 0', fontSize: '14px', fontWeight: '800', color: '#0f172a' }}>
-          {item.name}
-        </h3>
-        <p style={{ margin: '0 0 6px 0', fontSize: '11px', color: '#64748b', display: 'flex', alignItems: 'center', gap: '4px' }}>
-          📍 {item.category || item.amenity || 'Umum'}
-        </p>
-        <div style={{ fontSize: '12px', fontWeight: '700', color: '#0ea5e9' }}>
-          {activeTab === 'culinaries' 
-            ? (item.price_range || 'Harga belum tersedia') 
-            : activeTab === 'hotels' 
-              ? (item.price ? `Rp ${Number(item.price).toLocaleString('id-ID')} / malam` : 'Harga belum tersedia')
-              : (item.price || 'Harga belum tersedia')
-          }
-        </div>
-      </div>
+{/* PEMBUNGKUS DAFTAR KARTU (PAKSA MUTLAK 3 KOLOM PAKE INLINE CSS) */}
+      <div style={{ 
+        display: 'grid', 
+        /* INI KUNCINYA: Kalau layar HP (<=768px) 1 kolom, kalau PC dipaksa 3 kolom rata! */
+        gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : 'repeat(3, 1fr)', 
+        gap: '24px', 
+        marginTop: '24px',
+        width: '100%' 
+      }}>
+        
+        {currentList?.map((item) => (
+          <div 
+            key={item.id} 
+            onClick={() => setSelectedPlace(item)}
+            style={{ 
+              backgroundColor: 'rgba(255, 255, 255, 0.95)', 
+              backdropFilter: 'blur(12px)',
+              borderRadius: '12px', 
+              border: '1px solid rgba(255, 255, 255, 0.6)', 
+              boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+              display: 'flex',
+              flexDirection: 'column', 
+              overflow: 'hidden',
+              cursor: 'pointer',
+              transition: 'transform 0.2s'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-4px)'}
+            onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+          >
+            
+            {/* 🖼️ GAMBAR (UKURAN DIGEMBOK MATI) */}
+            <img 
+              src={item.image_url || 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e'} 
+              alt={item.name}
+              style={{ 
+                width: '100%', 
+                height: '180px', /* KUNCI UTAMA: Tinggi foto dikunci 180px */
+                objectFit: 'cover' 
+              }} 
+              onError={(e) => {
+                e.target.src = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e';
+              }}
+            />
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', fontWeight: '700', color: '#f59e0b' }}>
-        ⭐ {item.rating || '4.5'}
-      </div>
-    </div>
-  ))}
+            {/* 📝 BAGIAN TEKS */}
+            <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '8px', flexGrow: 1 }}>
+              <h3 style={{ margin: 0, fontSize: '15px', fontWeight: 'bold', color: '#0f172a', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                {item.name}
+              </h3>
+              
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <span style={{ fontSize: '12px', color: '#64748b', textTransform: 'capitalize' }}>
+                  {item.category || item.tourism || item.amenity || 'Umum'}
+                </span>
+                <span style={{ fontSize: '13px', fontWeight: 'bold', color: '#0ea5e9' }}>
+                  {getDisplayPrice(item)}
+                </span>
+              </div>
+              
+              {item.rating && (
+                <span style={{ fontSize: '12px', fontWeight: 'bold', color: '#f59e0b' }}>
+                  ⭐ {item.rating}
+                </span>
+              )}
+            </div>
+            
+          </div>
+        ))}
+        
       </div>
     </div>
   );

@@ -484,6 +484,26 @@ export default function App() {
   const [tripInfo, setTripInfo] = useState({ id: null, city: '', startDate: '', endDate: '', budget: '0', rawBudget: 0, passengers: 2, days: 3 });
   
   const [destinations, setDestinations] = useState({});
+
+  //  LOAD DATA DARI DATABASE SAAT WEB DIBUKA
+  useEffect(() => {
+    const fetchSavedTrips = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/api/trips');
+        if (response.data.success) {
+          // Masukin data dari database ke state My Trips
+          setSavedTrips(response.data.data); 
+        }
+      } catch (error) {
+        console.error('Gagal mengambil history trip dari database:', error);
+      }
+    };
+
+    // Kita ambil datanya cuma kalau usernya udah berhasil login ya
+    if (isLoggedIn) {
+      fetchSavedTrips();
+    }
+  }, [isLoggedIn]);
   
   // ==============================================================
   // 🚀 COPY DARI SINI: LOGIKA SMART BACK BUTTON
@@ -686,6 +706,39 @@ export default function App() {
     setSavedTrips(prev => prev.map(t => t.id === tripInfo.id ? { ...t, destinations: newDestinations } : t));
   };
 
+ const handleSaveTrip = async () => {
+    // Validasi: Jangan kasih save kalau jadwalnya masih kosong melompong
+    const isDestinationsEmpty = Object.keys(destinations).length === 0;
+    if (isDestinationsEmpty) {
+      alert('Isi minimal 1 tempat dulu dong di jadwalnya sebelum disimpan! 😅');
+      return;
+    }
+
+    // Bungkus semua data trip yang lagi aktif
+    const tripToSave = {
+      ...tripInfo, 
+      id: tripInfo.id || Date.now(), 
+      destinations: destinations, /* 🚨 FIX-NYA DI SINI: Kemarin 'itinerary', sekarang ganti jadi 'destinations' biar sinkron pas diload ulang */
+      savedAt: new Date().toISOString() 
+    };
+
+    await axios.post('http://localhost:5000/api/trips', tripToSave);
+    
+    setSavedTrips((prevTrips) => {
+      const existingIndex = prevTrips.findIndex(t => t.id === tripToSave.id);
+      if (existingIndex >= 0) {
+        const updatedTrips = [...prevTrips];
+        updatedTrips[existingIndex] = tripToSave;
+        return updatedTrips;
+      }
+      return [tripToSave, ...prevTrips];
+    });
+
+    alert('Mantap! Rencana perjalananmu berhasil disimpan. 🚀');
+    
+    // Otomatis pindah ke tab My Trips
+    setCurrentTab('mytrips'); 
+  };
   // Kalkulasi Semua Hari Buat Budget
   let allDestinations = [];
   if (tripInfo.days) {
@@ -811,7 +864,7 @@ export default function App() {
             onClick={() => setSelectedExploreCity('Bandung')}
             style={{ backgroundColor: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(12px)', borderRadius: '16px', overflow: 'hidden', cursor: 'pointer', boxShadow: '0 8px 24px rgba(0,0,0,0.15)', border: '1px solid rgba(255, 255, 255, 0.5)', transform: 'scale(1)', transition: 'transform 0.2s' }}
           >
-            <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?auto=format&fit=crop&w=600&q=80" style={{ width: '100%', height: '140px', objectFit: 'cover' }} alt="Bandung" />
+            <img src="https://images.unsplash.com/photo-1613057263089-7a8c82f2825d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?auto=format&fit=crop&w=600&q=80" style={{ width: '100%', height: '140px', objectFit: 'cover' }} alt="Bandung" />
             <div style={{ padding: '14px' }}>
               <h3 style={{ margin: 0, fontSize: '15px', fontWeight: '800', color: '#0f172a' }}>Bandung</h3>
               <p style={{ margin: '4px 0 0 0', fontSize: '11px', color: '#64748b', fontWeight: '600' }}>Jawa Barat • 1,400+ Destinasi</p>
@@ -902,6 +955,7 @@ export default function App() {
                 {/* KOLOM TENGAH - DRAG & DROP ITINERARY */}
                 <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.88)', backdropFilter: 'blur(12px)', padding: '14px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.6)', boxShadow: '0 4px 16px rgba(0,0,0,0.1)', display: 'flex', flexDirection: 'column' }}>
                   
+                  {/* HEADER ITINERARY & TOMBOL */}
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
                     <h2 style={{ fontSize: '14px', fontWeight: '800', margin: 0, color: '#0f172a' }}>
                       Rencana: {tripInfo.city} <br/>
@@ -909,12 +963,23 @@ export default function App() {
                         ({formatDateText(tripInfo.startDate)} - {formatDateText(tripInfo.endDate)} | {tripInfo.passengers} Peserta)
                       </span>
                     </h2>
-                    <button 
-                      onClick={() => setIsPickerOpen(true)} 
-                      style={{ display: 'flex', alignItems: 'center', gap: '4px', backgroundColor: '#0f172a', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: '8px', fontSize: '11px', fontWeight: '700', cursor: 'pointer' }}
-                    >
-                      <Plus size={12} /> Tambah
-                    </button>
+                    
+                    {/* BUNGKUSAN TOMBOL TAMBAH & SIMPAN */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <button 
+                        onClick={() => setIsPickerOpen(true)} 
+                        style={{ display: 'flex', alignItems: 'center', gap: '4px', backgroundColor: '#0f172a', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: '8px', fontSize: '11px', fontWeight: '700', cursor: 'pointer' }}
+                      >
+                        <Plus size={12} /> Tambah
+                      </button>
+
+                      <button 
+                        onClick={handleSaveTrip} 
+                        style={{ display: 'flex', alignItems: 'center', gap: '4px', backgroundColor: '#10b981', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: '8px', fontSize: '11px', fontWeight: '700', cursor: 'pointer', boxShadow: '0 4px 12px rgba(16, 185, 129, 0.25)' }}
+                      >
+                        <CheckCircle size={12} /> Simpan
+                      </button>
+                    </div>
                   </div>
 
                   {/* NAVIGASI TAB HARI */}
@@ -1024,16 +1089,13 @@ export default function App() {
                     {mapLoading ? (
                       <div className="skeleton-item" style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '8px' }}><span style={{ color: '#475569', fontSize: '11px', fontWeight: '700' }}>Menyiapkan Peta...</span></div>
                     ) : (
-                      <ErrorBoundary>
-                        {/* PENTING: Pake key berdasarkan selectedDay biar mapnya selalu nge-refresh saat ganti tab hari */}
-                        <MapContainer key={`map-day-${selectedDay}`} center={currentMapCenter} zoom={12} style={{ width: '100%', height: '100%' }}>
-                          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                          {currentDayDestinations.map((p, i) => (
-                            <Marker key={p.id} position={[p.lat, p.lng]} icon={createNumberIcon(i+1)}><Popup><b>{p.name}</b></Popup></Marker>
-                          ))}
-                          <Polyline positions={routeCoordinates} color="#f97316" weight={3} />
-                        </MapContainer>
-                      </ErrorBoundary>
+                      <MapContainer key={`map-day-${selectedDay}`} center={currentMapCenter} zoom={12} style={{ width: '100%', height: '100%' }}>
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        {currentDayDestinations.map((p, i) => (
+                          <Marker key={p.id} position={[p.lat, p.lng]} icon={createNumberIcon(i+1)}><Popup><b>{p.name}</b></Popup></Marker>
+                        ))}
+                        <Polyline positions={routeCoordinates} color="#f97316" weight={3} />
+                      </MapContainer>
                     )}
                   </div>
                 </div>

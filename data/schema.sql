@@ -50,3 +50,16 @@ CREATE TABLE IF NOT EXISTS users (
 
 DROP TABLE IF EXISTS users;
 
+CREATE TABLE IF NOT EXISTS trips (
+    id VARCHAR(100) PRIMARY KEY,
+    city VARCHAR(255),
+    start_date VARCHAR(50),
+    end_date VARCHAR(50),
+    budget VARCHAR(100),
+    raw_budget INTEGER,
+    passengers INTEGER,
+    days INTEGER,
+    destinations JSONB,
+    image VARCHAR(255),
+    saved_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
