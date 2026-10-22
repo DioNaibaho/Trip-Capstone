@@ -485,25 +485,36 @@ export default function App() {
   
   const [destinations, setDestinations] = useState({});
 
-  //  LOAD DATA DARI DATABASE SAAT WEB DIBUKA
+  // 🚀 LOAD DATA DARI DATABASE BERDASARKAN USER ID SAAT LOGIN
   useEffect(() => {
-    const fetchSavedTrips = async () => {
+    const fetchUserTrips = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/trips');
+        const currentUserId = 1; // Sesuaikan dengan ID user yang sedang login
+        const response = await axios.get(`http://localhost:5000/api/trips/user/${currentUserId}`);
+        
         if (response.data.success) {
-          // Masukin data dari database ke state My Trips
-          setSavedTrips(response.data.data); 
+          // Mapping data dari backend supaya propertinya cocok sama yang dibaca Frontend
+          const formattedData = response.data.data.map(t => ({
+            id: t.id,
+            city: t.trip_name,
+            startDate: t.start_date,
+            endDate: t.end_date,
+            destinations: t.itinerary_data, // Ambil dari itinerary_data database
+            ...t
+          }));
+          
+          setSavedTrips(formattedData); 
         }
       } catch (error) {
         console.error('Gagal mengambil history trip dari database:', error);
       }
     };
 
-    // Kita ambil datanya cuma kalau usernya udah berhasil login ya
     if (isLoggedIn) {
-      fetchSavedTrips();
+      fetchUserTrips();
     }
   }, [isLoggedIn]);
+
   
   // ==============================================================
   // 🚀 COPY DARI SINI: LOGIKA SMART BACK BUTTON
@@ -706,39 +717,50 @@ export default function App() {
     setSavedTrips(prev => prev.map(t => t.id === tripInfo.id ? { ...t, destinations: newDestinations } : t));
   };
 
- const handleSaveTrip = async () => {
-    // Validasi: Jangan kasih save kalau jadwalnya masih kosong melompong
+  const handleSaveTrip = async () => {
     const isDestinationsEmpty = Object.keys(destinations).length === 0;
     if (isDestinationsEmpty) {
       alert('Isi minimal 1 tempat dulu dong di jadwalnya sebelum disimpan! 😅');
       return;
     }
 
-    // Bungkus semua data trip yang lagi aktif
+    // Ambil ID user yang lagi aktif (biasanya kesimpen pas login, misal dari localStorage atau state)
+    // Kalau belum ada sistem user ID dinamis, kita pakai dummy ID sementara misal '1'
+    const currentUserId = 1; 
+
+    // Sesuaikan kuncinya dengan yang diminta backend controller temen lu
     const tripToSave = {
-      ...tripInfo, 
-      id: tripInfo.id || Date.now(), 
-      destinations: destinations, /* 🚨 FIX-NYA DI SINI: Kemarin 'itinerary', sekarang ganti jadi 'destinations' biar sinkron pas diload ulang */
-      savedAt: new Date().toISOString() 
+      user_id: currentUserId,
+      trip_name: `Liburan ke ${tripInfo.city}`,
+      start_date: tripInfo.startDate,
+      end_date: tripInfo.endDate,
+      itinerary_data: destinations, // Ini objek destinasi per hari
+      
+      // Tambahan properti lain kalau dibutuhin buat nampilin di UI frontend
+      id: tripInfo.id || Date.now(),
+      budget: tripInfo.budget,
+      rawBudget: tripInfo.rawBudget,
+      passengers: tripInfo.passengers,
+      days: tripInfo.days,
+      image: tripInfo.image || 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=600&q=80'
     };
 
-    await axios.post('http://localhost:5000/api/trips', tripToSave);
-    
-    setSavedTrips((prevTrips) => {
-      const existingIndex = prevTrips.findIndex(t => t.id === tripToSave.id);
-      if (existingIndex >= 0) {
-        const updatedTrips = [...prevTrips];
-        updatedTrips[existingIndex] = tripToSave;
-        return updatedTrips;
-      }
-      return [tripToSave, ...prevTrips];
-    });
+    try {
+      const response = await axios.post('http://localhost:5000/api/trips', tripToSave);
+      
+      if (response.data.success) {
+        // Masukin data balikan dari database ke state frontend
+        setSavedTrips((prevTrips) => [response.data.data, ...prevTrips]);
 
-    alert('Mantap! Rencana perjalananmu berhasil disimpan. 🚀');
-    
-    // Otomatis pindah ke tab My Trips
-    setCurrentTab('mytrips'); 
+        alert('Mantap! Rencana perjalananmu berhasil disimpan permanen ke database! 🚀');
+        setCurrentTab('mytrips'); 
+      }
+    } catch (error) {
+      console.error('Gagal menyimpan ke database:', error);
+      alert('Waduh, gagal nyimpen ke database nih pren. Cek backend lu ya!');
+    }
   };
+
   // Kalkulasi Semua Hari Buat Budget
   let allDestinations = [];
   if (tripInfo.days) {
@@ -1107,4 +1129,4 @@ export default function App() {
       </div>
     </ErrorBoundary>
   );
-}
+};
