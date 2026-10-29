@@ -18,26 +18,29 @@ class RouteRequest(BaseModel):
 
 # --- 2. KOMPONEN ALGORITMA GENETIKA (GA) ---
 
-def calculate_fitness(chromosome: List[int], time_matrix: List[List[int]], locations: List[Location]) -> int:
-    """Menghitung total waktu perjalanan + durasi wisata"""
-    full_route = [0] + chromosome
+def calculate_fitness(chromosome: List[int], time_matrix: List[List[int]], locations: List[Location]):
+    """Menghitung total waktu perjalanan + durasi wisata (0-indexed)"""
     total_time = 0
-    for i in range(len(full_route) - 1):
-        from_idx = full_route[i]
-        to_idx = full_route[i+1]
+    
+    for i in range(len(chromosome) - 1):
+        from_idx = chromosome[i]
+        to_idx = chromosome[i+1]
+        
+        # Mengakses matriks N x N dengan aman
         total_time += time_matrix[from_idx][to_idx]
-        if to_idx != 0:
-            total_time += locations[to_idx - 1].duration
+        total_time += locations[to_idx].duration
+        
     return total_time
 
 def create_initial_population(pop_size: int, num_destinations: int) -> List[List[int]]:
-    """Membuat populasi awal berisi rute-rute acak"""
-    base_route = list(range(1, num_destinations + 1))
+    """Membuat populasi awal berisi rute-rute acak (0 sampai N-1)"""
+    base_route = list(range(0, num_destinations))
+    
     population = []
     for _ in range(pop_size):
-        route = base_route.copy()
-        random.shuffle(route)
-        population.append(route)
+        shuffled = base_route.copy()
+        random.shuffle(shuffled)
+        population.append(shuffled)
     return population
 
 def tournament_selection(population: List[List[int]], time_matrix: List[List[int]], locations: List[Location], k: int = 3) -> List[int]:
