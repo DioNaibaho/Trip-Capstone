@@ -342,7 +342,7 @@ function MyTripsView({ savedTrips, onSelectTrip, setIsModalOpen }) {
 // ==========================================
 // MODAL BUAT RENCANA 
 // ==========================================
-function CreateTripModal({ isOpen, onClose, onSubmit }) {
+function CreateTripModal({ isOpen, onClose, onSubmit, onAIGenerate, isGeneratingAI }) {
   const getTodayDate = () => new Date().toISOString().split('T')[0];
   const getFutureDate = (daysAhead) => {
     const d = new Date();
@@ -440,9 +440,22 @@ function CreateTripModal({ isOpen, onClose, onSubmit }) {
 
         </div>
 
-        <div style={{ padding: '16px 20px', backgroundColor: '#f8fafc', borderTop: '1px solid #f1f5f9' }}>
-          <button onClick={() => onSubmit(formData)} style={{ width: '100%', backgroundColor: '#f97316', color: '#ffffff', fontWeight: 'bold', fontSize: '14px', padding: '12px', borderRadius: '10px', border: 'none', cursor: 'pointer' }}>
+        <div style={{ padding: '16px 20px', backgroundColor: '#f8fafc', borderTop: '1px solid #f1f5f9', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <button onClick={() => onSubmit(formData)} style={{ width: '100%', backgroundColor: '#0f172a', color: '#ffffff', fontWeight: 'bold', fontSize: '14px', padding: '12px', borderRadius: '10px', border: 'none', cursor: 'pointer' }}>
             Mulai Rencanakan Manual
+          </button>
+          
+          <button 
+            onClick={() => onAIGenerate(formData)} 
+            disabled={isGeneratingAI}
+            style={{ 
+              width: '100%', backgroundColor: '#f97316', color: '#ffffff', fontWeight: 'bold', 
+              fontSize: '14px', padding: '12px', borderRadius: '10px', border: 'none', 
+              cursor: isGeneratingAI ? 'not-allowed' : 'pointer', display: 'flex', 
+              alignItems: 'center', justifyContent: 'center', gap: '8px', opacity: isGeneratingAI ? 0.7 : 1
+            }}
+          >
+            {isGeneratingAI ? 'AI Sedang Memproses...' : <><Sparkles size={16} /> Generate Itinerary dengan AI</>}
           </button>
         </div>
       </div>
@@ -601,6 +614,52 @@ export default function App() {
     setHasTrip(true);
     setCurrentTab('dashboard');
   };
+
+  const [isGeneratingAI, setIsGeneratingAI] = useState(false);
+
+const handleAIGenerateTrip = async (data) => {
+  setIsGeneratingAI(true);
+  try {
+    const response = await axios.post('http://localhost:8000/api/generate', {
+      city: data.city,
+      startDate: data.startDate,
+      endDate: data.endDate,
+      days: data.days,
+      passengers: data.passengers,
+      budget: data.budget
+    });
+
+    const newTrip = {
+      id: Date.now().toString(),
+      city: data.city,
+      startDate: data.startDate, 
+      endDate: data.endDate,     
+      budget: new Intl.NumberFormat('id-ID').format(data.budget), 
+      rawBudget: parseInt(data.budget, 10), 
+      passengers: data.passengers, 
+      days: data.days,
+      destinations: {}, 
+      image: 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=600&q=80'
+    };
+
+    const aiDestinations = response.data.itinerary; 
+    newTrip.destinations = aiDestinations;
+
+    setSavedTrips([newTrip, ...savedTrips]);
+    setTripInfo(newTrip);
+    setDestinations(aiDestinations);
+    setSelectedDay(1); 
+    setHasTrip(true);
+    setIsModalOpen(false);
+    setCurrentTab('dashboard');
+    alert('✨ Jadwal cerdas berhasil disusun oleh AI!');
+  } catch (error) {
+    console.error('Gagal generate AI:', error);
+    alert('AI-nya gagal merespon pren. Pastikan backend Python AI udah di-run!');
+  } finally {
+    setIsGeneratingAI(false);
+  }
+};
 
   const handleAddDestination = (item, tabType) => {
     const rawPrice = tabType === 'culinaries' ? item.price_range : item.price;
@@ -815,7 +874,13 @@ export default function App() {
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', height: '100%', width: '100%' }}>
           
           <AIChatbotWidget />
-          <CreateTripModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={handleCreateTripSubmit} />
+          <CreateTripModal 
+          isOpen={isModalOpen} 
+          onClose={() => setIsModalOpen(false)} 
+          onSubmit={handleCreateTripSubmit} 
+          onAIGenerate={handleAIGenerateTrip} 
+          isGeneratingAI={isGeneratingAI} 
+          />
           <DestinationPickerModal isOpen={isPickerOpen} onClose={() => setIsPickerOpen(false)} city={tripInfo.city} onAdd={handleAddDestination} />
 
           {/* TOP NAVBAR */}
