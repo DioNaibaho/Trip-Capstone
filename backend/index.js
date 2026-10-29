@@ -105,43 +105,49 @@ app.post('/api/auth/login', async (req, res) => {
 });
 
 app.get('/api/destinations/:city', async (req, res) => {
-  const { city } = req.params;
+    const { city } = req.params;
 
-  try {
-    const hotels = await pool.query(
-      'SELECT * FROM hotels WHERE LOWER(city) LIKE LOWER($1)',
-      [`%${city}%`]
-    );
-    const attractions = await pool.query(
-      'SELECT * FROM attractions WHERE LOWER(city) LIKE LOWER($1)',
-      [`%${city}%`]
-    );
-    const culinaries = await pool.query(
-      'SELECT * FROM culinaries WHERE LOWER(city) LIKE LOWER($1)',
-      [`%${city}%`]
-    );
+    try {
+        const hotels = await pool.query(
+            'SELECT * FROM hotels WHERE LOWER(city) LIKE LOWER($1)',
+            [`%${city}%`]
+        );
+        const attractions = await pool.query(
+            'SELECT * FROM attractions WHERE LOWER(city) LIKE LOWER($1)',
+            [`%${city}%`]
+        );
+        const culinaries = await pool.query(
+            'SELECT * FROM culinaries WHERE LOWER(city) LIKE LOWER($1)',
+            [`%${city}%`]
+        );
 
-    res.json({
-      success: true,
-      city,
-      data: {
-        hotels: hotels.rows,
-        attractions: attractions.rows,
-        culinaries: culinaries.rows,
-      },
-    });
-  } catch (error) {
-    console.error('Error fetching destinations:', error);
-    res.status(500).json({ success: false, message: 'Gagal mengambil data dari database' });
-  }
+        res.json({
+            success: true,
+            city,
+            data: {
+                hotels: hotels.rows,
+                attractions: attractions.rows,
+                culinaries: culinaries.rows,
+            },
+        });
+    } catch (error) {
+        console.error('Error fetching destinations:', error);
+        res.status(500).json({ success: false, message: 'Gagal mengambil data dari database' });
+    }
 });
 
 // PASANG MIDDLEWARE / RUTE TRIPS
 app.use('/api/trips', tripRoutes);
 
+const aiRoutes = require('./routes/aiRoutes');
+
+app.use('/api', aiRoutes);
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server lokal jalan di port: ${PORT}`);
-    console.log(`Server publik Ngrok aktif di: https://scrappier-anthony-adnate.ngrok-free.dev`);
+    console.log(`Server publik Ngrok aktif di: https://aloha-legible-flop.ngrok-free.dev`);
+
+
 });
