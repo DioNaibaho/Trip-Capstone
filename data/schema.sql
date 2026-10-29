@@ -50,16 +50,12 @@ CREATE TABLE IF NOT EXISTS users (
 
 DROP TABLE IF EXISTS users;
 
-CREATE TABLE IF NOT EXISTS trips (
-    id VARCHAR(100) PRIMARY KEY,
-    city VARCHAR(255),
-    start_date VARCHAR(50),
-    end_date VARCHAR(50),
-    budget VARCHAR(100),
-    raw_budget INTEGER,
-    passengers INTEGER,
-    days INTEGER,
-    destinations JSONB,
-    image VARCHAR(255),
-    saved_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+CREATE TABLE trips (
+    id SERIAL PRIMARY KEY,
+    user_id UUID REFERENCES users(id) ON DELETE CASCADE,
+    trip_name VARCHAR(255) NOT NULL,
+    start_date DATE,
+    end_date DATE,
+    itinerary_data JSONB,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

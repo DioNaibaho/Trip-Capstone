@@ -342,7 +342,7 @@ function MyTripsView({ savedTrips, onSelectTrip, setIsModalOpen }) {
 // ==========================================
 // MODAL BUAT RENCANA 
 // ==========================================
-function CreateTripModal({ isOpen, onClose, onSubmit }) {
+function CreateTripModal({ isOpen, onClose, onSubmit, onAIGenerate, isGeneratingAI }) {
   const getTodayDate = () => new Date().toISOString().split('T')[0];
   const getFutureDate = (daysAhead) => {
     const d = new Date();
@@ -440,9 +440,22 @@ function CreateTripModal({ isOpen, onClose, onSubmit }) {
 
         </div>
 
-        <div style={{ padding: '16px 20px', backgroundColor: '#f8fafc', borderTop: '1px solid #f1f5f9' }}>
-          <button onClick={() => onSubmit(formData)} style={{ width: '100%', backgroundColor: '#f97316', color: '#ffffff', fontWeight: 'bold', fontSize: '14px', padding: '12px', borderRadius: '10px', border: 'none', cursor: 'pointer' }}>
+        <div style={{ padding: '16px 20px', backgroundColor: '#f8fafc', borderTop: '1px solid #f1f5f9', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <button onClick={() => onSubmit(formData)} style={{ width: '100%', backgroundColor: '#0f172a', color: '#ffffff', fontWeight: 'bold', fontSize: '14px', padding: '12px', borderRadius: '10px', border: 'none', cursor: 'pointer' }}>
             Mulai Rencanakan Manual
+          </button>
+          
+          <button 
+            onClick={() => onAIGenerate(formData)} 
+            disabled={isGeneratingAI}
+            style={{ 
+              width: '100%', backgroundColor: '#f97316', color: '#ffffff', fontWeight: 'bold', 
+              fontSize: '14px', padding: '12px', borderRadius: '10px', border: 'none', 
+              cursor: isGeneratingAI ? 'not-allowed' : 'pointer', display: 'flex', 
+              alignItems: 'center', justifyContent: 'center', gap: '8px', opacity: isGeneratingAI ? 0.7 : 1
+            }}
+          >
+            {isGeneratingAI ? 'AI Sedang Memproses...' : <><Sparkles size={16} /> Generate Itinerary dengan AI</>}
           </button>
         </div>
       </div>
@@ -485,25 +498,36 @@ export default function App() {
   
   const [destinations, setDestinations] = useState({});
 
-  //  LOAD DATA DARI DATABASE SAAT WEB DIBUKA
+  // 🚀 LOAD DATA DARI DATABASE BERDASARKAN USER ID SAAT LOGIN
   useEffect(() => {
-    const fetchSavedTrips = async () => {
+    const fetchUserTrips = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/trips');
+        const currentUserId = 1; // Sesuaikan dengan ID user yang sedang login
+        const response = await axios.get(`http://localhost:5000/api/trips/user/${currentUserId}`);
+        
         if (response.data.success) {
-          // Masukin data dari database ke state My Trips
-          setSavedTrips(response.data.data); 
+          // Mapping data dari backend supaya propertinya cocok sama yang dibaca Frontend
+          const formattedData = response.data.data.map(t => ({
+            id: t.id,
+            city: t.trip_name,
+            startDate: t.start_date,
+            endDate: t.end_date,
+            destinations: t.itinerary_data, // Ambil dari itinerary_data database
+            ...t
+          }));
+          
+          setSavedTrips(formattedData); 
         }
       } catch (error) {
         console.error('Gagal mengambil history trip dari database:', error);
       }
     };
 
-    // Kita ambil datanya cuma kalau usernya udah berhasil login ya
     if (isLoggedIn) {
-      fetchSavedTrips();
+      fetchUserTrips();
     }
   }, [isLoggedIn]);
+
   
   // ==============================================================
   // 🚀 COPY DARI SINI: LOGIKA SMART BACK BUTTON
@@ -590,6 +614,52 @@ export default function App() {
     setHasTrip(true);
     setCurrentTab('dashboard');
   };
+
+  const [isGeneratingAI, setIsGeneratingAI] = useState(false);
+
+const handleAIGenerateTrip = async (data) => {
+  setIsGeneratingAI(true);
+  try {
+    const response = await axios.post('http://localhost:8000/api/generate', {
+      city: data.city,
+      startDate: data.startDate,
+      endDate: data.endDate,
+      days: data.days,
+      passengers: data.passengers,
+      budget: data.budget
+    });
+
+    const newTrip = {
+      id: Date.now().toString(),
+      city: data.city,
+      startDate: data.startDate, 
+      endDate: data.endDate,     
+      budget: new Intl.NumberFormat('id-ID').format(data.budget), 
+      rawBudget: parseInt(data.budget, 10), 
+      passengers: data.passengers, 
+      days: data.days,
+      destinations: {}, 
+      image: 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=600&q=80'
+    };
+
+    const aiDestinations = response.data.itinerary; 
+    newTrip.destinations = aiDestinations;
+
+    setSavedTrips([newTrip, ...savedTrips]);
+    setTripInfo(newTrip);
+    setDestinations(aiDestinations);
+    setSelectedDay(1); 
+    setHasTrip(true);
+    setIsModalOpen(false);
+    setCurrentTab('dashboard');
+    alert('✨ Jadwal cerdas berhasil disusun oleh AI!');
+  } catch (error) {
+    console.error('Gagal generate AI:', error);
+    alert('AI-nya gagal merespon pren. Pastikan backend Python AI udah di-run!');
+  } finally {
+    setIsGeneratingAI(false);
+  }
+};
 
   const handleAddDestination = (item, tabType) => {
     const rawPrice = tabType === 'culinaries' ? item.price_range : item.price;
@@ -706,39 +776,50 @@ export default function App() {
     setSavedTrips(prev => prev.map(t => t.id === tripInfo.id ? { ...t, destinations: newDestinations } : t));
   };
 
- const handleSaveTrip = async () => {
-    // Validasi: Jangan kasih save kalau jadwalnya masih kosong melompong
+  const handleSaveTrip = async () => {
     const isDestinationsEmpty = Object.keys(destinations).length === 0;
     if (isDestinationsEmpty) {
       alert('Isi minimal 1 tempat dulu dong di jadwalnya sebelum disimpan! 😅');
       return;
     }
 
-    // Bungkus semua data trip yang lagi aktif
+    // Ambil ID user yang lagi aktif (biasanya kesimpen pas login, misal dari localStorage atau state)
+    // Kalau belum ada sistem user ID dinamis, kita pakai dummy ID sementara misal '1'
+    const currentUserId = 1; 
+
+    // Sesuaikan kuncinya dengan yang diminta backend controller temen lu
     const tripToSave = {
-      ...tripInfo, 
-      id: tripInfo.id || Date.now(), 
-      destinations: destinations, /* 🚨 FIX-NYA DI SINI: Kemarin 'itinerary', sekarang ganti jadi 'destinations' biar sinkron pas diload ulang */
-      savedAt: new Date().toISOString() 
+      user_id: currentUserId,
+      trip_name: `Liburan ke ${tripInfo.city}`,
+      start_date: tripInfo.startDate,
+      end_date: tripInfo.endDate,
+      itinerary_data: destinations, // Ini objek destinasi per hari
+      
+      // Tambahan properti lain kalau dibutuhin buat nampilin di UI frontend
+      id: tripInfo.id || Date.now(),
+      budget: tripInfo.budget,
+      rawBudget: tripInfo.rawBudget,
+      passengers: tripInfo.passengers,
+      days: tripInfo.days,
+      image: tripInfo.image || 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=600&q=80'
     };
 
-    await axios.post('http://localhost:5000/api/trips', tripToSave);
-    
-    setSavedTrips((prevTrips) => {
-      const existingIndex = prevTrips.findIndex(t => t.id === tripToSave.id);
-      if (existingIndex >= 0) {
-        const updatedTrips = [...prevTrips];
-        updatedTrips[existingIndex] = tripToSave;
-        return updatedTrips;
-      }
-      return [tripToSave, ...prevTrips];
-    });
+    try {
+      const response = await axios.post('http://localhost:5000/api/trips', tripToSave);
+      
+      if (response.data.success) {
+        // Masukin data balikan dari database ke state frontend
+        setSavedTrips((prevTrips) => [response.data.data, ...prevTrips]);
 
-    alert('Mantap! Rencana perjalananmu berhasil disimpan. 🚀');
-    
-    // Otomatis pindah ke tab My Trips
-    setCurrentTab('mytrips'); 
+        alert('Mantap! Rencana perjalananmu berhasil disimpan permanen ke database! 🚀');
+        setCurrentTab('mytrips'); 
+      }
+    } catch (error) {
+      console.error('Gagal menyimpan ke database:', error);
+      alert('Waduh, gagal nyimpen ke database nih pren. Cek backend lu ya!');
+    }
   };
+
   // Kalkulasi Semua Hari Buat Budget
   let allDestinations = [];
   if (tripInfo.days) {
@@ -793,7 +874,13 @@ export default function App() {
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', height: '100%', width: '100%' }}>
           
           <AIChatbotWidget />
-          <CreateTripModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={handleCreateTripSubmit} />
+          <CreateTripModal 
+          isOpen={isModalOpen} 
+          onClose={() => setIsModalOpen(false)} 
+          onSubmit={handleCreateTripSubmit} 
+          onAIGenerate={handleAIGenerateTrip} 
+          isGeneratingAI={isGeneratingAI} 
+          />
           <DestinationPickerModal isOpen={isPickerOpen} onClose={() => setIsPickerOpen(false)} city={tripInfo.city} onAdd={handleAddDestination} />
 
           {/* TOP NAVBAR */}
@@ -1107,4 +1194,4 @@ export default function App() {
       </div>
     </ErrorBoundary>
   );
-}
+};
