@@ -1,9 +1,18 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
 import random
 
 app = FastAPI(title="Trip Capstone AI Engine")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Mengizinkan akses dari URL frontend rekan Anda
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],  # Wajib "*" agar header ngrok tidak diblokir browser
+)
 
 # --- 1. STRUKTUR DATA INPUT ---
 class Location(BaseModel):
@@ -109,7 +118,7 @@ def run_genetic_algorithm(data: RouteRequest, pop_size: int = 20, generations: i
         population = new_population
         
     # Susun rute hasil optimasi
-    route_names = [data.start_point] + [data.locations[i - 1].name for i in best_chromosome]
+    route_names = [data.start_point] + [data.locations[i].name for i in best_chromosome]
     
     return {
         "optimized_route_indices": [0] + best_chromosome,
