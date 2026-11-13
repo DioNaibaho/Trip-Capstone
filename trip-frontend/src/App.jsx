@@ -503,6 +503,7 @@ export default function App() {
   const [destinations, setDestinations] = useState({});
 
   // LOAD DATA TRIP BERDASARKAN ID USER AKTIF
+  // LOAD DATA TRIP BERDASARKAN ID USER AKTIF
   useEffect(() => {
     const fetchUserTrips = async () => {
       if (!currentUser?.id) {
@@ -516,15 +517,35 @@ export default function App() {
         const response = await axios.get(`http://localhost:5000/api/trips/user/${currentUser.id}`);
         
         if (response.data.success && response.data.data.length > 0) {
-          const formattedData = response.data.data.map(t => ({
-            id: t.id,
-            city: t.trip_name,
-            startDate: t.start_date,
-            endDate: t.end_date,
-            destinations: t.itinerary_data,
-            image: getCityImage(t.trip_name),
-            ...t
-          }));
+          const formattedData = response.data.data.map(t => {
+            // PENGAMAN EKSTRA: Cari angka dari kolom mana pun yang tersedia
+            let rawVal = 0;
+            if (t.rawBudget) rawVal = Number(t.rawBudget);
+            else if (t.raw_budget) rawVal = Number(t.raw_budget);
+            else if (t.budget) {
+              // Bersihkan string budget dari huruf, titik, atau "Rp"
+              const cleaned = String(t.budget).replace(/\D/g, '');
+              rawVal = cleaned ? parseInt(cleaned, 10) : 5000000; // Default fallback kalau kosong melompong
+            } else {
+              rawVal = 5000000; // Fallback aman
+            }
+
+            return {
+              id: t.id,
+              city: t.trip_name,
+              startDate: t.start_date,
+              endDate: t.end_date,
+              destinations: t.itinerary_data,
+              image: getCityImage(t.trip_name),
+              
+              rawBudget: rawVal,
+              budget: new Intl.NumberFormat('id-ID').format(rawVal),
+              passengers: t.passengers || 2,
+              days: t.days || 3,
+              ...t
+            };
+          });
+          
           setSavedTrips(formattedData); 
           if (!selectedTripDetail) {
             setSelectedTripDetail(formattedData[0]);
@@ -546,22 +567,6 @@ export default function App() {
       fetchUserTrips();
     }
   }, [isLoggedIn, currentUser]);
-
-  const handleLogout = () => {
-    localStorage.removeItem('user');
-    localStorage.removeItem('token');
-    
-    setUserName('Traveler');
-    setCurrentUser(null);
-    setIsLoggedIn(false);
-    setIsProfileOpen(false);
-    setSavedTrips([]);
-    setHasTrip(false);
-    setTripInfo({ id: null, city: '', startDate: '', endDate: '', budget: '0', rawBudget: 0, passengers: 2, days: 3 });
-    setDestinations({});
-    setSelectedTripDetail(null);
-    setCurrentTab('dashboard');
-  };
 
   // LOGIKA SMART BACK BUTTON
   const appStateRef = useRef({ isModalOpen, isPickerOpen, selectedExploreCity, currentTab, selectedTripDetail });
@@ -645,29 +650,138 @@ export default function App() {
     setIsGeneratingAI(true);
     try {
       const cityName = data.city.split(',')[0];
+      const daysCount = parseInt(data.days, 10) || 1;
+      const totalBudget = parseInt(data.budget, 10) || 0;
+      
+      // 1. Tarik Master Data Lengkap
       const destRes = await axios.get(`http://localhost:5000/api/destinations/${cityName}`);
-      const places = destRes.data.data.attractions || [];
+      const allData = destRes.data?.data || {};
+      
+      const allAttractions = allData.attractions || [];
+      const allCulinaries = allData.culinaries || [];
+      const allHotels = allData.hotels || [];
+      
+      if (allAttractions.length === 0) {
+          alert(`Belum ada data wisata untuk kota ${cityName}.`);
+          setIsGeneratingAI(false); return;
+      }
 
-      const formattedLocations = places.map(p => ({
-        id: p.id,
-        name: p.name,
-        lat: parseFloat(p.latitude),
-        lng: parseFloat(p.longitude),
-        duration: 120
-      }));
+      // ==========================================
+      // FITUR BARU: SMART BUDGET ALLOCATION
+      // ==========================================
+      const dailyBudget = totalBudget / daysCount;
 
-      const matrixSize = formattedLocations.length;
-      const dummyMatrix = Array(matrixSize).fill(0).map(() => Array(matrixSize).fill(15));
+      // Asumsi pembagian budget harian: Hotel 45%, Kuliner 30% (2x), Wisata 25% (3x)
+      const targetHotelPrice = dailyBudget * 0.45;
+      const targetCulinaryPrice = dailyBudget * 0.15;
+      const targetAttractionPrice = dailyBudget * 0.08;
 
-      const response = await axios.post('http://localhost:5000/api/optimize-route', {
-        start_point: formattedLocations[0]?.id || 1,
-        start_time: "08:00",
-        locations: formattedLocations,
-        time_matrix: dummyMatrix
+      // Fungsi untuk mengurutkan tempat yang harganya PALING MENDEKATI target budget
+      const sortByTargetPrice = (arr, targetPrice, type) => {
+          return [...arr].sort((a, b) => {
+              const priceA = extractNumericPrice(type === 'culinaries' ? a.price_range : a.price);
+              const priceB = extractNumericPrice(type === 'culinaries' ? b.price_range : b.price);
+              return Math.abs(priceA - targetPrice) - Math.abs(priceB - targetPrice);
+          });
+      };
+
+      // Terapkan Smart Sorting
+      const smartHotels = sortByTargetPrice(allHotels, targetHotelPrice, 'hotels');
+      const smartCulinaries = sortByTargetPrice(allCulinaries, targetCulinaryPrice, 'culinaries');
+      const smartAttractions = sortByTargetPrice(allAttractions, targetAttractionPrice, 'attractions');
+
+      const newDestinationsState = {};
+      const mainHotel = smartHotels[0] || smartAttractions[0]; // Terpilih hotel yang sesuai kantong
+
+      // 2. Proses Multi-Hari Paralel (Sekarang mengambil dari data yang sudah difilter budget)
+      const dayPromises = Array.from({ length: daysCount }).map(async (_, dayIndex) => {
+          const currentDay = dayIndex + 1;
+          
+          // Ambil porsi data SMART: 3 Wisata & 2 Kuliner per hari
+          const dayAttractions = smartAttractions.slice(dayIndex * 3, currentDay * 3);
+          const dayCulinaries = smartCulinaries.slice(dayIndex * 2, currentDay * 2);
+          
+          const dailyPlaces = [mainHotel, ...dayAttractions, ...dayCulinaries].filter(Boolean);
+          if (dailyPlaces.length === 0) return { day: currentDay, places: [] };
+
+          const formattedLocations = dailyPlaces.map(p => ({
+              id: p.id,
+              name: p.name,
+              lat: parseFloat(p.latitude) || 0,
+              lng: parseFloat(p.longitude) || 0,
+              duration: 90
+          }));
+
+          const dummyMatrix = Array(formattedLocations.length).fill(0).map((_, i) => 
+              Array(formattedLocations.length).fill(0).map((_, j) => (i === j ? 0 : 15))
+          );
+
+          try {
+              // 3. Tembak AI untuk mencari Rute Jarak Terdekat
+              const response = await axios.post('http://localhost:5000/api/optimize-route', {
+                  start_point: formattedLocations[0]?.id.toString() || "1",
+                  start_time: "08:00",
+                  locations: formattedLocations,
+                  time_matrix: dummyMatrix
+              });
+
+              const aiData = response.data?.data?.data || response.data?.data || {};
+              const optimizedIndices = aiData.optimized_route_indices || dailyPlaces.map((_, i) => i);
+              
+              // 4. Pisahkan hasil urutan AI berdasarkan kategori
+              const sortedDailyPlaces = optimizedIndices.filter(idx => dailyPlaces[idx]).map(idx => dailyPlaces[idx]);
+              
+              const hotelArr = sortedDailyPlaces.filter(p => p.id === mainHotel.id);
+              const culinaryArr = sortedDailyPlaces.filter(p => dayCulinaries.some(c => c.id === p.id));
+              const wisataArr = sortedDailyPlaces.filter(p => dayAttractions.some(a => a.id === p.id) && p.id !== mainHotel.id);
+
+              // 5. TEMPLATE LOGIKA WAKTU (Human-like Itinerary)
+              const finalDaySchedule = [];
+
+              if (hotelArr.length > 0) finalDaySchedule.push({ place: hotelArr[0], time: "08:00", cat: "HOTEL" });
+              if (wisataArr.length > 0) finalDaySchedule.push({ place: wisataArr.shift(), time: "09:30", cat: "CULTURE" });
+              if (culinaryArr.length > 0) finalDaySchedule.push({ place: culinaryArr.shift(), time: "12:30", cat: "CULINARY" }); 
+              if (wisataArr.length > 0) finalDaySchedule.push({ place: wisataArr.shift(), time: "14:00", cat: "CULTURE" });
+              if (wisataArr.length > 0) finalDaySchedule.push({ place: wisataArr.shift(), time: "16:30", cat: "CULTURE" });
+              if (culinaryArr.length > 0) finalDaySchedule.push({ place: culinaryArr.shift(), time: "19:00", cat: "CULINARY" }); 
+
+              // 6. Map ke format State React
+              const mappedDestinations = finalDaySchedule.map((item, i) => {
+                  const p = item.place;
+                  const rawPrice = item.cat === 'CULINARY' ? p.price_range : p.price;
+                  
+                  return {
+                      id: `ai-${currentDay}-${p.id}-${i}`, 
+                      name: p.name,
+                      category: item.cat,
+                      lat: parseFloat(p.latitude),
+                      lng: parseFloat(p.longitude),
+                      image: p.image_url || 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd',
+                      numericPrice: extractNumericPrice(rawPrice),
+                      displayPriceText: rawPrice || 'Harga belum tersedia',
+                      time: item.time, 
+                      address: p.address || p.tourism || 'Rekomendasi AI TripBuddy',
+                      nights: 1,
+                      isClone: false
+                  };
+              });
+              
+              return { day: currentDay, places: mappedDestinations };
+          } catch (err) {
+              console.error(`Gagal optimize Day ${currentDay}:`, err);
+              return { day: currentDay, places: [] };
+          }
       });
 
-      const aiDestinations = response.data.data.itinerary;
+      const results = await Promise.all(dayPromises);
       
+      results.forEach(res => {
+          if (res.places.length > 0) {
+              newDestinationsState[res.day] = res.places;
+          }
+      });
+
+      // 7. Simpan ke UI
       const newTrip = {
         id: Date.now().toString(),
         city: data.city,
@@ -676,25 +790,26 @@ export default function App() {
         budget: new Intl.NumberFormat('id-ID').format(data.budget), 
         rawBudget: parseInt(data.budget, 10), 
         passengers: data.passengers, 
-        days: data.days,
-        destinations: aiDestinations, 
+        days: daysCount,
+        destinations: newDestinationsState, 
         image: getCityImage(data.city)
       };
 
       setSavedTrips([newTrip, ...savedTrips]);
       setTripInfo(newTrip);
-      setDestinations(aiDestinations);
+      setDestinations(newDestinationsState);
       setSelectedDay(1); 
       setHasTrip(true);
       setSelectedTripDetail(newTrip);
       setIsModalOpen(false);
       setCurrentTab('mytrips');
       setIsEditingMode(true);
-      alert('✨ Rute AI berhasil di-generate!');
+      
+      alert(`✨ Magic! Itinerary disusun menyesuaikan budget Rp ${newTrip.budget}!`);
 
     } catch (error) {
       console.error('Gagal generate AI:', error);
-      alert(`Gagal terhubung: ${error.response?.data?.message || error.message}`);
+      alert(`Gagal terhubung ke Server. Pesan error: ${error.message}`);
     } finally {
       setIsGeneratingAI(false);
     }
@@ -841,6 +956,7 @@ export default function App() {
       end_date: tripInfo.endDate,
       itinerary_data: destinations, 
       
+      // Pakai ID dari DB kalau ada, atau ID sementara dari React
       id: tripInfo.id || Date.now(),
       budget: tripInfo.budget,
       rawBudget: tripInfo.rawBudget,
@@ -850,6 +966,9 @@ export default function App() {
     };
 
     try {
+      // NOTE: Pastikan backend lu handle proses UPSERT (Update kalau ID ada, Insert kalau baru)
+      // Kalau endpoint /api/trips selalu bikin row baru di DB tiap di-post, 
+      // lu harus sesuaikan backend-nya jadi PUT atau kasih logika update di backend.
       const response = await axios.post('http://localhost:5000/api/trips', tripToSave);
       
       if (response.data.success) {
@@ -862,14 +981,34 @@ export default function App() {
           endDate: savedData.end_date || tripInfo.endDate,
           destinations: savedData.itinerary_data || destinations,
           budget: tripInfo.budget,
+          rawBudget: tripInfo.rawBudget,
           days: tripInfo.days,
           passengers: tripInfo.passengers,
           image: tripInfo.image
         };
 
-        setSavedTrips((prevTrips) => [formattedNewTrip, ...prevTrips]);
+        // ==========================================
+        // FITUR BARU: MENCEGAH KLONING DI UI
+        // ==========================================
+        setSavedTrips((prevTrips) => {
+          // Cek apakah trip ini udah ada di dalam list berdasarkan ID-nya
+          const existingTripIndex = prevTrips.findIndex(t => t.id === tripInfo.id);
+          
+          if (existingTripIndex >= 0) {
+            // Kalau udah ada, UPDATE (timpa data lama dengan data baru)
+            const updatedTrips = [...prevTrips];
+            updatedTrips[existingTripIndex] = formattedNewTrip;
+            return updatedTrips;
+          } else {
+            // Kalau beneran belum ada, baru tambahkan ke atas
+            return [formattedNewTrip, ...prevTrips];
+          }
+        });
+
+        // Update juga detail yang sedang dibuka
+        setSelectedTripDetail(formattedNewTrip);
         setIsEditingMode(false);
-        alert('Mantap! Rencana perjalananmu berhasil disimpan! 🚀');
+        alert('Mantap! Rencana perjalananmu berhasil disimpan tanpa dobel! 🚀');
       }
     } catch (error) {
       console.error('Gagal menyimpan ke database:', error);
