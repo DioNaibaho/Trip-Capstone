@@ -268,8 +268,8 @@ function DestinationPickerModal({ isOpen, onClose, city, onAdd }) {
                       {item.name || 'Nama Lokasi Belum Tersedia'}
                     </h3>
                     <img src={item.image_url || 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e'} alt={item.name} style={{ width: '50px', height: '50px', borderRadius: '8px', objectFit: 'cover', flexShrink: 0 }}
-                     onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e'; }}
-                   />
+                      onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e'; }}
+                    />
                     {item.rating && (
                       <span style={{ fontSize: '10px', fontWeight: '700', color: '#f59e0b', backgroundColor: '#fef3c7', padding: '2px 6px', borderRadius: '4px', flexShrink: 0 }}>
                         ⭐ {item.rating}
@@ -387,7 +387,6 @@ function CreateTripModal({ isOpen, onClose, onSubmit, onAIGenerate, isGenerating
             </div>
             <input type="range" min="0" max="20000000" step="250000" value={formData.budget} onChange={(e) => setFormData({...formData, budget: e.target.value})} style={{ width: '100%', accentColor: '#f97316' }} />
           </div>
-
         </div>
 
         <div style={{ padding: '16px 20px', backgroundColor: '#f8fafc', borderTop: '1px solid #f1f5f9', display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -418,6 +417,7 @@ function CreateTripModal({ isOpen, onClose, onSubmit, onAIGenerate, isGenerating
 // ==========================================
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isGeneratingAI, setIsGeneratingAI] = useState(false);
 
   // STATE USER DINAMIS DARI LOCALSTORAGE
   const [currentUser, setCurrentUser] = useState(() => {
@@ -641,8 +641,6 @@ export default function App() {
     setIsEditingMode(false);
   };
 
-  const [isGeneratingAI, setIsGeneratingAI] = useState(false);
-
   const handleAIGenerateTrip = async (data) => {
     setIsGeneratingAI(true);
     try {
@@ -697,6 +695,86 @@ export default function App() {
     } catch (error) {
       console.error('Gagal generate AI:', error);
       alert(`Gagal terhubung: ${error.response?.data?.message || error.message}`);
+    } finally {
+      setIsGeneratingAI(false);
+    }
+  };
+
+  // ==========================================
+  // FITUR: AI ROUTE OPTIMIZATION (Algoritma Genetika)
+  // ==========================================
+  const handleOptimizeRoute = async (dayId) => {
+    const currentDestinations = destinations[dayId] || [];
+    
+    // Minimal harus ada 2 tempat buat diurutin
+    if (currentDestinations.length < 2) {
+      alert('Tambahkan minimal 2 destinasi di hari ini untuk dioptimasi AI.');
+      return;
+    }
+
+    setIsGeneratingAI(true); // Biar tombolnya loading (disable sementara)
+
+    try {
+      // 1. Format payload 'locations' sesuai skema Pydantic
+      const locationsPayload = currentDestinations.map(dest => ({
+        id: dest.id.toString(),
+        name: dest.name,
+        duration: 90 // Asumsi 90 menit per lokasi (bisa disesuaikan kalau ada field durasi)
+      }));
+
+      // 2. Bikin 'time_matrix' dummy 15 menit (N x N)
+      // Jarak ke diri sendiri = 0, ke tempat lain = 15
+      const n = locationsPayload.length;
+      const timeMatrix = Array(n).fill(0).map((_, i) => 
+        Array(n).fill(0).map((_, j) => (i === j ? 0 : 15))
+      );
+
+      // Payload buat ditembak ke FastAPI
+      const payload = {
+        start_point: "Lokasi Awal (Hotel)",
+        locations: locationsPayload,
+        time_matrix: timeMatrix
+      };
+
+      // 3. Request ke API AI Engine (FastAPI port 8000)
+      const response = await axios.post('http://localhost:8000/optimize', payload);
+      
+      const { optimized_route_indices, estimated_total_time_minutes } = response.data.data;
+
+      // 4. Proses response index dari AI ke array React
+      // Backend ngirim array misal: [0, 2, 1, 3] (0 itu start_point, jadi kita slice/buang)
+      const aiSortedIndices = optimized_route_indices.slice(1);
+      
+      // Urutkan ulang kartu berdasarkan indeks baru dari AI
+      const reorderedDestinations = aiSortedIndices.map(idx => currentDestinations[idx]);
+
+      // 5. Update urutan label jam biar tetep beraturan dari pagi - malam
+      const timeSlots = ["08:30", "11:00", "14:30", "18:00", "20:00", "21:30"];
+      const finalDestinations = reorderedDestinations.map((dest, idx) => ({
+        ...dest,
+        time: timeSlots[idx % timeSlots.length] // Reset ulang label jam sesuai urutan baru
+      }));
+
+      // 6. Update State React (Otomatis ngubah UI & Garis Peta)
+      setDestinations(prev => {
+        const updatedDestinations = {
+          ...prev,
+          [dayId]: finalDestinations
+        };
+
+        // Sinkronisasi juga ke list savedTrips kalau lagi di mode edit
+        if (selectedTripDetail) {
+          setSelectedTripDetail(prevDetail => ({ ...prevDetail, destinations: updatedDestinations }));
+        }
+
+        return updatedDestinations;
+      });
+
+      alert(`✅ Rute dioptimasi! Estimasi total waktu perjalanan & wisata: ${estimated_total_time_minutes} menit.`);
+
+    } catch (error) {
+      console.error('AI Route Optimization Error:', error);
+      alert('Gagal menghubungi AI Engine. Pastikan server AI (port 8000) sudah menyala.');
     } finally {
       setIsGeneratingAI(false);
     }
@@ -775,25 +853,24 @@ export default function App() {
       const response = await axios.post('http://localhost:5000/api/trips', tripToSave);
       
       if (response.data.success) {
-    // Format ulang data dari backend agar propertinya sama persis dengan yang diminta frontend
-    const savedData = response.data.data;
-    
-    const formattedNewTrip = {
-      id: savedData.id || tripInfo.id || Date.now(),
-      city: savedData.trip_name || tripInfo.city,
-      startDate: savedData.start_date || tripInfo.startDate,
-      endDate: savedData.end_date || tripInfo.endDate,
-      destinations: savedData.itinerary_data || destinations,
-      budget: tripInfo.budget,
-      days: tripInfo.days,
-      passengers: tripInfo.passengers,
-      image: tripInfo.image
-    };
+        const savedData = response.data.data;
+        
+        const formattedNewTrip = {
+          id: savedData.id || tripInfo.id || Date.now(),
+          city: savedData.trip_name || tripInfo.city,
+          startDate: savedData.start_date || tripInfo.startDate,
+          endDate: savedData.end_date || tripInfo.endDate,
+          destinations: savedData.itinerary_data || destinations,
+          budget: tripInfo.budget,
+          days: tripInfo.days,
+          passengers: tripInfo.passengers,
+          image: tripInfo.image
+        };
 
-    setSavedTrips((prevTrips) => [formattedNewTrip, ...prevTrips]);
-    setIsEditingMode(false);
-    alert('Mantap! Rencana perjalananmu berhasil disimpan! 🚀');
-  }
+        setSavedTrips((prevTrips) => [formattedNewTrip, ...prevTrips]);
+        setIsEditingMode(false);
+        alert('Mantap! Rencana perjalananmu berhasil disimpan! 🚀');
+      }
     } catch (error) {
       console.error('Gagal menyimpan ke database:', error);
       alert('Gagal menyimpan ke database.');
@@ -809,7 +886,7 @@ export default function App() {
   const totalDaysAllTrips = savedTrips.reduce((acc, t) => acc + (parseInt(t.days, 10) || 0), 0);
 
   // Rute Map
-  const currentDayDestinations = destinations[selectedDay] || [];
+  const currentDayDestinations = destinations?.[selectedDay] || [];
   const routeCoordinates = currentDayDestinations.map(item => [item.lat, item.lng]);
   
   let currentMapCenter = [-6.9175, 107.6191]; 
@@ -1261,7 +1338,7 @@ export default function App() {
         const totalBudget = tripInfo.rawBudget || 0;
         
         // Ambil semua item dari semua hari (Object.values), jadikan satu array (flat), lalu jumlahkan numericPrice-nya
-        const totalSpent = Object.values(destinations).flat().reduce((sum, item) => sum + (item.numericPrice || 0), 0);
+        const totalSpent = Object.values(destinations || {}).flat().reduce((sum, item) => sum + (item.numericPrice || 0), 0);
         
         const remainingBudget = totalBudget - totalSpent;
         const budgetPercent = totalBudget > 0 ? Math.min((totalSpent / totalBudget) * 100, 100) : 0;
@@ -1351,8 +1428,28 @@ export default function App() {
                         <span style={{ fontSize: '10px', color: '#64748b' }}>Sunny • {currentDayDestinations.length} stops</span>
                       </div>
                     </div>
-                    <button onClick={() => handleAIGenerateTrip(tripInfo)} style={{ backgroundColor: '#ffffff', border: '1px solid #cbd5e1', color: '#0f172a', padding: '6px 12px', borderRadius: '8px', fontSize: '11px', fontWeight: '700', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <Sparkles size={12} color="#f97316" /> Optimize route
+                    
+                    {/* TOMBOL OPTIMIZE ROUTE DENGAN AI (UPDATED) */}
+                    <button 
+                      onClick={() => handleOptimizeRoute(selectedDay)} 
+                      disabled={isGeneratingAI}
+                      style={{ 
+                        backgroundColor: '#ffffff', 
+                        border: '1px solid #cbd5e1', 
+                        color: '#0f172a', 
+                        padding: '6px 12px', 
+                        borderRadius: '8px', 
+                        fontSize: '11px', 
+                        fontWeight: '700', 
+                        cursor: isGeneratingAI ? 'not-allowed' : 'pointer', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        gap: '6px',
+                        opacity: isGeneratingAI ? 0.6 : 1
+                      }}
+                    >
+                      <Sparkles size={12} color="#f97316" /> 
+                      {isGeneratingAI ? 'Mengoptimasi...' : 'Optimize route'}
                     </button>
                   </div>
 

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional, Any
 import random
 
 app = FastAPI(title="Trip Capstone AI Engine")
@@ -18,6 +18,8 @@ app.add_middleware(
 class Location(BaseModel):
     id: str
     name: str
+    lat: Optional[float] = None
+    lng: Optional[float] = None
     duration: int  # Durasi kunjungan (menit)
 
 class RouteRequest(BaseModel):

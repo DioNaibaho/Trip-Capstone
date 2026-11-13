@@ -23,21 +23,21 @@ const optimizeRoute = async (req, res) => {
         }
 
         // Ambil URL AI Engine dari environment variable (.env)
-        const AI_ENGINE_URL = process.env.AI_ENGINE_URL || 'https://aloha-legible-flop.ngrok-free.dev';
+        const AI_ENGINE_URL = process.env.AI_ENGINE_URL || 'http://127.0.0.1:8000';
 
         // Normalisasi data locations agar 'visit_duration_minutes' berubah jadi 'duration' sesuai FastAPI
-        const formattedLocations = rawLocations.map(loc => ({
-            id: loc.id,
-            name: loc.name,
-            lat: loc.lat,
-            lng: loc.lng,
-            duration: loc.duration !== undefined ? loc.duration : (loc.visit_duration_minutes || 0)
-        }));
+        const formattedLocations = rawLocations.map((loc, index) => ({
+    id: loc.id !== undefined && loc.id !== null ? String(loc.id) : `id-${index}`, 
+    name: String(loc.name || `Destinasi ${index + 1}`),
+    lat: loc.lat !== undefined && loc.lat !== null ? Number(loc.lat) : null,
+    lng: loc.lng !== undefined && loc.lng !== null ? Number(loc.lng) : null,
+    duration: loc.duration !== undefined ? Number(loc.duration) : (Number(loc.visit_duration_minutes) || 90)
+}));
 
         const aiResponse = await axios.post(
             `${AI_ENGINE_URL}/optimize`,
             {
-                start_point: start_point || start_location_id,
+                start_point: String(start_point || start_location_id || "1"),
                 start_time: start_time || "08:00",
                 locations: formattedLocations,
                 time_matrix: matrix
